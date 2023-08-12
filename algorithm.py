@@ -1,5 +1,6 @@
+# Algorithm 
+# Binary Search 
 
-# Binary Search
 def array(l:int,r:int,arr:list)->list:
    emp=[]
    for i in range(l,r+1):
@@ -23,12 +24,6 @@ def Binary_Search(li:list,n:int)->int:
          l=mid+1
       count+=1
    if li[mid] !=n:
-      print("Not Find")
-      
-
-
-        
-      
-
+      print("Not Find")       
 
 Binary_Search([1,2,3,4,5,6,7,8,9],1)
