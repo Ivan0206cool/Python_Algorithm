@@ -27,3 +27,11 @@ def Binary_Search(li:list,n:int)->int:
       print("Not Find")       
 
 Binary_Search([1,2,3,4,5,6,7,8,9],1)
+
+e={}
+for i in [2,3,3]:
+   r=e.get(i,0)
+   r+=1
+   e[i]=r
+
+print(e)
