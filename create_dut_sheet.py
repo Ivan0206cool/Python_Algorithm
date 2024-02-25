@@ -5,7 +5,7 @@ import openpyxl
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import PatternFill, Alignment, Font, Border, Side
 from openpyxl.styles import DEFAULT_FONT
-from ChartGen import *
+# from ChartGen import *
 import re
 import ntpath
 import json, itertools
@@ -223,798 +223,790 @@ def generate_fail_item_set(test_case,case_translation_table1):
         fail_item[test_case] = set()
     return fail_item
 # === parser function === #
+def slot_number_transform(value):
+    slot_name = {
+        1 : 'A',
+        2 : 'B',
+        3 : 'C',
+        4 : 'D',
+        5 : '1',
+        6 : '2',
+        7 : '3',
+        8 : '4',
+        9 : '5',
+        10 : '6',
+        11 : '7',
+        12 : '8',
+        13 : '9',
+        14 : '10',
+        15 : '11',
+        16 : '12',
+    }
+    if value in slot_name:
+        corresponding_string = slot_name[value]
+        return corresponding_string
+    else:
+        return f"None"    
+def RS485_Status_parse(info,test_case,case_translation_table1):
+    data = {}
+    fail_item = generate_fail_item_set(test_case,case_translation_table1)
+    result = 'ok'
+    if test_case == 'Rs485SlotStatistEntry':
+        data['RS485 info by slot'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if key == 'Dut':
+                data['RS485 info by slot']['DUT'] = int(val)
+            elif key == 'Slot':
+                data['RS485 info by slot']['Slot'] = slot_number_transform(int(val))
+            elif 'Txcount' in key:
+                data['RS485 info by slot']['Tx count'] = int(val)
+            elif 'Rxcount' in key:
+                data['RS485 info by slot']['Rx count'] = int(val)
+            elif 'Norxcount' in key:
+                data['RS485 info by slot']['No RX count'] = int(val)
+            elif 'Timeoutcount' in key:
+                data['RS485 info by slot']['Timeout count'] = int(val)
+            elif 'Alivecount' in key:
+                data['RS485 info by slot']['Alive count'] = int(val)
+            elif 'Nonalivecount' in key:
+                data['RS485 info by slot']['Non-alive count'] = int(val)
+            elif 'Oversizecount' in key:
+                data['RS485 info by slot']['Oversize count'] = int(val)
+            elif 'Initcount' in key:
+                data['RS485 info by slot']['Init count'] = int(val)
+            elif 'Badcmdcount' in key:
+                data['RS485 info by slot']['Bad CMD count'] = int(val)
+            elif 'Badcmdnum' in key:
+                data['RS485 info by slot']['Bad CMD num'] = int(val)
+        data['RS485 info by slot']['Result'] = 'ok'
+        if data['RS485 info by slot']['No RX count'] > 0:
+            data['RS485 info by slot']['Result'] = 'warning'
+            fail_item['RS485 info by slot'].add('No RX count')
+        if data['RS485 info by slot']['Timeout count'] > 0:
+            data['RS485 info by slot']['Result'] = 'warning'
+            fail_item['RS485 info by slot'].add('Timeout count')
+        if data['RS485 info by slot']['Non-alive count'] > 0:
+            data['RS485 info by slot']['Result'] = 'warning'
+            fail_item['RS485 info by slot'].add('Non-alive count')
+        if data['RS485 info by slot']['Result'] == 'fail':
+            fail_item['RS485 info by slot'].add('Result')
+            test_summary['RS485 Status']["fail"] += 1
+        elif data['RS485 info by slot']['Result'] == 'warning':
+            fail_item['RS485 info by slot'].add('Result')
+            test_summary['RS485 Status']["warning"] += 1
+        else:
+            test_summary['RS485 Status']["pass"] += 1
+    else:
+        data['RS485 info'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if key == 'Dut':
+                data['RS485 info']['DUT'] = int(val)
+            elif 'Rs485Buffererror' in key:
+                data['RS485 info']['Buffer error'] = int(val)
+            elif 'Rs485Sliperror' in key:
+                data['RS485 info']['Slip error'] = int(val)
+            elif 'Rs485FCSerror' in key:
+                data['RS485 info']['FCS error'] = int(val)
+        data['RS485 info']['Result'] = 'ok'
+        if data['RS485 info']['Buffer error'] > 0:
+            data['RS485 info']['Result'] = 'warning'
+            fail_item['RS485 info'].add('Buffer error')
+        if data['RS485 info']['FCS error'] > 0:
+            data['RS485 info']['Result'] = 'fail'
+            fail_item['RS485 info'].add('FCS error')
+        if data['RS485 info']['Slip error'] > 0:
+            data['RS485 info']['Result'] = 'warning'
+            fail_item['RS485 info'].add('Slip error')
+        if data['RS485 info']['Result'] == 'fail':
+            fail_item['RS485 info'].add('Result')
+            test_summary['RS485 Status']["fail"] += 1
+        elif data['RS485 info']['Result'] == 'warning':
+            fail_item['RS485 info'].add('Result')
+            test_summary['RS485 Status']["warning"] += 1
+        else:
+            test_summary['RS485 Status']["pass"] += 1
+    return data, fail_item
+def PW_Status_parse(info,test_case,case_translation_table1):
+    data = {}
+    fail_item = generate_fail_item_set(test_case,case_translation_table1)
+    result = 'ok'
+    if test_case == 'PwBundleStaticsEntry':
+        data['Working PW Status'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if key == 'Dut':
+                data['Working PW Status']['DUT'] = int(val)
+            elif key == 'CTRL':
+                data['Working PW Status']['CTRL'] = int(val)
+            elif 'PwStaticsPort' in key:
+                data['Working PW Status']['Bundle ID'] = int(val)
+            elif 'PwPath' in key:
+                data['Working PW Status']['Primary/Secondary'] = val
+            elif 'PwJitBufUnderRun' in key:
+                data['Working PW Status']['Jitter buffer Under run'] = float(val)
+            elif 'PwJitBufOverRun' in key:
+                data['Working PW Status']['Jitter buffer Over run'] = float(val)
+            elif 'PwJitBufDepth' in key:
+                data['Working PW Status']['Jitter buffer Depth'] = float(val)
+            elif 'PwJitBufMin' in key:
+                data['Working PW Status']['Jitter buffer MIN'] = float(val)
+            elif 'PwJitBufMax' in key:
+                data['Working PW Status']['Jitter buffer MAX'] = float(val)
+            elif 'PwLBitCount' in key:
+                data['Working PW Status']['L bit count'] = int(val)
+            elif 'PwRBitCount' in key:
+                data['Working PW Status']['R bit count'] = int(val)
+            elif 'PwTxGoodCount' in key:
+                data['Working PW Status']['TX Good count'] = int(val)
+            elif 'PwRxGoodCount' in key:
+                data['Working PW Status']['RX Good count'] = int(val)
+            elif 'PwRxLostCount' in key:
+                data['Working PW Status']['RX lost count'] = int(val)
+            elif 'PwLink' in key: 
+                data['Working PW Status']['Link'] = val
+        data['Working PW Status']['Result'] = 'ok'
+        if data['Working PW Status']['Jitter buffer Under run'] != 0.0:
+            data['Working PW Status']['Result'] = 'fail'
+            fail_item['Working PW Status'].add('Jitter buffer Under run')
+        if data['Working PW Status']['Jitter buffer Over run'] != 0.0:
+            data['Working PW Status']['Result'] = 'fail'
+            fail_item['Working PW Status'].add('Jitter buffer Over run')
+        if data['Working PW Status']['Jitter buffer Depth'] > 12.0 or data['Working PW Status']['Jitter buffer Depth'] < 4.0:
+            data['Working PW Status']['Result'] = 'fail'
+            fail_item['Working PW Status'].add('Jitter buffer Depth')
+        if data['Working PW Status']['Jitter buffer MIN'] < 4.0:
+            data['Working PW Status']['Result'] = 'fail'
+            fail_item['Working PW Status'].add('Jitter buffer MIN')
+        if data['Working PW Status']['Jitter buffer MAX'] > 20.0:
+            data['Working PW Status']['Result'] = 'fail'
+            fail_item['Working PW Status'].add('Jitter buffer MAX')
+        if data['Working PW Status']['L bit count'] != 0:
+            data['Working PW Status']['Result'] = 'fail'
+            fail_item['Working PW Status'].add('L bit count')
+        if data['Working PW Status']['R bit count'] != 0:
+            data['Working PW Status']['Result'] = 'fail'
+            fail_item['Working PW Status'].add('R bit count')
+        if data['Working PW Status']['RX lost count'] > 0:
+            data['Working PW Status']['Result'] = 'fail'
+            fail_item['Working PW Status'].add('RX lost count')
+        if data['Working PW Status']['Link'] != "Up":
+            data['Working PW Status']['Result'] = 'fail'
+            fail_item['Working PW Status'].add('Link')        
+        if data['Working PW Status']['Result'] != 'ok':
+            fail_item['Working PW Status'].add('Result')
+            test_summary['PW Status']["fail"] += 1
+        else:
+            test_summary['PW Status']["pass"] += 1
+    elif test_case == 'PwStandbyStaticsEntry':
+        data['Standby PW Status'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if key == 'Dut':
+                data['Standby PW Status']['DUT'] = int(val)
+            elif key == 'CTRL':
+                data['Standby PW Status']['CTRL'] = int(val)
+            elif 'PwStandbyStaticsPort' in key:
+                data['Standby PW Status']['Bundle ID'] = int(val)
+            elif 'PwStandbyPath' in key:
+                data['Standby PW Status']['Primary/Secondary'] = val
+            elif 'PwStandbyJitBufUnderRun' in key:
+                data['Standby PW Status']['Jitter buffer Under run'] = float(val)
+            elif 'PwStandbyJitBufOverRun' in key:
+                data['Standby PW Status']['Jitter buffer Over run'] = float(val)
+            elif 'PwStandbyJitBufDepth' in key:
+                data['Standby PW Status']['Jitter buffer Depth'] = float(val)
+            elif 'PwStandbyJitBufMin' in key:
+                data['Standby PW Status']['Jitter buffer MIN'] = float(val)
+            elif 'PwStandbyJitBufMax' in key:
+                data['Standby PW Status']['Jitter buffer MAX'] = float(val)
+            elif 'PwStandbyLBitCount' in key:
+                data['Standby PW Status']['L bit count'] = int(val)
+            elif 'PwStandbyRBitCount' in key:
+                data['Standby PW Status']['R bit count'] = int(val)
+            elif 'PwStandbyTxGoodCount' in key:
+                data['Standby PW Status']['TX Good count'] = int(val)
+            elif 'PwStandbyRxGoodCount' in key:
+                data['Standby PW Status']['RX Good count'] = int(val)
+            elif 'PwStandbyRxLostCount' in key:
+                data['Standby PW Status']['RX lost count'] = int(val)
+            elif 'PwStandbyLink' in key: 
+                data['Standby PW Status']['Link'] = val
+        data['Standby PW Status']['Result'] = 'ok'
+        if data['Standby PW Status']['Jitter buffer Under run'] != 0.0:
+            data['Standby PW Status']['Result'] = 'fail'
+            fail_item['Standby PW Status'].add('Jitter buffer Under run')
+        if data['Standby PW Status']['Jitter buffer Over run'] != 0.0:
+            data['Standby PW Status']['Result'] = 'fail'
+            fail_item['Standby PW Status'].add('Jitter buffer Over run')
+        if data['Standby PW Status']['Jitter buffer Depth'] > 12.0 or data['Standby PW Status']['Jitter buffer Depth'] < 4.0:
+            data['Standby PW Status']['Result'] = 'fail'
+            fail_item['Standby PW Status'].add('Jitter buffer Depth')
+        if data['Standby PW Status']['Jitter buffer MIN'] < 4.0:
+            data['Standby PW Status']['Result'] = 'fail'
+            fail_item['Standby PW Status'].add('Jitter buffer MIN')
+        if data['Standby PW Status']['Jitter buffer MAX'] > 20.0:
+            data['Standby PW Status']['Result'] = 'fail'
+            fail_item['Standby PW Status'].add('Jitter buffer MAX')
+        if data['Standby PW Status']['L bit count'] != 0:
+            data['Standby PW Status']['Result'] = 'fail'
+            fail_item['Standby PW Status'].add('L bit count')
+        if data['Standby PW Status']['R bit count'] != 0:
+            data['Standby PW Status']['Result'] = 'fail'
+            fail_item['Standby PW Status'].add('R bit count')
+        if data['Standby PW Status']['RX lost count'] > 0:
+            data['Standby PW Status']['Result'] = 'fail'
+            fail_item['Standby PW Status'].add('RX lost count')
+        if data['Standby PW Status']['Link'] != "Up":
+            data['Standby PW Status']['Result'] = 'fail'
+            fail_item['Standby PW Status'].add('Link')        
+        if data['Standby PW Status']['Result'] != 'ok':
+            fail_item['Standby PW Status'].add('Result')
+            test_summary['PW Status']["fail"] += 1
+        else:
+            test_summary['PW Status']["pass"] += 1
+    return data, fail_item
+def PW_Statist_parse(info,test_case,case_translation_table1):
+    data = {}
+    fail_item = generate_fail_item_set(test_case,case_translation_table1)
+    result = 'ok'
+    if test_case == 'PwPriProtectStatistEntry':
+        data['Working PW Statist'] = {}
+        data['Working PW Statist']['Primary/Secondary'] = 'Pri'
+        for x,(key,val) in enumerate(info.items()):
+            if key == 'Dut':
+                data['Working PW Statist']['DUT'] = int(val)
+            elif 'PwPriProtectIndex' in key:
+                data['Working PW Statist']['Bundle ID'] = int(val)
+            # elif '' in key:
+            #     data['Working PW Statist']['bid_index'] = float(val)
+            elif 'PwPriEth1Linkstat' in key:
+                data['Working PW Statist']['Eth1LinkStat'] = val
+            elif 'PwPriEth1RxSeqNum' in key:
+                data['Working PW Statist']['Eth1RxSeqNum'] = float(val)
+            elif 'PwPriEth1RxSeqLos' in key:
+                data['Working PW Statist']['Eth1RxSeqLos'] = float(val)
+            elif 'PwPriEth1RxJBLos' in key:
+                data['Working PW Statist']['Eth1RxJBLos'] = int(val)
+            elif 'PwPriDiffDelay' in key:
+                data['Working PW Statist']['DiffDelay'] = int(val)
+            # elif 'PwLink' in key: 
+            #     data['Working PW Statist']['Link'] = val
+        data['Working PW Statist']['Result'] = 'ok'
+        if data['Working PW Statist']['Eth1RxJBLos'] > 0:
+            data['Working PW Statist']['Result'] = 'fail'
+            fail_item['Working PW Statist'].add('Eth1RxJBLos')
+        if data['Working PW Statist']['Result'] != 'ok':
+            fail_item['Working PW Statist'].add('Result')
+            test_summary['PW Statist']["fail"] += 1
+        else:
+            test_summary['PW Statist']["pass"] += 1
+    elif test_case == 'PwSecProtectStatistEntry':
+        data['Standby PW Statist'] = {}
+        data['Standby PW Statist']['Primary/Secondary'] = 'Sec'
+        for x,(key,val) in enumerate(info.items()):
+            if key == 'Dut':
+                data['Standby PW Statist']['DUT'] = int(val)
+            elif 'PwSecProtectIndex' in key:
+                data['Standby PW Statist']['Bundle ID'] = int(val)
+            # elif '' in key:
+            #     data['Standby PW Statist']['bid_index'] = float(val)
+            elif 'PwSecEth1Linkstat' in key:
+                data['Standby PW Statist']['Eth1LinkStat'] = val
+            elif 'PwSecEth1RxSeqNum' in key:
+                data['Standby PW Statist']['Eth1RxSeqNum'] = float(val)
+            elif 'PwSecEth1RxSeqLos' in key:
+                data['Standby PW Statist']['Eth1RxSeqLos'] = float(val)
+            elif 'PwSecEth1RxJBLos' in key:
+                data['Standby PW Statist']['Eth1RxJBLos'] = int(val)
+            elif 'PwSecDiffDelay' in key:
+                data['Standby PW Statist']['DiffDelay'] = val
+            # elif 'PwLink' in key: 
+            #     data['Standby PW Statist']['Link'] = val
+        data['Standby PW Statist']['Result'] = 'ok'
+        if data['Standby PW Statist']['Eth1RxJBLos'] > 0:
+            data['Standby PW Statist']['Result'] = 'fail'
+            fail_item['Standby PW Statist'].add('Eth1RxJBLos')
+        if data['Standby PW Statist']['Result'] != 'ok':
+            fail_item['Standby PW Statist'].add('Result')
+            test_summary['PW Statist']["fail"] += 1
+        else:
+            test_summary['PW Statist']["pass"] += 1
+    return data, fail_item
+def Card_Port_Status_parse(info,test_case,case_translation_table1):
+    data = {}
+    result = 'ok'
+    fail_item = generate_fail_item_set(test_case,case_translation_table1)
+    if test_case == 'Qe1PortStatusEntry':
+        data['QE1'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if key == 'Dut':
+                data['QE1']['DUT'] = int(val)
+            elif 'Qe1PSSlotIndex' in key:
+                data['QE1']['Slot'] = int(val)
+            elif 'Qe1PSPortIndex' in key:
+                data['QE1']['Port'] = int(val)
+            elif 'Qe1PortLOS' in key:
+                data['QE1']['Qe1PortLOS'] = val
+            elif 'Qe1PortLOF' in key:
+                data['QE1']['Qe1PortLOF'] = val
+            elif 'Qe1PortRcvAIS' in key:
+                data['QE1']['Qe1PortRcvAIS'] = val
+            elif 'Qe1PortRcvRAI' in key:
+                data['QE1']['Qe1PortRcvRAI'] = val
+            elif 'Qe1PortXmtRAI' in key:
+                data['QE1']['Qe1PortXmtRAI'] = val
+            elif 'Qe1PortXmtAIS' in key:
+                data['QE1']['Qe1PortXmtAIS'] = val
+            elif 'Qe1PortBPVcount' in key:
+                data['QE1']['Qe1PortBPVcount'] = int(val)
+            elif 'Qe1PortEScount' in key:
+                data['QE1']['Qe1PortEScount'] = int(val)
+        data['QE1']['Result'] = 'ok'
+        if data['QE1']['Qe1PortLOS'] == 'Yes':
+            data['QE1']['Result'] = 'fail'
+            fail_item['QE1'].add('Qe1PortLOS')
+        if data['QE1']['Qe1PortLOF'] == 'Yes':
+            data['QE1']['Result'] = 'fail'
+            fail_item['QE1'].add('Qe1PortLOF')        
+        if data['QE1']['Result'] != 'ok':
+            fail_item['QE1'].add('Result')
+            test_summary['Card Port Status']["fail"] += 1
+        else:
+            test_summary['Card Port Status']["pass"] += 1
+    elif test_case == 'FomStatusEntry':
+        data['FOM'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if key == 'Dut':
+                data['FOM']['DUT'] = int(val)
+            elif 'Qe1PSSlotIndex' in key:
+                data['FOM']['Slot'] = int(val)
+            elif 'Qe1PSPortIndex' in key:
+                data['FOM']['Port'] = int(val)
+            elif 'FomType' in key:
+                data['FOM']['FomType'] = val
+            elif 'FomOpticalLOS' in key:
+                data['FOM']['FomOpticalLOS'] = val
+            elif 'FomOpticalLOF' in key:
+                data['FOM']['FomOpticalLOF'] = val
+            elif 'FomOpticalFE' in key:
+                data['FOM']['FomOpticalFE'] = int(val)
+            elif 'FomOpticalFCS' in key:
+                data['FOM']['FomOpticalFCS'] = int(val)
+            elif 'FomOpticalEOC' in key:
+                data['FOM']['FomOpticalEOC'] = int(val)
+            elif 'FomE1LOF' in key:
+                data['FOM']['FomE1LOF'] = val
+            elif 'FomE1CRC' in key:
+                data['FOM']['FomE1CRC'] = int(val)
+            elif 'FomE1RxAIS' in key:
+                data['FOM']['FomE1RxAIS'] = val
+            elif 'FomE1RxRAI' in key:
+                data['FOM']['FomE1RxRAI'] = val
+            elif 'FomE1TxAIS' in key:
+                data['FOM']['FomE1TxAIS'] = val
+            elif 'FomE1TxRAI' in key:
+                data['FOM']['FomE1TxRAI'] = val
+            elif 'FomE1LOS' in key:
+                data['FOM']['FomE1LOS'] = val
+            elif 'FomE1BPVCRC' in key:
+                data['FOM']['FomE1BPVCRC'] = int(val)
+        data['FOM']['Result'] = 'ok'
+        if data['FOM']['FomOpticalLOS'] == 'Yes':
+            data['FOM']['Result'] = 'fail'
+            fail_item['FOM'].add('FomOpticalLOS')
+        if data['FOM']['FomOpticalLOF'] == 'Yes':
+            data['FOM']['Result'] = 'fail'
+            fail_item['FOM'].add('FomOpticalLOF')        
+        if data['FOM']['FomE1LOF'] == 'Yes':
+            data['FOM']['Result'] = 'fail'
+            fail_item['FOM'].add('FomE1LOF')
+        if data['FOM']['FomE1LOS'] == 'Yes':
+            data['FOM']['Result'] = 'fail'
+            fail_item['FOM'].add('FomE1LOS')    
+        if data['FOM']['Result'] != 'ok':
+            fail_item['FOM'].add('Result')
+            test_summary['Card Port Status']["fail"] += 1
+        else:
+            test_summary['Card Port Status']["pass"] += 1
+    return data, fail_item
+def DPLL_Status_parse(info,test_case,case_translation_table1):
+    data = {}
+    result = 'ok'
+    fail_item = generate_fail_item_set(test_case,case_translation_table1)
+    if test_case == 'DpllPriStatusTable':
+        data['Working'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if key == 'Dut':
+                data['Working']['DUT'] = int(val)
+            elif 'DpllInput1Status' in key:
+                data['Working']['Input Status'] = val
+            elif 'DpllLockStatus' in key:
+                data['Working']['Lock Status'] = val
+            elif 'DpllInputSticky' in key:
+                data['Working']['Input Sticky'] = val
+            elif 'DpllLockSticky' in key:
+                data['Working']['Lock Sticky'] = val
+        data['Working']['Result'] = 'ok'
+        if data['Working']['Input Status'] != 'Normal':
+            data['Working']['Result'] = 'fail'
+            fail_item['Working'].add('Input Status')      
+        if data['Working']['Lock Status'] == 'Unlock':
+            data['Working']['Result'] = 'fail'
+            fail_item['Working'].add('Lock Status')   
+        if data['Working']['Input Sticky'] != 'Normal':
+            data['Working']['Result'] = 'fail'
+            fail_item['Working'].add('Input Sticky')   
+        if data['Working']['Lock Sticky'] == 'Unlock':
+            data['Working']['Result'] = 'fail'
+            fail_item['Working'].add('Lock Sticky')   
+        if data['Working']['Result'] != 'ok':
+            fail_item['Working'].add('Result')
+            test_summary['DPLL Status']["fail"] += 1
+        else:
+            test_summary['DPLL Status']["pass"] += 1
+    elif test_case == 'DpllStandbyStatusTable':
+        data['Standby'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if key == 'Dut':
+                data['Standby']['DUT'] = int(val)
+            elif 'StandbydpllInput1Status' in key:
+                data['Standby']['Input Status'] = val
+            elif 'StandbydpllLockStatus' in key:
+                data['Standby']['Lock Status'] = val
+            elif 'StandbydpllInputSticky' in key:
+                data['Standby']['Input Sticky'] = val
+            elif 'StandbydpllLockSticky' in key:
+                data['Standby']['Lock Sticky'] = val
+        data['Standby']['Result'] = 'ok'
+        if data['Standby']['Input Status'] != 'Normal':
+            data['Standby']['Result'] = 'fail'
+            fail_item['Standby'].add('Input Status')      
+        if data['Standby']['Lock Status'] == 'Unlock':
+            data['Standby']['Result'] = 'fail'
+            fail_item['Standby'].add('Lock Status')   
+        if data['Standby']['Input Sticky'] != 'Normal':
+            data['Standby']['Result'] = 'fail'
+            fail_item['Standby'].add('Input Sticky')   
+        if data['Standby']['Lock Sticky'] == 'Unlock':
+            data['Standby']['Result'] = 'fail'
+            fail_item['Standby'].add('Lock Sticky')   
+        if data['Standby']['Result'] != 'ok':
+            fail_item['Standby'].add('Result')
+            test_summary['DPLL Status']["fail"] += 1
+        else:
+            test_summary['DPLL Status']["pass"] += 1
+    return data, fail_item
+def Long_Time_Bert_parse(info,test_case,case_translation_table1):
+    data = {}
+    result = 'pass'
+    fail_item = generate_fail_item_set(test_case,case_translation_table1)
+    if test_case == 'Qe1LineDiagControlEntry':
+        data['QE1 Bert'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if 'Qe1PRBSStatus' in key:
+                data['QE1 Bert']['PRBS Status'] = val
+            elif 'Qe1PRBSErrorCounts' in key:
+                data['QE1 Bert']['Error Counts'] = int(val)
+            elif 'Qe1PRBSErrorSeconds' in key:
+                data['QE1 Bert']['Error Seconds'] = int(val)
+        data['QE1 Bert']['Result'] = 'pass'
+        if data['QE1 Bert']['Error Counts'] != 0:
+            data['QE1 Bert']['Result'] = 'fail'
+            fail_item['QE1 Bert'].add('Error Counts')      
+        if data['QE1 Bert']['Error Seconds'] != 0:
+            data['QE1 Bert']['Result'] = 'fail'
+            fail_item['QE1 Bert'].add('Error Seconds')   
+        if data['QE1 Bert']['Result'] != 'pass':
+            fail_item['QE1 Bert'].add('Result')
+            test_summary['Long Time Bert']["fail"] += 1
+        else:
+            test_summary['Long Time Bert']["pass"] += 1
+    return data, fail_item
+def HDLC_Status_parse(info,test_case,case_translation_table1):
+    data = {}
+    fail_item = generate_fail_item_set(test_case,case_translation_table1)
+    result = 'ok'
+    if test_case == 'HdlcPriStatusTable':
+        data['Primary'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if key == 'Dut':
+                data['Primary']['DUT'] = int(val)
+            elif 'PriFpgaRxFCSerr' in key:
+                data['Primary']['FpgaRxFCSerr'] = int(val)
+        data['Primary']['Result'] = 'ok'
+        if data['Primary']['FpgaRxFCSerr'] != 0:
+            data['Primary']['Result'] = 'fail'
+            fail_item['Primary'].add('FpgaRxFCSerr')
+        if data['Primary']['Result'] != 'ok':
+            fail_item['Primary'].add('Result')
+            test_summary['HDLC Status']["fail"] += 1
+        else:
+            test_summary['HDLC Status']["pass"] += 1
+    if test_case == 'HdlcSecStatusTable':
+        data['Secondary'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if key == 'Dut':
+                data['Secondary']['DUT'] = int(val)
+            elif 'SecFpgaRxFCSerr' in key:
+                data['Secondary']['FpgaRxFCSerr'] = int(val)
+        data['Secondary']['Result'] = 'ok'
+        if data['Secondary']['FpgaRxFCSerr'] != 0:
+            data['Secondary']['Result'] = 'fail'
+            fail_item['Secondary'].add('FpgaRxFCSerr')
+        if data['Secondary']['Result'] != 'ok':
+            fail_item['Secondary'].add('Result')
+            test_summary['HDLC Status']["fail"] += 1
+        else:
+            test_summary['HDLC Status']["pass"] += 1
+    return data, fail_item
+def TSI_in_out_parse(info,test_case,case_translation_table1):
+    data = {}
+    fail_item = generate_fail_item_set(test_case,case_translation_table1)
+    result = 'ok'
+    if test_case == 'TsiDataCasInOutTable':
+        data['TSI in out data'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if 'TS' in key:
+                data['TSI in out data']['TS'] = int(val)
+            elif "set outData" in key:
+                data['TSI in out data']['Set OutData'] = val
+            elif 'TsiDataCasInOutget' in key:
+                data['TSI in out data']['Get InData'] = val[val.find("i_val:") + len("i_val:")+2:val.find("i_val:") + len("i_val:")+4]
+            elif 'Result' in key:
+                data['TSI in out data']['Result'] = val
+        # if data['TSI in out data']['Set OutData'][0] != data['TSI in out data']['Get InData'][0] and \
+        #  data['TSI in out data']['Set OutData'][1] != data['TSI in out data']['Get InData'][1] and \
+        #  data['TSI in out data']['Get InData'] == 'FF':
+        #     data['TSI in out data']['Result'] = 'fail'
+        #     fail_item['TSI in out data'].add('Set OutData')
+        #     fail_item['TSI in out data'].add('Get InData')
+        if data['TSI in out data']['Result'] == 'fail':
+            fail_item['TSI in out data'].add('Result')
+            test_summary['TSI in out']["fail"] += 1
+        elif data['TSI in out data']['Result'] == 'fail,retry':
+            pass
+        else:
+            test_summary['TSI in out']["pass"] += 1
+    return data, fail_item
+def PWACR_Status_parse(info,test_case,case_translation_table1):
+    data = {}
+    fail_item = generate_fail_item_set(test_case,case_translation_table1)
+    result = 'ok'
+    data['PWACR Status'] = {}
+    for x,(key,val) in enumerate(info.items()):
+        if key == 'Dut':
+            data['PWACR Status']['DUT'] = int(val)
+        elif 'PwACRIndex' in key:
+            data['PWACR Status']['Index'] = int(val)
+        elif 'PwACRStatusIndex' in key:
+            data['PWACR Status']['Status Index'] = val
+        elif 'PwACRStatusPortID' in key:
+            data['PWACR Status']['Status Port ID'] = int(val)
+        elif 'PwACRStatusEnable' in key:
+            data['PWACR Status']['Status Enable'] = val
+        elif 'PwACRStatusStatus' in key:
+            data['PWACR Status']['Status'] = val
+        elif 'PwACRDisconCnt' in key:
+            data['PWACR Status']['Discon Cnt'] = int(val)
+        elif 'PwACRRestartCnt' in key:
+            data['PWACR Status']['Restart Cnt'] = int(val)
+        elif 'PwACRCovariance' in key:
+            data['PWACR Status']['Covariance'] = float(val)
+        elif 'PwACRFreq' in key:
+            data['PWACR Status']['Freq'] = float(val)
+    data['PWACR Status']['Result'] = 'ok'
+    if data['PWACR Status']['Status'] == 'acquisition':
+        data['PWACR Status']['Result'] = 'fail'
+        fail_item['PWACR Status'].add('Status')
+    if data['PWACR Status']['Result'] != 'ok':
+        fail_item['PWACR Status'].add('Result')
+        test_summary['PWACR Status']["fail"] += 1
+    else:
+        test_summary['PWACR Status']["pass"] += 1
+    return data, fail_item
+def CTRL_Bert_parse(info,test_case,bert_case,case_translation_table1):
+    data = {}
+    result = 'pass'
+    fail_item = generate_fail_item_set(bert_case,case_translation_table1)
+    if test_case == 'CtlBertTable':
+        data[bert_case] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if 'CtlBertSlot' in key:
+                data[bert_case]['Slot'] = int(val.split('_')[1])
+            elif 'CtlBertPort' in key:
+                data[bert_case]['Port'] = int(val.split('_')[1])
+            elif 'CtlBertStatus' in key:
+                data[bert_case]['Status'] = val
+            elif 'CtlBertElapsedTime' in key:
+                data[bert_case]['Elapsed Time'] = int(val)
+            elif 'CtlBertBitError' in key:
+                data[bert_case]['Bit Error'] = int(val)
+            elif 'CtlBertErrorSecond' in key:
+                data[bert_case]['Error Second'] = int(val)
+            elif 'CtlBertUnsyncSecond' in key:
+                data[bert_case]['Unsync Second'] = int(val)
+        data[bert_case]['Result'] = 'pass'
+        if data[bert_case]['Bit Error'] != 0:
+            data[bert_case]['Result'] = 'fail'
+            fail_item[bert_case].add('Bit Error')      
+        if data[bert_case]['Error Second'] != 0:
+            data[bert_case]['Result'] = 'fail'
+            fail_item[bert_case].add('Error Seconds')   
+        if data[bert_case]['Status'] != 'Sync':
+            data[bert_case]['Result'] = 'fail'
+            fail_item[bert_case].add('Status')   
+        if data[bert_case]['Result'] != 'pass':
+            fail_item[bert_case].add('Result')
+            test_summary[bert_case]["fail"] += 1
+        else:
+            test_summary[bert_case]["pass"] += 1
+    return data, fail_item
+def SSM_Clock_Source_parse(info,test_case,case_translation_table1):
+    data = {}
+    result = 'pass'
+    fail_item = generate_fail_item_set(test_case,case_translation_table1)
+    if test_case == 'CcbClockSourceEntry':
+        data['SSM Clock Source'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if 'Dut' in key:
+                data['SSM Clock Source']['DUT'] = val
+            elif 'CcbClockIndex' in key:
+                data['SSM Clock Source']['Clock Index'] = int(val)
+            elif 'CcbClockSource' in key:
+                data['SSM Clock Source']['Clock Source'] = val
+            elif 'CcbClockPort' in key:
+                data['SSM Clock Source']['Clock Port'] = val
+            elif 'CcbClockState' in key:
+                pattern = r'RxSSM(\d+)'
+                result_val = hex(int(re.search(pattern, val).group(1), 2))[2:].upper()
+                data['SSM Clock Source']['Clock State'] = result_val
+    elif test_case == 'CcbTimingSource':
+        data['SSM Timing Source'] = {}
+        for x,(key,val) in enumerate(info.items()):
+            if 'Dut' in key:
+                data['SSM Timing Source']['DUT'] = int(val)
+            elif 'CcbClockMode' in key:
+                data['SSM Timing Source']['Clock Mode'] = val
+            elif 'CcbCurrentClock' in key:
+                data['SSM Timing Source']['Current Clock'] = val
+            elif 'Result' in key:
+                data['SSM Timing Source']['Result'] = val
+        if 'Result' not in data['SSM Timing Source']:
+            data['SSM Timing Source']['Result'] = ''
+        if data['SSM Timing Source']['Result'] == 'Fail':
+            fail_item['SSM Timing Source'].add('Result')
+            fail_item['SSM Timing Source'].add('Current Clock')
+            fail_item['SSM Timing Source'].add('Clock State')
+            test_summary['SSM Clock Source']["fail"] += 1
+        elif data['SSM Timing Source']['Result'] == 'Pass':
+            test_summary['SSM Clock Source']["pass"] += 1
+    return data, fail_item
+# === parser function === 
+def count_pw_test_summary(test_summary, working_pw_array,standby_pw_array):
+    found_fail = False
+    for working_status, standby_status in itertools.zip_longest(working_pw_array, standby_pw_array):
+        if working_status is not None and working_status['result'] == 'fail':
+            if working_status['fail_reason'] == 'L_bit':
+                test_summary["PW Status(L-bit error)"]['fail'] += 1
+            elif working_status['fail_reason'] == 'jitter_max':
+                test_summary["PW Status(Jitter Max)"]['fail'] += 1
+            elif working_status['fail_reason'] == 'DP+-1':
+                test_summary["PW Status(DP +- 1)"]['fail'] += 1
+            elif working_status['fail_reason'] == 'DP+-2':
+                test_summary["PW Status(DP +- 2)"]['fail'] += 1
+            elif working_status['fail_reason'] == 'link down':
+                test_summary["PW Status(Link down)"]['fail'] += 1
+            test_summary["PW Status"]['fail'] += 1
+            found_fail = True
+        if standby_status is not None and standby_status['result'] == 'fail':
+            if standby_status['fail_reason'] == 'L_bit':
+                test_summary["PW Status(L-bit error)"]['fail'] += 1
+            elif standby_status['fail_reason'] == 'jitter_max':
+                test_summary["PW Status(Jitter Max)"]['fail'] += 1
+            elif standby_status['fail_reason'] == 'DP+-1':
+                test_summary["PW Status(DP +- 1)"]['fail'] += 1
+            elif standby_status['fail_reason'] == 'DP+-2':
+                test_summary["PW Status(DP +- 2)"]['fail'] += 1
+            elif standby_status['fail_reason'] == 'link down':
+                test_summary["PW Status(Link down)"]['fail'] += 1
+            test_summary["PW Status"]['fail'] += 1
+            found_fail = True
+    if found_fail != True:
+        test_summary["PW Status"]['pass'] += 1
+def IP6704_aps_data_parse(time_stamp, text_line,f_read):
+    data = {}
+    data[time_stamp] = text_line
 
-# def slot_number_transform(value):
-#     slot_name = {
-#         1 : 'A',
-#         2 : 'B',
-#         3 : 'C',
-#         4 : 'D',
-#         5 : '1',
-#         6 : '2',
-#         7 : '3',
-#         8 : '4',
-#         9 : '5',
-#         10 : '6',
-#         11 : '7',
-#         12 : '8',
-#         13 : '9',
-#         14 : '10',
-#         15 : '11',
-#         16 : '12',
-#     }
-#     if value in slot_name:
-#         corresponding_string = slot_name[value]
-#         return corresponding_string
-#     else:
-#         return f"None"
-    
-# def RS485_Status_parse(info,test_case,case_translation_table1):
-#     data = {}
-#     fail_item = generate_fail_item_set(test_case,case_translation_table1)
-#     result = 'ok'
-#     if test_case == 'Rs485SlotStatistEntry':
-#         data['RS485 info by slot'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if key == 'Dut':
-#                 data['RS485 info by slot']['DUT'] = int(val)
-#             elif key == 'Slot':
-#                 data['RS485 info by slot']['Slot'] = slot_number_transform(int(val))
-#             elif 'Txcount' in key:
-#                 data['RS485 info by slot']['Tx count'] = int(val)
-#             elif 'Rxcount' in key:
-#                 data['RS485 info by slot']['Rx count'] = int(val)
-#             elif 'Norxcount' in key:
-#                 data['RS485 info by slot']['No RX count'] = int(val)
-#             elif 'Timeoutcount' in key:
-#                 data['RS485 info by slot']['Timeout count'] = int(val)
-#             elif 'Alivecount' in key:
-#                 data['RS485 info by slot']['Alive count'] = int(val)
-#             elif 'Nonalivecount' in key:
-#                 data['RS485 info by slot']['Non-alive count'] = int(val)
-#             elif 'Oversizecount' in key:
-#                 data['RS485 info by slot']['Oversize count'] = int(val)
-#             elif 'Initcount' in key:
-#                 data['RS485 info by slot']['Init count'] = int(val)
-#             elif 'Badcmdcount' in key:
-#                 data['RS485 info by slot']['Bad CMD count'] = int(val)
-#             elif 'Badcmdnum' in key:
-#                 data['RS485 info by slot']['Bad CMD num'] = int(val)
-#         data['RS485 info by slot']['Result'] = 'ok'
-#         if data['RS485 info by slot']['No RX count'] > 0:
-#             data['RS485 info by slot']['Result'] = 'warning'
-#             fail_item['RS485 info by slot'].add('No RX count')
-#         if data['RS485 info by slot']['Timeout count'] > 0:
-#             data['RS485 info by slot']['Result'] = 'warning'
-#             fail_item['RS485 info by slot'].add('Timeout count')
-#         if data['RS485 info by slot']['Non-alive count'] > 0:
-#             data['RS485 info by slot']['Result'] = 'warning'
-#             fail_item['RS485 info by slot'].add('Non-alive count')
-#         if data['RS485 info by slot']['Result'] == 'fail':
-#             fail_item['RS485 info by slot'].add('Result')
-#             test_summary['RS485 Status']["fail"] += 1
-#         elif data['RS485 info by slot']['Result'] == 'warning':
-#             fail_item['RS485 info by slot'].add('Result')
-#             test_summary['RS485 Status']["warning"] += 1
-#         else:
-#             test_summary['RS485 Status']["pass"] += 1
-#     else:
-#         data['RS485 info'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if key == 'Dut':
-#                 data['RS485 info']['DUT'] = int(val)
-#             elif 'Rs485Buffererror' in key:
-#                 data['RS485 info']['Buffer error'] = int(val)
-#             elif 'Rs485Sliperror' in key:
-#                 data['RS485 info']['Slip error'] = int(val)
-#             elif 'Rs485FCSerror' in key:
-#                 data['RS485 info']['FCS error'] = int(val)
-#         data['RS485 info']['Result'] = 'ok'
-#         if data['RS485 info']['Buffer error'] > 0:
-#             data['RS485 info']['Result'] = 'warning'
-#             fail_item['RS485 info'].add('Buffer error')
-#         if data['RS485 info']['FCS error'] > 0:
-#             data['RS485 info']['Result'] = 'fail'
-#             fail_item['RS485 info'].add('FCS error')
-#         if data['RS485 info']['Slip error'] > 0:
-#             data['RS485 info']['Result'] = 'warning'
-#             fail_item['RS485 info'].add('Slip error')
-#         if data['RS485 info']['Result'] == 'fail':
-#             fail_item['RS485 info'].add('Result')
-#             test_summary['RS485 Status']["fail"] += 1
-#         elif data['RS485 info']['Result'] == 'warning':
-#             fail_item['RS485 info'].add('Result')
-#             test_summary['RS485 Status']["warning"] += 1
-#         else:
-#             test_summary['RS485 Status']["pass"] += 1
-#     return data, fail_item
-# def PW_Status_parse(info,test_case,case_translation_table1):
-#     data = {}
-#     fail_item = generate_fail_item_set(test_case,case_translation_table1)
-#     result = 'ok'
-#     if test_case == 'PwBundleStaticsEntry':
-#         data['Working PW Status'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if key == 'Dut':
-#                 data['Working PW Status']['DUT'] = int(val)
-#             elif key == 'CTRL':
-#                 data['Working PW Status']['CTRL'] = int(val)
-#             elif 'PwStaticsPort' in key:
-#                 data['Working PW Status']['Bundle ID'] = int(val)
-#             elif 'PwPath' in key:
-#                 data['Working PW Status']['Primary/Secondary'] = val
-#             elif 'PwJitBufUnderRun' in key:
-#                 data['Working PW Status']['Jitter buffer Under run'] = float(val)
-#             elif 'PwJitBufOverRun' in key:
-#                 data['Working PW Status']['Jitter buffer Over run'] = float(val)
-#             elif 'PwJitBufDepth' in key:
-#                 data['Working PW Status']['Jitter buffer Depth'] = float(val)
-#             elif 'PwJitBufMin' in key:
-#                 data['Working PW Status']['Jitter buffer MIN'] = float(val)
-#             elif 'PwJitBufMax' in key:
-#                 data['Working PW Status']['Jitter buffer MAX'] = float(val)
-#             elif 'PwLBitCount' in key:
-#                 data['Working PW Status']['L bit count'] = int(val)
-#             elif 'PwRBitCount' in key:
-#                 data['Working PW Status']['R bit count'] = int(val)
-#             elif 'PwTxGoodCount' in key:
-#                 data['Working PW Status']['TX Good count'] = int(val)
-#             elif 'PwRxGoodCount' in key:
-#                 data['Working PW Status']['RX Good count'] = int(val)
-#             elif 'PwRxLostCount' in key:
-#                 data['Working PW Status']['RX lost count'] = int(val)
-#             elif 'PwLink' in key: 
-#                 data['Working PW Status']['Link'] = val
-#         data['Working PW Status']['Result'] = 'ok'
-#         if data['Working PW Status']['Jitter buffer Under run'] != 0.0:
-#             data['Working PW Status']['Result'] = 'fail'
-#             fail_item['Working PW Status'].add('Jitter buffer Under run')
-#         if data['Working PW Status']['Jitter buffer Over run'] != 0.0:
-#             data['Working PW Status']['Result'] = 'fail'
-#             fail_item['Working PW Status'].add('Jitter buffer Over run')
-#         if data['Working PW Status']['Jitter buffer Depth'] > 12.0 or data['Working PW Status']['Jitter buffer Depth'] < 4.0:
-#             data['Working PW Status']['Result'] = 'fail'
-#             fail_item['Working PW Status'].add('Jitter buffer Depth')
-#         if data['Working PW Status']['Jitter buffer MIN'] < 4.0:
-#             data['Working PW Status']['Result'] = 'fail'
-#             fail_item['Working PW Status'].add('Jitter buffer MIN')
-#         if data['Working PW Status']['Jitter buffer MAX'] > 20.0:
-#             data['Working PW Status']['Result'] = 'fail'
-#             fail_item['Working PW Status'].add('Jitter buffer MAX')
-#         if data['Working PW Status']['L bit count'] != 0:
-#             data['Working PW Status']['Result'] = 'fail'
-#             fail_item['Working PW Status'].add('L bit count')
-#         if data['Working PW Status']['R bit count'] != 0:
-#             data['Working PW Status']['Result'] = 'fail'
-#             fail_item['Working PW Status'].add('R bit count')
-#         if data['Working PW Status']['RX lost count'] > 0:
-#             data['Working PW Status']['Result'] = 'fail'
-#             fail_item['Working PW Status'].add('RX lost count')
-#         if data['Working PW Status']['Link'] != "Up":
-#             data['Working PW Status']['Result'] = 'fail'
-#             fail_item['Working PW Status'].add('Link')        
-#         if data['Working PW Status']['Result'] != 'ok':
-#             fail_item['Working PW Status'].add('Result')
-#             test_summary['PW Status']["fail"] += 1
-#         else:
-#             test_summary['PW Status']["pass"] += 1
-#     elif test_case == 'PwStandbyStaticsEntry':
-#         data['Standby PW Status'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if key == 'Dut':
-#                 data['Standby PW Status']['DUT'] = int(val)
-#             elif key == 'CTRL':
-#                 data['Standby PW Status']['CTRL'] = int(val)
-#             elif 'PwStandbyStaticsPort' in key:
-#                 data['Standby PW Status']['Bundle ID'] = int(val)
-#             elif 'PwStandbyPath' in key:
-#                 data['Standby PW Status']['Primary/Secondary'] = val
-#             elif 'PwStandbyJitBufUnderRun' in key:
-#                 data['Standby PW Status']['Jitter buffer Under run'] = float(val)
-#             elif 'PwStandbyJitBufOverRun' in key:
-#                 data['Standby PW Status']['Jitter buffer Over run'] = float(val)
-#             elif 'PwStandbyJitBufDepth' in key:
-#                 data['Standby PW Status']['Jitter buffer Depth'] = float(val)
-#             elif 'PwStandbyJitBufMin' in key:
-#                 data['Standby PW Status']['Jitter buffer MIN'] = float(val)
-#             elif 'PwStandbyJitBufMax' in key:
-#                 data['Standby PW Status']['Jitter buffer MAX'] = float(val)
-#             elif 'PwStandbyLBitCount' in key:
-#                 data['Standby PW Status']['L bit count'] = int(val)
-#             elif 'PwStandbyRBitCount' in key:
-#                 data['Standby PW Status']['R bit count'] = int(val)
-#             elif 'PwStandbyTxGoodCount' in key:
-#                 data['Standby PW Status']['TX Good count'] = int(val)
-#             elif 'PwStandbyRxGoodCount' in key:
-#                 data['Standby PW Status']['RX Good count'] = int(val)
-#             elif 'PwStandbyRxLostCount' in key:
-#                 data['Standby PW Status']['RX lost count'] = int(val)
-#             elif 'PwStandbyLink' in key: 
-#                 data['Standby PW Status']['Link'] = val
-#         data['Standby PW Status']['Result'] = 'ok'
-#         if data['Standby PW Status']['Jitter buffer Under run'] != 0.0:
-#             data['Standby PW Status']['Result'] = 'fail'
-#             fail_item['Standby PW Status'].add('Jitter buffer Under run')
-#         if data['Standby PW Status']['Jitter buffer Over run'] != 0.0:
-#             data['Standby PW Status']['Result'] = 'fail'
-#             fail_item['Standby PW Status'].add('Jitter buffer Over run')
-#         if data['Standby PW Status']['Jitter buffer Depth'] > 12.0 or data['Standby PW Status']['Jitter buffer Depth'] < 4.0:
-#             data['Standby PW Status']['Result'] = 'fail'
-#             fail_item['Standby PW Status'].add('Jitter buffer Depth')
-#         if data['Standby PW Status']['Jitter buffer MIN'] < 4.0:
-#             data['Standby PW Status']['Result'] = 'fail'
-#             fail_item['Standby PW Status'].add('Jitter buffer MIN')
-#         if data['Standby PW Status']['Jitter buffer MAX'] > 20.0:
-#             data['Standby PW Status']['Result'] = 'fail'
-#             fail_item['Standby PW Status'].add('Jitter buffer MAX')
-#         if data['Standby PW Status']['L bit count'] != 0:
-#             data['Standby PW Status']['Result'] = 'fail'
-#             fail_item['Standby PW Status'].add('L bit count')
-#         if data['Standby PW Status']['R bit count'] != 0:
-#             data['Standby PW Status']['Result'] = 'fail'
-#             fail_item['Standby PW Status'].add('R bit count')
-#         if data['Standby PW Status']['RX lost count'] > 0:
-#             data['Standby PW Status']['Result'] = 'fail'
-#             fail_item['Standby PW Status'].add('RX lost count')
-#         if data['Standby PW Status']['Link'] != "Up":
-#             data['Standby PW Status']['Result'] = 'fail'
-#             fail_item['Standby PW Status'].add('Link')        
-#         if data['Standby PW Status']['Result'] != 'ok':
-#             fail_item['Standby PW Status'].add('Result')
-#             test_summary['PW Status']["fail"] += 1
-#         else:
-#             test_summary['PW Status']["pass"] += 1
-#     return data, fail_item
-# def PW_Statist_parse(info,test_case,case_translation_table1):
-#     data = {}
-#     fail_item = generate_fail_item_set(test_case,case_translation_table1)
-#     result = 'ok'
-#     if test_case == 'PwPriProtectStatistEntry':
-#         data['Working PW Statist'] = {}
-#         data['Working PW Statist']['Primary/Secondary'] = 'Pri'
-#         for x,(key,val) in enumerate(info.items()):
-#             if key == 'Dut':
-#                 data['Working PW Statist']['DUT'] = int(val)
-#             elif 'PwPriProtectIndex' in key:
-#                 data['Working PW Statist']['Bundle ID'] = int(val)
-#             # elif '' in key:
-#             #     data['Working PW Statist']['bid_index'] = float(val)
-#             elif 'PwPriEth1Linkstat' in key:
-#                 data['Working PW Statist']['Eth1LinkStat'] = val
-#             elif 'PwPriEth1RxSeqNum' in key:
-#                 data['Working PW Statist']['Eth1RxSeqNum'] = float(val)
-#             elif 'PwPriEth1RxSeqLos' in key:
-#                 data['Working PW Statist']['Eth1RxSeqLos'] = float(val)
-#             elif 'PwPriEth1RxJBLos' in key:
-#                 data['Working PW Statist']['Eth1RxJBLos'] = int(val)
-#             elif 'PwPriDiffDelay' in key:
-#                 data['Working PW Statist']['DiffDelay'] = int(val)
-#             # elif 'PwLink' in key: 
-#             #     data['Working PW Statist']['Link'] = val
-#         data['Working PW Statist']['Result'] = 'ok'
-#         if data['Working PW Statist']['Eth1RxJBLos'] > 0:
-#             data['Working PW Statist']['Result'] = 'fail'
-#             fail_item['Working PW Statist'].add('Eth1RxJBLos')
-#         if data['Working PW Statist']['Result'] != 'ok':
-#             fail_item['Working PW Statist'].add('Result')
-#             test_summary['PW Statist']["fail"] += 1
-#         else:
-#             test_summary['PW Statist']["pass"] += 1
-#     elif test_case == 'PwSecProtectStatistEntry':
-#         data['Standby PW Statist'] = {}
-#         data['Standby PW Statist']['Primary/Secondary'] = 'Sec'
-#         for x,(key,val) in enumerate(info.items()):
-#             if key == 'Dut':
-#                 data['Standby PW Statist']['DUT'] = int(val)
-#             elif 'PwSecProtectIndex' in key:
-#                 data['Standby PW Statist']['Bundle ID'] = int(val)
-#             # elif '' in key:
-#             #     data['Standby PW Statist']['bid_index'] = float(val)
-#             elif 'PwSecEth1Linkstat' in key:
-#                 data['Standby PW Statist']['Eth1LinkStat'] = val
-#             elif 'PwSecEth1RxSeqNum' in key:
-#                 data['Standby PW Statist']['Eth1RxSeqNum'] = float(val)
-#             elif 'PwSecEth1RxSeqLos' in key:
-#                 data['Standby PW Statist']['Eth1RxSeqLos'] = float(val)
-#             elif 'PwSecEth1RxJBLos' in key:
-#                 data['Standby PW Statist']['Eth1RxJBLos'] = int(val)
-#             elif 'PwSecDiffDelay' in key:
-#                 data['Standby PW Statist']['DiffDelay'] = val
-#             # elif 'PwLink' in key: 
-#             #     data['Standby PW Statist']['Link'] = val
-#         data['Standby PW Statist']['Result'] = 'ok'
-#         if data['Standby PW Statist']['Eth1RxJBLos'] > 0:
-#             data['Standby PW Statist']['Result'] = 'fail'
-#             fail_item['Standby PW Statist'].add('Eth1RxJBLos')
-#         if data['Standby PW Statist']['Result'] != 'ok':
-#             fail_item['Standby PW Statist'].add('Result')
-#             test_summary['PW Statist']["fail"] += 1
-#         else:
-#             test_summary['PW Statist']["pass"] += 1
-#     return data, fail_item
-# def Card_Port_Status_parse(info,test_case,case_translation_table1):
-#     data = {}
-#     result = 'ok'
-#     fail_item = generate_fail_item_set(test_case,case_translation_table1)
-#     if test_case == 'Qe1PortStatusEntry':
-#         data['QE1'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if key == 'Dut':
-#                 data['QE1']['DUT'] = int(val)
-#             elif 'Qe1PSSlotIndex' in key:
-#                 data['QE1']['Slot'] = int(val)
-#             elif 'Qe1PSPortIndex' in key:
-#                 data['QE1']['Port'] = int(val)
-#             elif 'Qe1PortLOS' in key:
-#                 data['QE1']['Qe1PortLOS'] = val
-#             elif 'Qe1PortLOF' in key:
-#                 data['QE1']['Qe1PortLOF'] = val
-#             elif 'Qe1PortRcvAIS' in key:
-#                 data['QE1']['Qe1PortRcvAIS'] = val
-#             elif 'Qe1PortRcvRAI' in key:
-#                 data['QE1']['Qe1PortRcvRAI'] = val
-#             elif 'Qe1PortXmtRAI' in key:
-#                 data['QE1']['Qe1PortXmtRAI'] = val
-#             elif 'Qe1PortXmtAIS' in key:
-#                 data['QE1']['Qe1PortXmtAIS'] = val
-#             elif 'Qe1PortBPVcount' in key:
-#                 data['QE1']['Qe1PortBPVcount'] = int(val)
-#             elif 'Qe1PortEScount' in key:
-#                 data['QE1']['Qe1PortEScount'] = int(val)
-#         data['QE1']['Result'] = 'ok'
-#         if data['QE1']['Qe1PortLOS'] == 'Yes':
-#             data['QE1']['Result'] = 'fail'
-#             fail_item['QE1'].add('Qe1PortLOS')
-#         if data['QE1']['Qe1PortLOF'] == 'Yes':
-#             data['QE1']['Result'] = 'fail'
-#             fail_item['QE1'].add('Qe1PortLOF')        
-#         if data['QE1']['Result'] != 'ok':
-#             fail_item['QE1'].add('Result')
-#             test_summary['Card Port Status']["fail"] += 1
-#         else:
-#             test_summary['Card Port Status']["pass"] += 1
-#     elif test_case == 'FomStatusEntry':
-#         data['FOM'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if key == 'Dut':
-#                 data['FOM']['DUT'] = int(val)
-#             elif 'Qe1PSSlotIndex' in key:
-#                 data['FOM']['Slot'] = int(val)
-#             elif 'Qe1PSPortIndex' in key:
-#                 data['FOM']['Port'] = int(val)
-#             elif 'FomType' in key:
-#                 data['FOM']['FomType'] = val
-#             elif 'FomOpticalLOS' in key:
-#                 data['FOM']['FomOpticalLOS'] = val
-#             elif 'FomOpticalLOF' in key:
-#                 data['FOM']['FomOpticalLOF'] = val
-#             elif 'FomOpticalFE' in key:
-#                 data['FOM']['FomOpticalFE'] = int(val)
-#             elif 'FomOpticalFCS' in key:
-#                 data['FOM']['FomOpticalFCS'] = int(val)
-#             elif 'FomOpticalEOC' in key:
-#                 data['FOM']['FomOpticalEOC'] = int(val)
-#             elif 'FomE1LOF' in key:
-#                 data['FOM']['FomE1LOF'] = val
-#             elif 'FomE1CRC' in key:
-#                 data['FOM']['FomE1CRC'] = int(val)
-#             elif 'FomE1RxAIS' in key:
-#                 data['FOM']['FomE1RxAIS'] = val
-#             elif 'FomE1RxRAI' in key:
-#                 data['FOM']['FomE1RxRAI'] = val
-#             elif 'FomE1TxAIS' in key:
-#                 data['FOM']['FomE1TxAIS'] = val
-#             elif 'FomE1TxRAI' in key:
-#                 data['FOM']['FomE1TxRAI'] = val
-#             elif 'FomE1LOS' in key:
-#                 data['FOM']['FomE1LOS'] = val
-#             elif 'FomE1BPVCRC' in key:
-#                 data['FOM']['FomE1BPVCRC'] = int(val)
-#         data['FOM']['Result'] = 'ok'
-#         if data['FOM']['FomOpticalLOS'] == 'Yes':
-#             data['FOM']['Result'] = 'fail'
-#             fail_item['FOM'].add('FomOpticalLOS')
-#         if data['FOM']['FomOpticalLOF'] == 'Yes':
-#             data['FOM']['Result'] = 'fail'
-#             fail_item['FOM'].add('FomOpticalLOF')        
-#         if data['FOM']['FomE1LOF'] == 'Yes':
-#             data['FOM']['Result'] = 'fail'
-#             fail_item['FOM'].add('FomE1LOF')
-#         if data['FOM']['FomE1LOS'] == 'Yes':
-#             data['FOM']['Result'] = 'fail'
-#             fail_item['FOM'].add('FomE1LOS')    
-#         if data['FOM']['Result'] != 'ok':
-#             fail_item['FOM'].add('Result')
-#             test_summary['Card Port Status']["fail"] += 1
-#         else:
-#             test_summary['Card Port Status']["pass"] += 1
-#     return data, fail_item
-# def DPLL_Status_parse(info,test_case,case_translation_table1):
-#     data = {}
-#     result = 'ok'
-#     fail_item = generate_fail_item_set(test_case,case_translation_table1)
-#     if test_case == 'DpllPriStatusTable':
-#         data['Working'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if key == 'Dut':
-#                 data['Working']['DUT'] = int(val)
-#             elif 'DpllInput1Status' in key:
-#                 data['Working']['Input Status'] = val
-#             elif 'DpllLockStatus' in key:
-#                 data['Working']['Lock Status'] = val
-#             elif 'DpllInputSticky' in key:
-#                 data['Working']['Input Sticky'] = val
-#             elif 'DpllLockSticky' in key:
-#                 data['Working']['Lock Sticky'] = val
-#         data['Working']['Result'] = 'ok'
-#         if data['Working']['Input Status'] != 'Normal':
-#             data['Working']['Result'] = 'fail'
-#             fail_item['Working'].add('Input Status')      
-#         if data['Working']['Lock Status'] == 'Unlock':
-#             data['Working']['Result'] = 'fail'
-#             fail_item['Working'].add('Lock Status')   
-#         if data['Working']['Input Sticky'] != 'Normal':
-#             data['Working']['Result'] = 'fail'
-#             fail_item['Working'].add('Input Sticky')   
-#         if data['Working']['Lock Sticky'] == 'Unlock':
-#             data['Working']['Result'] = 'fail'
-#             fail_item['Working'].add('Lock Sticky')   
-#         if data['Working']['Result'] != 'ok':
-#             fail_item['Working'].add('Result')
-#             test_summary['DPLL Status']["fail"] += 1
-#         else:
-#             test_summary['DPLL Status']["pass"] += 1
-#     elif test_case == 'DpllStandbyStatusTable':
-#         data['Standby'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if key == 'Dut':
-#                 data['Standby']['DUT'] = int(val)
-#             elif 'StandbydpllInput1Status' in key:
-#                 data['Standby']['Input Status'] = val
-#             elif 'StandbydpllLockStatus' in key:
-#                 data['Standby']['Lock Status'] = val
-#             elif 'StandbydpllInputSticky' in key:
-#                 data['Standby']['Input Sticky'] = val
-#             elif 'StandbydpllLockSticky' in key:
-#                 data['Standby']['Lock Sticky'] = val
-#         data['Standby']['Result'] = 'ok'
-#         if data['Standby']['Input Status'] != 'Normal':
-#             data['Standby']['Result'] = 'fail'
-#             fail_item['Standby'].add('Input Status')      
-#         if data['Standby']['Lock Status'] == 'Unlock':
-#             data['Standby']['Result'] = 'fail'
-#             fail_item['Standby'].add('Lock Status')   
-#         if data['Standby']['Input Sticky'] != 'Normal':
-#             data['Standby']['Result'] = 'fail'
-#             fail_item['Standby'].add('Input Sticky')   
-#         if data['Standby']['Lock Sticky'] == 'Unlock':
-#             data['Standby']['Result'] = 'fail'
-#             fail_item['Standby'].add('Lock Sticky')   
-#         if data['Standby']['Result'] != 'ok':
-#             fail_item['Standby'].add('Result')
-#             test_summary['DPLL Status']["fail"] += 1
-#         else:
-#             test_summary['DPLL Status']["pass"] += 1
-#     return data, fail_item
-# def Long_Time_Bert_parse(info,test_case,case_translation_table1):
-#     data = {}
-#     result = 'pass'
-#     fail_item = generate_fail_item_set(test_case,case_translation_table1)
-#     if test_case == 'Qe1LineDiagControlEntry':
-#         data['QE1 Bert'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if 'Qe1PRBSStatus' in key:
-#                 data['QE1 Bert']['PRBS Status'] = val
-#             elif 'Qe1PRBSErrorCounts' in key:
-#                 data['QE1 Bert']['Error Counts'] = int(val)
-#             elif 'Qe1PRBSErrorSeconds' in key:
-#                 data['QE1 Bert']['Error Seconds'] = int(val)
-#         data['QE1 Bert']['Result'] = 'pass'
-#         if data['QE1 Bert']['Error Counts'] != 0:
-#             data['QE1 Bert']['Result'] = 'fail'
-#             fail_item['QE1 Bert'].add('Error Counts')      
-#         if data['QE1 Bert']['Error Seconds'] != 0:
-#             data['QE1 Bert']['Result'] = 'fail'
-#             fail_item['QE1 Bert'].add('Error Seconds')   
-#         if data['QE1 Bert']['Result'] != 'pass':
-#             fail_item['QE1 Bert'].add('Result')
-#             test_summary['Long Time Bert']["fail"] += 1
-#         else:
-#             test_summary['Long Time Bert']["pass"] += 1
-#     return data, fail_item
-# def HDLC_Status_parse(info,test_case,case_translation_table1):
-#     data = {}
-#     fail_item = generate_fail_item_set(test_case,case_translation_table1)
-#     result = 'ok'
-#     if test_case == 'HdlcPriStatusTable':
-#         data['Primary'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if key == 'Dut':
-#                 data['Primary']['DUT'] = int(val)
-#             elif 'PriFpgaRxFCSerr' in key:
-#                 data['Primary']['FpgaRxFCSerr'] = int(val)
-#         data['Primary']['Result'] = 'ok'
-#         if data['Primary']['FpgaRxFCSerr'] != 0:
-#             data['Primary']['Result'] = 'fail'
-#             fail_item['Primary'].add('FpgaRxFCSerr')
-#         if data['Primary']['Result'] != 'ok':
-#             fail_item['Primary'].add('Result')
-#             test_summary['HDLC Status']["fail"] += 1
-#         else:
-#             test_summary['HDLC Status']["pass"] += 1
-#     if test_case == 'HdlcSecStatusTable':
-#         data['Secondary'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if key == 'Dut':
-#                 data['Secondary']['DUT'] = int(val)
-#             elif 'SecFpgaRxFCSerr' in key:
-#                 data['Secondary']['FpgaRxFCSerr'] = int(val)
-#         data['Secondary']['Result'] = 'ok'
-#         if data['Secondary']['FpgaRxFCSerr'] != 0:
-#             data['Secondary']['Result'] = 'fail'
-#             fail_item['Secondary'].add('FpgaRxFCSerr')
-#         if data['Secondary']['Result'] != 'ok':
-#             fail_item['Secondary'].add('Result')
-#             test_summary['HDLC Status']["fail"] += 1
-#         else:
-#             test_summary['HDLC Status']["pass"] += 1
-#     return data, fail_item
-# def TSI_in_out_parse(info,test_case,case_translation_table1):
-#     data = {}
-#     fail_item = generate_fail_item_set(test_case,case_translation_table1)
-#     result = 'ok'
-#     if test_case == 'TsiDataCasInOutTable':
-#         data['TSI in out data'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if 'TS' in key:
-#                 data['TSI in out data']['TS'] = int(val)
-#             elif "set outData" in key:
-#                 data['TSI in out data']['Set OutData'] = val
-#             elif 'TsiDataCasInOutget' in key:
-#                 data['TSI in out data']['Get InData'] = val[val.find("i_val:") + len("i_val:")+2:val.find("i_val:") + len("i_val:")+4]
-#             elif 'Result' in key:
-#                 data['TSI in out data']['Result'] = val
-#         # if data['TSI in out data']['Set OutData'][0] != data['TSI in out data']['Get InData'][0] and \
-#         #  data['TSI in out data']['Set OutData'][1] != data['TSI in out data']['Get InData'][1] and \
-#         #  data['TSI in out data']['Get InData'] == 'FF':
-#         #     data['TSI in out data']['Result'] = 'fail'
-#         #     fail_item['TSI in out data'].add('Set OutData')
-#         #     fail_item['TSI in out data'].add('Get InData')
-#         if data['TSI in out data']['Result'] == 'fail':
-#             fail_item['TSI in out data'].add('Result')
-#             test_summary['TSI in out']["fail"] += 1
-#         elif data['TSI in out data']['Result'] == 'fail,retry':
-#             pass
-#         else:
-#             test_summary['TSI in out']["pass"] += 1
-#     return data, fail_item
-# def PWACR_Status_parse(info,test_case,case_translation_table1):
-#     data = {}
-#     fail_item = generate_fail_item_set(test_case,case_translation_table1)
-#     result = 'ok'
-#     data['PWACR Status'] = {}
-#     for x,(key,val) in enumerate(info.items()):
-#         if key == 'Dut':
-#             data['PWACR Status']['DUT'] = int(val)
-#         elif 'PwACRIndex' in key:
-#             data['PWACR Status']['Index'] = int(val)
-#         elif 'PwACRStatusIndex' in key:
-#             data['PWACR Status']['Status Index'] = val
-#         elif 'PwACRStatusPortID' in key:
-#             data['PWACR Status']['Status Port ID'] = int(val)
-#         elif 'PwACRStatusEnable' in key:
-#             data['PWACR Status']['Status Enable'] = val
-#         elif 'PwACRStatusStatus' in key:
-#             data['PWACR Status']['Status'] = val
-#         elif 'PwACRDisconCnt' in key:
-#             data['PWACR Status']['Discon Cnt'] = int(val)
-#         elif 'PwACRRestartCnt' in key:
-#             data['PWACR Status']['Restart Cnt'] = int(val)
-#         elif 'PwACRCovariance' in key:
-#             data['PWACR Status']['Covariance'] = float(val)
-#         elif 'PwACRFreq' in key:
-#             data['PWACR Status']['Freq'] = float(val)
-#     data['PWACR Status']['Result'] = 'ok'
-#     if data['PWACR Status']['Status'] == 'acquisition':
-#         data['PWACR Status']['Result'] = 'fail'
-#         fail_item['PWACR Status'].add('Status')
-#     if data['PWACR Status']['Result'] != 'ok':
-#         fail_item['PWACR Status'].add('Result')
-#         test_summary['PWACR Status']["fail"] += 1
-#     else:
-#         test_summary['PWACR Status']["pass"] += 1
-#     return data, fail_item
-# def CTRL_Bert_parse(info,test_case,bert_case,case_translation_table1):
-#     data = {}
-#     result = 'pass'
-#     fail_item = generate_fail_item_set(bert_case,case_translation_table1)
-#     if test_case == 'CtlBertTable':
-#         data[bert_case] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if 'CtlBertSlot' in key:
-#                 data[bert_case]['Slot'] = int(val.split('_')[1])
-#             elif 'CtlBertPort' in key:
-#                 data[bert_case]['Port'] = int(val.split('_')[1])
-#             elif 'CtlBertStatus' in key:
-#                 data[bert_case]['Status'] = val
-#             elif 'CtlBertElapsedTime' in key:
-#                 data[bert_case]['Elapsed Time'] = int(val)
-#             elif 'CtlBertBitError' in key:
-#                 data[bert_case]['Bit Error'] = int(val)
-#             elif 'CtlBertErrorSecond' in key:
-#                 data[bert_case]['Error Second'] = int(val)
-#             elif 'CtlBertUnsyncSecond' in key:
-#                 data[bert_case]['Unsync Second'] = int(val)
-#         data[bert_case]['Result'] = 'pass'
-#         if data[bert_case]['Bit Error'] != 0:
-#             data[bert_case]['Result'] = 'fail'
-#             fail_item[bert_case].add('Bit Error')      
-#         if data[bert_case]['Error Second'] != 0:
-#             data[bert_case]['Result'] = 'fail'
-#             fail_item[bert_case].add('Error Seconds')   
-#         if data[bert_case]['Status'] != 'Sync':
-#             data[bert_case]['Result'] = 'fail'
-#             fail_item[bert_case].add('Status')   
-#         if data[bert_case]['Result'] != 'pass':
-#             fail_item[bert_case].add('Result')
-#             test_summary[bert_case]["fail"] += 1
-#         else:
-#             test_summary[bert_case]["pass"] += 1
-#     return data, fail_item
-# def SSM_Clock_Source_parse(info,test_case,case_translation_table1):
-#     data = {}
-#     result = 'pass'
-#     fail_item = generate_fail_item_set(test_case,case_translation_table1)
-#     if test_case == 'CcbClockSourceEntry':
-#         data['SSM Clock Source'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if 'Dut' in key:
-#                 data['SSM Clock Source']['DUT'] = val
-#             elif 'CcbClockIndex' in key:
-#                 data['SSM Clock Source']['Clock Index'] = int(val)
-#             elif 'CcbClockSource' in key:
-#                 data['SSM Clock Source']['Clock Source'] = val
-#             elif 'CcbClockPort' in key:
-#                 data['SSM Clock Source']['Clock Port'] = val
-#             elif 'CcbClockState' in key:
-#                 pattern = r'RxSSM(\d+)'
-#                 result_val = hex(int(re.search(pattern, val).group(1), 2))[2:].upper()
-#                 data['SSM Clock Source']['Clock State'] = result_val
-#     elif test_case == 'CcbTimingSource':
-#         data['SSM Timing Source'] = {}
-#         for x,(key,val) in enumerate(info.items()):
-#             if 'Dut' in key:
-#                 data['SSM Timing Source']['DUT'] = int(val)
-#             elif 'CcbClockMode' in key:
-#                 data['SSM Timing Source']['Clock Mode'] = val
-#             elif 'CcbCurrentClock' in key:
-#                 data['SSM Timing Source']['Current Clock'] = val
-#             elif 'Result' in key:
-#                 data['SSM Timing Source']['Result'] = val
-#         if 'Result' not in data['SSM Timing Source']:
-#             data['SSM Timing Source']['Result'] = ''
-#         if data['SSM Timing Source']['Result'] == 'Fail':
-#             fail_item['SSM Timing Source'].add('Result')
-#             fail_item['SSM Timing Source'].add('Current Clock')
-#             fail_item['SSM Timing Source'].add('Clock State')
-#             test_summary['SSM Clock Source']["fail"] += 1
-#         elif data['SSM Timing Source']['Result'] == 'Pass':
-#             test_summary['SSM Clock Source']["pass"] += 1
-#     return data, fail_item
+    time_stamp, cur_text_line = read_line_and_split_time(f_read)
+    while "IP6704 APS" in cur_text_line:
+        if cur_text_line != text_line:
+            data[time_stamp] = cur_text_line
+            text_line = cur_text_line
+        time_stamp, cur_text_line = read_line_and_split_time(f_read)
+    return data
+def ctrl_bert_fail_data_parse(text_line, f_read):
+    bit_error = ""
+    unsync_sec = ""
+    if "BitError" in text_line:
+        bit_error = re.findall(
+            r'\bBitError=[^ ]*', text_line)[0].split('=')[1]
+    elif "UnsyncSecond" in text_line:
+        unsync_sec = re.findall(
+            r'\bUnsyncSecond=[^ ]*', text_line)[0].split('=')[1]
+    error_id = re.findall(
+        r'\berr_id=[^\n]*', text_line)[0].split('=')[1]
+    time_stamp, text_line = read_line_and_split_time(f_read)
+    if "ElapsedTime" in text_line:
+        elapsed_time = re.split(
+            r'=', text_line)[-1].strip()
+        if bit_error != "":
+            data = {"Time": time_stamp,
+                    "Bit Error": bit_error,
+                    "Error ID": error_id,
+                    "Elapsed Time": elapsed_time
+                    }
+        elif unsync_sec != "":
+            data = {
+                "Time": time_stamp,
+                "UnsyncSecond": unsync_sec,
+                "Error ID": error_id,
+                "Elapsed Time": elapsed_time
+            }
+    # print(json.dumps(data,indent=4))
+    return data
+def IP6704_50ms_fail_data_parse(time_stamp, text_line):
+    # DUT 3	50ms pass :Bit error=46784, Curr value=18
+    if "Bit error" in text_line:
+        bit_error = re.findall(
+            r'\bBit error=[^ ]*', text_line)[0].split('=')[1].strip(',')
+    if "Curr value" in text_line:
+        cur_val = re.findall(
+            r'\bCurr value=[^ ]*', text_line)[0].split('=')[1].strip('\n')
+    data = {
+        "Time": time_stamp,
+        "Bit error": bit_error,
+        "Cur value": cur_val
+    }
+    return data
+def IP6704_50ms_result_parse(time_stamp, text_line, f_read):
+    result_str = time_stamp + " : " + "=======================================================\n"
+    result_str += time_stamp + " : " + text_line
+    text_line = f_read.readline()
+    while 'End' not in text_line and text_line != '':
+        result_str += text_line
+        if "50ms result" in text_line:
+            if 'Pass' in text_line:
+                result = 'pass'
+            else:
+                result = 'fail'
+        text_line = f_read.readline()
+    result_str += text_line
+    text_line = f_read.readline()
+    result_str += text_line
 
-# === parser function === #
-# def count_pw_test_summary(test_summary, working_pw_array,standby_pw_array):
-#     found_fail = False
-#     for working_status, standby_status in itertools.zip_longest(working_pw_array, standby_pw_array):
-#         if working_status is not None and working_status['result'] == 'fail':
-#             if working_status['fail_reason'] == 'L_bit':
-#                 test_summary["PW Status(L-bit error)"]['fail'] += 1
-#             elif working_status['fail_reason'] == 'jitter_max':
-#                 test_summary["PW Status(Jitter Max)"]['fail'] += 1
-#             elif working_status['fail_reason'] == 'DP+-1':
-#                 test_summary["PW Status(DP +- 1)"]['fail'] += 1
-#             elif working_status['fail_reason'] == 'DP+-2':
-#                 test_summary["PW Status(DP +- 2)"]['fail'] += 1
-#             elif working_status['fail_reason'] == 'link down':
-#                 test_summary["PW Status(Link down)"]['fail'] += 1
-#             test_summary["PW Status"]['fail'] += 1
-#             found_fail = True
-#         if standby_status is not None and standby_status['result'] == 'fail':
-#             if standby_status['fail_reason'] == 'L_bit':
-#                 test_summary["PW Status(L-bit error)"]['fail'] += 1
-#             elif standby_status['fail_reason'] == 'jitter_max':
-#                 test_summary["PW Status(Jitter Max)"]['fail'] += 1
-#             elif standby_status['fail_reason'] == 'DP+-1':
-#                 test_summary["PW Status(DP +- 1)"]['fail'] += 1
-#             elif standby_status['fail_reason'] == 'DP+-2':
-#                 test_summary["PW Status(DP +- 2)"]['fail'] += 1
-#             elif standby_status['fail_reason'] == 'link down':
-#                 test_summary["PW Status(Link down)"]['fail'] += 1
-#             test_summary["PW Status"]['fail'] += 1
-#             found_fail = True
-#     if found_fail != True:
-#         test_summary["PW Status"]['pass'] += 1
-
-# def IP6704_aps_data_parse(time_stamp, text_line,f_read):
-#     data = {}
-#     data[time_stamp] = text_line
-
-#     time_stamp, cur_text_line = read_line_and_split_time(f_read)
-#     while "IP6704 APS" in cur_text_line:
-#         if cur_text_line != text_line:
-#             data[time_stamp] = cur_text_line
-#             text_line = cur_text_line
-#         time_stamp, cur_text_line = read_line_and_split_time(f_read)
-#     return data
-
-# def ctrl_bert_fail_data_parse(text_line, f_read):
-#     bit_error = ""
-#     unsync_sec = ""
-#     if "BitError" in text_line:
-#         bit_error = re.findall(
-#             r'\bBitError=[^ ]*', text_line)[0].split('=')[1]
-#     elif "UnsyncSecond" in text_line:
-#         unsync_sec = re.findall(
-#             r'\bUnsyncSecond=[^ ]*', text_line)[0].split('=')[1]
-#     error_id = re.findall(
-#         r'\berr_id=[^\n]*', text_line)[0].split('=')[1]
-#     time_stamp, text_line = read_line_and_split_time(f_read)
-#     if "ElapsedTime" in text_line:
-#         elapsed_time = re.split(
-#             r'=', text_line)[-1].strip()
-#         if bit_error != "":
-#             data = {"Time": time_stamp,
-#                     "Bit Error": bit_error,
-#                     "Error ID": error_id,
-#                     "Elapsed Time": elapsed_time
-#                     }
-#         elif unsync_sec != "":
-#             data = {
-#                 "Time": time_stamp,
-#                 "UnsyncSecond": unsync_sec,
-#                 "Error ID": error_id,
-#                 "Elapsed Time": elapsed_time
-#             }
-#     # print(json.dumps(data,indent=4))
-#     return data
-
-# def IP6704_50ms_fail_data_parse(time_stamp, text_line):
-#     # DUT 3	50ms pass :Bit error=46784, Curr value=18
-#     if "Bit error" in text_line:
-#         bit_error = re.findall(
-#             r'\bBit error=[^ ]*', text_line)[0].split('=')[1].strip(',')
-#     if "Curr value" in text_line:
-#         cur_val = re.findall(
-#             r'\bCurr value=[^ ]*', text_line)[0].split('=')[1].strip('\n')
-#     data = {
-#         "Time": time_stamp,
-#         "Bit error": bit_error,
-#         "Cur value": cur_val
-#     }
-#     return data
-
-# def IP6704_50ms_result_parse(time_stamp, text_line, f_read):
-#     result_str = time_stamp + " : " + "=======================================================\n"
-#     result_str += time_stamp + " : " + text_line
-#     text_line = f_read.readline()
-#     while 'End' not in text_line and text_line != '':
-#         result_str += text_line
-#         if "50ms result" in text_line:
-#             if 'Pass' in text_line:
-#                 result = 'pass'
-#             else:
-#                 result = 'fail'
-#         text_line = f_read.readline()
-#     result_str += text_line
-#     text_line = f_read.readline()
-#     result_str += text_line
-
-#     return result_str, result
-
+    return result_str, result
 # === file path
 date = datetime.today().strftime('%m%d')
-file_path = F"D:/autotest/G7800"
-excel_path = Path(F'D:/autotest/G7800/summary_json_parser_{date}.xlsx')
+file_path = F"C:/Users/User/Desktop/VScode_Project/Python_Algorithm"
+excel_path = Path(F'C:/Users/User/Desktop/VScode_Project/Python_Algorithm/summary_json_parser_{date}.xlsx')
 # with open(F"{file_path}/test_result_modified.json",'r') as fr1:
 #     test_result = json.load(fr1)
 report_log = F"{file_path}/Report_log_2.txt"
@@ -1030,19 +1022,19 @@ s1 = wb['Summary']
 s4 = wb['DUTs']
 
 # ===== main =====
-# case_mapping_table = {
-#     'RS485 Status': {'first_case':'Rs485SlotStatistEntry', 'second_case': 'Rs485StatistTable'},
-#     'PW Status': {'first_case':'PwBundleStaticsEntry','second_case': 'PwStandbyStaticsEntry'},
-#     'PW Statist': {'first_case':'PwPriProtectStatistEntry','second_case': 'PwSecProtectStatistEntry'},
-#     'Card Port Status': {'first_case':'Qe1PortStatusEntry','second_case': 'FomStatusEntry'},
-#     'DPLL Status': {'first_case':'DpllPriStatusTable','second_case': 'DpllStandbyStatusTable'},
-#     'HDLC Status': {'first_case':'HdlcPriStatusTable','second_case': 'HdlcSecStatusTable'},
-#     'PWACR Status': {'first_case':'PwACRStatusEntry','second_case':''},
-#     'Long Time Bert': {'first_case':'Qe1LineDiagControlEntry','second_case':''},
-#     'CTRL Bert': {'first_case':'CtlBertTable','second_case':''},
-#     'TSI in out': {'first_case':'TsiDataCasInOutTable','second_case':''},
-#     'SSM Clock Source': {'first_case': 'CcbClockSourceEntry','second_case':"CcbTimingSource"}
-# }
+case_mapping_table = {
+    'RS485 Status': {'first_case':'Rs485SlotStatistEntry', 'second_case': 'Rs485StatistTable'},
+    'PW Status': {'first_case':'PwBundleStaticsEntry','second_case': 'PwStandbyStaticsEntry'},
+    'PW Statist': {'first_case':'PwPriProtectStatistEntry','second_case': 'PwSecProtectStatistEntry'},
+    'Card Port Status': {'first_case':'Qe1PortStatusEntry','second_case': 'FomStatusEntry'},
+    'DPLL Status': {'first_case':'DpllPriStatusTable','second_case': 'DpllStandbyStatusTable'},
+    'HDLC Status': {'first_case':'HdlcPriStatusTable','second_case': 'HdlcSecStatusTable'},
+    'PWACR Status': {'first_case':'PwACRStatusEntry','second_case':''},
+    'Long Time Bert': {'first_case':'Qe1LineDiagControlEntry','second_case':''},
+    'CTRL Bert': {'first_case':'CtlBertTable','second_case':''},
+    'TSI in out': {'first_case':'TsiDataCasInOutTable','second_case':''},
+    'SSM Clock Source': {'first_case': 'CcbClockSourceEntry','second_case':"CcbTimingSource"}
+}
 # case_translation_table1 = {
 #     'Rs485SlotStatistEntry': 'RS485 info by slot',
 #     'Rs485StatistTable': 'RS485 info',
@@ -1079,7 +1071,7 @@ s4 = wb['DUTs']
 #     'Others': {'PWACR Status':{}, 'HDLC Status':{}},
 #     'Clock': {'SSM Clock Source':{}}
 #     }
-# case_translation_table, test_case_length, test_counter = generate_test_case(case_mapping_table)
+case_translation_table, test_case_length, test_counter = generate_test_case(case_mapping_table)
 # bert_case = ["Warm Reset",
 #         "Cold Reset(T1 Unframe)",
 #         "Cold Reset(others)",
