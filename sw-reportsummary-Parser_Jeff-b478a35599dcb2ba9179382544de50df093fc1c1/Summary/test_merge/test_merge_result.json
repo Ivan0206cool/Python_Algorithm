@@ -1,0 +1,2600 @@
+{
+    "Bert": {
+        "Total": 3,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "pass": 1,
+                "fail": 0,
+                "fail_item": []
+            },
+            "FXO-no define-warmreset": {
+                "pass": 1,
+                "fail": 1,
+                "fail_item": [
+                    {
+                        "Time": "2023-11-21 22:16:36",
+                        "UnsyncSecond": "33",
+                        "Error ID": "18",
+                        "Elapsed Time": "31"
+                    }
+                ]
+            }
+        }
+    },
+    "50ms": {
+        "Total": 0,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "pass": 0,
+                "fail": 0,
+                "fail_item": []
+            },
+            "FXO-no define-warmreset": {
+                "pass": 0,
+                "fail": 0,
+                "fail_item": []
+            }
+        }
+    },
+    "Tone": {
+        "Total": 160,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "u-law_900-ohm": {
+                    "pass": 36,
+                    "fail": 4,
+                    "fail_item": [
+                        "\t\ttone fail at time:2023/11/10 \u4e0b\u5348 03:53:25 err_id=1\n",
+                        "\t\ttone fail at time:2023/11/10 \u4e0b\u5348 03:53:25 err_id=1\n",
+                        "\t\ttone fail at time:2023/11/10 \u4e0b\u5348 03:53:25 err_id=1\n",
+                        "\t\ttone fail at time:2023/11/10 \u4e0b\u5348 03:53:25 err_id=1\n"
+                    ]
+                },
+                "u-law_600-ohm": {
+                    "pass": 40,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "a-law_900-ohm": {
+                    "pass": 40,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "a-law_600-ohm": {
+                    "pass": 40,
+                    "fail": 0,
+                    "fail_item": []
+                }
+            }
+        }
+    },
+    "Ring": {
+        "Total": 474,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "u-law_900-ohm": {
+                    "pass": 116,
+                    "fail": 4,
+                    "fail_item": [
+                        "2023-11-11 08:57:30 fxopPortStatus ringing=no,ring fail ---TS: 1",
+                        "2023-11-11 08:57:30 fxopPortStatus ringing=no,ring fail ---TS: 2",
+                        "2023-11-11 08:57:30 fxopPortStatus ringing=no,ring fail ---TS: 3",
+                        "2023-11-11 08:57:30 fxopPortStatus ringing=no,ring fail ---TS: 4"
+                    ]
+                },
+                "u-law_600-ohm": {
+                    "pass": 120,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "a-law_900-ohm": {
+                    "pass": 120,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "a-law_600-ohm": {
+                    "pass": 114,
+                    "fail": 0,
+                    "fail_item": []
+                }
+            }
+        }
+    },
+    "Voice Bert": {
+        "Total": 468,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "u-law_900-ohm": {
+                    "pass": 116,
+                    "fail": 4,
+                    "fail_item": [
+                        "2023-11-12 21:18:15 bert test Fail!! DUT 1 BitError=0 fail,err_id=2118 DUT 1 Bert Table:ElapsedTime\t\t\t=16 ---TS: 1",
+                        "2023-11-12 21:18:15 bert test Fail!! DUT 1 BitError=0 fail,err_id=2118 DUT 1 Bert Table:ElapsedTime\t\t\t=17 ---TS: 2",
+                        "2023-11-12 21:18:15 bert test Fail!! DUT 1 BitError=0 fail,err_id=2118 DUT 1 Bert Table:ElapsedTime\t\t\t=18 ---TS: 3",
+                        "2023-11-12 21:18:15 bert test Fail!! DUT 1 BitError=0 fail,err_id=2118 DUT 1 Bert Table:ElapsedTime\t\t\t=19 ---TS: 4"
+                    ]
+                },
+                "u-law_600-ohm": {
+                    "pass": 120,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "a-law_900-ohm": {
+                    "pass": 120,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "a-law_600-ohm": {
+                    "pass": 108,
+                    "fail": 0,
+                    "fail_item": []
+                }
+            }
+        }
+    },
+    "PW Status": [
+        {
+            "Check setup status-FXO-no define": {
+                "Working PW status": [
+                    {
+                        "2023-11-21 21:52:40": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.3(0.3)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:52:43": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.3(0.3)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:52:46": "DUT 2 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.5(0.5)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:52:48": "DUT 2 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.5(0.5)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:52:51": "DUT 2 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.5(0.5)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:53:36": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:53:39": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:53:42": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:53:44": "DUT 2 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.5(0.5)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:53:47": "DUT 2 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.5(0.5)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:53:49": "DUT 2 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.5(0.5)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:55:49": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:55:52": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:55:54": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:55:57": "DUT 2 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:55:59": "DUT 2 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.5(0.5)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:56:02": "DUT 2 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:56:08": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.3(0.3)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:56:11": "DUT 2 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    }
+                ],
+                "Standby PW status": []
+            }
+        },
+        {
+            "record before action-FXO-no define-warmreset": {
+                "Working PW status": [
+                    {
+                        "2023-11-21 21:57:48": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "9.1(1.1)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:57:51": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:57:54": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:57:56": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.3(0.3)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:58:04": "DUT 2 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "9.3(1.3)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:58:06": "DUT 2 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.5(0.5)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:58:09": "DUT 2 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.3(0.3)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:58:11": "DUT 2 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.5(0.5)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    }
+                ],
+                "Standby PW status": []
+            }
+        },
+        {
+            "record after action-FXO-no define-warmreset": {
+                "Working PW status": [
+                    {
+                        "2023-11-21 22:03:28": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:28": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:29": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:29": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.7(0.7)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:30": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.7(0.7)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:30": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.7(0.7)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:31": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.7(0.7)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:31": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.7(0.7)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:32": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.7(0.7)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:32": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:35": "DUT 2 CTRL-2 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:03:38": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:39": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:39": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:40": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:40": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:41": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:41": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:42": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:42": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:43": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:45": "DUT 2 CTRL-2 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:03:49": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:49": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:50": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:50": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:51": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:51": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:52": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:52": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:53": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:53": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:03:56": "DUT 2 CTRL-2 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:03:59": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:00": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:00": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:01": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:01": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:02": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:02": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:03": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:03": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:04": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:06": "DUT 2 CTRL-2 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.5(0.5)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    }
+                ],
+                "Standby PW status": []
+            }
+        },
+        {
+            "Reget action-FXO-no define-warmreset": {
+                "Working PW status": [
+                    {
+                        "2023-11-21 22:04:22": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "9.2(1.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:25": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:27": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.3(0.3)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:30": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:04:37": "DUT 2 CTRL-2 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.5(0.5)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:04:40": "DUT 2 CTRL-2 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.3(0.3)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:04:42": "DUT 2 CTRL-2 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:04:45": "DUT 2 CTRL-2 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.3(0.3)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    }
+                ],
+                "Standby PW status": []
+            }
+        },
+        {
+            "record before action-FXO-no define-warmreset": {
+                "Working PW status": [
+                    {
+                        "2023-11-21 22:06:23": "DUT 1 CTRL-1 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "9.3(1.3)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:06:25": "DUT 1 CTRL-1 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:06:28": "DUT 1 CTRL-1 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.2(0.2)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:06:30": "DUT 1 CTRL-1 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.0(0.0)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 8.3,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "down",
+                        "fail_reason": "link down",
+                        "result": "fail"
+                    },
+                    {
+                        "2023-11-21 22:06:38": "DUT 2 CTRL-2 Bundle 17 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.7(0.7)",
+                        "Jitter Buffer min": 8.0,
+                        "Jitter Buffer max": 9.8,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:06:40": "DUT 2 CTRL-2 Bundle 60 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:06:43": "DUT 2 CTRL-2 Bundle 61 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.5(0.5)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:06:45": "DUT 2 CTRL-2 Bundle 62 Primary ",
+                        "Jitter Buffer under run": 0.0,
+                        "Jitter Buffer over run": 0.0,
+                        "Jitter Buffer depth": "8.1(0.1)",
+                        "Jitter Buffer min": 8.1,
+                        "Jitter Buffer max": 8.5,
+                        "PW L Bit_Count": 0,
+                        "PW R Bit_Count": 0,
+                        "RX lost count": 0,
+                        "PW link status": "up",
+                        "result": "ok"
+                    }
+                ],
+                "Standby PW status": []
+            }
+        }
+    ],
+    "Card port status": [
+        {
+            "Check setup status-FXO-no define": [
+                {
+                    "2023-11-21 21:55:23": "DUT 1 QE1 Slot 7 Port 1",
+                    "Qe1PortLOS": "No",
+                    "Qe1PortLOF": "No",
+                    "Qe1PortRcvAIS": "No",
+                    "Qe1PortRcvRAI": "No",
+                    "Qe1PortXmtAIS": "No",
+                    "Qe1PortXmtRAI": "No",
+                    "Qe1PortBPVcount": "0",
+                    "Qe1PortEScount": "0",
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:55:25": "DUT 1 QE1 Slot 7 Port 2",
+                    "Qe1PortLOS": "No",
+                    "Qe1PortLOF": "No",
+                    "Qe1PortRcvAIS": "No",
+                    "Qe1PortRcvRAI": "No",
+                    "Qe1PortXmtAIS": "No",
+                    "Qe1PortXmtRAI": "No",
+                    "Qe1PortBPVcount": "0",
+                    "Qe1PortEScount": "0",
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:55:26": "DUT 2 QE1 Slot 11 Port 1",
+                    "Qe1PortLOS": "No",
+                    "Qe1PortLOF": "No",
+                    "Qe1PortRcvAIS": "No",
+                    "Qe1PortRcvRAI": "No",
+                    "Qe1PortXmtAIS": "No",
+                    "Qe1PortXmtRAI": "No",
+                    "Qe1PortBPVcount": "0",
+                    "Qe1PortEScount": "0",
+                    "result": "ok"
+                }
+            ]
+        },
+        {
+            "record before action-FXO-no define-warmreset": [
+                {
+                    "2023-11-21 21:57:26": "DUT 1 QE1 Slot 7 Port 1",
+                    "Qe1PortLOS": "No",
+                    "Qe1PortLOF": "No",
+                    "Qe1PortRcvAIS": "No",
+                    "Qe1PortRcvRAI": "No",
+                    "Qe1PortXmtAIS": "No",
+                    "Qe1PortXmtRAI": "No",
+                    "Qe1PortBPVcount": "0",
+                    "Qe1PortEScount": "0",
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:57:28": "DUT 1 QE1 Slot 7 Port 2",
+                    "Qe1PortLOS": "No",
+                    "Qe1PortLOF": "No",
+                    "Qe1PortRcvAIS": "No",
+                    "Qe1PortRcvRAI": "No",
+                    "Qe1PortXmtAIS": "No",
+                    "Qe1PortXmtRAI": "No",
+                    "Qe1PortBPVcount": "0",
+                    "Qe1PortEScount": "0",
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:57:30": "DUT 2 QE1 Slot 11 Port 1",
+                    "Qe1PortLOS": "No",
+                    "Qe1PortLOF": "No",
+                    "Qe1PortRcvAIS": "No",
+                    "Qe1PortRcvRAI": "No",
+                    "Qe1PortXmtAIS": "No",
+                    "Qe1PortXmtRAI": "No",
+                    "Qe1PortBPVcount": "0",
+                    "Qe1PortEScount": "0",
+                    "result": "ok"
+                }
+            ]
+        },
+        {
+            "record before action-FXO-no define-warmreset": [
+                {
+                    "2023-11-21 22:06:00": "DUT 1 QE1 Slot 7 Port 1",
+                    "Qe1PortLOS": "No",
+                    "Qe1PortLOF": "No",
+                    "Qe1PortRcvAIS": "No",
+                    "Qe1PortRcvRAI": "No",
+                    "Qe1PortXmtAIS": "No",
+                    "Qe1PortXmtRAI": "No",
+                    "Qe1PortBPVcount": "0",
+                    "Qe1PortEScount": "0",
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:06:02": "DUT 1 QE1 Slot 7 Port 2",
+                    "Qe1PortLOS": "No",
+                    "Qe1PortLOF": "No",
+                    "Qe1PortRcvAIS": "No",
+                    "Qe1PortRcvRAI": "No",
+                    "Qe1PortXmtAIS": "No",
+                    "Qe1PortXmtRAI": "No",
+                    "Qe1PortBPVcount": "0",
+                    "Qe1PortEScount": "0",
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:06:04": "DUT 2 QE1 Slot 11 Port 1",
+                    "Qe1PortLOS": "No",
+                    "Qe1PortLOF": "No",
+                    "Qe1PortRcvAIS": "No",
+                    "Qe1PortRcvRAI": "No",
+                    "Qe1PortXmtAIS": "No",
+                    "Qe1PortXmtRAI": "No",
+                    "Qe1PortBPVcount": "6",
+                    "Qe1PortEScount": "2",
+                    "result": "ok"
+                }
+            ]
+        }
+    ],
+    "PW Statist": [
+        {
+            "Check setup status-FXO-no define": {
+                "Working PW Static": [
+                    {
+                        "2023-11-21 21:56:02": "DUT 1 Bundle 60 Pri",
+                        "bid_idx": "60",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "61301",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:56:03": "DUT 2 Bundle 60 Pri",
+                        "bid_idx": "60",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "24564",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:56:03": "DUT 1 Bundle 61 Pri",
+                        "bid_idx": "61",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "6498",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:56:04": "DUT 2 Bundle 61 Pri",
+                        "bid_idx": "61",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "62715",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:56:04": "DUT 1 Bundle 62 Pri",
+                        "bid_idx": "62",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "16849",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:56:05": "DUT 2 Bundle 62 Pri",
+                        "bid_idx": "62",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "35554",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:56:11": "DUT 1 Bundle 17 Pri",
+                        "bid_idx": "17",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "60473",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:56:12": "DUT 2 Bundle 17 Pri",
+                        "bid_idx": "17",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "56680",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    }
+                ],
+                "Standby PW Static": []
+            }
+        },
+        {
+            "record before action-FXO-no define-warmreset": {
+                "Working PW Static": [
+                    {
+                        "2023-11-21 21:58:17": "DUT 1 Bundle 17 Pri",
+                        "bid_idx": "17",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "57938",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:58:17": "DUT 1 Bundle 60 Pri",
+                        "bid_idx": "60",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "5625",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:58:18": "DUT 1 Bundle 61 Pri",
+                        "bid_idx": "61",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "14358",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:58:18": "DUT 1 Bundle 62 Pri",
+                        "bid_idx": "62",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "24709",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:58:24": "DUT 2 Bundle 17 Pri",
+                        "bid_idx": "17",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "57145",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:58:24": "DUT 2 Bundle 60 Pri",
+                        "bid_idx": "60",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "46426",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:58:25": "DUT 2 Bundle 61 Pri",
+                        "bid_idx": "61",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "17040",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 21:58:25": "DUT 2 Bundle 62 Pri",
+                        "bid_idx": "62",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "55416",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    }
+                ],
+                "Standby PW Static": []
+            }
+        },
+        {
+            "record after action-FXO-no define-warmreset": {
+                "Working PW Static": [
+                    {
+                        "2023-11-21 22:03:25": "DUT 1 Bundle 17 Pri",
+                        "bid_idx": "17",
+                        "Eth1LinkStat": "down",
+                        "Eth1RxSeqNum": "0",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:03:25": "DUT 2 Bundle 17 Pri",
+                        "bid_idx": "17",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "11216",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:03:35": "DUT 1 Bundle 60 Pri",
+                        "bid_idx": "60",
+                        "Eth1LinkStat": "down",
+                        "Eth1RxSeqNum": "0",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:03:36": "DUT 2 Bundle 60 Pri",
+                        "bid_idx": "60",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "13781",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:03:46": "DUT 1 Bundle 61 Pri",
+                        "bid_idx": "61",
+                        "Eth1LinkStat": "down",
+                        "Eth1RxSeqNum": "0",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:03:46": "DUT 2 Bundle 61 Pri",
+                        "bid_idx": "61",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "4395",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:03:56": "DUT 1 Bundle 62 Pri",
+                        "bid_idx": "62",
+                        "Eth1LinkStat": "down",
+                        "Eth1RxSeqNum": "0",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:03:57": "DUT 2 Bundle 62 Pri",
+                        "bid_idx": "62",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "62772",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    }
+                ],
+                "Standby PW Static": []
+            }
+        },
+        {
+            "Reget action-FXO-no define-warmreset": {
+                "Working PW Static": [
+                    {
+                        "2023-11-21 22:04:50": "DUT 1 Bundle 17 Pri",
+                        "bid_idx": "17",
+                        "Eth1LinkStat": "down",
+                        "Eth1RxSeqNum": "0",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:04:51": "DUT 1 Bundle 60 Pri",
+                        "bid_idx": "60",
+                        "Eth1LinkStat": "down",
+                        "Eth1RxSeqNum": "0",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:04:51": "DUT 1 Bundle 61 Pri",
+                        "bid_idx": "61",
+                        "Eth1LinkStat": "down",
+                        "Eth1RxSeqNum": "0",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:04:52": "DUT 1 Bundle 62 Pri",
+                        "bid_idx": "62",
+                        "Eth1LinkStat": "down",
+                        "Eth1RxSeqNum": "0",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:04:57": "DUT 2 Bundle 17 Pri",
+                        "bid_idx": "17",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "57717",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:04:58": "DUT 2 Bundle 60 Pri",
+                        "bid_idx": "60",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "46712",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:04:58": "DUT 2 Bundle 61 Pri",
+                        "bid_idx": "61",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "19326",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:04:59": "DUT 2 Bundle 62 Pri",
+                        "bid_idx": "62",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "55702",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    }
+                ],
+                "Standby PW Static": []
+            }
+        },
+        {
+            "record before action-FXO-no define-warmreset": {
+                "Working PW Static": [
+                    {
+                        "2023-11-21 22:06:51": "DUT 1 Bundle 17 Pri",
+                        "bid_idx": "17",
+                        "Eth1LinkStat": "down",
+                        "Eth1RxSeqNum": "0",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:06:51": "DUT 1 Bundle 60 Pri",
+                        "bid_idx": "60",
+                        "Eth1LinkStat": "down",
+                        "Eth1RxSeqNum": "0",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:06:52": "DUT 1 Bundle 61 Pri",
+                        "bid_idx": "61",
+                        "Eth1LinkStat": "down",
+                        "Eth1RxSeqNum": "0",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:06:52": "DUT 1 Bundle 62 Pri",
+                        "bid_idx": "62",
+                        "Eth1LinkStat": "down",
+                        "Eth1RxSeqNum": "0",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:06:58": "DUT 2 Bundle 17 Pri",
+                        "bid_idx": "17",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "52182",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:06:58": "DUT 2 Bundle 60 Pri",
+                        "bid_idx": "60",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "26572",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:06:59": "DUT 2 Bundle 61 Pri",
+                        "bid_idx": "61",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "62722",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    },
+                    {
+                        "2023-11-21 22:06:59": "DUT 2 Bundle 62 Pri",
+                        "bid_idx": "62",
+                        "Eth1LinkStat": "up",
+                        "Eth1RxSeqNum": "35562",
+                        "Eth1RxSeqLos": "0",
+                        "Eth1RxJBLos": "0",
+                        "DiffDelay": "\"na.\"",
+                        "result": "ok"
+                    }
+                ],
+                "Standby PW Static": []
+            }
+        }
+    ],
+    "RS485 Status": [
+        {
+            "Check setup status-FXO-no define": [
+                {
+                    "2023-11-21 21:56:12": "DUT 1 slot C ft1",
+                    "TX count": 1172,
+                    "RX count": 1172,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1172,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:56:13": "DUT 1 slot 3 quad-e1",
+                    "TX count": 1199,
+                    "RX count": 1199,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1199,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:56:13": "DUT 1 slot 5 em",
+                    "TX count": 1172,
+                    "RX count": 1172,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1172,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:56:14": "DUT 1 slot 6 em",
+                    "TX count": 1172,
+                    "RX count": 1172,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1172,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:56:15": "DUT 1 slot 9 fxs",
+                    "TX count": 1182,
+                    "RX count": 1182,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1182,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:56:15": "DUT 1 slot 10 fxo",
+                    "TX count": 1223,
+                    "RX count": 1223,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1223,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:56:16": "DUT 1",
+                    "FCS error": "0",
+                    "Slip error": "0",
+                    "Buffer error": "0",
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:56:17": "DUT 2 slot A mquad-e1",
+                    "TX count": 1642,
+                    "RX count": 1642,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1642,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:56:17": "DUT 2 slot B fom",
+                    "TX count": 1635,
+                    "RX count": 1635,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1635,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:56:20": "DUT 2 slot 7 quad-e1",
+                    "TX count": 1662,
+                    "RX count": 1662,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1662,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:56:20": "DUT 2 slot 9 quad-t1",
+                    "TX count": 1911,
+                    "RX count": 1911,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1911,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:56:21": "DUT 2 slot 10 ls-optical",
+                    "TX count": 1641,
+                    "RX count": 1641,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1641,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:56:21": "DUT 2",
+                    "FCS error": "0",
+                    "Slip error": "0",
+                    "Buffer error": "0",
+                    "result": "ok"
+                }
+            ]
+        },
+        {
+            "record before action-FXO-no define-warmreset": [
+                {
+                    "2023-11-21 21:58:26": "DUT 1 slot C ft1",
+                    "TX count": 1316,
+                    "RX count": 1316,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1316,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:58:26": "DUT 1 slot 3 quad-e1",
+                    "TX count": 1351,
+                    "RX count": 1351,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1351,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:58:27": "DUT 1 slot 5 em",
+                    "TX count": 1316,
+                    "RX count": 1316,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1316,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:58:27": "DUT 1 slot 6 em",
+                    "TX count": 1316,
+                    "RX count": 1316,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1316,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:58:28": "DUT 1 slot 9 fxs",
+                    "TX count": 1326,
+                    "RX count": 1326,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1326,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:58:29": "DUT 1 slot 10 fxo",
+                    "TX count": 1367,
+                    "RX count": 1367,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1367,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:58:29": "DUT 1",
+                    "FCS error": "0",
+                    "Slip error": "0",
+                    "Buffer error": "0",
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:58:31": "DUT 2 slot A mquad-e1",
+                    "TX count": 1856,
+                    "RX count": 1856,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1856,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:58:32": "DUT 2 slot B fom",
+                    "TX count": 1841,
+                    "RX count": 1841,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1841,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:58:35": "DUT 2 slot 7 quad-e1",
+                    "TX count": 1880,
+                    "RX count": 1880,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1880,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:58:35": "DUT 2 slot 9 quad-t1",
+                    "TX count": 2125,
+                    "RX count": 2125,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 2125,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:58:36": "DUT 2 slot 10 ls-optical",
+                    "TX count": 1847,
+                    "RX count": 1847,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 1847,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 21:58:36": "DUT 2",
+                    "FCS error": "0",
+                    "Slip error": "0",
+                    "Buffer error": "0",
+                    "result": "ok"
+                }
+            ]
+        },
+        {
+            "record after action-FXO-no define-warmreset": [
+                {
+                    "2023-11-21 22:03:07": "DUT 1 slot C ft1",
+                    "TX count": 72,
+                    "RX count": 72,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 72,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:03:08": "DUT 1 slot 3 quad-e1",
+                    "TX count": 87,
+                    "RX count": 87,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 87,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:03:08": "DUT 1 slot 5 em",
+                    "TX count": 71,
+                    "RX count": 71,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 71,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:03:09": "DUT 1 slot 6 em",
+                    "TX count": 72,
+                    "RX count": 72,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 72,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:03:10": "DUT 1 slot 9 fxs",
+                    "TX count": 73,
+                    "RX count": 73,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 73,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:03:10": "DUT 1 slot 10 fxo",
+                    "TX count": 73,
+                    "RX count": 73,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 74,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:03:11": "DUT 1",
+                    "FCS error": "0",
+                    "Slip error": "0",
+                    "Buffer error": "0",
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:03:13": "DUT 2 slot A mquad-e1",
+                    "TX count": 96,
+                    "RX count": 96,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 96,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:03:13": "DUT 2 slot B fom",
+                    "TX count": 96,
+                    "RX count": 96,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 96,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:03:16": "DUT 2 slot 7 quad-e1",
+                    "TX count": 118,
+                    "RX count": 118,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 118,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:03:17": "DUT 2 slot 9 quad-t1",
+                    "TX count": 101,
+                    "RX count": 101,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 101,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:03:17": "DUT 2 slot 10 ls-optical",
+                    "TX count": 101,
+                    "RX count": 101,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 101,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:03:18": "DUT 2",
+                    "FCS error": "0",
+                    "Slip error": "0",
+                    "Buffer error": "0",
+                    "result": "ok"
+                }
+            ]
+        },
+        {
+            "record before action-FXO-no define-warmreset": [
+                {
+                    "2023-11-21 22:07:00": "DUT 1 slot C ft1",
+                    "TX count": 323,
+                    "RX count": 323,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 323,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:07:00": "DUT 1 slot 3 quad-e1",
+                    "TX count": 345,
+                    "RX count": 345,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 345,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:07:01": "DUT 1 slot 5 em",
+                    "TX count": 322,
+                    "RX count": 322,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 322,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:07:01": "DUT 1 slot 6 em",
+                    "TX count": 322,
+                    "RX count": 322,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 322,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:07:02": "DUT 1 slot 9 fxs",
+                    "TX count": 323,
+                    "RX count": 323,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 323,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:07:03": "DUT 1 slot 10 fxo",
+                    "TX count": 324,
+                    "RX count": 324,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 325,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:07:03": "DUT 1",
+                    "FCS error": "0",
+                    "Slip error": "0",
+                    "Buffer error": "0",
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:07:05": "DUT 2 slot A mquad-e1",
+                    "TX count": 420,
+                    "RX count": 420,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 420,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:07:06": "DUT 2 slot B fom",
+                    "TX count": 421,
+                    "RX count": 421,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 421,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:07:09": "DUT 2 slot 7 quad-e1",
+                    "TX count": 447,
+                    "RX count": 447,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 447,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:07:09": "DUT 2 slot 9 quad-t1",
+                    "TX count": 690,
+                    "RX count": 690,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 690,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:07:10": "DUT 2 slot 10 ls-optical",
+                    "TX count": 426,
+                    "RX count": 426,
+                    "No RX count": 0,
+                    "Timeout count": 0,
+                    "Alive count": 426,
+                    "Non-alive count": 0,
+                    "Oversize count": 0,
+                    "Init count": 32,
+                    "Bad CMD count": 0,
+                    "Bad CMD num": 0,
+                    "result": "ok"
+                },
+                {
+                    "2023-11-21 22:07:10": "DUT 2",
+                    "FCS error": "0",
+                    "Slip error": "0",
+                    "Buffer error": "0",
+                    "result": "ok"
+                }
+            ]
+        }
+    ]
+}

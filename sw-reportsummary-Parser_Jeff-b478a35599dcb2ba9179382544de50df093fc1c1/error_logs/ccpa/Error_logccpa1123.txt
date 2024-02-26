@@ -1,0 +1,3380 @@
+2023-11-21 11:51:10 : TEST BEGIN
+2023-11-21 11:51:10 : DUT1 is LOOP CCPA-A ,slot#16
+2023-11-21 11:51:12 : DUT2 is LOOP CCPB_2ge-A ,slot#16
+2023-11-21 11:51:16 : DUT:1 ctrl : sw:"V12.16.01 (0012)" serial:213 hw: "Ver.C, FPGA1:V16(9), FPGA2:V14(10), CPLD:V3(2) "
+2023-11-21 11:51:16 : DUT:1 ctrl2: sw:"V12.16.01 (0012)" serial:7 hw: "Ver.C"
+2023-11-21 11:51:21 : DUT:1 slot: 10 QE1        ver:"V3.10.05 (0066)"
+2023-11-21 11:51:26 : DUT:1 slot: 7  Ls_optical ver:"FPGA:F HW:B"
+2023-11-21 11:51:28 : DUT:1 slot: 6  FXS        ver:"V4.09.02 (0003) Ver.P FPGA:V8(10)"
+2023-11-21 11:51:29 : DUT:1 slot: 5  FXO        ver:"V3.05.01 (0069) HW Ver.H FPGA :V10(4)"
+2023-11-21 11:51:38 : DUT:1 slot: d  Fom        ver:"FPGA:J HW:B"
+2023-11-21 11:51:40 : DUT:1 slot: c  FE1        ver:"V4.03.04 (0010), HW: G, FPGA: 09"
+2023-11-21 11:51:42 : DUT:1 slot: b  Fom        ver:"FPGA:I HW:B"
+2023-11-21 11:51:47 : DUT:2 ctrl : sw:"V23.11.01 (0012)" serial:41 hw: "Ver.C, FPGA1:V16(10), FPGA2:V14(10), CPLD:V3(5) "
+2023-11-21 11:51:47 : DUT:2 ctrl2: sw:"V23.11.01 (0012)" serial:73 hw: "Ver.C"
+2023-11-21 11:51:52 : DUT:2 slot: 10 QE1        ver:"V3.09.02 (0032)"
+2023-11-21 11:51:56 : DUT:2 slot: 8  Rs232_8    ver:"V1.08.01 (0001)"
+2023-11-21 11:51:57 : DUT:2 slot: 7  Tdmoe      ver:"V3.01.08 (0007) HW:Ver.E FPGA:6(1)"
+2023-11-21 11:51:59 : DUT:2 slot: 6  FXS        ver:"V4.09.02 (0003) Ver.P FPGA:V8(10)"
+2023-11-21 11:52:01 : DUT:2 slot: 5  FXO        ver:"V3.05.01 (0069) HW Ver.H FPGA :V10(4)"
+2023-11-21 11:52:03 : DUT:2 slot: 4  G703       ver:" (mismatch)(card type)"
+2023-11-21 11:52:15 : DUT:2 slot: a  FE1        ver:" (mismatch)(card type)"
+2023-11-21 11:52:30 : ---------Round@     1---------fxs/fxo     Begin
+2023-11-21 11:53:01 : ---------Round@     1-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 11:53:01
+2023-11-21 11:55:15 : Check setup status start 
+2023-11-21 11:55:15 : ********tone-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 11:56:00 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 11:57:06 : 		tone test pass "444--444--444--444"
+2023-11-21 11:58:13 : 		tone test pass "888--888--888--888"
+2023-11-21 12:00:23 : 		tone test pass "###--###--###--###"
+2023-11-21 12:00:46 : Check setup status end 
+2023-11-21 12:01:17 : ---test end---
+2023-11-21 12:03:31 : Check setup status start 
+2023-11-21 12:03:31 : ********tone-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 12:04:14 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 12:05:18 : 		tone test pass "444--444--444--444"
+2023-11-21 12:06:23 : 		tone test pass "888--888--888--888"
+2023-11-21 12:07:28 : 		tone test pass "###--###--###--###"
+2023-11-21 12:07:48 : Check setup status end 
+2023-11-21 12:08:18 : ---test end---
+2023-11-21 12:10:31 : Check setup status start 
+2023-11-21 12:10:31 : ********tone-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 12:11:14 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 12:12:17 : 		tone test pass "444--444--444--444"
+2023-11-21 12:13:22 : 		tone test pass "888--888--888--888"
+2023-11-21 12:14:28 : 		tone test pass "###--###--###--###"
+2023-11-21 12:14:49 : Check setup status end 
+2023-11-21 12:15:19 : ---test end---
+2023-11-21 12:17:32 : Check setup status start 
+2023-11-21 12:17:32 : ********tone-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 12:18:15 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 12:19:21 : 		tone test pass "444--444--444--444"
+2023-11-21 12:20:30 : 		tone test pass "888--888--888--888"
+2023-11-21 12:21:37 : 		tone test pass "###--###--###--###"
+2023-11-21 12:21:58 : Check setup status end 
+2023-11-21 12:22:32 : ---test end---
+2023-11-21 12:23:07 : ---------Round@     2-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 下午 12:23:07
+2023-11-21 12:25:21 : Check setup status start 
+2023-11-21 12:25:21 : ********ring-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 12:25:41 : ********* TS:1 *********
+2023-11-21 12:25:47 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:26:28 : ********* TS:2 *********
+2023-11-21 12:26:35 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:27:15 : ********* TS:3 *********
+2023-11-21 12:27:22 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:28:02 : ********* TS:4 *********
+2023-11-21 12:28:09 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:28:50 : ********* TS:5 *********
+2023-11-21 12:28:56 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:29:36 : ********* TS:6 *********
+2023-11-21 12:29:43 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:30:23 : ********* TS:7 *********
+2023-11-21 12:30:29 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:31:10 : ********* TS:8 *********
+2023-11-21 12:31:16 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:31:57 : ********* TS:9 *********
+2023-11-21 12:32:03 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:32:44 : ********* TS:10 *********
+2023-11-21 12:32:50 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:33:31 : ********* TS:11 *********
+2023-11-21 12:33:37 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:34:18 : ********* TS:12 *********
+2023-11-21 12:34:24 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:34:46 : ********bert********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 12:35:06 : ********* TS:1 *********
+2023-11-21 12:35:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:35:30 : 	bert test Pass
+2023-11-21 12:35:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:35:42 : ********* TS:2 *********
+2023-11-21 12:35:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:36:05 : 	bert test Pass
+2023-11-21 12:36:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:36:16 : ********* TS:3 *********
+2023-11-21 12:36:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:36:39 : 	bert test Pass
+2023-11-21 12:36:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:36:51 : ********* TS:4 *********
+2023-11-21 12:37:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:37:14 : 	bert test Pass
+2023-11-21 12:37:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:37:25 : ********* TS:5 *********
+2023-11-21 12:37:41 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:37:48 : 	bert test Pass
+2023-11-21 12:37:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:37:59 : ********* TS:6 *********
+2023-11-21 12:38:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:38:23 : 	bert test Pass
+2023-11-21 12:38:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:38:33 : ********* TS:7 *********
+2023-11-21 12:38:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:38:56 : 	bert test Pass
+2023-11-21 12:38:56 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:39:08 : ********* TS:8 *********
+2023-11-21 12:39:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:39:30 : 	bert test Pass
+2023-11-21 12:39:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:39:42 : ********* TS:9 *********
+2023-11-21 12:39:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:40:05 : 	bert test Pass
+2023-11-21 12:40:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:40:16 : ********* TS:10 *********
+2023-11-21 12:40:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:40:40 : 	bert test Pass
+2023-11-21 12:40:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:40:52 : ********* TS:11 *********
+2023-11-21 12:41:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:41:15 : 	bert test Pass
+2023-11-21 12:41:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:41:26 : ********* TS:12 *********
+2023-11-21 12:41:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:41:49 : 	bert test Pass
+2023-11-21 12:41:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:42:20 : Check setup status end 
+2023-11-21 12:42:52 : ---test end---
+2023-11-21 12:45:05 : Check setup status start 
+2023-11-21 12:45:05 : ********ring-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 12:45:26 : ********* TS:1 *********
+2023-11-21 12:45:33 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:46:15 : ********* TS:2 *********
+2023-11-21 12:46:21 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:47:03 : ********* TS:3 *********
+2023-11-21 12:47:09 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:47:51 : ********* TS:4 *********
+2023-11-21 12:47:57 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:48:40 : ********* TS:5 *********
+2023-11-21 12:48:47 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:49:29 : ********* TS:6 *********
+2023-11-21 12:49:35 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:50:18 : ********* TS:7 *********
+2023-11-21 12:50:24 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:51:06 : ********* TS:8 *********
+2023-11-21 12:51:12 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:51:55 : ********* TS:9 *********
+2023-11-21 12:52:01 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:52:43 : ********* TS:10 *********
+2023-11-21 12:52:49 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:53:31 : ********* TS:11 *********
+2023-11-21 12:53:38 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:54:20 : ********* TS:12 *********
+2023-11-21 12:54:26 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 12:54:48 : ********bert********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 12:55:09 : ********* TS:1 *********
+2023-11-21 12:55:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:55:32 : 	bert test Pass
+2023-11-21 12:55:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:55:43 : ********* TS:2 *********
+2023-11-21 12:55:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:56:07 : 	bert test Pass
+2023-11-21 12:56:07 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:56:18 : ********* TS:3 *********
+2023-11-21 12:56:34 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:56:42 : 	bert test Pass
+2023-11-21 12:56:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:56:53 : ********* TS:4 *********
+2023-11-21 12:57:10 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:57:17 : 	bert test Pass
+2023-11-21 12:57:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:57:28 : ********* TS:5 *********
+2023-11-21 12:57:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:57:51 : 	bert test Pass
+2023-11-21 12:57:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:58:02 : ********* TS:6 *********
+2023-11-21 12:58:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:58:25 : 	bert test Pass
+2023-11-21 12:58:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:58:37 : ********* TS:7 *********
+2023-11-21 12:58:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:59:00 : 	bert test Pass
+2023-11-21 12:59:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:59:11 : ********* TS:8 *********
+2023-11-21 12:59:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 12:59:34 : 	bert test Pass
+2023-11-21 12:59:34 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 12:59:46 : ********* TS:9 *********
+2023-11-21 13:00:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:00:09 : 	bert test Pass
+2023-11-21 13:00:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:00:21 : ********* TS:10 *********
+2023-11-21 13:00:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:00:44 : 	bert test Pass
+2023-11-21 13:00:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:00:56 : ********* TS:11 *********
+2023-11-21 13:01:13 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:01:20 : 	bert test Pass
+2023-11-21 13:01:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:01:31 : ********* TS:12 *********
+2023-11-21 13:01:47 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:01:54 : 	bert test Pass
+2023-11-21 13:01:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:02:27 : Check setup status end 
+2023-11-21 13:03:00 : ---test end---
+2023-11-21 13:05:18 : Check setup status start 
+2023-11-21 13:05:18 : ********ring-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 13:05:40 : ********* TS:1 *********
+2023-11-21 13:05:46 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:06:30 : ********* TS:2 *********
+2023-11-21 13:06:36 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:07:20 : ********* TS:3 *********
+2023-11-21 13:07:26 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:08:09 : ********* TS:4 *********
+2023-11-21 13:08:15 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:08:58 : ********* TS:5 *********
+2023-11-21 13:09:05 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:09:47 : ********* TS:6 *********
+2023-11-21 13:09:53 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:10:36 : ********* TS:7 *********
+2023-11-21 13:10:43 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:11:26 : ********* TS:8 *********
+2023-11-21 13:11:32 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:12:17 : ********* TS:9 *********
+2023-11-21 13:12:23 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:13:07 : ********* TS:10 *********
+2023-11-21 13:13:13 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:13:57 : ********* TS:11 *********
+2023-11-21 13:14:03 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:14:47 : ********* TS:12 *********
+2023-11-21 13:14:53 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:15:15 : ********bert********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 13:15:36 : ********* TS:1 *********
+2023-11-21 13:15:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:16:00 : 	bert test Pass
+2023-11-21 13:16:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:16:12 : ********* TS:2 *********
+2023-11-21 13:16:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:16:35 : 	bert test Pass
+2023-11-21 13:16:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:16:47 : ********* TS:3 *********
+2023-11-21 13:17:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:17:10 : 	bert test Pass
+2023-11-21 13:17:10 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:17:21 : ********* TS:4 *********
+2023-11-21 13:17:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:17:46 : 	bert test Pass
+2023-11-21 13:17:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:17:56 : ********* TS:5 *********
+2023-11-21 13:18:13 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:18:21 : 	bert test Pass
+2023-11-21 13:18:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:18:32 : ********* TS:6 *********
+2023-11-21 13:18:47 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:18:55 : 	bert test Pass
+2023-11-21 13:18:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:19:06 : ********* TS:7 *********
+2023-11-21 13:19:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:19:30 : 	bert test Pass
+2023-11-21 13:19:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:19:41 : ********* TS:8 *********
+2023-11-21 13:19:57 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:20:05 : 	bert test Pass
+2023-11-21 13:20:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:20:16 : ********* TS:9 *********
+2023-11-21 13:20:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:20:40 : 	bert test Pass
+2023-11-21 13:20:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:20:51 : ********* TS:10 *********
+2023-11-21 13:21:07 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:21:15 : 	bert test Pass
+2023-11-21 13:21:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:21:26 : ********* TS:11 *********
+2023-11-21 13:21:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:21:50 : 	bert test Pass
+2023-11-21 13:21:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:22:01 : ********* TS:12 *********
+2023-11-21 13:22:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 13:22:25 : 	bert test Pass
+2023-11-21 13:22:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 13:22:56 : Check setup status end 
+2023-11-21 13:23:30 : ---test end---
+2023-11-21 13:53:19 : Check setup status start 
+2023-11-21 13:53:19 : ********ring-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 13:53:40 : ********* TS:1 *********
+2023-11-21 13:53:47 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:54:30 : ********* TS:2 *********
+2023-11-21 13:54:36 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:55:21 : ********* TS:3 *********
+2023-11-21 13:55:27 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:56:12 : ********* TS:4 *********
+2023-11-21 13:56:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:57:03 : ********* TS:5 *********
+2023-11-21 13:57:09 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:57:52 : ********* TS:6 *********
+2023-11-21 13:57:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:58:42 : ********* TS:7 *********
+2023-11-21 13:58:48 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 13:59:32 : ********* TS:8 *********
+2023-11-21 13:59:38 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:00:21 : ********* TS:9 *********
+2023-11-21 14:00:27 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:01:09 : ********* TS:10 *********
+2023-11-21 14:01:15 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:01:58 : ********* TS:11 *********
+2023-11-21 14:02:04 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:04:06 : ********* TS:12 *********
+2023-11-21 14:04:13 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:04:34 : ********bert********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 14:04:55 : ********* TS:1 *********
+2023-11-21 14:05:10 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:05:18 : 	bert test Pass
+2023-11-21 14:05:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:05:30 : ********* TS:2 *********
+2023-11-21 14:05:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:05:53 : 	bert test Pass
+2023-11-21 14:05:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:06:04 : ********* TS:3 *********
+2023-11-21 14:06:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:06:28 : 	bert test Pass
+2023-11-21 14:06:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:06:39 : ********* TS:4 *********
+2023-11-21 14:06:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:07:03 : 	bert test Pass
+2023-11-21 14:07:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:07:13 : ********* TS:5 *********
+2023-11-21 14:07:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:07:37 : 	bert test Pass
+2023-11-21 14:07:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:07:48 : ********* TS:6 *********
+2023-11-21 14:08:04 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:08:12 : 	bert test Pass
+2023-11-21 14:08:12 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:08:23 : ********* TS:7 *********
+2023-11-21 14:08:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:08:47 : 	bert test Pass
+2023-11-21 14:08:47 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:08:58 : ********* TS:8 *********
+2023-11-21 14:09:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:09:22 : 	bert test Pass
+2023-11-21 14:09:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:09:34 : ********* TS:9 *********
+2023-11-21 14:09:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:09:57 : 	bert test Pass
+2023-11-21 14:09:57 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:10:08 : ********* TS:10 *********
+2023-11-21 14:10:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:10:33 : 	bert test Pass
+2023-11-21 14:10:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:10:44 : ********* TS:11 *********
+2023-11-21 14:11:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:11:08 : 	bert test Pass
+2023-11-21 14:11:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:11:19 : ********* TS:12 *********
+2023-11-21 14:11:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:11:42 : 	bert test Pass
+2023-11-21 14:11:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:12:15 : Check setup status end 
+2023-11-21 14:12:49 : ---test end---
+2023-11-21 14:13:24 : ---------Round@     3-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 下午 02:13:24
+2023-11-21 14:15:43 : Check setup status start 
+2023-11-21 14:15:43 : ********tone-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 14:16:30 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 14:17:38 : 		tone test pass "444--444--444--444"
+2023-11-21 14:18:48 : 		tone test pass "888--888--888--888"
+2023-11-21 14:19:58 : 		tone test pass "###--###--###--###"
+2023-11-21 14:20:20 : Check setup status end 
+2023-11-21 14:20:55 : ---test end---
+2023-11-21 14:23:14 : Check setup status start 
+2023-11-21 14:23:14 : ********tone-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 14:24:00 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 14:25:07 : 		tone test pass "444--444--444--444"
+2023-11-21 14:26:15 : 		tone test pass "888--888--888--888"
+2023-11-21 14:27:26 : 		tone test pass "###--###--###--###"
+2023-11-21 14:27:48 : Check setup status end 
+2023-11-21 14:28:21 : ---test end---
+2023-11-21 14:30:38 : Check setup status start 
+2023-11-21 14:30:38 : ********tone-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 14:31:24 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 14:32:32 : 		tone test pass "444--444--444--444"
+2023-11-21 14:33:41 : 		tone test pass "888--888--888--888"
+2023-11-21 14:34:49 : 		tone test pass "###--###--###--###"
+2023-11-21 14:35:10 : Check setup status end 
+2023-11-21 14:35:45 : ---test end---
+2023-11-21 14:38:03 : Check setup status start 
+2023-11-21 14:38:03 : ********tone-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 14:38:49 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 14:39:58 : 		tone test pass "444--444--444--444"
+2023-11-21 14:41:08 : 		tone test pass "888--888--888--888"
+2023-11-21 14:42:17 : 		tone test pass "###--###--###--###"
+2023-11-21 14:42:41 : Check setup status end 
+2023-11-21 14:43:14 : ---test end---
+2023-11-21 14:43:49 : ---------Round@     4-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 下午 02:43:49
+2023-11-21 14:46:08 : Check setup status start 
+2023-11-21 14:46:08 : ********ring-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 14:46:30 : ********* TS:1 *********
+2023-11-21 14:46:36 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:47:21 : ********* TS:2 *********
+2023-11-21 14:47:27 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:48:13 : ********* TS:3 *********
+2023-11-21 14:48:19 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:49:04 : ********* TS:4 *********
+2023-11-21 14:49:11 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:49:56 : ********* TS:5 *********
+2023-11-21 14:50:02 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:50:48 : ********* TS:6 *********
+2023-11-21 14:50:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:51:38 : ********* TS:7 *********
+2023-11-21 14:51:44 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:52:27 : ********* TS:8 *********
+2023-11-21 14:52:33 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:53:18 : ********* TS:9 *********
+2023-11-21 14:53:24 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:54:08 : ********* TS:10 *********
+2023-11-21 14:54:15 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:54:59 : ********* TS:11 *********
+2023-11-21 14:55:05 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:55:50 : ********* TS:12 *********
+2023-11-21 14:55:56 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 14:56:19 : ********bert********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 14:56:42 : ********* TS:1 *********
+2023-11-21 14:56:57 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:57:05 : 	bert test Pass
+2023-11-21 14:57:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:57:16 : ********* TS:2 *********
+2023-11-21 14:57:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:57:41 : 	bert test Pass
+2023-11-21 14:57:41 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:57:52 : ********* TS:3 *********
+2023-11-21 14:58:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:58:17 : 	bert test Pass
+2023-11-21 14:58:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:58:28 : ********* TS:4 *********
+2023-11-21 14:58:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:58:51 : 	bert test Pass
+2023-11-21 14:58:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:59:03 : ********* TS:5 *********
+2023-11-21 14:59:19 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 14:59:27 : 	bert test Pass
+2023-11-21 14:59:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 14:59:38 : ********* TS:6 *********
+2023-11-21 14:59:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:00:02 : 	bert test Pass
+2023-11-21 15:00:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:00:13 : ********* TS:7 *********
+2023-11-21 15:00:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:00:37 : 	bert test Pass
+2023-11-21 15:00:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:00:48 : ********* TS:8 *********
+2023-11-21 15:01:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:01:13 : 	bert test Pass
+2023-11-21 15:01:13 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:01:25 : ********* TS:9 *********
+2023-11-21 15:01:41 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:01:50 : 	bert test Pass
+2023-11-21 15:01:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:02:01 : ********* TS:10 *********
+2023-11-21 15:02:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:02:24 : 	bert test Pass
+2023-11-21 15:02:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:02:35 : ********* TS:11 *********
+2023-11-21 15:02:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:02:59 : 	bert test Pass
+2023-11-21 15:02:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:03:11 : ********* TS:12 *********
+2023-11-21 15:03:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:03:45 : 	bert test Pass
+2023-11-21 15:03:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:04:17 : Check setup status end 
+2023-11-21 15:04:54 : ---test end---
+2023-11-21 15:07:12 : Check setup status start 
+2023-11-21 15:07:12 : ********ring-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 15:07:33 : ********* TS:1 *********
+2023-11-21 15:07:40 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:08:25 : ********* TS:2 *********
+2023-11-21 15:08:31 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:09:14 : ********* TS:3 *********
+2023-11-21 15:09:20 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:10:06 : ********* TS:4 *********
+2023-11-21 15:10:12 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:10:58 : ********* TS:5 *********
+2023-11-21 15:11:04 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:11:50 : ********* TS:6 *********
+2023-11-21 15:11:56 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:12:41 : ********* TS:7 *********
+2023-11-21 15:12:48 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:13:32 : ********* TS:8 *********
+2023-11-21 15:13:38 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:14:23 : ********* TS:9 *********
+2023-11-21 15:14:30 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:15:15 : ********* TS:10 *********
+2023-11-21 15:15:22 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:16:07 : ********* TS:11 *********
+2023-11-21 15:16:14 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:16:59 : ********* TS:12 *********
+2023-11-21 15:17:06 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:17:29 : ********bert********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 15:17:51 : ********* TS:1 *********
+2023-11-21 15:18:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:18:14 : 	bert test Pass
+2023-11-21 15:18:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:18:26 : ********* TS:2 *********
+2023-11-21 15:18:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:18:51 : 	bert test Pass
+2023-11-21 15:18:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:19:02 : ********* TS:3 *********
+2023-11-21 15:19:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:19:26 : 	bert test Pass
+2023-11-21 15:19:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:19:38 : ********* TS:4 *********
+2023-11-21 15:19:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:20:04 : 	bert test Pass
+2023-11-21 15:20:04 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:20:15 : ********* TS:5 *********
+2023-11-21 15:20:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:20:39 : 	bert test Pass
+2023-11-21 15:20:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:20:50 : ********* TS:6 *********
+2023-11-21 15:21:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:21:14 : 	bert test Pass
+2023-11-21 15:21:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:21:25 : ********* TS:7 *********
+2023-11-21 15:21:41 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:21:49 : 	bert test Pass
+2023-11-21 15:21:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:22:00 : ********* TS:8 *********
+2023-11-21 15:22:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:22:24 : 	bert test Pass
+2023-11-21 15:22:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:22:35 : ********* TS:9 *********
+2023-11-21 15:22:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:22:59 : 	bert test Pass
+2023-11-21 15:22:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:23:10 : ********* TS:10 *********
+2023-11-21 15:23:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:23:35 : 	bert test Pass
+2023-11-21 15:23:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:23:46 : ********* TS:11 *********
+2023-11-21 15:24:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:24:11 : 	bert test Pass
+2023-11-21 15:24:11 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:24:22 : ********* TS:12 *********
+2023-11-21 15:24:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:24:47 : 	bert test Pass
+2023-11-21 15:24:47 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:25:19 : Check setup status end 
+2023-11-21 15:25:56 : ---test end---
+2023-11-21 15:28:16 : Check setup status start 
+2023-11-21 15:28:16 : ********ring-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 15:28:38 : ********* TS:1 *********
+2023-11-21 15:28:44 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:29:30 : ********* TS:2 *********
+2023-11-21 15:29:37 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:30:24 : ********* TS:3 *********
+2023-11-21 15:30:30 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:31:15 : ********* TS:4 *********
+2023-11-21 15:31:21 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:32:07 : ********* TS:5 *********
+2023-11-21 15:32:14 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:32:59 : ********* TS:6 *********
+2023-11-21 15:33:06 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:33:51 : ********* TS:7 *********
+2023-11-21 15:33:57 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:34:43 : ********* TS:8 *********
+2023-11-21 15:34:50 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:35:36 : ********* TS:9 *********
+2023-11-21 15:35:43 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:36:28 : ********* TS:10 *********
+2023-11-21 15:36:35 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:37:21 : ********* TS:11 *********
+2023-11-21 15:37:28 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:38:13 : ********* TS:12 *********
+2023-11-21 15:38:20 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:38:44 : ********bert********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 15:39:08 : ********* TS:1 *********
+2023-11-21 15:39:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:39:32 : 	bert test Pass
+2023-11-21 15:39:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:39:43 : ********* TS:2 *********
+2023-11-21 15:39:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:40:08 : 	bert test Pass
+2023-11-21 15:40:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:40:19 : ********* TS:3 *********
+2023-11-21 15:40:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:40:44 : 	bert test Pass
+2023-11-21 15:40:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:40:55 : ********* TS:4 *********
+2023-11-21 15:41:11 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:41:19 : 	bert test Pass
+2023-11-21 15:41:19 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:41:30 : ********* TS:5 *********
+2023-11-21 15:41:47 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:41:55 : 	bert test Pass
+2023-11-21 15:41:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:42:06 : ********* TS:6 *********
+2023-11-21 15:42:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:42:31 : 	bert test Pass
+2023-11-21 15:42:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:42:42 : ********* TS:7 *********
+2023-11-21 15:42:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:43:06 : 	bert test Pass
+2023-11-21 15:43:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:43:17 : ********* TS:8 *********
+2023-11-21 15:43:34 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:43:43 : 	bert test Pass
+2023-11-21 15:43:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:43:54 : ********* TS:9 *********
+2023-11-21 15:44:11 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:44:19 : 	bert test Pass
+2023-11-21 15:44:19 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:44:31 : ********* TS:10 *********
+2023-11-21 15:44:47 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:44:56 : 	bert test Pass
+2023-11-21 15:44:56 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:45:07 : ********* TS:11 *********
+2023-11-21 15:45:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:45:33 : 	bert test Pass
+2023-11-21 15:45:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:45:44 : ********* TS:12 *********
+2023-11-21 15:46:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 15:46:09 : 	bert test Pass
+2023-11-21 15:46:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 15:46:44 : Check setup status end 
+2023-11-21 15:47:25 : ---test end---
+2023-11-21 15:49:51 : Check setup status start 
+2023-11-21 15:49:51 : ********ring-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 15:50:13 : ********* TS:1 *********
+2023-11-21 15:50:20 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:51:09 : ********* TS:2 *********
+2023-11-21 15:51:15 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:52:02 : ********* TS:3 *********
+2023-11-21 15:52:09 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:52:58 : ********* TS:4 *********
+2023-11-21 15:53:05 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:53:55 : ********* TS:5 *********
+2023-11-21 15:54:02 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:54:50 : ********* TS:6 *********
+2023-11-21 15:54:56 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:55:47 : ********* TS:7 *********
+2023-11-21 15:55:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:56:44 : ********* TS:8 *********
+2023-11-21 15:56:51 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:57:41 : ********* TS:9 *********
+2023-11-21 15:57:47 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:58:38 : ********* TS:10 *********
+2023-11-21 15:58:45 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 15:59:34 : ********* TS:11 *********
+2023-11-21 15:59:40 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:00:29 : ********* TS:12 *********
+2023-11-21 16:00:36 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:01:04 : ********bert********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 16:01:29 : ********* TS:1 *********
+2023-11-21 16:01:47 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:01:55 : 	bert test Pass
+2023-11-21 16:01:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:02:07 : ********* TS:2 *********
+2023-11-21 16:02:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:02:32 : 	bert test Pass
+2023-11-21 16:02:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:02:44 : ********* TS:3 *********
+2023-11-21 16:03:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:03:09 : 	bert test Pass
+2023-11-21 16:03:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:03:20 : ********* TS:4 *********
+2023-11-21 16:03:36 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:03:45 : 	bert test Pass
+2023-11-21 16:03:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:03:56 : ********* TS:5 *********
+2023-11-21 16:04:12 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:04:20 : 	bert test Pass
+2023-11-21 16:04:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:04:32 : ********* TS:6 *********
+2023-11-21 16:04:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:04:56 : 	bert test Pass
+2023-11-21 16:04:56 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:05:07 : ********* TS:7 *********
+2023-11-21 16:05:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:05:33 : 	bert test Pass
+2023-11-21 16:05:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:05:44 : ********* TS:8 *********
+2023-11-21 16:06:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:06:10 : 	bert test Pass
+2023-11-21 16:06:10 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:06:21 : ********* TS:9 *********
+2023-11-21 16:06:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:06:46 : 	bert test Pass
+2023-11-21 16:06:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:06:58 : ********* TS:10 *********
+2023-11-21 16:07:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:07:22 : 	bert test Pass
+2023-11-21 16:07:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:07:33 : ********* TS:11 *********
+2023-11-21 16:07:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:07:57 : 	bert test Pass
+2023-11-21 16:07:57 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:08:09 : ********* TS:12 *********
+2023-11-21 16:08:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:08:34 : 	bert test Pass
+2023-11-21 16:08:34 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:09:11 : Check setup status end 
+2023-11-21 16:09:50 : ---test end---
+2023-11-21 16:10:31 : ---------Round@     5-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 下午 04:10:31
+2023-11-21 16:12:59 : Check setup status start 
+2023-11-21 16:12:59 : ********tone-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 16:13:49 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 16:15:05 : 		tone test pass "444--444--444--444"
+2023-11-21 16:16:21 : 		tone test pass "888--888--888--888"
+2023-11-21 16:17:36 : 		tone test pass "###--###--###--###"
+2023-11-21 16:18:02 : Check setup status end 
+2023-11-21 16:18:44 : ---test end---
+2023-11-21 16:21:14 : Check setup status start 
+2023-11-21 16:21:14 : ********tone-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 16:22:04 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 16:23:21 : 		tone test pass "444--444--444--444"
+2023-11-21 16:24:38 : 		tone test pass "888--888--888--888"
+2023-11-21 16:25:53 : 		tone test pass "###--###--###--###"
+2023-11-21 16:26:17 : Check setup status end 
+2023-11-21 16:26:58 : ---test end---
+2023-11-21 16:29:28 : Check setup status start 
+2023-11-21 16:29:28 : ********tone-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 16:30:19 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 16:31:35 : 		tone test pass "444--444--444--444"
+2023-11-21 16:32:51 : 		tone test pass "888--888--888--888"
+2023-11-21 16:34:07 : 		tone test pass "###--###--###--###"
+2023-11-21 16:34:32 : Check setup status end 
+2023-11-21 16:35:11 : ---test end---
+2023-11-21 16:37:40 : Check setup status start 
+2023-11-21 16:37:40 : ********tone-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 16:38:29 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 16:39:42 : 		tone test pass "444--444--444--444"
+2023-11-21 16:40:55 : 		tone test pass "888--888--888--888"
+2023-11-21 16:42:10 : 		tone test pass "###--###--###--###"
+2023-11-21 16:42:34 : Check setup status end 
+2023-11-21 16:43:11 : ---test end---
+2023-11-21 16:43:49 : ---------Round@     6-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 下午 04:43:49
+2023-11-21 16:46:10 : Check setup status start 
+2023-11-21 16:46:10 : ********ring-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 16:46:34 : ********* TS:1 *********
+2023-11-21 16:46:40 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:47:27 : ********* TS:2 *********
+2023-11-21 16:47:33 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:48:18 : ********* TS:3 *********
+2023-11-21 16:48:25 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:49:10 : ********* TS:4 *********
+2023-11-21 16:49:17 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:50:02 : ********* TS:5 *********
+2023-11-21 16:50:08 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:50:53 : ********* TS:6 *********
+2023-11-21 16:51:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:51:45 : ********* TS:7 *********
+2023-11-21 16:51:52 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:52:37 : ********* TS:8 *********
+2023-11-21 16:52:43 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:53:31 : ********* TS:9 *********
+2023-11-21 16:53:37 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:54:23 : ********* TS:10 *********
+2023-11-21 16:54:30 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:55:14 : ********* TS:11 *********
+2023-11-21 16:55:21 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:56:06 : ********* TS:12 *********
+2023-11-21 16:56:12 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 16:56:35 : ********bert********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 16:56:57 : ********* TS:1 *********
+2023-11-21 16:57:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:57:22 : 	bert test Pass
+2023-11-21 16:57:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:57:33 : ********* TS:2 *********
+2023-11-21 16:57:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:57:58 : 	bert test Pass
+2023-11-21 16:57:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:58:09 : ********* TS:3 *********
+2023-11-21 16:58:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:58:33 : 	bert test Pass
+2023-11-21 16:58:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:58:44 : ********* TS:4 *********
+2023-11-21 16:59:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:59:09 : 	bert test Pass
+2023-11-21 16:59:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:59:20 : ********* TS:5 *********
+2023-11-21 16:59:36 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 16:59:45 : 	bert test Pass
+2023-11-21 16:59:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 16:59:56 : ********* TS:6 *********
+2023-11-21 17:00:12 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:00:20 : 	bert test Pass
+2023-11-21 17:00:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:00:32 : ********* TS:7 *********
+2023-11-21 17:00:47 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:00:55 : 	bert test Pass
+2023-11-21 17:00:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:01:06 : ********* TS:8 *********
+2023-11-21 17:01:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:01:29 : 	bert test Pass
+2023-11-21 17:01:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:01:41 : ********* TS:9 *********
+2023-11-21 17:01:57 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:02:05 : 	bert test Pass
+2023-11-21 17:02:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:02:16 : ********* TS:10 *********
+2023-11-21 17:02:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:02:40 : 	bert test Pass
+2023-11-21 17:02:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:02:51 : ********* TS:11 *********
+2023-11-21 17:03:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:03:16 : 	bert test Pass
+2023-11-21 17:03:16 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:03:28 : ********* TS:12 *********
+2023-11-21 17:03:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:03:52 : 	bert test Pass
+2023-11-21 17:03:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:04:24 : Check setup status end 
+2023-11-21 17:05:00 : ---test end---
+2023-11-21 17:07:19 : Check setup status start 
+2023-11-21 17:07:19 : ********ring-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 17:07:41 : ********* TS:1 *********
+2023-11-21 17:07:48 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:08:33 : ********* TS:2 *********
+2023-11-21 17:08:39 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:09:25 : ********* TS:3 *********
+2023-11-21 17:09:32 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:10:17 : ********* TS:4 *********
+2023-11-21 17:10:24 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:11:10 : ********* TS:5 *********
+2023-11-21 17:11:16 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:12:01 : ********* TS:6 *********
+2023-11-21 17:12:07 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:12:52 : ********* TS:7 *********
+2023-11-21 17:12:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:13:45 : ********* TS:8 *********
+2023-11-21 17:13:52 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:14:40 : ********* TS:9 *********
+2023-11-21 17:14:46 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:15:31 : ********* TS:10 *********
+2023-11-21 17:15:38 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:16:24 : ********* TS:11 *********
+2023-11-21 17:16:31 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:17:17 : ********* TS:12 *********
+2023-11-21 17:17:23 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:17:46 : ********bert********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 17:18:08 : ********* TS:1 *********
+2023-11-21 17:18:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:18:32 : 	bert test Pass
+2023-11-21 17:18:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:18:43 : ********* TS:2 *********
+2023-11-21 17:18:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:19:07 : 	bert test Pass
+2023-11-21 17:19:07 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:19:18 : ********* TS:3 *********
+2023-11-21 17:19:34 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:19:42 : 	bert test Pass
+2023-11-21 17:19:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:19:53 : ********* TS:4 *********
+2023-11-21 17:20:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:20:17 : 	bert test Pass
+2023-11-21 17:20:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:20:28 : ********* TS:5 *********
+2023-11-21 17:20:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:20:52 : 	bert test Pass
+2023-11-21 17:20:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:21:03 : ********* TS:6 *********
+2023-11-21 17:21:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:21:28 : 	bert test Pass
+2023-11-21 17:21:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:21:39 : ********* TS:7 *********
+2023-11-21 17:21:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:22:03 : 	bert test Pass
+2023-11-21 17:22:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:22:14 : ********* TS:8 *********
+2023-11-21 17:22:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:22:39 : 	bert test Pass
+2023-11-21 17:22:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:22:50 : ********* TS:9 *********
+2023-11-21 17:23:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:23:14 : 	bert test Pass
+2023-11-21 17:23:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:23:25 : ********* TS:10 *********
+2023-11-21 17:23:41 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:23:49 : 	bert test Pass
+2023-11-21 17:23:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:24:01 : ********* TS:11 *********
+2023-11-21 17:24:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:24:24 : 	bert test Pass
+2023-11-21 17:24:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:24:36 : ********* TS:12 *********
+2023-11-21 17:24:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:25:00 : 	bert test Pass
+2023-11-21 17:25:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:25:34 : Check setup status end 
+2023-11-21 17:26:13 : ---test end---
+2023-11-21 17:28:34 : Check setup status start 
+2023-11-21 17:28:34 : ********ring-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 17:28:55 : ********* TS:1 *********
+2023-11-21 17:29:01 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:29:48 : ********* TS:2 *********
+2023-11-21 17:29:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:30:40 : ********* TS:3 *********
+2023-11-21 17:30:47 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:31:34 : ********* TS:4 *********
+2023-11-21 17:31:40 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:32:27 : ********* TS:5 *********
+2023-11-21 17:32:33 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:33:20 : ********* TS:6 *********
+2023-11-21 17:33:27 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:34:13 : ********* TS:7 *********
+2023-11-21 17:34:19 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:35:06 : ********* TS:8 *********
+2023-11-21 17:35:12 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:35:58 : ********* TS:9 *********
+2023-11-21 17:36:05 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:36:50 : ********* TS:10 *********
+2023-11-21 17:36:56 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:37:44 : ********* TS:11 *********
+2023-11-21 17:37:50 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:38:36 : ********* TS:12 *********
+2023-11-21 17:38:43 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:39:06 : ********bert********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 17:39:29 : ********* TS:1 *********
+2023-11-21 17:39:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:39:53 : 	bert test Pass
+2023-11-21 17:39:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:40:05 : ********* TS:2 *********
+2023-11-21 17:40:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:40:28 : 	bert test Pass
+2023-11-21 17:40:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:40:39 : ********* TS:3 *********
+2023-11-21 17:40:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:41:03 : 	bert test Pass
+2023-11-21 17:41:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:41:14 : ********* TS:4 *********
+2023-11-21 17:41:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:41:38 : 	bert test Pass
+2023-11-21 17:41:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:41:49 : ********* TS:5 *********
+2023-11-21 17:42:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:42:13 : 	bert test Pass
+2023-11-21 17:42:13 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:42:24 : ********* TS:6 *********
+2023-11-21 17:42:41 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:42:49 : 	bert test Pass
+2023-11-21 17:42:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:43:00 : ********* TS:7 *********
+2023-11-21 17:43:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:43:25 : 	bert test Pass
+2023-11-21 17:43:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:43:36 : ********* TS:8 *********
+2023-11-21 17:43:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:44:00 : 	bert test Pass
+2023-11-21 17:44:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:44:11 : ********* TS:9 *********
+2023-11-21 17:44:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:44:35 : 	bert test Pass
+2023-11-21 17:44:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:44:46 : ********* TS:10 *********
+2023-11-21 17:45:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:45:10 : 	bert test Pass
+2023-11-21 17:45:10 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:45:21 : ********* TS:11 *********
+2023-11-21 17:45:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:45:45 : 	bert test Pass
+2023-11-21 17:45:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:45:57 : ********* TS:12 *********
+2023-11-21 17:46:12 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 17:46:20 : 	bert test Pass
+2023-11-21 17:46:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 17:46:53 : Check setup status end 
+2023-11-21 17:47:29 : ---test end---
+2023-11-21 17:49:48 : Check setup status start 
+2023-11-21 17:49:48 : ********ring-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 17:50:10 : ********* TS:1 *********
+2023-11-21 17:50:17 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:51:03 : ********* TS:2 *********
+2023-11-21 17:51:09 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:51:54 : ********* TS:3 *********
+2023-11-21 17:52:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:52:46 : ********* TS:4 *********
+2023-11-21 17:52:53 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:53:40 : ********* TS:5 *********
+2023-11-21 17:53:47 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:54:35 : ********* TS:6 *********
+2023-11-21 17:54:42 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:55:28 : ********* TS:7 *********
+2023-11-21 17:55:34 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:56:21 : ********* TS:8 *********
+2023-11-21 17:56:27 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:57:11 : ********* TS:9 *********
+2023-11-21 17:57:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:58:04 : ********* TS:10 *********
+2023-11-21 17:58:10 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:58:54 : ********* TS:11 *********
+2023-11-21 17:59:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 17:59:46 : ********* TS:12 *********
+2023-11-21 17:59:52 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 18:00:15 : ********bert********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 18:00:38 : ********* TS:1 *********
+2023-11-21 18:00:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:01:03 : 	bert test Pass
+2023-11-21 18:01:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:01:14 : ********* TS:2 *********
+2023-11-21 18:01:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:01:39 : 	bert test Pass
+2023-11-21 18:01:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:01:50 : ********* TS:3 *********
+2023-11-21 18:02:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:02:14 : 	bert test Pass
+2023-11-21 18:02:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:02:26 : ********* TS:4 *********
+2023-11-21 18:02:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:02:50 : 	bert test Pass
+2023-11-21 18:02:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:03:01 : ********* TS:5 *********
+2023-11-21 18:03:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:03:26 : 	bert test Pass
+2023-11-21 18:03:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:03:38 : ********* TS:6 *********
+2023-11-21 18:03:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:04:01 : 	bert test Pass
+2023-11-21 18:04:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:04:13 : ********* TS:7 *********
+2023-11-21 18:04:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:04:37 : 	bert test Pass
+2023-11-21 18:04:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:04:49 : ********* TS:8 *********
+2023-11-21 18:05:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:05:13 : 	bert test Pass
+2023-11-21 18:05:13 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:05:24 : ********* TS:9 *********
+2023-11-21 18:05:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:05:48 : 	bert test Pass
+2023-11-21 18:05:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:05:59 : ********* TS:10 *********
+2023-11-21 18:06:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:06:23 : 	bert test Pass
+2023-11-21 18:06:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:06:34 : ********* TS:11 *********
+2023-11-21 18:06:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:06:58 : 	bert test Pass
+2023-11-21 18:06:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:07:09 : ********* TS:12 *********
+2023-11-21 18:07:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:07:33 : 	bert test Pass
+2023-11-21 18:07:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:08:07 : Check setup status end 
+2023-11-21 18:08:43 : ---test end---
+2023-11-21 18:09:19 : ---------Round@     7-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 下午 06:09:19
+2023-11-21 18:11:39 : Check setup status start 
+2023-11-21 18:11:39 : ********tone-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 18:12:26 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 18:13:38 : 		tone test pass "444--444--444--444"
+2023-11-21 18:14:48 : 		tone test pass "888--888--888--888"
+2023-11-21 18:15:59 : 		tone test pass "###--###--###--###"
+2023-11-21 18:16:24 : Check setup status end 
+2023-11-21 18:17:04 : ---test end---
+2023-11-21 18:19:24 : Check setup status start 
+2023-11-21 18:19:24 : ********tone-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 18:20:12 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 18:21:25 : 		tone test pass "444--444--444--444"
+2023-11-21 18:22:40 : 		tone test pass "888--888--888--888"
+2023-11-21 18:23:53 : 		tone test pass "###--###--###--###"
+2023-11-21 18:24:15 : Check setup status end 
+2023-11-21 18:24:51 : ---test end---
+2023-11-21 18:27:12 : Check setup status start 
+2023-11-21 18:27:12 : ********tone-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 18:27:59 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 18:29:09 : 		tone test pass "444--444--444--444"
+2023-11-21 18:30:27 : 		tone test pass "888--888--888--888"
+2023-11-21 18:31:44 : 		tone test pass "###--###--###--###"
+2023-11-21 18:32:09 : Check setup status end 
+2023-11-21 18:32:53 : ---test end---
+2023-11-21 18:35:21 : Check setup status start 
+2023-11-21 18:35:21 : ********tone-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 18:36:08 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 18:37:23 : 		tone test pass "444--444--444--444"
+2023-11-21 18:38:38 : 		tone test pass "888--888--888--888"
+2023-11-21 18:39:55 : 		tone test pass "###--###--###--###"
+2023-11-21 18:40:20 : Check setup status end 
+2023-11-21 18:41:02 : ---test end---
+2023-11-21 18:41:46 : ---------Round@     8-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 下午 06:41:46
+2023-11-21 18:44:13 : Check setup status start 
+2023-11-21 18:44:13 : ********ring-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 18:44:36 : ********* TS:1 *********
+2023-11-21 18:44:43 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 18:45:32 : ********* TS:2 *********
+2023-11-21 18:45:39 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 18:46:31 : ********* TS:3 *********
+2023-11-21 18:46:38 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 18:47:28 : ********* TS:4 *********
+2023-11-21 18:47:35 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 18:48:25 : ********* TS:5 *********
+2023-11-21 18:48:31 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 18:49:19 : ********* TS:6 *********
+2023-11-21 18:49:26 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 18:50:15 : ********* TS:7 *********
+2023-11-21 18:50:22 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 18:51:12 : ********* TS:8 *********
+2023-11-21 18:51:19 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 18:52:11 : ********* TS:9 *********
+2023-11-21 18:52:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 18:53:09 : ********* TS:10 *********
+2023-11-21 18:53:16 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 18:54:07 : ********* TS:11 *********
+2023-11-21 18:54:14 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 18:55:06 : ********* TS:12 *********
+2023-11-21 18:55:13 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 18:55:39 : ********bert********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 18:56:03 : ********* TS:1 *********
+2023-11-21 18:56:19 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:56:28 : 	bert test Pass
+2023-11-21 18:56:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:56:39 : ********* TS:2 *********
+2023-11-21 18:56:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:57:04 : 	bert test Pass
+2023-11-21 18:57:04 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:57:15 : ********* TS:3 *********
+2023-11-21 18:57:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:57:40 : 	bert test Pass
+2023-11-21 18:57:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:57:52 : ********* TS:4 *********
+2023-11-21 18:58:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:58:18 : 	bert test Pass
+2023-11-21 18:58:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:58:29 : ********* TS:5 *********
+2023-11-21 18:58:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:58:55 : 	bert test Pass
+2023-11-21 18:58:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:59:06 : ********* TS:6 *********
+2023-11-21 18:59:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 18:59:32 : 	bert test Pass
+2023-11-21 18:59:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 18:59:43 : ********* TS:7 *********
+2023-11-21 19:00:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:00:08 : 	bert test Pass
+2023-11-21 19:00:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:00:19 : ********* TS:8 *********
+2023-11-21 19:00:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:00:44 : 	bert test Pass
+2023-11-21 19:00:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:00:56 : ********* TS:9 *********
+2023-11-21 19:01:12 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:01:21 : 	bert test Pass
+2023-11-21 19:01:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:01:32 : ********* TS:10 *********
+2023-11-21 19:01:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:01:57 : 	bert test Pass
+2023-11-21 19:01:57 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:02:09 : ********* TS:11 *********
+2023-11-21 19:02:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:02:35 : 	bert test Pass
+2023-11-21 19:02:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:02:46 : ********* TS:12 *********
+2023-11-21 19:03:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:03:12 : 	bert test Pass
+2023-11-21 19:03:12 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:03:50 : Check setup status end 
+2023-11-21 19:04:34 : ---test end---
+2023-11-21 19:07:02 : Check setup status start 
+2023-11-21 19:07:02 : ********ring-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 19:07:27 : ********* TS:1 *********
+2023-11-21 19:07:34 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:08:24 : ********* TS:2 *********
+2023-11-21 19:08:31 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:09:21 : ********* TS:3 *********
+2023-11-21 19:09:28 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:10:22 : ********* TS:4 *********
+2023-11-21 19:10:29 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:11:20 : ********* TS:5 *********
+2023-11-21 19:11:26 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:12:16 : ********* TS:6 *********
+2023-11-21 19:12:23 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:13:12 : ********* TS:7 *********
+2023-11-21 19:13:20 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:14:09 : ********* TS:8 *********
+2023-11-21 19:14:16 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:15:06 : ********* TS:9 *********
+2023-11-21 19:15:13 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:16:04 : ********* TS:10 *********
+2023-11-21 19:16:11 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:17:03 : ********* TS:11 *********
+2023-11-21 19:17:10 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:18:00 : ********* TS:12 *********
+2023-11-21 19:18:07 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:18:35 : ********bert********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 19:18:58 : ********* TS:1 *********
+2023-11-21 19:19:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:19:24 : 	bert test Pass
+2023-11-21 19:19:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:19:36 : ********* TS:2 *********
+2023-11-21 19:19:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:20:01 : 	bert test Pass
+2023-11-21 19:20:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:20:12 : ********* TS:3 *********
+2023-11-21 19:20:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:20:38 : 	bert test Pass
+2023-11-21 19:20:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:20:48 : ********* TS:4 *********
+2023-11-21 19:21:04 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:21:13 : 	bert test Pass
+2023-11-21 19:21:13 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:21:24 : ********* TS:5 *********
+2023-11-21 19:21:41 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:21:50 : 	bert test Pass
+2023-11-21 19:21:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:22:01 : ********* TS:6 *********
+2023-11-21 19:22:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:22:26 : 	bert test Pass
+2023-11-21 19:22:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:22:37 : ********* TS:7 *********
+2023-11-21 19:22:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:23:02 : 	bert test Pass
+2023-11-21 19:23:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:23:13 : ********* TS:8 *********
+2023-11-21 19:23:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:23:39 : 	bert test Pass
+2023-11-21 19:23:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:23:50 : ********* TS:9 *********
+2023-11-21 19:24:07 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:24:16 : 	bert test Pass
+2023-11-21 19:24:16 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:24:27 : ********* TS:10 *********
+2023-11-21 19:24:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:24:52 : 	bert test Pass
+2023-11-21 19:24:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:25:03 : ********* TS:11 *********
+2023-11-21 19:25:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:25:29 : 	bert test Pass
+2023-11-21 19:25:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:25:40 : ********* TS:12 *********
+2023-11-21 19:25:56 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:26:05 : 	bert test Pass
+2023-11-21 19:26:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:26:42 : Check setup status end 
+2023-11-21 19:27:23 : ---test end---
+2023-11-21 19:29:54 : Check setup status start 
+2023-11-21 19:29:54 : ********ring-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 19:30:19 : ********* TS:1 *********
+2023-11-21 19:30:26 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:31:15 : ********* TS:2 *********
+2023-11-21 19:31:22 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:32:13 : ********* TS:3 *********
+2023-11-21 19:32:21 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:33:12 : ********* TS:4 *********
+2023-11-21 19:33:19 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:34:10 : ********* TS:5 *********
+2023-11-21 19:34:17 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:35:10 : ********* TS:6 *********
+2023-11-21 19:35:16 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:36:06 : ********* TS:7 *********
+2023-11-21 19:36:13 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:37:02 : ********* TS:8 *********
+2023-11-21 19:37:09 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:38:00 : ********* TS:9 *********
+2023-11-21 19:38:07 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:38:58 : ********* TS:10 *********
+2023-11-21 19:39:05 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:39:57 : ********* TS:11 *********
+2023-11-21 19:40:04 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:40:56 : ********* TS:12 *********
+2023-11-21 19:41:03 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:41:29 : ********bert********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 19:41:53 : ********* TS:1 *********
+2023-11-21 19:42:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:42:18 : 	bert test Pass
+2023-11-21 19:42:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:42:30 : ********* TS:2 *********
+2023-11-21 19:42:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:42:55 : 	bert test Pass
+2023-11-21 19:42:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:43:06 : ********* TS:3 *********
+2023-11-21 19:43:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:43:33 : 	bert test Pass
+2023-11-21 19:43:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:43:44 : ********* TS:4 *********
+2023-11-21 19:44:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:44:09 : 	bert test Pass
+2023-11-21 19:44:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:44:20 : ********* TS:5 *********
+2023-11-21 19:44:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:44:45 : 	bert test Pass
+2023-11-21 19:44:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:44:56 : ********* TS:6 *********
+2023-11-21 19:45:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:45:23 : 	bert test Pass
+2023-11-21 19:45:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:45:35 : ********* TS:7 *********
+2023-11-21 19:45:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:46:00 : 	bert test Pass
+2023-11-21 19:46:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:46:11 : ********* TS:8 *********
+2023-11-21 19:46:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:46:37 : 	bert test Pass
+2023-11-21 19:46:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:46:48 : ********* TS:9 *********
+2023-11-21 19:47:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:47:14 : 	bert test Pass
+2023-11-21 19:47:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:47:25 : ********* TS:10 *********
+2023-11-21 19:47:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:47:50 : 	bert test Pass
+2023-11-21 19:47:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:48:02 : ********* TS:11 *********
+2023-11-21 19:48:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:48:27 : 	bert test Pass
+2023-11-21 19:48:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:48:38 : ********* TS:12 *********
+2023-11-21 19:48:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 19:49:03 : 	bert test Pass
+2023-11-21 19:49:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 19:49:40 : Check setup status end 
+2023-11-21 19:50:25 : ---test end---
+2023-11-21 19:52:57 : Check setup status start 
+2023-11-21 19:52:57 : ********ring-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 19:53:21 : ********* TS:1 *********
+2023-11-21 19:53:28 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:54:17 : ********* TS:2 *********
+2023-11-21 19:54:25 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:55:16 : ********* TS:3 *********
+2023-11-21 19:55:23 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:56:17 : ********* TS:4 *********
+2023-11-21 19:56:23 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:57:15 : ********* TS:5 *********
+2023-11-21 19:57:22 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:58:23 : ********* TS:6 *********
+2023-11-21 19:58:30 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 19:59:23 : ********* TS:7 *********
+2023-11-21 19:59:30 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 20:00:23 : ********* TS:8 *********
+2023-11-21 20:00:30 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 20:01:22 : ********* TS:9 *********
+2023-11-21 20:01:29 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 20:02:21 : ********* TS:10 *********
+2023-11-21 20:02:29 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 20:03:21 : ********* TS:11 *********
+2023-11-21 20:03:28 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 20:04:20 : ********* TS:12 *********
+2023-11-21 20:04:27 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 20:04:55 : ********bert********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 20:05:21 : ********* TS:1 *********
+2023-11-21 20:05:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 20:05:45 : 	bert test Pass
+2023-11-21 20:05:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 20:05:56 : ********* TS:2 *********
+2023-11-21 20:06:12 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 20:06:21 : 	bert test Pass
+2023-11-21 20:06:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 20:06:33 : ********* TS:3 *********
+2023-11-21 20:06:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 20:06:58 : 	bert test Pass
+2023-11-21 20:06:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 20:07:09 : ********* TS:4 *********
+2023-11-21 20:07:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 20:07:34 : 	bert test Pass
+2023-11-21 20:07:34 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 20:07:46 : ********* TS:5 *********
+2023-11-21 20:08:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 20:08:11 : 	bert test Pass
+2023-11-21 20:08:11 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 20:08:23 : ********* TS:6 *********
+2023-11-21 20:08:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 20:08:48 : 	bert test Pass
+2023-11-21 20:08:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 20:09:01 : ********* TS:7 *********
+2023-11-21 20:09:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 20:09:26 : 	bert test Pass
+2023-11-21 20:09:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 20:09:38 : ********* TS:8 *********
+2023-11-21 20:09:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 20:10:03 : 	bert test Pass
+2023-11-21 20:10:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 20:10:15 : ********* TS:9 *********
+2023-11-21 20:10:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 20:10:40 : 	bert test Pass
+2023-11-21 20:10:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 20:10:51 : ********* TS:10 *********
+2023-11-21 20:11:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 20:11:17 : 	bert test Pass
+2023-11-21 20:11:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 20:11:28 : ********* TS:11 *********
+2023-11-21 20:11:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 20:11:55 : 	bert test Pass
+2023-11-21 20:11:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 20:12:06 : ********* TS:12 *********
+2023-11-21 20:12:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 20:12:32 : 	bert test Pass
+2023-11-21 20:12:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 20:13:09 : Check setup status end 
+2023-11-21 20:13:51 : ---test end---
+2023-11-21 20:14:38 : ---------Round@     9-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 下午 08:14:38
+2023-11-21 20:17:11 : Check setup status start 
+2023-11-21 20:17:11 : ********tone-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 20:18:05 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 20:19:46 : 		tone test pass "444--444--444--444"
+2023-11-21 20:21:03 : 		tone test pass "888--888--888--888"
+2023-11-21 20:22:20 : 		tone test pass "###--###--###--###"
+2023-11-21 20:22:48 : Check setup status end 
+2023-11-21 20:23:30 : ---test end---
+2023-11-21 20:26:03 : Check setup status start 
+2023-11-21 20:26:03 : ********tone-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 20:26:55 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 20:28:16 : 		tone test pass "444--444--444--444"
+2023-11-21 20:29:32 : 		tone test pass "888--888--888--888"
+2023-11-21 20:30:51 : 		tone test pass "###--###--###--###"
+2023-11-21 20:31:17 : Check setup status end 
+2023-11-21 20:32:00 : ---test end---
+2023-11-21 20:34:29 : Check setup status start 
+2023-11-21 20:34:29 : ********tone-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 20:35:24 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 20:36:43 : 		tone test pass "444--444--444--444"
+2023-11-21 20:38:00 : 		tone test pass "888--888--888--888"
+2023-11-21 20:39:21 : 		tone test pass "###--###--###--###"
+2023-11-21 20:39:48 : Check setup status end 
+2023-11-21 20:40:30 : ---test end---
+2023-11-21 20:43:02 : Check setup status start 
+2023-11-21 20:43:02 : ********tone-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 20:43:56 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 20:45:15 : 		tone test pass "444--444--444--444"
+2023-11-21 20:46:30 : 		tone test pass "888--888--888--888"
+2023-11-21 20:47:47 : 		tone test pass "###--###--###--###"
+2023-11-21 20:48:15 : Check setup status end 
+2023-11-21 20:48:59 : ---test end---
+2023-11-21 20:49:44 : ---------Round@     10-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 下午 08:49:44
+2023-11-21 20:52:14 : Check setup status start 
+2023-11-21 20:52:14 : ********ring-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 20:52:41 : ********* TS:1 *********
+2023-11-21 20:52:48 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 20:53:42 : ********* TS:2 *********
+2023-11-21 20:53:49 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 20:54:42 : ********* TS:3 *********
+2023-11-21 20:54:50 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 20:55:42 : ********* TS:4 *********
+2023-11-21 20:55:49 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 20:56:43 : ********* TS:5 *********
+2023-11-21 20:56:50 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 20:57:44 : ********* TS:6 *********
+2023-11-21 20:57:51 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 20:58:44 : ********* TS:7 *********
+2023-11-21 20:58:51 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 20:59:39 : ********* TS:8 *********
+2023-11-21 20:59:46 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:00:35 : ********* TS:9 *********
+2023-11-21 21:00:43 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:01:37 : ********* TS:10 *********
+2023-11-21 21:01:44 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:02:36 : ********* TS:11 *********
+2023-11-21 21:02:43 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:03:33 : ********* TS:12 *********
+2023-11-21 21:03:39 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:04:06 : ********bert********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 21:04:33 : ********* TS:1 *********
+2023-11-21 21:04:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:04:59 : 	bert test Pass
+2023-11-21 21:04:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:05:11 : ********* TS:2 *********
+2023-11-21 21:05:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:05:35 : 	bert test Pass
+2023-11-21 21:05:36 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:05:46 : ********* TS:3 *********
+2023-11-21 21:06:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:06:11 : 	bert test Pass
+2023-11-21 21:06:11 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:06:22 : ********* TS:4 *********
+2023-11-21 21:06:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:06:47 : 	bert test Pass
+2023-11-21 21:06:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:06:58 : ********* TS:5 *********
+2023-11-21 21:07:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:07:25 : 	bert test Pass
+2023-11-21 21:07:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:07:36 : ********* TS:6 *********
+2023-11-21 21:07:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:08:02 : 	bert test Pass
+2023-11-21 21:08:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:08:14 : ********* TS:7 *********
+2023-11-21 21:08:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:08:39 : 	bert test Pass
+2023-11-21 21:08:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:08:51 : ********* TS:8 *********
+2023-11-21 21:09:07 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:09:17 : 	bert test Pass
+2023-11-21 21:09:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:09:28 : ********* TS:9 *********
+2023-11-21 21:09:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:09:54 : 	bert test Pass
+2023-11-21 21:09:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:10:05 : ********* TS:10 *********
+2023-11-21 21:10:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:10:30 : 	bert test Pass
+2023-11-21 21:10:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:10:42 : ********* TS:11 *********
+2023-11-21 21:10:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:11:07 : 	bert test Pass
+2023-11-21 21:11:07 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:11:19 : ********* TS:12 *********
+2023-11-21 21:11:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:11:44 : 	bert test Pass
+2023-11-21 21:11:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:12:21 : Check setup status end 
+2023-11-21 21:13:06 : ---test end---
+2023-11-21 21:15:38 : Check setup status start 
+2023-11-21 21:15:38 : ********ring-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 21:16:05 : ********* TS:1 *********
+2023-11-21 21:16:12 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:17:06 : ********* TS:2 *********
+2023-11-21 21:17:13 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:18:07 : ********* TS:3 *********
+2023-11-21 21:18:14 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:19:09 : ********* TS:4 *********
+2023-11-21 21:19:15 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:20:09 : ********* TS:5 *********
+2023-11-21 21:20:16 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:21:06 : ********* TS:6 *********
+2023-11-21 21:21:13 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:22:07 : ********* TS:7 *********
+2023-11-21 21:22:13 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:23:07 : ********* TS:8 *********
+2023-11-21 21:23:15 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:24:11 : ********* TS:9 *********
+2023-11-21 21:24:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:25:11 : ********* TS:10 *********
+2023-11-21 21:25:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:26:10 : ********* TS:11 *********
+2023-11-21 21:26:17 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:27:07 : ********* TS:12 *********
+2023-11-21 21:27:14 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:27:43 : ********bert********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 21:28:11 : ********* TS:1 *********
+2023-11-21 21:28:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:28:36 : 	bert test Pass
+2023-11-21 21:28:36 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:28:48 : ********* TS:2 *********
+2023-11-21 21:29:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:29:14 : 	bert test Pass
+2023-11-21 21:29:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:29:25 : ********* TS:3 *********
+2023-11-21 21:29:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:29:52 : 	bert test Pass
+2023-11-21 21:29:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:30:03 : ********* TS:4 *********
+2023-11-21 21:30:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:30:30 : 	bert test Pass
+2023-11-21 21:30:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:30:42 : ********* TS:5 *********
+2023-11-21 21:30:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:31:08 : 	bert test Pass
+2023-11-21 21:31:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:31:19 : ********* TS:6 *********
+2023-11-21 21:31:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:31:44 : 	bert test Pass
+2023-11-21 21:31:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:31:55 : ********* TS:7 *********
+2023-11-21 21:32:12 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:32:22 : 	bert test Pass
+2023-11-21 21:32:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:32:33 : ********* TS:8 *********
+2023-11-21 21:32:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:32:59 : 	bert test Pass
+2023-11-21 21:32:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:33:11 : ********* TS:9 *********
+2023-11-21 21:33:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:33:36 : 	bert test Pass
+2023-11-21 21:33:36 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:33:47 : ********* TS:10 *********
+2023-11-21 21:34:04 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:34:14 : 	bert test Pass
+2023-11-21 21:34:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:34:25 : ********* TS:11 *********
+2023-11-21 21:34:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:34:51 : 	bert test Pass
+2023-11-21 21:34:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:35:02 : ********* TS:12 *********
+2023-11-21 21:35:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:35:27 : 	bert test Pass
+2023-11-21 21:35:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:36:05 : Check setup status end 
+2023-11-21 21:36:51 : ---test end---
+2023-11-21 21:39:25 : Check setup status start 
+2023-11-21 21:39:25 : ********ring-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 21:39:48 : ********* TS:1 *********
+2023-11-21 21:39:55 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:40:45 : ********* TS:2 *********
+2023-11-21 21:40:52 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:41:47 : ********* TS:3 *********
+2023-11-21 21:41:55 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:42:47 : ********* TS:4 *********
+2023-11-21 21:42:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:43:47 : ********* TS:5 *********
+2023-11-21 21:43:53 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:44:43 : ********* TS:6 *********
+2023-11-21 21:44:51 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:45:47 : ********* TS:7 *********
+2023-11-21 21:45:53 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:46:48 : ********* TS:8 *********
+2023-11-21 21:46:55 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:47:48 : ********* TS:9 *********
+2023-11-21 21:47:56 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:48:50 : ********* TS:10 *********
+2023-11-21 21:48:57 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:49:53 : ********* TS:11 *********
+2023-11-21 21:50:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:50:53 : ********* TS:12 *********
+2023-11-21 21:51:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 21:51:26 : ********bert********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 21:51:51 : ********* TS:1 *********
+2023-11-21 21:52:07 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:52:16 : 	bert test Pass
+2023-11-21 21:52:16 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:52:27 : ********* TS:2 *********
+2023-11-21 21:52:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:52:53 : 	bert test Pass
+2023-11-21 21:52:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:53:05 : ********* TS:3 *********
+2023-11-21 21:53:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:53:32 : 	bert test Pass
+2023-11-21 21:53:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:53:43 : ********* TS:4 *********
+2023-11-21 21:53:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:54:09 : 	bert test Pass
+2023-11-21 21:54:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:54:20 : ********* TS:5 *********
+2023-11-21 21:54:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:54:46 : 	bert test Pass
+2023-11-21 21:54:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:54:58 : ********* TS:6 *********
+2023-11-21 21:55:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:55:24 : 	bert test Pass
+2023-11-21 21:55:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:55:35 : ********* TS:7 *********
+2023-11-21 21:55:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:56:00 : 	bert test Pass
+2023-11-21 21:56:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:56:12 : ********* TS:8 *********
+2023-11-21 21:56:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:56:38 : 	bert test Pass
+2023-11-21 21:56:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:56:49 : ********* TS:9 *********
+2023-11-21 21:57:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:57:15 : 	bert test Pass
+2023-11-21 21:57:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:57:27 : ********* TS:10 *********
+2023-11-21 21:57:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:57:52 : 	bert test Pass
+2023-11-21 21:57:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:58:03 : ********* TS:11 *********
+2023-11-21 21:58:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:58:28 : 	bert test Pass
+2023-11-21 21:58:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:58:40 : ********* TS:12 *********
+2023-11-21 21:58:57 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 21:59:05 : 	bert test Pass
+2023-11-21 21:59:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 21:59:43 : Check setup status end 
+2023-11-21 22:00:28 : ---test end---
+2023-11-21 22:03:01 : Check setup status start 
+2023-11-21 22:03:01 : ********ring-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 22:03:29 : ********* TS:1 *********
+2023-11-21 22:03:36 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 22:04:29 : ********* TS:2 *********
+2023-11-21 22:04:36 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 22:05:26 : ********* TS:3 *********
+2023-11-21 22:05:34 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 22:06:23 : ********* TS:4 *********
+2023-11-21 22:06:30 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 22:07:25 : ********* TS:5 *********
+2023-11-21 22:07:32 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 22:08:25 : ********* TS:6 *********
+2023-11-21 22:08:31 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 22:09:24 : ********* TS:7 *********
+2023-11-21 22:09:31 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 22:10:23 : ********* TS:8 *********
+2023-11-21 22:10:30 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 22:11:25 : ********* TS:9 *********
+2023-11-21 22:11:32 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 22:12:25 : ********* TS:10 *********
+2023-11-21 22:12:33 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 22:13:25 : ********* TS:11 *********
+2023-11-21 22:13:32 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 22:14:26 : ********* TS:12 *********
+2023-11-21 22:14:33 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 22:15:00 : ********bert********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 22:15:27 : ********* TS:1 *********
+2023-11-21 22:15:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 22:15:53 : 	bert test Pass
+2023-11-21 22:15:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 22:16:05 : ********* TS:2 *********
+2023-11-21 22:16:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 22:16:30 : 	bert test Pass
+2023-11-21 22:16:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 22:16:42 : ********* TS:3 *********
+2023-11-21 22:16:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 22:17:08 : 	bert test Pass
+2023-11-21 22:17:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 22:17:20 : ********* TS:4 *********
+2023-11-21 22:17:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 22:17:48 : 	bert test Pass
+2023-11-21 22:17:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 22:17:59 : ********* TS:5 *********
+2023-11-21 22:18:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 22:18:23 : 	bert test Pass
+2023-11-21 22:18:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 22:18:34 : ********* TS:6 *********
+2023-11-21 22:18:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 22:19:01 : 	bert test Pass
+2023-11-21 22:19:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 22:19:13 : ********* TS:7 *********
+2023-11-21 22:19:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 22:19:38 : 	bert test Pass
+2023-11-21 22:19:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 22:19:49 : ********* TS:8 *********
+2023-11-21 22:20:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 22:20:15 : 	bert test Pass
+2023-11-21 22:20:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 22:20:26 : ********* TS:9 *********
+2023-11-21 22:20:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 22:20:53 : 	bert test Pass
+2023-11-21 22:20:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 22:21:04 : ********* TS:10 *********
+2023-11-21 22:21:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 22:21:31 : 	bert test Pass
+2023-11-21 22:21:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 22:21:42 : ********* TS:11 *********
+2023-11-21 22:21:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 22:22:08 : 	bert test Pass
+2023-11-21 22:22:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 22:22:20 : ********* TS:12 *********
+2023-11-21 22:22:36 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 22:22:46 : 	bert test Pass
+2023-11-21 22:22:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 22:23:21 : Check setup status end 
+2023-11-21 22:24:06 : ---test end---
+2023-11-21 22:24:51 : ---------Round@     11-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 下午 10:24:51
+2023-11-21 22:27:24 : Check setup status start 
+2023-11-21 22:27:24 : ********tone-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 22:28:17 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 22:29:37 : 		tone test pass "444--444--444--444"
+2023-11-21 22:31:04 : 		tone test pass "888--888--888--888"
+2023-11-21 22:32:23 : 		tone test pass "###--###--###--###"
+2023-11-21 22:32:51 : Check setup status end 
+2023-11-21 22:33:35 : ---test end---
+2023-11-21 22:36:10 : Check setup status start 
+2023-11-21 22:36:10 : ********tone-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 22:37:02 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 22:38:23 : 		tone test pass "444--444--444--444"
+2023-11-21 22:39:45 : 		tone test pass "888--888--888--888"
+2023-11-21 22:41:01 : 		tone test pass "###--###--###--###"
+2023-11-21 22:41:28 : Check setup status end 
+2023-11-21 22:42:15 : ---test end---
+2023-11-21 22:44:46 : Check setup status start 
+2023-11-21 22:44:46 : ********tone-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 22:45:38 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 22:46:56 : 		tone test pass "444--444--444--444"
+2023-11-21 22:48:19 : 		tone test pass "888--888--888--888"
+2023-11-21 22:49:40 : 		tone test pass "###--###--###--###"
+2023-11-21 22:50:06 : Check setup status end 
+2023-11-21 22:50:53 : ---test end---
+2023-11-21 22:53:28 : Check setup status start 
+2023-11-21 22:53:28 : ********tone-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-21 22:54:22 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-21 22:55:41 : 		tone test pass "444--444--444--444"
+2023-11-21 22:57:00 : 		tone test pass "888--888--888--888"
+2023-11-21 22:58:21 : 		tone test pass "###--###--###--###"
+2023-11-21 22:58:46 : Check setup status end 
+2023-11-21 22:59:30 : ---test end---
+2023-11-21 23:00:14 : ---------Round@     12-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 下午 11:00:14
+2023-11-21 23:02:49 : Check setup status start 
+2023-11-21 23:02:49 : ********ring-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 23:03:15 : ********* TS:1 *********
+2023-11-21 23:03:22 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:04:11 : ********* TS:2 *********
+2023-11-21 23:04:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:05:11 : ********* TS:3 *********
+2023-11-21 23:05:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:06:13 : ********* TS:4 *********
+2023-11-21 23:06:20 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:07:12 : ********* TS:5 *********
+2023-11-21 23:07:19 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:08:11 : ********* TS:6 *********
+2023-11-21 23:08:19 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:09:14 : ********* TS:7 *********
+2023-11-21 23:09:21 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:10:17 : ********* TS:8 *********
+2023-11-21 23:10:24 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:11:20 : ********* TS:9 *********
+2023-11-21 23:11:27 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:12:22 : ********* TS:10 *********
+2023-11-21 23:12:28 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:13:19 : ********* TS:11 *********
+2023-11-21 23:13:27 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:14:16 : ********* TS:12 *********
+2023-11-21 23:14:23 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:14:51 : ********bert********* Aulaw:u-law Impedance: 900-ohm
+2023-11-21 23:15:19 : ********* TS:1 *********
+2023-11-21 23:15:36 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:15:45 : 	bert test Pass
+2023-11-21 23:15:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:15:57 : ********* TS:2 *********
+2023-11-21 23:16:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:16:23 : 	bert test Pass
+2023-11-21 23:16:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:16:35 : ********* TS:3 *********
+2023-11-21 23:16:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:17:00 : 	bert test Pass
+2023-11-21 23:17:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:17:11 : ********* TS:4 *********
+2023-11-21 23:17:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:17:38 : 	bert test Pass
+2023-11-21 23:17:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:17:49 : ********* TS:5 *********
+2023-11-21 23:18:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:18:14 : 	bert test Pass
+2023-11-21 23:18:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:18:26 : ********* TS:6 *********
+2023-11-21 23:18:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:18:52 : 	bert test Pass
+2023-11-21 23:18:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:19:03 : ********* TS:7 *********
+2023-11-21 23:19:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:19:30 : 	bert test Pass
+2023-11-21 23:19:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:19:42 : ********* TS:8 *********
+2023-11-21 23:19:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:20:09 : 	bert test Pass
+2023-11-21 23:20:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:20:20 : ********* TS:9 *********
+2023-11-21 23:20:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:20:46 : 	bert test Pass
+2023-11-21 23:20:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:20:57 : ********* TS:10 *********
+2023-11-21 23:21:13 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:21:22 : 	bert test Pass
+2023-11-21 23:21:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:21:33 : ********* TS:11 *********
+2023-11-21 23:21:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:21:59 : 	bert test Pass
+2023-11-21 23:21:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:22:10 : ********* TS:12 *********
+2023-11-21 23:22:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:22:37 : 	bert test Pass
+2023-11-21 23:22:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:23:16 : Check setup status end 
+2023-11-21 23:24:02 : ---test end---
+2023-11-21 23:26:34 : Check setup status start 
+2023-11-21 23:26:34 : ********ring-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 23:26:58 : ********* TS:1 *********
+2023-11-21 23:27:05 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:27:58 : ********* TS:2 *********
+2023-11-21 23:28:05 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:29:03 : ********* TS:3 *********
+2023-11-21 23:29:10 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:30:03 : ********* TS:4 *********
+2023-11-21 23:30:10 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:31:03 : ********* TS:5 *********
+2023-11-21 23:31:10 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:32:04 : ********* TS:6 *********
+2023-11-21 23:32:10 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:33:07 : ********* TS:7 *********
+2023-11-21 23:33:15 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:34:10 : ********* TS:8 *********
+2023-11-21 23:34:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:35:11 : ********* TS:9 *********
+2023-11-21 23:35:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:36:11 : ********* TS:10 *********
+2023-11-21 23:36:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:37:11 : ********* TS:11 *********
+2023-11-21 23:37:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:38:15 : ********* TS:12 *********
+2023-11-21 23:38:23 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:38:52 : ********bert********* Aulaw:u-law Impedance: 600-ohm
+2023-11-21 23:39:15 : ********* TS:1 *********
+2023-11-21 23:39:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:39:40 : 	bert test Pass
+2023-11-21 23:39:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:39:52 : ********* TS:2 *********
+2023-11-21 23:40:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:40:17 : 	bert test Pass
+2023-11-21 23:40:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:40:29 : ********* TS:3 *********
+2023-11-21 23:40:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:40:55 : 	bert test Pass
+2023-11-21 23:40:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:41:07 : ********* TS:4 *********
+2023-11-21 23:41:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:41:32 : 	bert test Pass
+2023-11-21 23:41:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:41:43 : ********* TS:5 *********
+2023-11-21 23:42:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:42:10 : 	bert test Pass
+2023-11-21 23:42:10 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:42:22 : ********* TS:6 *********
+2023-11-21 23:42:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:42:49 : 	bert test Pass
+2023-11-21 23:42:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:43:00 : ********* TS:7 *********
+2023-11-21 23:43:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:43:26 : 	bert test Pass
+2023-11-21 23:43:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:43:38 : ********* TS:8 *********
+2023-11-21 23:43:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:44:04 : 	bert test Pass
+2023-11-21 23:44:04 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:44:15 : ********* TS:9 *********
+2023-11-21 23:44:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:44:40 : 	bert test Pass
+2023-11-21 23:44:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:44:51 : ********* TS:10 *********
+2023-11-21 23:45:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:45:17 : 	bert test Pass
+2023-11-21 23:45:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:45:28 : ********* TS:11 *********
+2023-11-21 23:45:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:45:55 : 	bert test Pass
+2023-11-21 23:45:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:46:06 : ********* TS:12 *********
+2023-11-21 23:46:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 23:46:34 : 	bert test Pass
+2023-11-21 23:46:34 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-21 23:47:13 : Check setup status end 
+2023-11-21 23:47:55 : ---test end---
+2023-11-21 23:50:24 : Check setup status start 
+2023-11-21 23:50:24 : ********ring-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-21 23:50:52 : ********* TS:1 *********
+2023-11-21 23:50:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:51:53 : ********* TS:2 *********
+2023-11-21 23:52:01 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:52:56 : ********* TS:3 *********
+2023-11-21 23:53:03 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:53:51 : ********* TS:4 *********
+2023-11-21 23:53:57 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:54:47 : ********* TS:5 *********
+2023-11-21 23:54:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:55:48 : ********* TS:6 *********
+2023-11-21 23:55:56 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:56:50 : ********* TS:7 *********
+2023-11-21 23:56:57 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:57:55 : ********* TS:8 *********
+2023-11-21 23:58:02 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:58:55 : ********* TS:9 *********
+2023-11-21 23:59:02 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 23:59:58 : ********* TS:10 *********
+2023-11-22 00:00:05 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:00:57 : ********* TS:11 *********
+2023-11-22 00:01:03 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:01:58 : ********* TS:12 *********
+2023-11-22 00:02:04 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:02:31 : ********bert********* Aulaw:a-law Impedance: 900-ohm
+2023-11-22 00:02:57 : ********* TS:1 *********
+2023-11-22 00:03:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:03:24 : 	bert test Pass
+2023-11-22 00:03:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:03:35 : ********* TS:2 *********
+2023-11-22 00:03:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:04:02 : 	bert test Pass
+2023-11-22 00:04:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:04:13 : ********* TS:3 *********
+2023-11-22 00:04:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:04:40 : 	bert test Pass
+2023-11-22 00:04:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:04:51 : ********* TS:4 *********
+2023-11-22 00:05:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:05:17 : 	bert test Pass
+2023-11-22 00:05:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:05:29 : ********* TS:5 *********
+2023-11-22 00:05:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:05:55 : 	bert test Pass
+2023-11-22 00:05:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:06:06 : ********* TS:6 *********
+2023-11-22 00:06:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:06:33 : 	bert test Pass
+2023-11-22 00:06:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:06:45 : ********* TS:7 *********
+2023-11-22 00:07:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:07:11 : 	bert test Pass
+2023-11-22 00:07:11 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:07:23 : ********* TS:8 *********
+2023-11-22 00:07:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:07:49 : 	bert test Pass
+2023-11-22 00:07:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:08:00 : ********* TS:9 *********
+2023-11-22 00:08:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:08:25 : 	bert test Pass
+2023-11-22 00:08:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:08:36 : ********* TS:10 *********
+2023-11-22 00:08:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:09:03 : 	bert test Pass
+2023-11-22 00:09:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:09:14 : ********* TS:11 *********
+2023-11-22 00:09:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:09:42 : 	bert test Pass
+2023-11-22 00:09:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:09:54 : ********* TS:12 *********
+2023-11-22 00:10:11 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:10:20 : 	bert test Pass
+2023-11-22 00:10:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:10:59 : Check setup status end 
+2023-11-22 00:11:47 : ---test end---
+2023-11-22 00:14:16 : Check setup status start 
+2023-11-22 00:14:16 : ********ring-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-22 00:14:44 : ********* TS:1 *********
+2023-11-22 00:14:50 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:15:43 : ********* TS:2 *********
+2023-11-22 00:15:49 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:16:43 : ********* TS:3 *********
+2023-11-22 00:16:50 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:17:45 : ********* TS:4 *********
+2023-11-22 00:17:52 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:18:47 : ********* TS:5 *********
+2023-11-22 00:18:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:19:51 : ********* TS:6 *********
+2023-11-22 00:19:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:20:48 : ********* TS:7 *********
+2023-11-22 00:20:55 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:21:45 : ********* TS:8 *********
+2023-11-22 00:21:51 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:22:46 : ********* TS:9 *********
+2023-11-22 00:22:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:23:51 : ********* TS:10 *********
+2023-11-22 00:23:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:24:52 : ********* TS:11 *********
+2023-11-22 00:24:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:25:51 : ********* TS:12 *********
+2023-11-22 00:25:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 00:26:26 : ********bert********* Aulaw:a-law Impedance: 600-ohm
+2023-11-22 00:26:53 : ********* TS:1 *********
+2023-11-22 00:27:10 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:27:19 : 	bert test Pass
+2023-11-22 00:27:19 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:27:31 : ********* TS:2 *********
+2023-11-22 00:27:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:27:58 : 	bert test Pass
+2023-11-22 00:27:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:28:10 : ********* TS:3 *********
+2023-11-22 00:28:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:28:35 : 	bert test Pass
+2023-11-22 00:28:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:28:46 : ********* TS:4 *********
+2023-11-22 00:29:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:29:10 : 	bert test Pass
+2023-11-22 00:29:10 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:29:21 : ********* TS:5 *********
+2023-11-22 00:29:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:29:48 : 	bert test Pass
+2023-11-22 00:29:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:29:59 : ********* TS:6 *********
+2023-11-22 00:30:16 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:30:24 : 	bert test Pass
+2023-11-22 00:30:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:30:36 : ********* TS:7 *********
+2023-11-22 00:30:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:31:02 : 	bert test Pass
+2023-11-22 00:31:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:31:13 : ********* TS:8 *********
+2023-11-22 00:31:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:31:39 : 	bert test Pass
+2023-11-22 00:31:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:31:50 : ********* TS:9 *********
+2023-11-22 00:32:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:32:17 : 	bert test Pass
+2023-11-22 00:32:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:32:28 : ********* TS:10 *********
+2023-11-22 00:32:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:32:56 : 	bert test Pass
+2023-11-22 00:32:56 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:33:07 : ********* TS:11 *********
+2023-11-22 00:33:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:33:32 : 	bert test Pass
+2023-11-22 00:33:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:33:44 : ********* TS:12 *********
+2023-11-22 00:34:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 00:34:09 : 	bert test Pass
+2023-11-22 00:34:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 00:34:45 : Check setup status end 
+2023-11-22 00:35:25 : ---test end---
+2023-11-22 00:36:11 : ---------Round@     13-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/22 上午 12:36:11
+2023-11-22 00:38:44 : Check setup status start 
+2023-11-22 00:38:44 : ********tone-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-22 00:39:34 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 00:40:52 : 		tone test pass "444--444--444--444"
+2023-11-22 00:42:12 : 		tone test pass "888--888--888--888"
+2023-11-22 00:43:34 : 		tone test pass "###--###--###--###"
+2023-11-22 00:44:03 : Check setup status end 
+2023-11-22 00:44:49 : ---test end---
+2023-11-22 00:47:20 : Check setup status start 
+2023-11-22 00:47:20 : ********tone-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-22 00:48:10 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 00:49:27 : 		tone test pass "444--444--444--444"
+2023-11-22 00:50:47 : 		tone test pass "888--888--888--888"
+2023-11-22 00:52:07 : 		tone test pass "###--###--###--###"
+2023-11-22 00:52:33 : Check setup status end 
+2023-11-22 00:53:18 : ---test end---
+2023-11-22 00:55:49 : Check setup status start 
+2023-11-22 00:55:49 : ********tone-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-22 00:56:44 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 00:58:07 : 		tone test pass "444--444--444--444"
+2023-11-22 00:59:31 : 		tone test pass "888--888--888--888"
+2023-11-22 01:00:51 : 		tone test pass "###--###--###--###"
+2023-11-22 01:01:17 : Check setup status end 
+2023-11-22 01:01:59 : ---test end---
+2023-11-22 01:04:28 : Check setup status start 
+2023-11-22 01:04:28 : ********tone-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-22 01:05:23 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 01:06:45 : 		tone test pass "444--444--444--444"
+2023-11-22 01:08:09 : 		tone test pass "888--888--888--888"
+2023-11-22 01:09:34 : 		tone test pass "###--###--###--###"
+2023-11-22 01:10:02 : Check setup status end 
+2023-11-22 01:10:50 : ---test end---
+2023-11-22 01:11:37 : ---------Round@     14-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/22 上午 01:11:37
+2023-11-22 01:14:12 : Check setup status start 
+2023-11-22 01:14:12 : ********ring-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-22 01:14:36 : ********* TS:1 *********
+2023-11-22 01:14:42 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:15:31 : ********* TS:2 *********
+2023-11-22 01:15:38 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:16:30 : ********* TS:3 *********
+2023-11-22 01:16:37 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:17:37 : ********* TS:4 *********
+2023-11-22 01:17:44 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:18:37 : ********* TS:5 *********
+2023-11-22 01:18:44 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:19:40 : ********* TS:6 *********
+2023-11-22 01:19:48 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:20:41 : ********* TS:7 *********
+2023-11-22 01:20:48 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:21:45 : ********* TS:8 *********
+2023-11-22 01:21:52 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:22:47 : ********* TS:9 *********
+2023-11-22 01:22:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:23:48 : ********* TS:10 *********
+2023-11-22 01:23:55 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:24:48 : ********* TS:11 *********
+2023-11-22 01:24:55 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:25:52 : ********* TS:12 *********
+2023-11-22 01:25:59 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:26:30 : ********bert********* Aulaw:u-law Impedance: 900-ohm
+2023-11-22 01:26:59 : ********* TS:1 *********
+2023-11-22 01:27:16 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:27:25 : 	bert test Pass
+2023-11-22 01:27:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:27:36 : ********* TS:2 *********
+2023-11-22 01:27:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:28:01 : 	bert test Pass
+2023-11-22 01:28:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:28:13 : ********* TS:3 *********
+2023-11-22 01:28:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:28:39 : 	bert test Pass
+2023-11-22 01:28:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:28:50 : ********* TS:4 *********
+2023-11-22 01:29:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:29:15 : 	bert test Pass
+2023-11-22 01:29:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:29:26 : ********* TS:5 *********
+2023-11-22 01:29:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:29:53 : 	bert test Pass
+2023-11-22 01:29:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:30:04 : ********* TS:6 *********
+2023-11-22 01:30:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:30:29 : 	bert test Pass
+2023-11-22 01:30:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:30:40 : ********* TS:7 *********
+2023-11-22 01:30:57 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:31:07 : 	bert test Pass
+2023-11-22 01:31:07 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:31:18 : ********* TS:8 *********
+2023-11-22 01:31:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:31:46 : 	bert test Pass
+2023-11-22 01:31:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:31:57 : ********* TS:9 *********
+2023-11-22 01:32:13 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:32:23 : 	bert test Pass
+2023-11-22 01:32:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:32:35 : ********* TS:10 *********
+2023-11-22 01:32:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:33:02 : 	bert test Pass
+2023-11-22 01:33:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:33:13 : ********* TS:11 *********
+2023-11-22 01:33:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:33:39 : 	bert test Pass
+2023-11-22 01:33:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:33:51 : ********* TS:12 *********
+2023-11-22 01:34:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:34:17 : 	bert test Pass
+2023-11-22 01:34:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:34:56 : Check setup status end 
+2023-11-22 01:35:42 : ---test end---
+2023-11-22 01:38:12 : Check setup status start 
+2023-11-22 01:38:12 : ********ring-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-22 01:38:37 : ********* TS:1 *********
+2023-11-22 01:38:45 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:39:38 : ********* TS:2 *********
+2023-11-22 01:39:45 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:40:42 : ********* TS:3 *********
+2023-11-22 01:40:49 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:41:44 : ********* TS:4 *********
+2023-11-22 01:41:50 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:42:42 : ********* TS:5 *********
+2023-11-22 01:42:49 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:43:42 : ********* TS:6 *********
+2023-11-22 01:43:49 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:44:44 : ********* TS:7 *********
+2023-11-22 01:44:52 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:45:47 : ********* TS:8 *********
+2023-11-22 01:45:53 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:46:50 : ********* TS:9 *********
+2023-11-22 01:46:57 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:47:47 : ********* TS:10 *********
+2023-11-22 01:47:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:48:51 : ********* TS:11 *********
+2023-11-22 01:48:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:49:53 : ********* TS:12 *********
+2023-11-22 01:50:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 01:50:26 : ********bert********* Aulaw:u-law Impedance: 600-ohm
+2023-11-22 01:50:52 : ********* TS:1 *********
+2023-11-22 01:51:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:51:20 : 	bert test Pass
+2023-11-22 01:51:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:51:32 : ********* TS:2 *********
+2023-11-22 01:51:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:51:58 : 	bert test Pass
+2023-11-22 01:51:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:52:09 : ********* TS:3 *********
+2023-11-22 01:52:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:52:36 : 	bert test Pass
+2023-11-22 01:52:36 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:52:47 : ********* TS:4 *********
+2023-11-22 01:53:04 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:53:13 : 	bert test Pass
+2023-11-22 01:53:13 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:53:24 : ********* TS:5 *********
+2023-11-22 01:53:41 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:53:51 : 	bert test Pass
+2023-11-22 01:53:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:54:02 : ********* TS:6 *********
+2023-11-22 01:54:19 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:54:29 : 	bert test Pass
+2023-11-22 01:54:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:54:40 : ********* TS:7 *********
+2023-11-22 01:54:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:55:07 : 	bert test Pass
+2023-11-22 01:55:07 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:55:18 : ********* TS:8 *********
+2023-11-22 01:55:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:55:44 : 	bert test Pass
+2023-11-22 01:55:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:55:55 : ********* TS:9 *********
+2023-11-22 01:56:12 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:56:22 : 	bert test Pass
+2023-11-22 01:56:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:56:33 : ********* TS:10 *********
+2023-11-22 01:56:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:57:01 : 	bert test Pass
+2023-11-22 01:57:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:57:12 : ********* TS:11 *********
+2023-11-22 01:57:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:57:38 : 	bert test Pass
+2023-11-22 01:57:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:57:49 : ********* TS:12 *********
+2023-11-22 01:58:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 01:58:17 : 	bert test Pass
+2023-11-22 01:58:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 01:59:00 : Check setup status end 
+2023-11-22 01:59:49 : ---test end---
+2023-11-22 02:02:18 : Check setup status start 
+2023-11-22 02:02:18 : ********ring-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-22 02:02:45 : ********* TS:1 *********
+2023-11-22 02:02:52 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:03:48 : ********* TS:2 *********
+2023-11-22 02:03:56 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:04:49 : ********* TS:3 *********
+2023-11-22 02:04:56 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:05:48 : ********* TS:4 *********
+2023-11-22 02:05:55 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:06:45 : ********* TS:5 *********
+2023-11-22 02:06:53 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:07:44 : ********* TS:6 *********
+2023-11-22 02:07:51 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:08:47 : ********* TS:7 *********
+2023-11-22 02:08:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:09:47 : ********* TS:8 *********
+2023-11-22 02:09:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:10:48 : ********* TS:9 *********
+2023-11-22 02:10:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:11:45 : ********* TS:10 *********
+2023-11-22 02:11:52 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:12:50 : ********* TS:11 *********
+2023-11-22 02:12:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:13:51 : ********* TS:12 *********
+2023-11-22 02:13:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:14:25 : ********bert********* Aulaw:a-law Impedance: 900-ohm
+2023-11-22 02:14:49 : ********* TS:1 *********
+2023-11-22 02:15:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:15:16 : 	bert test Pass
+2023-11-22 02:15:16 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:15:27 : ********* TS:2 *********
+2023-11-22 02:15:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:15:52 : 	bert test Pass
+2023-11-22 02:15:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:16:04 : ********* TS:3 *********
+2023-11-22 02:16:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:16:31 : 	bert test Pass
+2023-11-22 02:16:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:16:42 : ********* TS:4 *********
+2023-11-22 02:17:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:17:09 : 	bert test Pass
+2023-11-22 02:17:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:17:21 : ********* TS:5 *********
+2023-11-22 02:17:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:17:48 : 	bert test Pass
+2023-11-22 02:17:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:18:00 : ********* TS:6 *********
+2023-11-22 02:18:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:18:27 : 	bert test Pass
+2023-11-22 02:18:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:18:38 : ********* TS:7 *********
+2023-11-22 02:18:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:19:03 : 	bert test Pass
+2023-11-22 02:19:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:19:14 : ********* TS:8 *********
+2023-11-22 02:19:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:19:40 : 	bert test Pass
+2023-11-22 02:19:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:19:51 : ********* TS:9 *********
+2023-11-22 02:20:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:20:16 : 	bert test Pass
+2023-11-22 02:20:16 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:20:27 : ********* TS:10 *********
+2023-11-22 02:20:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:20:53 : 	bert test Pass
+2023-11-22 02:20:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:21:04 : ********* TS:11 *********
+2023-11-22 02:21:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:21:30 : 	bert test Pass
+2023-11-22 02:21:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:21:41 : ********* TS:12 *********
+2023-11-22 02:21:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:22:08 : 	bert test Pass
+2023-11-22 02:22:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:22:46 : Check setup status end 
+2023-11-22 02:23:31 : ---test end---
+2023-11-22 02:26:04 : Check setup status start 
+2023-11-22 02:26:04 : ********ring-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-22 02:26:32 : ********* TS:1 *********
+2023-11-22 02:26:40 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:27:33 : ********* TS:2 *********
+2023-11-22 02:27:39 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:28:33 : ********* TS:3 *********
+2023-11-22 02:28:40 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:29:29 : ********* TS:4 *********
+2023-11-22 02:29:36 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:30:33 : ********* TS:5 *********
+2023-11-22 02:30:41 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:31:35 : ********* TS:6 *********
+2023-11-22 02:31:42 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:32:34 : ********* TS:7 *********
+2023-11-22 02:32:41 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:33:33 : ********* TS:8 *********
+2023-11-22 02:33:40 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:34:33 : ********* TS:9 *********
+2023-11-22 02:34:40 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:35:38 : ********* TS:10 *********
+2023-11-22 02:35:45 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:36:43 : ********* TS:11 *********
+2023-11-22 02:36:50 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:37:42 : ********* TS:12 *********
+2023-11-22 02:37:48 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 02:38:14 : ********bert********* Aulaw:a-law Impedance: 600-ohm
+2023-11-22 02:38:39 : ********* TS:1 *********
+2023-11-22 02:38:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:39:05 : 	bert test Pass
+2023-11-22 02:39:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:39:16 : ********* TS:2 *********
+2023-11-22 02:39:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:39:42 : 	bert test Pass
+2023-11-22 02:39:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:39:54 : ********* TS:3 *********
+2023-11-22 02:40:11 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:40:20 : 	bert test Pass
+2023-11-22 02:40:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:40:32 : ********* TS:4 *********
+2023-11-22 02:40:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:40:58 : 	bert test Pass
+2023-11-22 02:40:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:41:09 : ********* TS:5 *********
+2023-11-22 02:41:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:41:37 : 	bert test Pass
+2023-11-22 02:41:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:41:49 : ********* TS:6 *********
+2023-11-22 02:42:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:42:14 : 	bert test Pass
+2023-11-22 02:42:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:42:25 : ********* TS:7 *********
+2023-11-22 02:42:41 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:42:51 : 	bert test Pass
+2023-11-22 02:42:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:43:02 : ********* TS:8 *********
+2023-11-22 02:43:19 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:43:28 : 	bert test Pass
+2023-11-22 02:43:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:43:39 : ********* TS:9 *********
+2023-11-22 02:43:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:44:04 : 	bert test Pass
+2023-11-22 02:44:04 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:44:16 : ********* TS:10 *********
+2023-11-22 02:44:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:44:42 : 	bert test Pass
+2023-11-22 02:44:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:44:54 : ********* TS:11 *********
+2023-11-22 02:45:11 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:45:20 : 	bert test Pass
+2023-11-22 02:45:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:45:32 : ********* TS:12 *********
+2023-11-22 02:45:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 02:45:58 : 	bert test Pass
+2023-11-22 02:45:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 02:46:34 : Check setup status end 
+2023-11-22 02:47:18 : ---test end---
+2023-11-22 02:48:02 : ---------Round@     15-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/22 上午 02:48:02
+2023-11-22 02:50:36 : Check setup status start 
+2023-11-22 02:50:36 : ********tone-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-22 02:51:26 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 02:52:45 : 		tone test pass "444--444--444--444"
+2023-11-22 02:54:09 : 		tone test pass "888--888--888--888"
+2023-11-22 02:55:29 : 		tone test pass "###--###--###--###"
+2023-11-22 02:55:58 : Check setup status end 
+2023-11-22 02:56:44 : ---test end---
+2023-11-22 02:59:15 : Check setup status start 
+2023-11-22 02:59:15 : ********tone-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-22 03:00:06 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 03:01:29 : 		tone test pass "444--444--444--444"
+2023-11-22 03:02:53 : 		tone test pass "888--888--888--888"
+2023-11-22 03:04:13 : 		tone test pass "###--###--###--###"
+2023-11-22 03:04:41 : Check setup status end 
+2023-11-22 03:05:26 : ---test end---
+2023-11-22 03:08:00 : Check setup status start 
+2023-11-22 03:08:00 : ********tone-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-22 03:08:57 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 03:10:19 : 		tone test pass "444--444--444--444"
+2023-11-22 03:11:40 : 		tone test pass "888--888--888--888"
+2023-11-22 03:13:05 : 		tone test pass "###--###--###--###"
+2023-11-22 03:13:31 : Check setup status end 
+2023-11-22 03:14:15 : ---test end---
+2023-11-22 03:16:49 : Check setup status start 
+2023-11-22 03:16:49 : ********tone-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-22 03:17:47 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 03:19:08 : 		tone test pass "444--444--444--444"
+2023-11-22 03:20:29 : 		tone test pass "888--888--888--888"
+2023-11-22 03:21:50 : 		tone test pass "###--###--###--###"
+2023-11-22 03:22:19 : Check setup status end 
+2023-11-22 03:23:08 : ---test end---
+2023-11-22 03:23:56 : ---------Round@     16-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/22 上午 03:23:55
+2023-11-22 03:26:28 : Check setup status start 
+2023-11-22 03:26:28 : ********ring-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-22 03:26:55 : ********* TS:1 *********
+2023-11-22 03:27:02 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:27:53 : ********* TS:2 *********
+2023-11-22 03:28:01 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:28:51 : ********* TS:3 *********
+2023-11-22 03:28:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:29:52 : ********* TS:4 *********
+2023-11-22 03:29:59 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:30:55 : ********* TS:5 *********
+2023-11-22 03:31:02 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:31:55 : ********* TS:6 *********
+2023-11-22 03:32:02 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:32:55 : ********* TS:7 *********
+2023-11-22 03:33:01 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:33:53 : ********* TS:8 *********
+2023-11-22 03:34:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:34:52 : ********* TS:9 *********
+2023-11-22 03:35:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:35:58 : ********* TS:10 *********
+2023-11-22 03:36:04 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:37:01 : ********* TS:11 *********
+2023-11-22 03:37:07 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:37:59 : ********* TS:12 *********
+2023-11-22 03:38:06 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:38:33 : ********bert********* Aulaw:u-law Impedance: 900-ohm
+2023-11-22 03:39:01 : ********* TS:1 *********
+2023-11-22 03:39:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 03:39:27 : 	bert test Pass
+2023-11-22 03:39:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 03:39:38 : ********* TS:2 *********
+2023-11-22 03:39:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 03:40:05 : 	bert test Pass
+2023-11-22 03:40:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 03:40:17 : ********* TS:3 *********
+2023-11-22 03:40:34 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 03:40:45 : 	bert test Pass
+2023-11-22 03:40:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 03:40:57 : ********* TS:4 *********
+2023-11-22 03:41:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 03:41:22 : 	bert test Pass
+2023-11-22 03:41:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 03:41:33 : ********* TS:5 *********
+2023-11-22 03:41:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 03:41:59 : 	bert test Pass
+2023-11-22 03:41:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 03:42:10 : ********* TS:6 *********
+2023-11-22 03:42:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 03:42:38 : 	bert test Pass
+2023-11-22 03:42:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 03:42:49 : ********* TS:7 *********
+2023-11-22 03:43:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 03:43:16 : 	bert test Pass
+2023-11-22 03:43:16 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 03:43:27 : ********* TS:8 *********
+2023-11-22 03:43:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 03:43:54 : 	bert test Pass
+2023-11-22 03:43:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 03:44:05 : ********* TS:9 *********
+2023-11-22 03:44:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 03:44:33 : 	bert test Pass
+2023-11-22 03:44:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 03:44:44 : ********* TS:10 *********
+2023-11-22 03:45:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 03:45:11 : 	bert test Pass
+2023-11-22 03:45:11 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 03:45:22 : ********* TS:11 *********
+2023-11-22 03:45:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 03:45:48 : 	bert test Pass
+2023-11-22 03:45:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 03:46:00 : ********* TS:12 *********
+2023-11-22 03:46:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 03:46:26 : 	bert test Pass
+2023-11-22 03:46:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 03:47:02 : Check setup status end 
+2023-11-22 03:47:49 : ---test end---
+2023-11-22 03:50:23 : Check setup status start 
+2023-11-22 03:50:23 : ********ring-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-22 03:50:49 : ********* TS:1 *********
+2023-11-22 03:50:57 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:51:48 : ********* TS:2 *********
+2023-11-22 03:51:55 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:52:49 : ********* TS:3 *********
+2023-11-22 03:52:56 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:53:50 : ********* TS:4 *********
+2023-11-22 03:53:57 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:54:49 : ********* TS:5 *********
+2023-11-22 03:54:56 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:55:50 : ********* TS:6 *********
+2023-11-22 03:55:57 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:56:50 : ********* TS:7 *********
+2023-11-22 03:56:57 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:57:53 : ********* TS:8 *********
+2023-11-22 03:58:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 03:58:58 : ********* TS:9 *********
+2023-11-22 03:59:06 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:00:00 : ********* TS:10 *********
+2023-11-22 04:00:07 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:01:00 : ********* TS:11 *********
+2023-11-22 04:01:07 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:01:58 : ********* TS:12 *********
+2023-11-22 04:02:05 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:02:33 : ********bert********* Aulaw:u-law Impedance: 600-ohm
+2023-11-22 04:03:02 : ********* TS:1 *********
+2023-11-22 04:03:19 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:03:30 : 	bert test Pass
+2023-11-22 04:03:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:03:41 : ********* TS:2 *********
+2023-11-22 04:03:57 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:04:07 : 	bert test Pass
+2023-11-22 04:04:07 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:04:18 : ********* TS:3 *********
+2023-11-22 04:04:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:04:45 : 	bert test Pass
+2023-11-22 04:04:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:04:57 : ********* TS:4 *********
+2023-11-22 04:05:13 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:05:23 : 	bert test Pass
+2023-11-22 04:05:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:05:35 : ********* TS:5 *********
+2023-11-22 04:05:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:06:01 : 	bert test Pass
+2023-11-22 04:06:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:06:12 : ********* TS:6 *********
+2023-11-22 04:06:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:06:38 : 	bert test Pass
+2023-11-22 04:06:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:06:50 : ********* TS:7 *********
+2023-11-22 04:07:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:07:14 : 	bert test Pass
+2023-11-22 04:07:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:07:26 : ********* TS:8 *********
+2023-11-22 04:07:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:07:53 : 	bert test Pass
+2023-11-22 04:07:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:08:04 : ********* TS:9 *********
+2023-11-22 04:08:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:08:30 : 	bert test Pass
+2023-11-22 04:08:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:08:42 : ********* TS:10 *********
+2023-11-22 04:08:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:09:08 : 	bert test Pass
+2023-11-22 04:09:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:09:20 : ********* TS:11 *********
+2023-11-22 04:09:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:09:46 : 	bert test Pass
+2023-11-22 04:09:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:09:58 : ********* TS:12 *********
+2023-11-22 04:10:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:10:26 : 	bert test Pass
+2023-11-22 04:10:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:11:05 : Check setup status end 
+2023-11-22 04:11:57 : ---test end---
+2023-11-22 04:14:34 : Check setup status start 
+2023-11-22 04:14:34 : ********ring-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-22 04:14:58 : ********* TS:1 *********
+2023-11-22 04:15:05 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:15:59 : ********* TS:2 *********
+2023-11-22 04:16:05 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:17:01 : ********* TS:3 *********
+2023-11-22 04:17:09 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:18:07 : ********* TS:4 *********
+2023-11-22 04:18:13 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:19:09 : ********* TS:5 *********
+2023-11-22 04:19:17 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:20:11 : ********* TS:6 *********
+2023-11-22 04:20:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:21:14 : ********* TS:7 *********
+2023-11-22 04:21:22 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:22:19 : ********* TS:8 *********
+2023-11-22 04:22:26 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:23:19 : ********* TS:9 *********
+2023-11-22 04:23:26 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:24:21 : ********* TS:10 *********
+2023-11-22 04:24:28 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:25:20 : ********* TS:11 *********
+2023-11-22 04:25:26 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:26:24 : ********* TS:12 *********
+2023-11-22 04:26:32 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:26:58 : ********bert********* Aulaw:a-law Impedance: 900-ohm
+2023-11-22 04:27:27 : ********* TS:1 *********
+2023-11-22 04:27:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:27:54 : 	bert test Pass
+2023-11-22 04:27:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:28:05 : ********* TS:2 *********
+2023-11-22 04:28:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:28:31 : 	bert test Pass
+2023-11-22 04:28:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:28:42 : ********* TS:3 *********
+2023-11-22 04:28:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:29:09 : 	bert test Pass
+2023-11-22 04:29:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:29:21 : ********* TS:4 *********
+2023-11-22 04:29:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:29:46 : 	bert test Pass
+2023-11-22 04:29:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:29:57 : ********* TS:5 *********
+2023-11-22 04:30:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:30:24 : 	bert test Pass
+2023-11-22 04:30:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:30:36 : ********* TS:6 *********
+2023-11-22 04:30:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:31:01 : 	bert test Pass
+2023-11-22 04:31:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:31:13 : ********* TS:7 *********
+2023-11-22 04:31:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:31:39 : 	bert test Pass
+2023-11-22 04:31:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:31:50 : ********* TS:8 *********
+2023-11-22 04:32:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:32:15 : 	bert test Pass
+2023-11-22 04:32:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:32:26 : ********* TS:9 *********
+2023-11-22 04:32:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:32:55 : 	bert test Pass
+2023-11-22 04:32:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:33:06 : ********* TS:10 *********
+2023-11-22 04:33:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:33:33 : 	bert test Pass
+2023-11-22 04:33:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:33:45 : ********* TS:11 *********
+2023-11-22 04:34:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:34:12 : 	bert test Pass
+2023-11-22 04:34:12 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:34:24 : ********* TS:12 *********
+2023-11-22 04:34:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:34:51 : 	bert test Pass
+2023-11-22 04:34:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:35:30 : Check setup status end 
+2023-11-22 04:36:19 : ---test end---
+2023-11-22 04:38:52 : Check setup status start 
+2023-11-22 04:38:52 : ********ring-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-22 04:39:16 : ********* TS:1 *********
+2023-11-22 04:39:23 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:40:18 : ********* TS:2 *********
+2023-11-22 04:40:25 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:41:20 : ********* TS:3 *********
+2023-11-22 04:41:26 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:42:18 : ********* TS:4 *********
+2023-11-22 04:42:25 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:43:19 : ********* TS:5 *********
+2023-11-22 04:43:25 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:44:15 : ********* TS:6 *********
+2023-11-22 04:44:23 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:45:24 : ********* TS:7 *********
+2023-11-22 04:45:32 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:46:28 : ********* TS:8 *********
+2023-11-22 04:46:34 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:47:29 : ********* TS:9 *********
+2023-11-22 04:47:35 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:48:31 : ********* TS:10 *********
+2023-11-22 04:48:38 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:49:34 : ********* TS:11 *********
+2023-11-22 04:49:41 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:50:35 : ********* TS:12 *********
+2023-11-22 04:50:42 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 04:51:09 : ********bert********* Aulaw:a-law Impedance: 600-ohm
+2023-11-22 04:51:35 : ********* TS:1 *********
+2023-11-22 04:51:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:52:00 : 	bert test Pass
+2023-11-22 04:52:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:52:11 : ********* TS:2 *********
+2023-11-22 04:52:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:52:37 : 	bert test Pass
+2023-11-22 04:52:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:52:48 : ********* TS:3 *********
+2023-11-22 04:53:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:53:15 : 	bert test Pass
+2023-11-22 04:53:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:53:26 : ********* TS:4 *********
+2023-11-22 04:53:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:53:54 : 	bert test Pass
+2023-11-22 04:53:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:54:05 : ********* TS:5 *********
+2023-11-22 04:54:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:54:33 : 	bert test Pass
+2023-11-22 04:54:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:54:44 : ********* TS:6 *********
+2023-11-22 04:55:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:55:10 : 	bert test Pass
+2023-11-22 04:55:10 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:55:22 : ********* TS:7 *********
+2023-11-22 04:55:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:55:47 : 	bert test Pass
+2023-11-22 04:55:47 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:55:58 : ********* TS:8 *********
+2023-11-22 04:56:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:56:25 : 	bert test Pass
+2023-11-22 04:56:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:56:35 : ********* TS:9 *********
+2023-11-22 04:56:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:57:02 : 	bert test Pass
+2023-11-22 04:57:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:57:13 : ********* TS:10 *********
+2023-11-22 04:57:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:57:40 : 	bert test Pass
+2023-11-22 04:57:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:57:51 : ********* TS:11 *********
+2023-11-22 04:58:07 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:58:17 : 	bert test Pass
+2023-11-22 04:58:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:58:28 : ********* TS:12 *********
+2023-11-22 04:58:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 04:58:56 : 	bert test Pass
+2023-11-22 04:58:56 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 04:59:40 : Check setup status end 
+2023-11-22 05:00:25 : ---test end---
+2023-11-22 05:01:12 : ---------Round@     17-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/22 上午 05:01:11
+2023-11-22 05:03:43 : Check setup status start 
+2023-11-22 05:03:43 : ********tone-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-22 05:04:36 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 05:05:56 : 		tone test pass "444--444--444--444"
+2023-11-22 05:07:16 : 		tone test pass "888--888--888--888"
+2023-11-22 05:08:37 : 		tone test pass "###--###--###--###"
+2023-11-22 05:09:04 : Check setup status end 
+2023-11-22 05:09:55 : ---test end---
+2023-11-22 05:12:30 : Check setup status start 
+2023-11-22 05:12:30 : ********tone-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-22 05:13:25 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 05:14:44 : 		tone test pass "444--444--444--444"
+2023-11-22 05:16:05 : 		tone test pass "888--888--888--888"
+2023-11-22 05:17:26 : 		tone test pass "###--###--###--###"
+2023-11-22 05:17:53 : Check setup status end 
+2023-11-22 05:18:36 : ---test end---
+2023-11-22 05:21:08 : Check setup status start 
+2023-11-22 05:21:08 : ********tone-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-22 05:22:03 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 05:23:27 : 		tone test pass "444--444--444--444"
+2023-11-22 05:24:48 : 		tone test pass "888--888--888--888"
+2023-11-22 05:26:06 : 		tone test pass "###--###--###--###"
+2023-11-22 05:26:34 : Check setup status end 
+2023-11-22 05:27:21 : ---test end---
+2023-11-22 05:29:59 : Check setup status start 
+2023-11-22 05:29:59 : ********tone-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-22 05:30:51 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 05:32:10 : 		tone test pass "444--444--444--444"
+2023-11-22 05:33:27 : 		tone test pass "888--888--888--888"
+2023-11-22 05:34:46 : 		tone test pass "###--###--###--###"
+2023-11-22 05:35:16 : Check setup status end 
+2023-11-22 05:35:59 : ---test end---
+2023-11-22 05:36:47 : ---------Round@     18-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/22 上午 05:36:47
+2023-11-22 05:39:19 : Check setup status start 
+2023-11-22 05:39:19 : ********ring-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-22 05:39:44 : ********* TS:1 *********
+2023-11-22 05:39:50 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 05:40:46 : ********* TS:2 *********
+2023-11-22 05:40:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 05:41:48 : ********* TS:3 *********
+2023-11-22 05:41:55 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 05:42:46 : ********* TS:4 *********
+2023-11-22 05:42:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 05:43:45 : ********* TS:5 *********
+2023-11-22 05:43:51 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 05:44:44 : ********* TS:6 *********
+2023-11-22 05:44:51 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 05:45:46 : ********* TS:7 *********
+2023-11-22 05:45:53 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 05:46:48 : ********* TS:8 *********
+2023-11-22 05:46:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 05:47:47 : ********* TS:9 *********
+2023-11-22 05:47:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 05:48:48 : ********* TS:10 *********
+2023-11-22 05:48:55 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 05:49:53 : ********* TS:11 *********
+2023-11-22 05:50:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 05:50:56 : ********* TS:12 *********
+2023-11-22 05:51:03 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 05:51:31 : ********bert********* Aulaw:u-law Impedance: 900-ohm
+2023-11-22 05:51:58 : ********* TS:1 *********
+2023-11-22 05:52:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 05:52:26 : 	bert test Pass
+2023-11-22 05:52:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 05:52:37 : ********* TS:2 *********
+2023-11-22 05:52:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 05:53:03 : 	bert test Pass
+2023-11-22 05:53:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 05:53:14 : ********* TS:3 *********
+2023-11-22 05:53:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 05:53:42 : 	bert test Pass
+2023-11-22 05:53:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 05:53:54 : ********* TS:4 *********
+2023-11-22 05:54:12 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 05:54:22 : 	bert test Pass
+2023-11-22 05:54:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 05:54:33 : ********* TS:5 *********
+2023-11-22 05:54:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 05:55:00 : 	bert test Pass
+2023-11-22 05:55:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 05:55:11 : ********* TS:6 *********
+2023-11-22 05:55:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 05:55:37 : 	bert test Pass
+2023-11-22 05:55:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 05:55:48 : ********* TS:7 *********
+2023-11-22 05:56:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 05:56:15 : 	bert test Pass
+2023-11-22 05:56:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 05:56:27 : ********* TS:8 *********
+2023-11-22 05:56:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 05:56:54 : 	bert test Pass
+2023-11-22 05:56:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 05:57:05 : ********* TS:9 *********
+2023-11-22 05:57:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 05:57:31 : 	bert test Pass
+2023-11-22 05:57:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 05:57:42 : ********* TS:10 *********
+2023-11-22 05:57:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 05:58:08 : 	bert test Pass
+2023-11-22 05:58:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 05:58:19 : ********* TS:11 *********
+2023-11-22 05:58:36 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 05:58:47 : 	bert test Pass
+2023-11-22 05:58:47 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 05:58:58 : ********* TS:12 *********
+2023-11-22 05:59:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 05:59:23 : 	bert test Pass
+2023-11-22 05:59:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:00:00 : Check setup status end 
+2023-11-22 06:00:45 : ---test end---
+2023-11-22 06:03:18 : Check setup status start 
+2023-11-22 06:03:18 : ********ring-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-22 06:03:46 : ********* TS:1 *********
+2023-11-22 06:03:53 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:04:47 : ********* TS:2 *********
+2023-11-22 06:04:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:05:48 : ********* TS:3 *********
+2023-11-22 06:05:55 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:06:50 : ********* TS:4 *********
+2023-11-22 06:06:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:07:52 : ********* TS:5 *********
+2023-11-22 06:08:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:08:57 : ********* TS:6 *********
+2023-11-22 06:09:04 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:09:59 : ********* TS:7 *********
+2023-11-22 06:10:06 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:11:05 : ********* TS:8 *********
+2023-11-22 06:11:13 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:12:06 : ********* TS:9 *********
+2023-11-22 06:12:14 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:13:08 : ********* TS:10 *********
+2023-11-22 06:13:15 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:14:07 : ********* TS:11 *********
+2023-11-22 06:14:15 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:15:06 : ********* TS:12 *********
+2023-11-22 06:15:14 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:15:40 : ********bert********* Aulaw:u-law Impedance: 600-ohm
+2023-11-22 06:16:06 : ********* TS:1 *********
+2023-11-22 06:16:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:16:33 : 	bert test Pass
+2023-11-22 06:16:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:16:44 : ********* TS:2 *********
+2023-11-22 06:17:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:17:10 : 	bert test Pass
+2023-11-22 06:17:10 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:17:22 : ********* TS:3 *********
+2023-11-22 06:17:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:17:48 : 	bert test Pass
+2023-11-22 06:17:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:17:59 : ********* TS:4 *********
+2023-11-22 06:18:16 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:18:26 : 	bert test Pass
+2023-11-22 06:18:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:18:38 : ********* TS:5 *********
+2023-11-22 06:18:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:19:03 : 	bert test Pass
+2023-11-22 06:19:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:19:14 : ********* TS:6 *********
+2023-11-22 06:19:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:19:41 : 	bert test Pass
+2023-11-22 06:19:41 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:19:53 : ********* TS:7 *********
+2023-11-22 06:20:10 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:20:18 : 	bert test Pass
+2023-11-22 06:20:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:20:29 : ********* TS:8 *********
+2023-11-22 06:20:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:20:55 : 	bert test Pass
+2023-11-22 06:20:55 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:21:06 : ********* TS:9 *********
+2023-11-22 06:21:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:21:32 : 	bert test Pass
+2023-11-22 06:21:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:21:43 : ********* TS:10 *********
+2023-11-22 06:21:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:22:09 : 	bert test Pass
+2023-11-22 06:22:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:22:20 : ********* TS:11 *********
+2023-11-22 06:22:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:22:48 : 	bert test Pass
+2023-11-22 06:22:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:23:00 : ********* TS:12 *********
+2023-11-22 06:23:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:23:28 : 	bert test Pass
+2023-11-22 06:23:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:24:07 : Check setup status end 
+2023-11-22 06:24:57 : ---test end---
+2023-11-22 06:27:28 : Check setup status start 
+2023-11-22 06:27:28 : ********ring-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-22 06:27:53 : ********* TS:1 *********
+2023-11-22 06:27:59 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:28:52 : ********* TS:2 *********
+2023-11-22 06:28:59 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:29:51 : ********* TS:3 *********
+2023-11-22 06:29:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:30:53 : ********* TS:4 *********
+2023-11-22 06:30:59 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:31:53 : ********* TS:5 *********
+2023-11-22 06:32:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:32:54 : ********* TS:6 *********
+2023-11-22 06:33:01 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:33:54 : ********* TS:7 *********
+2023-11-22 06:34:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:34:53 : ********* TS:8 *********
+2023-11-22 06:35:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:35:54 : ********* TS:9 *********
+2023-11-22 06:36:01 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:36:57 : ********* TS:10 *********
+2023-11-22 06:37:04 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:38:00 : ********* TS:11 *********
+2023-11-22 06:38:07 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:39:00 : ********* TS:12 *********
+2023-11-22 06:39:07 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:39:34 : ********bert********* Aulaw:a-law Impedance: 900-ohm
+2023-11-22 06:39:58 : ********* TS:1 *********
+2023-11-22 06:40:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:40:25 : 	bert test Pass
+2023-11-22 06:40:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:40:38 : ********* TS:2 *********
+2023-11-22 06:40:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:41:02 : 	bert test Pass
+2023-11-22 06:41:02 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:41:14 : ********* TS:3 *********
+2023-11-22 06:41:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:41:42 : 	bert test Pass
+2023-11-22 06:41:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:41:53 : ********* TS:4 *********
+2023-11-22 06:42:10 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:42:18 : 	bert test Pass
+2023-11-22 06:42:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:42:29 : ********* TS:5 *********
+2023-11-22 06:42:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:42:56 : 	bert test Pass
+2023-11-22 06:42:56 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:43:07 : ********* TS:6 *********
+2023-11-22 06:43:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:43:34 : 	bert test Pass
+2023-11-22 06:43:34 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:43:45 : ********* TS:7 *********
+2023-11-22 06:44:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:44:13 : 	bert test Pass
+2023-11-22 06:44:13 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:44:24 : ********* TS:8 *********
+2023-11-22 06:44:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:44:50 : 	bert test Pass
+2023-11-22 06:44:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:45:02 : ********* TS:9 *********
+2023-11-22 06:45:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:45:29 : 	bert test Pass
+2023-11-22 06:45:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:45:40 : ********* TS:10 *********
+2023-11-22 06:45:57 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:46:05 : 	bert test Pass
+2023-11-22 06:46:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:46:16 : ********* TS:11 *********
+2023-11-22 06:46:34 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:46:43 : 	bert test Pass
+2023-11-22 06:46:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:46:54 : ********* TS:12 *********
+2023-11-22 06:47:10 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 06:47:19 : 	bert test Pass
+2023-11-22 06:47:19 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 06:47:58 : Check setup status end 
+2023-11-22 06:48:46 : ---test end---
+2023-11-22 06:51:21 : Check setup status start 
+2023-11-22 06:51:21 : ********ring-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-22 06:51:48 : ********* TS:1 *********
+2023-11-22 06:51:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:52:51 : ********* TS:2 *********
+2023-11-22 06:52:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:53:53 : ********* TS:3 *********
+2023-11-22 06:54:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:54:55 : ********* TS:4 *********
+2023-11-22 06:55:02 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:55:55 : ********* TS:5 *********
+2023-11-22 06:56:02 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:56:57 : ********* TS:6 *********
+2023-11-22 06:57:03 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:57:56 : ********* TS:7 *********
+2023-11-22 06:58:04 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 06:59:03 : ********* TS:8 *********
+2023-11-22 06:59:10 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 07:00:02 : ********* TS:9 *********
+2023-11-22 07:00:09 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 07:01:03 : ********* TS:10 *********
+2023-11-22 07:01:10 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 07:02:02 : ********* TS:11 *********
+2023-11-22 07:02:10 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 07:03:03 : ********* TS:12 *********
+2023-11-22 07:03:10 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 07:03:42 : ********bert********* Aulaw:a-law Impedance: 600-ohm
+2023-11-22 07:04:10 : ********* TS:1 *********
+2023-11-22 07:04:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 07:04:37 : 	bert test Pass
+2023-11-22 07:04:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 07:04:49 : ********* TS:2 *********
+2023-11-22 07:05:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 07:05:16 : 	bert test Pass
+2023-11-22 07:05:16 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 07:05:27 : ********* TS:3 *********
+2023-11-22 07:05:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 07:05:54 : 	bert test Pass
+2023-11-22 07:05:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 07:06:05 : ********* TS:4 *********
+2023-11-22 07:06:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 07:06:32 : 	bert test Pass
+2023-11-22 07:06:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 07:06:43 : ********* TS:5 *********
+2023-11-22 07:07:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 07:07:11 : 	bert test Pass
+2023-11-22 07:07:11 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 07:07:23 : ********* TS:6 *********
+2023-11-22 07:07:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 07:07:49 : 	bert test Pass
+2023-11-22 07:07:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 07:08:00 : ********* TS:7 *********
+2023-11-22 07:08:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 07:08:26 : 	bert test Pass
+2023-11-22 07:08:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 07:08:37 : ********* TS:8 *********
+2023-11-22 07:08:53 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 07:09:03 : 	bert test Pass
+2023-11-22 07:09:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 07:09:14 : ********* TS:9 *********
+2023-11-22 07:09:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 07:09:39 : 	bert test Pass
+2023-11-22 07:09:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 07:09:50 : ********* TS:10 *********
+2023-11-22 07:10:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 07:10:15 : 	bert test Pass
+2023-11-22 07:10:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 07:10:26 : ********* TS:11 *********
+2023-11-22 07:10:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 07:10:51 : 	bert test Pass
+2023-11-22 07:10:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 07:11:02 : ********* TS:12 *********
+2023-11-22 07:11:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 07:11:29 : 	bert test Pass
+2023-11-22 07:11:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 07:12:07 : Check setup status end 
+2023-11-22 07:12:53 : ---test end---
+2023-11-22 07:13:43 : ---------Round@     19-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/22 上午 07:13:43
+2023-11-22 07:16:20 : Check setup status start 
+2023-11-22 07:16:20 : ********tone-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-22 07:17:16 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 07:18:38 : 		tone test pass "444--444--444--444"
+2023-11-22 07:20:02 : 		tone test pass "888--888--888--888"
+2023-11-22 07:21:23 : 		tone test pass "###--###--###--###"
+2023-11-22 07:21:51 : Check setup status end 
+2023-11-22 07:22:35 : ---test end---
+2023-11-22 07:25:07 : Check setup status start 
+2023-11-22 07:25:08 : ********tone-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-22 07:26:01 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 07:27:26 : 		tone test pass "444--444--444--444"
+2023-11-22 07:28:42 : 		tone test pass "888--888--888--888"
+2023-11-22 07:30:07 : 		tone test pass "###--###--###--###"
+2023-11-22 07:30:34 : Check setup status end 
+2023-11-22 07:31:22 : ---test end---
+2023-11-22 07:34:03 : Check setup status start 
+2023-11-22 07:34:03 : ********tone-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-22 07:34:58 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 07:36:24 : 		tone test pass "444--444--444--444"
+2023-11-22 07:37:48 : 		tone test pass "888--888--888--888"
+2023-11-22 07:39:01 : 		tone test pass "###--###--###--###"
+2023-11-22 07:39:29 : Check setup status end 
+2023-11-22 07:40:13 : ---test end---
+2023-11-22 07:42:44 : Check setup status start 
+2023-11-22 07:42:44 : ********tone-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-22 07:43:39 : 		tone test pass "DDD--DDD--DDD--DDD"
+2023-11-22 07:45:01 : 		tone test pass "444--444--444--444"
+2023-11-22 07:46:19 : 		tone test pass "888--888--888--888"
+2023-11-22 07:47:42 : 		tone test pass "###--###--###--###"
+2023-11-22 07:48:11 : Check setup status end 
+2023-11-22 07:49:00 : ---test end---
+2023-11-22 07:49:44 : ---------Round@     20-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/22 上午 07:49:43
+2023-11-22 07:52:17 : Check setup status start 
+2023-11-22 07:52:17 : ********ring-test********* Aulaw:u-law Impedance: 900-ohm
+2023-11-22 07:52:41 : ********* TS:1 *********
+2023-11-22 07:52:48 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 07:53:39 : ********* TS:2 *********
+2023-11-22 07:53:46 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 07:54:43 : ********* TS:3 *********
+2023-11-22 07:54:50 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 07:55:47 : ********* TS:4 *********
+2023-11-22 07:55:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 07:56:50 : ********* TS:5 *********
+2023-11-22 07:56:57 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 07:57:50 : ********* TS:6 *********
+2023-11-22 07:57:57 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 07:58:51 : ********* TS:7 *********
+2023-11-22 07:58:57 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 07:59:55 : ********* TS:8 *********
+2023-11-22 08:00:02 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:01:09 : ********* TS:9 *********
+2023-11-22 08:01:16 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:02:11 : ********* TS:10 *********
+2023-11-22 08:02:17 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:03:15 : ********* TS:11 *********
+2023-11-22 08:03:22 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:04:16 : ********* TS:12 *********
+2023-11-22 08:04:23 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:04:53 : ********bert********* Aulaw:u-law Impedance: 900-ohm
+2023-11-22 08:05:19 : ********* TS:1 *********
+2023-11-22 08:05:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:05:45 : 	bert test Pass
+2023-11-22 08:05:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:05:57 : ********* TS:2 *********
+2023-11-22 08:06:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:06:23 : 	bert test Pass
+2023-11-22 08:06:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:06:34 : ********* TS:3 *********
+2023-11-22 08:06:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:07:01 : 	bert test Pass
+2023-11-22 08:07:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:07:12 : ********* TS:4 *********
+2023-11-22 08:07:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:07:39 : 	bert test Pass
+2023-11-22 08:07:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:07:51 : ********* TS:5 *********
+2023-11-22 08:08:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:08:18 : 	bert test Pass
+2023-11-22 08:08:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:08:30 : ********* TS:6 *********
+2023-11-22 08:08:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:08:56 : 	bert test Pass
+2023-11-22 08:08:56 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:09:07 : ********* TS:7 *********
+2023-11-22 08:09:23 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:09:33 : 	bert test Pass
+2023-11-22 08:09:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:09:44 : ********* TS:8 *********
+2023-11-22 08:10:00 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:10:11 : 	bert test Pass
+2023-11-22 08:10:11 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:10:22 : ********* TS:9 *********
+2023-11-22 08:10:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:10:49 : 	bert test Pass
+2023-11-22 08:10:49 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:11:00 : ********* TS:10 *********
+2023-11-22 08:11:16 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:11:27 : 	bert test Pass
+2023-11-22 08:11:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:11:38 : ********* TS:11 *********
+2023-11-22 08:11:56 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:12:05 : 	bert test Pass
+2023-11-22 08:12:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:12:16 : ********* TS:12 *********
+2023-11-22 08:12:33 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:12:42 : 	bert test Pass
+2023-11-22 08:12:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:13:24 : Check setup status end 
+2023-11-22 08:14:15 : ---test end---
+2023-11-22 08:16:59 : Check setup status start 
+2023-11-22 08:16:59 : ********ring-test********* Aulaw:u-law Impedance: 600-ohm
+2023-11-22 08:17:25 : ********* TS:1 *********
+2023-11-22 08:17:33 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:18:26 : ********* TS:2 *********
+2023-11-22 08:18:32 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:19:24 : ********* TS:3 *********
+2023-11-22 08:19:31 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:20:28 : ********* TS:4 *********
+2023-11-22 08:20:35 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:21:32 : ********* TS:5 *********
+2023-11-22 08:21:39 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:22:38 : ********* TS:6 *********
+2023-11-22 08:22:45 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:23:38 : ********* TS:7 *********
+2023-11-22 08:23:45 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:24:42 : ********* TS:8 *********
+2023-11-22 08:24:50 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:25:47 : ********* TS:9 *********
+2023-11-22 08:25:54 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:26:51 : ********* TS:10 *********
+2023-11-22 08:26:58 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:28:00 : ********* TS:11 *********
+2023-11-22 08:28:08 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:29:06 : ********* TS:12 *********
+2023-11-22 08:29:12 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:29:42 : ********bert********* Aulaw:u-law Impedance: 600-ohm
+2023-11-22 08:30:09 : ********* TS:1 *********
+2023-11-22 08:30:26 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:30:35 : 	bert test Pass
+2023-11-22 08:30:35 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:30:47 : ********* TS:2 *********
+2023-11-22 08:31:04 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:31:13 : 	bert test Pass
+2023-11-22 08:31:13 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:31:24 : ********* TS:3 *********
+2023-11-22 08:31:40 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:31:50 : 	bert test Pass
+2023-11-22 08:31:50 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:32:01 : ********* TS:4 *********
+2023-11-22 08:32:18 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:32:28 : 	bert test Pass
+2023-11-22 08:32:28 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:32:39 : ********* TS:5 *********
+2023-11-22 08:32:56 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:33:04 : 	bert test Pass
+2023-11-22 08:33:04 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:33:15 : ********* TS:6 *********
+2023-11-22 08:33:32 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:33:42 : 	bert test Pass
+2023-11-22 08:33:42 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:33:53 : ********* TS:7 *********
+2023-11-22 08:34:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:34:20 : 	bert test Pass
+2023-11-22 08:34:20 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:34:32 : ********* TS:8 *********
+2023-11-22 08:34:48 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:34:58 : 	bert test Pass
+2023-11-22 08:34:58 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:35:10 : ********* TS:9 *********
+2023-11-22 08:35:27 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:35:37 : 	bert test Pass
+2023-11-22 08:35:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:35:48 : ********* TS:10 *********
+2023-11-22 08:36:05 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:36:16 : 	bert test Pass
+2023-11-22 08:36:16 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:36:27 : ********* TS:11 *********
+2023-11-22 08:36:44 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:36:54 : 	bert test Pass
+2023-11-22 08:36:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:37:05 : ********* TS:12 *********
+2023-11-22 08:37:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:37:29 : 	bert test Pass
+2023-11-22 08:37:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:38:10 : Check setup status end 
+2023-11-22 08:39:01 : ---test end---
+2023-11-22 08:41:39 : Check setup status start 
+2023-11-22 08:41:39 : ********ring-test********* Aulaw:a-law Impedance: 900-ohm
+2023-11-22 08:42:06 : ********* TS:1 *********
+2023-11-22 08:42:14 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:43:11 : ********* TS:2 *********
+2023-11-22 08:43:19 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:44:17 : ********* TS:3 *********
+2023-11-22 08:44:23 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:45:11 : ********* TS:4 *********
+2023-11-22 08:45:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:46:11 : ********* TS:5 *********
+2023-11-22 08:46:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:47:18 : ********* TS:6 *********
+2023-11-22 08:47:25 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:48:30 : ********* TS:7 *********
+2023-11-22 08:48:37 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:49:56 : ********* TS:8 *********
+2023-11-22 08:50:04 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:51:08 : ********* TS:9 *********
+2023-11-22 08:51:16 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:52:19 : ********* TS:10 *********
+2023-11-22 08:53:01 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:54:09 : ********* TS:11 *********
+2023-11-22 08:54:16 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:55:19 : ********* TS:12 *********
+2023-11-22 08:55:26 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 08:55:51 : ********bert********* Aulaw:a-law Impedance: 900-ohm
+2023-11-22 08:56:14 : ********* TS:1 *********
+2023-11-22 08:56:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:56:39 : 	bert test Pass
+2023-11-22 08:56:39 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:56:51 : ********* TS:2 *********
+2023-11-22 08:57:08 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:57:16 : 	bert test Pass
+2023-11-22 08:57:16 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:57:28 : ********* TS:3 *********
+2023-11-22 08:57:45 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:57:54 : 	bert test Pass
+2023-11-22 08:57:54 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:58:05 : ********* TS:4 *********
+2023-11-22 08:58:22 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:58:31 : 	bert test Pass
+2023-11-22 08:58:31 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:58:43 : ********* TS:5 *********
+2023-11-22 08:58:59 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:59:09 : 	bert test Pass
+2023-11-22 08:59:09 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:59:20 : ********* TS:6 *********
+2023-11-22 08:59:37 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 08:59:46 : 	bert test Pass
+2023-11-22 08:59:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 08:59:57 : ********* TS:7 *********
+2023-11-22 09:00:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 09:00:24 : 	bert test Pass
+2023-11-22 09:00:24 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 09:00:35 : ********* TS:8 *********
+2023-11-22 09:00:51 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 09:01:01 : 	bert test Pass
+2023-11-22 09:01:01 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 09:01:13 : ********* TS:9 *********
+2023-11-22 09:01:29 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 09:01:38 : 	bert test Pass
+2023-11-22 09:01:38 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 09:01:49 : ********* TS:10 *********
+2023-11-22 09:02:06 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 09:02:15 : 	bert test Pass
+2023-11-22 09:02:15 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 09:02:26 : ********* TS:11 *********
+2023-11-22 09:02:43 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 09:02:52 : 	bert test Pass
+2023-11-22 09:02:52 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 09:03:04 : ********* TS:12 *********
+2023-11-22 09:03:21 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-22 09:03:30 : 	bert test Pass
+2023-11-22 09:03:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) end
+2023-11-22 09:04:08 : Check setup status end 
+2023-11-22 09:04:53 : ---test end---
+2023-11-22 09:07:26 : Check setup status start 
+2023-11-22 09:07:26 : ********ring-test********* Aulaw:a-law Impedance: 600-ohm
+2023-11-22 09:07:52 : ********* TS:1 *********
+2023-11-22 09:08:00 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 09:08:55 : ********* TS:2 *********
+2023-11-22 09:09:02 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 09:09:54 : ********* TS:3 *********
+2023-11-22 09:10:02 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 09:10:56 : ********* TS:4 *********
+2023-11-22 09:11:03 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 09:11:53 : ********* TS:5 *********
+2023-11-22 09:11:59 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 09:12:45 : ********* TS:6 *********
+2023-11-22 09:12:52 : 	fxopPortStatus ringing=yes,pass!
+2023-11-22 09:12:52 : ********bert*********

@@ -1,0 +1,19 @@
+;begin
+[title]
+mibfilename = mibs/LOOP-AM3440A-CCPB-2GE-V23.11.01.MIB
+firmware version = "V23.11.01(0004)"
+registerSlot = controller,ccNotification,
+
+[in product only]
+
+loopTelecom.loop-AM3440-CCPB-2GE-A.controller.commandControlTable.26.0 = ""
+loopTelecom.loop-AM3440-CCPB-2GE-A.controller.systemInformationTable.36.0 = INTEGER: 2
+loopTelecom.loop-AM3440-CCPB-2GE-A.controller.linkbackup.backupTable.8.0 = INTEGER: 17
+loopTelecom.loop-AM3440-CCPB-2GE-A.controller.linkbackup.backupTable.9.0 = INTEGER: 17
+loopTelecom.loop-AM3440-CCPB-2GE-A.controller.linkbackup.backupTable.10.0 = INTEGER: 17
+loopTelecom.loop-AM3440-CCPB-2GE-A.controller.linkbackup.backupTable.11.0 = INTEGER: 17
+loopTelecom.loop-AM3440-CCPB-2GE-A.controller.linkbackup.backupTable.12.0 = INTEGER: 17
+loopTelecom.loop-AM3440-CCPB-2GE-A.controller.ccbTimingSource.11.1.1.1 = INTEGER: 1
+loopTelecom.loop-AM3440-CCPB-2GE-A.controller.ccbTimingSource.11.1.2.1 = INTEGER: 1
+loopTelecom.loop-AM3440-CCPB-2GE-A.controller.ccbTimingSource.11.1.3.1 = INTEGER: 1
+loopTelecom.loop-AM3440-CCPB-2GE-A.controller.ccbTimingSource.11.1.4.1 = INTEGER: 1

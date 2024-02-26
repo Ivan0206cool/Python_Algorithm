@@ -1,0 +1,103 @@
+{
+    "Bert": {
+        "Total": 0,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "pass": 0,
+                "fail": 0,
+                "fail_item": []
+            }
+        }
+    },
+    "50ms": {
+        "Total": 0,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "pass": 0,
+                "fail": 0,
+                "fail_item": []
+            }
+        }
+    },
+    "Tone": {
+        "Total": 160,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "u-law_900-ohm": {
+                    "pass": 40,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "u-law_600-ohm": {
+                    "pass": 40,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "a-law_900-ohm": {
+                    "pass": 40,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "a-law_600-ohm": {
+                    "pass": 40,
+                    "fail": 0,
+                    "fail_item": []
+                }
+            }
+        }
+    },
+    "Voice Bert": {
+        "Total": 468,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "u-law_900-ohm": {
+                    "pass": 120,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "u-law_600-ohm": {
+                    "pass": 120,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "a-law_900-ohm": {
+                    "pass": 120,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "a-law_600-ohm": {
+                    "pass": 108,
+                    "fail": 0,
+                    "fail_item": []
+                }
+            }
+        }
+    },
+    "Ring": {
+        "Total": 354,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "u-law_900-ohm": {
+                    "pass": 0,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "u-law_600-ohm": {
+                    "pass": 120,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "a-law_900-ohm": {
+                    "pass": 120,
+                    "fail": 0,
+                    "fail_item": []
+                },
+                "a-law_600-ohm": {
+                    "pass": 114,
+                    "fail": 0,
+                    "fail_item": []
+                }
+            }
+        }
+    }
+}

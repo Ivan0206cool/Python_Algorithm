@@ -1,0 +1,1389 @@
+2023-11-21 09:46:23 : TEST begin
+2023-11-21 09:46:24 : DUT1 is LOOP CCPA-A ,slot#16
+2023-11-21 09:46:26 : DUT2 is LOOP CCPB_2ge-A ,slot#16
+2023-11-21 09:46:30 : DUT:1 ctrl : sw:"V12.16.01 (0012)" serial:213 hw: "Ver.C, FPGA1:V16(9), FPGA2:V14(10), CPLD:V3(2) "
+2023-11-21 09:46:30 : DUT:1 ctrl2: sw:"V12.16.01 (0012)" serial:7 hw: "Ver.C"
+2023-11-21 09:46:35 : DUT:1 slot: 10 QE1        ver:" (mismatch)(card type)"
+2023-11-21 09:46:40 : DUT:1 slot: 7  Ls_optical ver:"FPGA:F HW:B"
+2023-11-21 09:46:41 : DUT:1 slot: 6  FXS        ver:"V4.09.02 (0003) Ver.P FPGA:V8(10)"
+2023-11-21 09:46:43 : DUT:1 slot: 5  FXO        ver:"V3.05.01 (0069) HW Ver.H FPGA :V10(4)"
+2023-11-21 09:46:51 : DUT:1 slot: d  Fom        ver:"FPGA:J HW:B"
+2023-11-21 09:46:53 : DUT:1 slot: c  FE1        ver:"V4.03.04 (0010), HW: G, FPGA: 09"
+2023-11-21 09:46:54 : DUT:1 slot: b  Fom        ver:"FPGA:I HW:B"
+2023-11-21 09:47:00 : DUT:2 ctrl : sw:"V23.11.01 (0012)" serial:41 hw: "Ver.C, FPGA1:V16(10), FPGA2:V14(10), CPLD:V3(5) "
+2023-11-21 09:47:00 : DUT:2 ctrl2: sw:"V23.11.01 (0012)" serial:73 hw: "Ver.C"
+2023-11-21 09:47:05 : DUT:2 slot: 10 QE1        ver:" (mismatch)(card type)"
+2023-11-21 09:47:09 : DUT:2 slot: 8  Rs232_8    ver:"V1.08.01 (0001)"
+2023-11-21 09:47:10 : DUT:2 slot: 7  Tdmoe      ver:"V3.01.08 (0007) HW:Ver.E FPGA:6(1)"
+2023-11-21 09:47:12 : DUT:2 slot: 6  FXS        ver:"V4.09.02 (0003) Ver.P FPGA:V8(10)"
+2023-11-21 09:47:14 : DUT:2 slot: 5  FXO        ver:"V3.05.01 (0069) HW Ver.H FPGA :V10(4)"
+2023-11-21 09:47:16 : DUT:2 slot: 4  G703       ver:" (mismatch)(card type)"
+2023-11-21 09:47:28 : DUT:2 slot: a  FE1        ver:" (mismatch)(card type)"
+2023-11-21 09:47:37 : DUT 1 (AM3440_CCPA_pw_src_ip_set) 31.31.31.1 Working save:2
+2023-11-21 09:47:43 : DUT 2 (AM3440_CCPA_pw_src_ip_set) 31.31.31.2 Working save:2
+2023-11-21 09:47:43 : *****************************************************************
+2023-11-21 09:47:43 : *********************Begin of initialization*********************
+2023-11-21 09:47:43 : *****************************************************************
+2023-11-21 09:47:43 : ***************************************************************
+2023-11-21 09:47:43 : *********************End of initialization*********************
+2023-11-21 09:47:43 : ***************************************************************
+2023-11-21 09:47:43 : ---------Round@     1---------fxs/fxo     Begin
+2023-11-21 09:47:43 : DUT 1 $dut1_Fxs_slot:10
+2023-11-21 09:47:43 : DUT 1 $dut1_Fxo_slot:9
+2023-11-21 09:47:43 : DUT 2 $dut2_Fxs_slot:10
+2023-11-21 09:47:43 : DUT 2 $dut2_Fxo_slot:9
+2023-11-21 09:47:46 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:47:46 : DUT 1 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 09:47:49 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:47:49 : DUT 2 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 09:47:52 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:47:52 : DUT 1 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 09:47:55 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:47:55 : DUT 2 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 09:48:01 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:48:06 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:48:11 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:48:16 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:48:16 : 	TSI Mapping clear
+2023-11-21 09:48:16 : ---------Round@     1-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 09:48:16
+2023-11-21 09:48:16 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 09:48:16 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 09:48:17 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 09:48:17 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 09:48:48 : 	Scan voice ts 
+2023-11-21 09:48:48 : 	Scan voice ts:1 enable
+2023-11-21 09:48:49 : 	Scan voice ts:2 disable
+2023-11-21 09:48:49 : 	Scan voice ts:3 disable
+2023-11-21 09:48:50 : 	Scan voice ts:4 disable
+2023-11-21 09:48:51 : 	Scan voice ts:5 disable
+2023-11-21 09:48:51 : 	Scan voice ts:6 disable
+2023-11-21 09:48:52 : 	Scan voice ts:7 disable
+2023-11-21 09:48:52 : 	Scan voice ts:8 disable
+2023-11-21 09:48:53 : 	Scan voice ts:9 disable
+2023-11-21 09:48:54 : 	Scan voice ts:10 disable
+2023-11-21 09:48:55 : 	Scan voice ts:11 disable
+2023-11-21 09:48:55 : 	Scan voice ts:12 disable
+2023-11-21 09:48:55 : ******current test $Aulaw=u-law $Impedance=900-ohm $Gain_mode=default
+2023-11-21 09:49:00 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 09:49:05 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 09:49:08 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 31	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:49:11 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 31	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:49:14 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 32	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:49:17 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 32	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:49:19 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:49:20 : DUT 1 (AM3440_CCPA_pw_connect) bid:31 connect to ecid:13657
+2023-11-21 09:49:20 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 09:49:22 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:49:23 : DUT 2 (AM3440_CCPA_pw_connect) bid:31 connect to ecid:13657
+2023-11-21 09:49:23 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 09:49:26 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:49:26 : DUT 2 (AM3440_CCPA_pw_connect) bid:32 connect to ecid:13658
+2023-11-21 09:49:26 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 09:49:29 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:49:29 : DUT 1 (AM3440_CCPA_pw_connect) bid:32 connect to ecid:13658
+2023-11-21 09:49:29 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 09:50:30 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 09:50:30 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 09:50:30 : Check setup status start 
+2023-11-21 09:50:51 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 09:50:51 : 		Tone value set :D
+2023-11-21 09:50:52 : 		Tone Expected value:"DXX--XXX--XXX--XXX"
+2023-11-21 09:50:53 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 09:50:57 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 09:51:02 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 09:51:06 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 09:51:10 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 09:51:14 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 09:51:14 : 		tone test pass "DXX--XXX--XXX--XXX"
+2023-11-21 09:51:57 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 09:51:57 : 		Tone value set :n4
+2023-11-21 09:51:58 : 		Tone Expected value:"4XX--XXX--XXX--XXX"
+2023-11-21 09:51:59 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 09:52:03 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 09:52:07 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 09:52:12 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 09:52:16 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 09:52:20 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 09:52:20 : 		tone test pass "4XX--XXX--XXX--XXX"
+2023-11-21 09:53:02 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 09:53:02 : 		Tone value set :n8
+2023-11-21 09:53:03 : 		Tone Expected value:"8XX--XXX--XXX--XXX"
+2023-11-21 09:53:05 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 09:53:09 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 09:53:13 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 09:53:17 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 09:53:21 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 09:53:25 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 09:53:25 : 		tone test pass "8XX--XXX--XXX--XXX"
+2023-11-21 09:54:06 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 09:54:06 : 		Tone value set :pound
+2023-11-21 09:54:07 : 		Tone Expected value:"#XX--XXX--XXX--XXX"
+2023-11-21 09:54:08 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 09:54:13 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 09:54:17 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 09:54:21 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 09:54:25 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 09:54:29 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 09:54:29 : 		tone test pass "#XX--XXX--XXX--XXX"
+2023-11-21 09:54:51 : !!! reget !!! times:1   at 09:54:51
+2023-11-21 09:55:11 : !!! reget !!! times:2   at 09:55:11
+2023-11-21 09:55:31 : !!! reget !!! times:3   at 09:55:31
+2023-11-21 09:55:48 : Check setup status end 
+2023-11-21 09:55:51 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:55:51 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 31
+2023-11-21 09:55:54 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:55:54 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 31
+2023-11-21 09:55:57 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:55:57 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 32
+2023-11-21 09:56:00 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:56:00 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 32
+2023-11-21 09:56:05 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:56:10 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:56:15 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:56:20 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:56:20 : 	TSI Mapping clear
+2023-11-21 09:56:20 : ---test end---
+2023-11-21 09:56:20 : ---------Round@     1-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 09:56:20
+2023-11-21 09:56:20 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 09:56:20 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 09:56:21 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 09:56:22 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 09:56:52 : 	Scan voice ts 
+2023-11-21 09:56:53 : 	Scan voice ts:1 enable
+2023-11-21 09:56:54 : 	Scan voice ts:2 disable
+2023-11-21 09:56:55 : 	Scan voice ts:3 disable
+2023-11-21 09:56:55 : 	Scan voice ts:4 disable
+2023-11-21 09:56:56 : 	Scan voice ts:5 disable
+2023-11-21 09:56:56 : 	Scan voice ts:6 disable
+2023-11-21 09:56:57 : 	Scan voice ts:7 disable
+2023-11-21 09:56:58 : 	Scan voice ts:8 disable
+2023-11-21 09:56:58 : 	Scan voice ts:9 disable
+2023-11-21 09:56:59 : 	Scan voice ts:10 disable
+2023-11-21 09:57:00 : 	Scan voice ts:11 disable
+2023-11-21 09:57:00 : 	Scan voice ts:12 disable
+2023-11-21 09:57:00 : ******current test $Aulaw=u-law $Impedance=600-ohm $Gain_mode=default
+2023-11-21 09:57:05 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 09:57:10 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 09:57:14 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 31	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:57:16 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 31	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:57:19 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 32	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:57:22 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 32	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 09:57:25 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:57:25 : DUT 1 (AM3440_CCPA_pw_connect) bid:31 connect to ecid:13657
+2023-11-21 09:57:25 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 09:57:28 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:57:29 : DUT 2 (AM3440_CCPA_pw_connect) bid:31 connect to ecid:13657
+2023-11-21 09:57:29 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 09:57:31 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:57:32 : DUT 2 (AM3440_CCPA_pw_connect) bid:32 connect to ecid:13658
+2023-11-21 09:57:32 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 09:57:34 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 09:57:35 : DUT 1 (AM3440_CCPA_pw_connect) bid:32 connect to ecid:13658
+2023-11-21 09:57:35 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 09:58:35 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 09:58:36 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 09:58:36 : Check setup status start 
+2023-11-21 09:58:58 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 09:58:58 : 		Tone value set :D
+2023-11-21 09:58:59 : 		Tone Expected value:"DXX--XXX--XXX--XXX"
+2023-11-21 09:59:00 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 09:59:04 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 09:59:08 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 09:59:13 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 09:59:17 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 09:59:21 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 09:59:21 : 		tone test pass "DXX--XXX--XXX--XXX"
+2023-11-21 10:00:03 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:00:03 : 		Tone value set :n4
+2023-11-21 10:00:04 : 		Tone Expected value:"4XX--XXX--XXX--XXX"
+2023-11-21 10:00:05 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:00:10 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:00:14 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:00:18 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:00:22 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:00:27 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:00:27 : 		tone test pass "4XX--XXX--XXX--XXX"
+2023-11-21 10:01:08 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:01:08 : 		Tone value set :n8
+2023-11-21 10:01:09 : 		Tone Expected value:"8XX--XXX--XXX--XXX"
+2023-11-21 10:01:10 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:01:15 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:01:19 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:01:23 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:01:27 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:01:31 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:01:31 : 		tone test pass "8XX--XXX--XXX--XXX"
+2023-11-21 10:02:13 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:02:13 : 		Tone value set :pound
+2023-11-21 10:02:14 : 		Tone Expected value:"#XX--XXX--XXX--XXX"
+2023-11-21 10:02:15 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:02:19 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:02:24 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:02:28 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:02:32 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:02:36 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:02:36 : 		tone test pass "#XX--XXX--XXX--XXX"
+2023-11-21 10:02:58 : Check setup status end 
+2023-11-21 10:03:00 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:03:00 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 31
+2023-11-21 10:03:03 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:03:03 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 31
+2023-11-21 10:03:06 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:03:06 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 32
+2023-11-21 10:03:09 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:03:09 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 32
+2023-11-21 10:03:14 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:03:19 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:03:24 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:03:29 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:03:29 : 	TSI Mapping clear
+2023-11-21 10:03:29 : ---test end---
+2023-11-21 10:03:29 : ---------Round@     1-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 10:03:29
+2023-11-21 10:03:29 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:03:30 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:03:30 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:03:31 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:04:01 : 	Scan voice ts 
+2023-11-21 10:04:02 : 	Scan voice ts:1 enable
+2023-11-21 10:04:02 : 	Scan voice ts:2 disable
+2023-11-21 10:04:03 : 	Scan voice ts:3 disable
+2023-11-21 10:04:04 : 	Scan voice ts:4 disable
+2023-11-21 10:04:04 : 	Scan voice ts:5 disable
+2023-11-21 10:04:05 : 	Scan voice ts:6 disable
+2023-11-21 10:04:06 : 	Scan voice ts:7 disable
+2023-11-21 10:04:06 : 	Scan voice ts:8 disable
+2023-11-21 10:04:07 : 	Scan voice ts:9 disable
+2023-11-21 10:04:07 : 	Scan voice ts:10 disable
+2023-11-21 10:04:08 : 	Scan voice ts:11 disable
+2023-11-21 10:04:09 : 	Scan voice ts:12 disable
+2023-11-21 10:04:09 : ******current test $Aulaw=a-law $Impedance=900-ohm $Gain_mode=default
+2023-11-21 10:04:13 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:04:19 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:04:22 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 31	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:04:25 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 31	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:04:28 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 32	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:04:31 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 32	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:04:33 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:04:33 : DUT 1 (AM3440_CCPA_pw_connect) bid:31 connect to ecid:13657
+2023-11-21 10:04:33 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 10:04:36 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:04:37 : DUT 2 (AM3440_CCPA_pw_connect) bid:31 connect to ecid:13657
+2023-11-21 10:04:37 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 10:04:39 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:04:40 : DUT 2 (AM3440_CCPA_pw_connect) bid:32 connect to ecid:13658
+2023-11-21 10:04:40 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 10:04:42 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:04:43 : DUT 1 (AM3440_CCPA_pw_connect) bid:32 connect to ecid:13658
+2023-11-21 10:04:43 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 10:05:43 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:05:44 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:05:44 : Check setup status start 
+2023-11-21 10:06:05 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:06:05 : 		Tone value set :D
+2023-11-21 10:06:06 : 		Tone Expected value:"DXX--XXX--XXX--XXX"
+2023-11-21 10:06:07 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:06:12 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:06:16 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:06:21 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:06:25 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:06:29 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:06:29 : 		tone test pass "DXX--XXX--XXX--XXX"
+2023-11-21 10:07:11 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:07:11 : 		Tone value set :n4
+2023-11-21 10:07:12 : 		Tone Expected value:"4XX--XXX--XXX--XXX"
+2023-11-21 10:07:13 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:07:17 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:07:22 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:07:26 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:07:30 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:07:34 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:07:34 : 		tone test pass "4XX--XXX--XXX--XXX"
+2023-11-21 10:08:17 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:08:17 : 		Tone value set :n8
+2023-11-21 10:08:18 : 		Tone Expected value:"8XX--XXX--XXX--XXX"
+2023-11-21 10:08:19 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:08:23 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:08:27 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:08:31 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:08:36 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:08:40 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:08:40 : 		tone test pass "8XX--XXX--XXX--XXX"
+2023-11-21 10:09:22 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:09:22 : 		Tone value set :pound
+2023-11-21 10:09:23 : 		Tone Expected value:"#XX--XXX--XXX--XXX"
+2023-11-21 10:09:25 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:09:29 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:09:33 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:09:37 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:09:41 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:09:46 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:09:46 : 		tone test pass "#XX--XXX--XXX--XXX"
+2023-11-21 10:10:08 : Check setup status end 
+2023-11-21 10:10:10 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:10:10 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 31
+2023-11-21 10:10:14 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:10:14 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 31
+2023-11-21 10:10:17 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:10:17 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 32
+2023-11-21 10:10:20 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:10:20 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 32
+2023-11-21 10:10:25 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:10:30 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:10:35 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:10:40 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:10:40 : 	TSI Mapping clear
+2023-11-21 10:10:40 : ---test end---
+2023-11-21 10:10:40 : ---------Round@     1-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 10:10:40
+2023-11-21 10:10:40 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:10:41 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:10:41 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:10:42 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:11:13 : 	Scan voice ts 
+2023-11-21 10:11:13 : 	Scan voice ts:1 enable
+2023-11-21 10:11:14 : 	Scan voice ts:2 disable
+2023-11-21 10:11:14 : 	Scan voice ts:3 disable
+2023-11-21 10:11:15 : 	Scan voice ts:4 disable
+2023-11-21 10:11:16 : 	Scan voice ts:5 disable
+2023-11-21 10:11:16 : 	Scan voice ts:6 disable
+2023-11-21 10:11:17 : 	Scan voice ts:7 disable
+2023-11-21 10:11:17 : 	Scan voice ts:8 disable
+2023-11-21 10:11:18 : 	Scan voice ts:9 disable
+2023-11-21 10:11:19 : 	Scan voice ts:10 disable
+2023-11-21 10:11:19 : 	Scan voice ts:11 disable
+2023-11-21 10:11:20 : 	Scan voice ts:12 disable
+2023-11-21 10:11:20 : ******current test $Aulaw=a-law $Impedance=600-ohm $Gain_mode=default
+2023-11-21 10:11:25 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:11:29 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:11:32 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 31	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:11:35 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 31	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:11:38 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 32	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:11:41 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 32	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:11:43 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:11:44 : DUT 1 (AM3440_CCPA_pw_connect) bid:31 connect to ecid:13657
+2023-11-21 10:11:44 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 10:11:47 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:11:47 : DUT 2 (AM3440_CCPA_pw_connect) bid:31 connect to ecid:13657
+2023-11-21 10:11:47 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 10:11:49 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:11:50 : DUT 2 (AM3440_CCPA_pw_connect) bid:32 connect to ecid:13658
+2023-11-21 10:11:50 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 10:11:53 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:11:53 : DUT 1 (AM3440_CCPA_pw_connect) bid:32 connect to ecid:13658
+2023-11-21 10:11:53 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 10:12:54 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:12:54 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:12:54 : Check setup status start 
+2023-11-21 10:13:16 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:13:16 : 		Tone value set :D
+2023-11-21 10:13:17 : 		Tone Expected value:"DXX--XXX--XXX--XXX"
+2023-11-21 10:13:18 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:13:22 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:13:26 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:13:30 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:13:35 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:13:39 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:13:39 : 		tone test pass "DXX--XXX--XXX--XXX"
+2023-11-21 10:14:21 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:14:21 : 		Tone value set :n4
+2023-11-21 10:14:22 : 		Tone Expected value:"4XX--XXX--XXX--XXX"
+2023-11-21 10:14:23 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:14:28 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:14:32 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:14:36 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:14:40 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:14:44 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:14:44 : 		tone test pass "4XX--XXX--XXX--XXX"
+2023-11-21 10:15:28 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:15:28 : 		Tone value set :n8
+2023-11-21 10:15:29 : 		Tone Expected value:"8XX--XXX--XXX--XXX"
+2023-11-21 10:15:30 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:15:34 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:15:38 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:15:42 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:15:47 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:15:51 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:15:51 : 		tone test pass "8XX--XXX--XXX--XXX"
+2023-11-21 10:16:35 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:16:35 : 		Tone value set :pound
+2023-11-21 10:16:36 : 		Tone Expected value:"#XX--XXX--XXX--XXX"
+2023-11-21 10:16:37 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:16:42 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:16:46 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:16:50 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:16:54 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:16:58 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:16:58 : 		tone test pass "#XX--XXX--XXX--XXX"
+2023-11-21 10:17:20 : Check setup status end 
+2023-11-21 10:17:22 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:17:22 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 31
+2023-11-21 10:17:25 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:17:25 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 31
+2023-11-21 10:17:28 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:17:28 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 32
+2023-11-21 10:17:31 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:17:31 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 32
+2023-11-21 10:17:37 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:17:42 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:17:47 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:17:51 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:17:51 : 	TSI Mapping clear
+2023-11-21 10:17:51 : ---test end---
+2023-11-21 10:17:54 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:17:54 : DUT 1 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 10:17:57 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:17:57 : DUT 2 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 10:18:01 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:18:01 : DUT 1 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 10:18:05 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:18:05 : DUT 2 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 10:18:10 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:18:15 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:18:20 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:18:25 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:18:25 : 	TSI Mapping clear
+2023-11-21 10:18:25 : ---------Round@     2-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 10:18:25
+2023-11-21 10:18:25 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:18:26 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:18:26 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:18:27 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:18:57 : 	Scan voice ts 
+2023-11-21 10:18:58 : 	Scan voice ts:1 enable
+2023-11-21 10:18:58 : 	Scan voice ts:2 disable
+2023-11-21 10:18:59 : 	Scan voice ts:3 disable
+2023-11-21 10:19:00 : 	Scan voice ts:4 disable
+2023-11-21 10:19:00 : 	Scan voice ts:5 disable
+2023-11-21 10:19:02 : 	Scan voice ts:6 disable
+2023-11-21 10:19:02 : 	Scan voice ts:7 disable
+2023-11-21 10:19:03 : 	Scan voice ts:8 disable
+2023-11-21 10:19:03 : 	Scan voice ts:9 disable
+2023-11-21 10:19:04 : 	Scan voice ts:10 disable
+2023-11-21 10:19:05 : 	Scan voice ts:11 disable
+2023-11-21 10:19:05 : 	Scan voice ts:12 disable
+2023-11-21 10:19:05 : ******current test $Aulaw=u-law $Impedance=900-ohm $Gain_mode=default
+2023-11-21 10:19:09 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:19:14 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:19:17 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 41	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:19:21 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 41	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:19:24 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 42	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:19:27 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 42	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:19:29 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:19:30 : DUT 1 (AM3440_CCPA_pw_connect) bid:41 connect to ecid:26162
+2023-11-21 10:19:30 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 10:19:32 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:19:32 : DUT 2 (AM3440_CCPA_pw_connect) bid:41 connect to ecid:26162
+2023-11-21 10:19:32 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 10:19:35 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:19:35 : DUT 2 (AM3440_CCPA_pw_connect) bid:42 connect to ecid:26163
+2023-11-21 10:19:35 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 10:19:38 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:19:38 : DUT 1 (AM3440_CCPA_pw_connect) bid:42 connect to ecid:26163
+2023-11-21 10:19:38 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 10:20:39 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:20:39 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:20:39 : Check setup status start 
+2023-11-21 10:21:00 : ********* TS:1 *********
+2023-11-21 10:21:04 : 	fxopPortStatus ringing=no
+2023-11-21 10:21:06 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 10:21:48 : ********* TS:1 *********
+2023-11-21 10:22:03 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 10:22:07 : 		Table:bert
+2023-11-21 10:22:07 : 		Table:Syn
+2023-11-21 10:22:07 : 		Table:Bit error:0
+2023-11-21 10:22:07 : 		Table:Time8
+2023-11-21 10:22:10 : 		Table:bert
+2023-11-21 10:22:10 : 		Table:Sync
+2023-11-21 10:22:10 : 		Table:Bit error:0
+2023-11-21 10:22:10 : 		Table:Time12
+2023-11-21 10:22:10 : 		bert test Pass
+2023-11-21 10:22:41 : Check setup status end 
+2023-11-21 10:22:43 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:22:43 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 41
+2023-11-21 10:22:46 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:22:46 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 41
+2023-11-21 10:22:48 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:22:48 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 42
+2023-11-21 10:22:51 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:22:51 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 42
+2023-11-21 10:22:57 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:23:01 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:23:06 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:23:10 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:23:10 : 	TSI Mapping clear
+2023-11-21 10:23:10 : ---test end---
+2023-11-21 10:23:10 : ---------Round@     2-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 10:23:10
+2023-11-21 10:23:10 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:23:11 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:23:12 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:23:12 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:23:43 : 	Scan voice ts 
+2023-11-21 10:23:43 : 	Scan voice ts:1 enable
+2023-11-21 10:23:44 : 	Scan voice ts:2 disable
+2023-11-21 10:23:44 : 	Scan voice ts:3 disable
+2023-11-21 10:23:45 : 	Scan voice ts:4 disable
+2023-11-21 10:23:45 : 	Scan voice ts:5 disable
+2023-11-21 10:23:46 : 	Scan voice ts:6 disable
+2023-11-21 10:23:46 : 	Scan voice ts:7 disable
+2023-11-21 10:23:47 : 	Scan voice ts:8 disable
+2023-11-21 10:23:48 : 	Scan voice ts:9 disable
+2023-11-21 10:23:48 : 	Scan voice ts:10 disable
+2023-11-21 10:23:49 : 	Scan voice ts:11 disable
+2023-11-21 10:23:49 : 	Scan voice ts:12 disable
+2023-11-21 10:23:49 : ******current test $Aulaw=u-law $Impedance=600-ohm $Gain_mode=default
+2023-11-21 10:23:54 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:23:59 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:24:01 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 41	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:24:04 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 41	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:24:07 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 42	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:24:10 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 42	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:24:12 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:24:13 : DUT 1 (AM3440_CCPA_pw_connect) bid:41 connect to ecid:26162
+2023-11-21 10:24:13 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 10:24:15 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:24:16 : DUT 2 (AM3440_CCPA_pw_connect) bid:41 connect to ecid:26162
+2023-11-21 10:24:16 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 10:24:18 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:24:19 : DUT 2 (AM3440_CCPA_pw_connect) bid:42 connect to ecid:26163
+2023-11-21 10:24:19 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 10:24:21 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:24:22 : DUT 1 (AM3440_CCPA_pw_connect) bid:42 connect to ecid:26163
+2023-11-21 10:24:22 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 10:25:22 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:25:23 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:25:23 : Check setup status start 
+2023-11-21 10:25:42 : ********* TS:1 *********
+2023-11-21 10:25:47 : 	fxopPortStatus ringing=no
+2023-11-21 10:25:49 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 10:26:31 : ********* TS:1 *********
+2023-11-21 10:26:46 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 10:26:50 : 		Table:bert
+2023-11-21 10:26:50 : 		Table:Syn
+2023-11-21 10:26:50 : 		Table:Bit error:0
+2023-11-21 10:26:50 : 		Table:Time12
+2023-11-21 10:26:54 : 		Table:bert
+2023-11-21 10:26:54 : 		Table:Sync
+2023-11-21 10:26:54 : 		Table:Bit error:0
+2023-11-21 10:26:54 : 		Table:Time12
+2023-11-21 10:26:54 : 		bert test Pass
+2023-11-21 10:27:25 : Check setup status end 
+2023-11-21 10:27:27 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:27:27 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 41
+2023-11-21 10:27:30 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:27:30 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 41
+2023-11-21 10:27:33 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:27:33 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 42
+2023-11-21 10:27:35 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:27:35 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 42
+2023-11-21 10:27:41 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:27:45 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:27:50 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:27:55 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:27:55 : 	TSI Mapping clear
+2023-11-21 10:27:55 : ---test end---
+2023-11-21 10:27:55 : ---------Round@     2-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 10:27:55
+2023-11-21 10:27:55 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:27:55 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:27:56 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:27:56 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:28:27 : 	Scan voice ts 
+2023-11-21 10:28:27 : 	Scan voice ts:1 enable
+2023-11-21 10:28:28 : 	Scan voice ts:2 disable
+2023-11-21 10:28:29 : 	Scan voice ts:3 disable
+2023-11-21 10:28:29 : 	Scan voice ts:4 disable
+2023-11-21 10:28:30 : 	Scan voice ts:5 disable
+2023-11-21 10:28:30 : 	Scan voice ts:6 disable
+2023-11-21 10:28:31 : 	Scan voice ts:7 disable
+2023-11-21 10:28:31 : 	Scan voice ts:8 disable
+2023-11-21 10:28:32 : 	Scan voice ts:9 disable
+2023-11-21 10:28:32 : 	Scan voice ts:10 disable
+2023-11-21 10:28:33 : 	Scan voice ts:11 disable
+2023-11-21 10:28:33 : 	Scan voice ts:12 disable
+2023-11-21 10:28:33 : ******current test $Aulaw=a-law $Impedance=900-ohm $Gain_mode=default
+2023-11-21 10:28:38 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:28:43 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:28:46 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 41	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:28:50 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 41	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:28:53 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 42	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:28:55 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 42	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:28:58 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:28:58 : DUT 1 (AM3440_CCPA_pw_connect) bid:41 connect to ecid:26162
+2023-11-21 10:28:58 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 10:29:01 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:29:01 : DUT 2 (AM3440_CCPA_pw_connect) bid:41 connect to ecid:26162
+2023-11-21 10:29:01 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 10:29:04 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:29:04 : DUT 2 (AM3440_CCPA_pw_connect) bid:42 connect to ecid:26163
+2023-11-21 10:29:04 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 10:29:06 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:29:07 : DUT 1 (AM3440_CCPA_pw_connect) bid:42 connect to ecid:26163
+2023-11-21 10:29:07 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 10:30:08 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:30:08 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:30:08 : Check setup status start 
+2023-11-21 10:30:28 : ********* TS:1 *********
+2023-11-21 10:30:32 : 	fxopPortStatus ringing=no
+2023-11-21 10:30:34 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 10:31:14 : ********* TS:1 *********
+2023-11-21 10:31:30 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 10:31:33 : 		Table:bert
+2023-11-21 10:31:33 : 		Table:Syn
+2023-11-21 10:31:33 : 		Table:Bit error:0
+2023-11-21 10:31:33 : 		Table:Time12
+2023-11-21 10:31:37 : 		Table:bert
+2023-11-21 10:31:37 : 		Table:Sync
+2023-11-21 10:31:37 : 		Table:Bit error:0
+2023-11-21 10:31:37 : 		Table:Time12
+2023-11-21 10:31:37 : 		bert test Pass
+2023-11-21 10:32:07 : Check setup status end 
+2023-11-21 10:32:09 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:32:09 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 41
+2023-11-21 10:32:12 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:32:12 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 41
+2023-11-21 10:32:15 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:32:15 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 42
+2023-11-21 10:32:18 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:32:18 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 42
+2023-11-21 10:32:24 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:32:29 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:32:33 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:32:38 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:32:38 : 	TSI Mapping clear
+2023-11-21 10:32:38 : ---test end---
+2023-11-21 10:32:38 : ---------Round@     2-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 10:32:38
+2023-11-21 10:32:38 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:32:38 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:32:39 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:32:40 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:33:10 : 	Scan voice ts 
+2023-11-21 10:33:11 : 	Scan voice ts:1 enable
+2023-11-21 10:33:11 : 	Scan voice ts:2 disable
+2023-11-21 10:33:12 : 	Scan voice ts:3 disable
+2023-11-21 10:33:12 : 	Scan voice ts:4 disable
+2023-11-21 10:33:13 : 	Scan voice ts:5 disable
+2023-11-21 10:33:13 : 	Scan voice ts:6 disable
+2023-11-21 10:33:14 : 	Scan voice ts:7 disable
+2023-11-21 10:33:15 : 	Scan voice ts:8 disable
+2023-11-21 10:33:15 : 	Scan voice ts:9 disable
+2023-11-21 10:33:16 : 	Scan voice ts:10 disable
+2023-11-21 10:33:16 : 	Scan voice ts:11 disable
+2023-11-21 10:33:17 : 	Scan voice ts:12 disable
+2023-11-21 10:33:17 : ******current test $Aulaw=a-law $Impedance=600-ohm $Gain_mode=default
+2023-11-21 10:33:22 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:33:27 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:33:30 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 41	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:33:33 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 41	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:33:36 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 42	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:33:39 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 42	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:33:41 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:33:42 : DUT 1 (AM3440_CCPA_pw_connect) bid:41 connect to ecid:26162
+2023-11-21 10:33:42 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 10:33:44 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:33:45 : DUT 2 (AM3440_CCPA_pw_connect) bid:41 connect to ecid:26162
+2023-11-21 10:33:45 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 10:33:47 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:33:48 : DUT 2 (AM3440_CCPA_pw_connect) bid:42 connect to ecid:26163
+2023-11-21 10:33:48 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 10:33:50 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:33:51 : DUT 1 (AM3440_CCPA_pw_connect) bid:42 connect to ecid:26163
+2023-11-21 10:33:51 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 10:34:51 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:34:52 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:34:52 : Check setup status start 
+2023-11-21 10:35:12 : ********* TS:1 *********
+2023-11-21 10:35:16 : 	fxopPortStatus ringing=no
+2023-11-21 10:35:18 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 10:35:59 : ********* TS:1 *********
+2023-11-21 10:36:14 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 10:36:18 : 		Table:bert
+2023-11-21 10:36:18 : 		Table:Syn
+2023-11-21 10:36:18 : 		Table:Bit error:0
+2023-11-21 10:36:18 : 		Table:Time11
+2023-11-21 10:36:22 : 		Table:bert
+2023-11-21 10:36:22 : 		Table:Sync
+2023-11-21 10:36:22 : 		Table:Bit error:0
+2023-11-21 10:36:22 : 		Table:Time11
+2023-11-21 10:36:22 : 		bert test Pass
+2023-11-21 10:36:53 : Check setup status end 
+2023-11-21 10:36:55 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:36:55 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 41
+2023-11-21 10:36:58 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:36:58 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 41
+2023-11-21 10:37:01 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:37:01 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 42
+2023-11-21 10:37:03 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:37:03 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 42
+2023-11-21 10:37:09 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:37:13 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:37:18 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:37:23 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:37:23 : 	TSI Mapping clear
+2023-11-21 10:37:23 : ---test end---
+2023-11-21 10:37:25 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:37:25 : DUT 1 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 10:37:28 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:37:28 : DUT 2 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 10:37:31 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:37:31 : DUT 1 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 10:37:34 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:37:34 : DUT 2 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 10:37:40 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:37:44 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:37:49 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:37:54 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:37:54 : 	TSI Mapping clear
+2023-11-21 10:37:54 : ---------Round@     3-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 10:37:54
+2023-11-21 10:37:54 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:37:55 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:37:56 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:37:56 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:38:27 : 	Scan voice ts 
+2023-11-21 10:38:27 : 	Scan voice ts:1 enable
+2023-11-21 10:38:28 : 	Scan voice ts:2 disable
+2023-11-21 10:38:28 : 	Scan voice ts:3 disable
+2023-11-21 10:38:29 : 	Scan voice ts:4 disable
+2023-11-21 10:38:30 : 	Scan voice ts:5 disable
+2023-11-21 10:38:30 : 	Scan voice ts:6 disable
+2023-11-21 10:38:31 : 	Scan voice ts:7 disable
+2023-11-21 10:38:31 : 	Scan voice ts:8 disable
+2023-11-21 10:38:32 : 	Scan voice ts:9 disable
+2023-11-21 10:38:33 : 	Scan voice ts:10 disable
+2023-11-21 10:38:33 : 	Scan voice ts:11 disable
+2023-11-21 10:38:34 : 	Scan voice ts:12 disable
+2023-11-21 10:38:34 : ******current test $Aulaw=u-law $Impedance=900-ohm $Gain_mode=default
+2023-11-21 10:38:38 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:38:43 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:38:47 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 50	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:38:50 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 50	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:38:53 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 51	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:38:56 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 51	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:38:58 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:38:59 : DUT 1 (AM3440_CCPA_pw_connect) bid:50 connect to ecid:22868
+2023-11-21 10:38:59 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 10:39:01 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:39:02 : DUT 2 (AM3440_CCPA_pw_connect) bid:50 connect to ecid:22868
+2023-11-21 10:39:02 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 10:39:04 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:39:05 : DUT 2 (AM3440_CCPA_pw_connect) bid:51 connect to ecid:22869
+2023-11-21 10:39:05 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 10:39:07 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:39:08 : DUT 1 (AM3440_CCPA_pw_connect) bid:51 connect to ecid:22869
+2023-11-21 10:39:08 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 10:40:09 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:40:09 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:40:09 : Check setup status start 
+2023-11-21 10:40:31 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:40:31 : 		Tone value set :D
+2023-11-21 10:40:32 : 		Tone Expected value:"DXX--XXX--XXX--XXX"
+2023-11-21 10:40:33 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:40:37 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:40:41 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:40:45 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:40:50 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:40:54 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:40:54 : 		tone test pass "DXX--XXX--XXX--XXX"
+2023-11-21 10:41:38 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:41:38 : 		Tone value set :n4
+2023-11-21 10:41:39 : 		Tone Expected value:"4XX--XXX--XXX--XXX"
+2023-11-21 10:41:40 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:41:44 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:41:48 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:41:53 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:41:57 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:42:01 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:42:01 : 		tone test pass "4XX--XXX--XXX--XXX"
+2023-11-21 10:42:44 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:42:44 : 		Tone value set :n8
+2023-11-21 10:42:45 : 		Tone Expected value:"8XX--XXX--XXX--XXX"
+2023-11-21 10:42:46 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:42:50 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:42:55 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:42:59 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:43:03 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:43:07 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:43:07 : 		tone test pass "8XX--XXX--XXX--XXX"
+2023-11-21 10:43:49 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:43:50 : 		Tone value set :pound
+2023-11-21 10:43:51 : 		Tone Expected value:"#XX--XXX--XXX--XXX"
+2023-11-21 10:43:52 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:43:56 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:44:00 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:44:05 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:44:09 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:44:13 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 10:44:13 : 		tone test pass "#XX--XXX--XXX--XXX"
+2023-11-21 10:44:34 : Check setup status end 
+2023-11-21 10:44:36 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:44:36 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 50
+2023-11-21 10:44:39 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:44:39 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 50
+2023-11-21 10:44:42 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:44:42 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 51
+2023-11-21 10:44:45 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:44:45 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 51
+2023-11-21 10:44:50 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:44:55 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:45:00 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:45:04 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:45:04 : 	TSI Mapping clear
+2023-11-21 10:45:04 : ---test end---
+2023-11-21 10:45:04 : ---------Round@     3-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 10:45:04
+2023-11-21 10:45:04 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:45:05 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:45:06 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 10:45:06 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 10:45:37 : 	Scan voice ts 
+2023-11-21 10:45:38 : 	Scan voice ts:1 enable
+2023-11-21 10:45:38 : 	Scan voice ts:2 disable
+2023-11-21 10:45:39 : 	Scan voice ts:3 disable
+2023-11-21 10:45:39 : 	Scan voice ts:4 disable
+2023-11-21 10:45:40 : 	Scan voice ts:5 disable
+2023-11-21 10:45:41 : 	Scan voice ts:6 disable
+2023-11-21 10:45:41 : 	Scan voice ts:7 disable
+2023-11-21 10:45:42 : 	Scan voice ts:8 disable
+2023-11-21 10:45:43 : 	Scan voice ts:9 disable
+2023-11-21 10:45:43 : 	Scan voice ts:10 disable
+2023-11-21 10:45:44 : 	Scan voice ts:11 disable
+2023-11-21 10:45:44 : 	Scan voice ts:12 disable
+2023-11-21 10:45:44 : ******current test $Aulaw=u-law $Impedance=600-ohm $Gain_mode=default
+2023-11-21 10:45:49 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:45:55 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 10:45:58 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 50	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:46:01 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 50	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:46:03 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 51	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:46:06 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 51	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 10:46:09 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:46:09 : DUT 1 (AM3440_CCPA_pw_connect) bid:50 connect to ecid:22868
+2023-11-21 10:46:09 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 10:46:12 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:46:12 : DUT 2 (AM3440_CCPA_pw_connect) bid:50 connect to ecid:22868
+2023-11-21 10:46:12 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 10:46:15 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:46:16 : DUT 2 (AM3440_CCPA_pw_connect) bid:51 connect to ecid:22869
+2023-11-21 10:46:16 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 10:46:18 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 10:46:19 : DUT 1 (AM3440_CCPA_pw_connect) bid:51 connect to ecid:22869
+2023-11-21 10:46:19 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 10:47:19 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:47:20 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 10:47:20 : Check setup status start 
+2023-11-21 10:47:41 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:47:41 : 		Tone value set :D
+2023-11-21 10:47:42 : 		Tone Expected value:"DXX--XXX--XXX--XXX"
+2023-11-21 10:47:43 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:47:47 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:47:51 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:47:55 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:48:00 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:48:04 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 10:48:04 : 		tone test pass "DXX--XXX--XXX--XXX"
+2023-11-21 10:48:46 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:48:46 : 		Tone value set :n4
+2023-11-21 10:48:47 : 		Tone Expected value:"4XX--XXX--XXX--XXX"
+2023-11-21 10:48:48 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:48:52 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:48:56 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:49:00 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:49:05 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:49:09 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 10:49:09 : 		tone test pass "4XX--XXX--XXX--XXX"
+2023-11-21 10:49:50 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 10:49:50 : 		Tone value set :n8
+2023-11-21 10:49:51 : 		Tone Expected value:"8XX--XXX--XXX--XXX"
+2023-11-21 10:49:52 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:49:56 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 10:50:01 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:50:05 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:50:09 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 10:50:32 : !!! reget !!! times:1   at 10:50:32
+2023-11-21 10:50:52 : !!! reget !!! times:2   at 10:50:52
+2023-11-21 10:51:12 : !!! reget !!! times:3   at 10:51:12
+2023-11-21 10:51:32 : !!! reget !!! times:4   at 10:51:32
+2023-11-21 10:51:52 : !!! reget !!! times:5   at 10:51:52
+2023-11-21 10:51:52 : net-snmp can do retry by itself. Give '-r 3' to tell it retry 3 times.
+2023-11-21 10:51:52 : Force close Run process with retry 1 0 IS FAIL
+2023-11-21 10:52:12 : !!! reget !!! times:1   at 10:52:12
+2023-11-21 10:52:32 : !!! reget !!! times:2   at 10:52:32
+2023-11-21 10:52:52 : !!! reget !!! times:3   at 10:52:52
+2023-11-21 10:53:12 : !!! reget !!! times:4   at 10:53:12
+2023-11-21 10:53:32 : !!! reget !!! times:5   at 10:53:32
+2023-11-21 10:53:32 : net-snmp can do retry by itself. Give '-r 3' to tell it retry 3 times.
+2023-11-21 10:53:32 : Force close Run process with retry 1 0 IS FAIL
+2023-11-21 10:53:52 : !!! reget !!! times:1   at 10:53:52
+2023-11-21 10:54:12 : !!! reget !!! times:2   at 10:54:12
+2023-11-21 10:54:32 : !!! reget !!! times:3   at 10:54:32
+2023-11-21 10:54:52 : !!! reget !!! times:4   at 10:54:52
+2023-11-21 10:55:12 : !!! reget !!! times:5   at 10:55:12
+2023-11-21 10:55:12 : net-snmp can do retry by itself. Give '-r 3' to tell it retry 3 times.
+2023-11-21 10:55:12 : Force close Run process with retry 1 0 IS FAIL
+2023-11-21 10:55:32 : !!! reget !!! times:1   at 10:55:32
+2023-11-21 10:55:52 : !!! reget !!! times:2   at 10:55:52
+2023-11-21 10:56:12 : !!! reget !!! times:3   at 10:56:12
+2023-11-21 10:56:32 : !!! reget !!! times:4   at 10:56:32
+2023-11-21 10:56:52 : !!! reget !!! times:5   at 10:56:52
+2023-11-21 10:56:52 : net-snmp can do retry by itself. Give '-r 3' to tell it retry 3 times.
+2023-11-21 10:56:52 : Force close Run process with retry 1 0 IS FAIL
+2023-11-21 10:57:12 : !!! reget !!! times:1   at 10:57:12
+2023-11-21 10:57:32 : !!! reget !!! times:2   at 10:57:32
+2023-11-21 10:57:52 : !!! reget !!! times:3   at 10:57:52
+2023-11-21 10:58:12 : !!! reget !!! times:4   at 10:58:12
+2023-11-21 10:58:32 : !!! reget !!! times:5   at 10:58:32
+2023-11-21 10:58:32 : net-snmp can do retry by itself. Give '-r 3' to tell it retry 3 times.
+2023-11-21 10:58:32 : Force close Run process with retry 1 0 IS FAIL
+2023-11-21 10:58:52 : !!! reget !!! times:1   at 10:58:52
+2023-11-21 10:59:12 : !!! reget !!! times:2   at 10:59:12
+2023-11-21 10:59:32 : !!! reget !!! times:3   at 10:59:32
+2023-11-21 10:59:52 : !!! reget !!! times:4   at 10:59:52
+2023-11-21 11:00:12 : !!! reget !!! times:5   at 11:00:12
+2023-11-21 11:00:12 : net-snmp can do retry by itself. Give '-r 3' to tell it retry 3 times.
+2023-11-21 11:00:12 : Force close Run process with retry 1 0 IS FAIL
+2023-11-21 11:00:32 : !!! reget !!! times:1   at 11:00:32
+2023-11-21 11:00:52 : !!! reget !!! times:2   at 11:00:52
+2023-11-21 11:01:12 : !!! reget !!! times:3   at 11:01:12
+2023-11-21 11:01:32 : !!! reget !!! times:4   at 11:01:32
+2023-11-21 11:01:52 : !!! reget !!! times:5   at 11:01:52
+2023-11-21 11:01:52 : Force close Run process
+2023-11-21 11:02:12 : !!! reget !!! times:1   at 11:02:12
+2023-11-21 11:02:32 : !!! reget !!! times:2   at 11:02:32
+2023-11-21 11:02:52 : !!! reget !!! times:3   at 11:02:52
+2023-11-21 11:03:12 : !!! reget !!! times:4   at 11:03:12
+2023-11-21 11:03:32 : !!! reget !!! times:5   at 11:03:32
+2023-11-21 11:03:33 : net-snmp can do retry by itself. Give '-r 3' to tell it retry 3 times.
+2023-11-21 11:03:33 : Force close Run process with retry 1 0 IS FAIL
+2023-11-21 11:03:53 : !!! reget !!! times:1   at 11:03:53
+2023-11-21 11:04:13 : !!! reget !!! times:2   at 11:04:13
+2023-11-21 11:04:33 : !!! reget !!! times:3   at 11:04:33
+2023-11-21 11:04:53 : !!! reget !!! times:4   at 11:04:53
+2023-11-21 11:05:13 : !!! reget !!! times:5   at 11:05:13
+2023-11-21 11:05:13 : net-snmp can do retry by itself. Give '-r 3' to tell it retry 3 times.
+2023-11-21 11:05:13 : Force close Run process with retry 1 0 IS FAIL
+2023-11-21 11:05:33 : !!! reget !!! times:1   at 11:05:33
+2023-11-21 11:05:53 : !!! reget !!! times:2   at 11:05:53
+2023-11-21 11:06:13 : !!! reget !!! times:3   at 11:06:13
+2023-11-21 11:06:33 : !!! reget !!! times:4   at 11:06:33
+2023-11-21 11:06:53 : !!! reget !!! times:5   at 11:06:53
+2023-11-21 11:06:53 : net-snmp can do retry by itself. Give '-r 3' to tell it retry 3 times.
+2023-11-21 11:06:53 : Force close Run process with retry 1 0 IS FAIL
+2023-11-21 11:07:13 : !!! reget !!! times:1   at 11:07:13
+2023-11-21 11:07:33 : !!! reget !!! times:2   at 11:07:33
+2023-11-21 11:07:53 : !!! reget !!! times:3   at 11:07:53
+2023-11-21 11:08:13 : !!! reget !!! times:4   at 11:08:13
+2023-11-21 11:08:33 : !!! reget !!! times:5   at 11:08:33
+2023-11-21 11:08:33 : net-snmp can do retry by itself. Give '-r 3' to tell it retry 3 times.
+2023-11-21 11:08:33 : Force close Run process with retry 1 0 IS FAIL
+2023-11-21 11:08:53 : !!! reget !!! times:1   at 11:08:53
+2023-11-21 11:09:13 : !!! reget !!! times:2   at 11:09:13
+2023-11-21 11:09:33 : !!! reget !!! times:3   at 11:09:33
+2023-11-21 11:09:53 : !!! reget !!! times:4   at 11:09:53
+2023-11-21 11:10:13 : !!! reget !!! times:5   at 11:10:13
+2023-11-21 11:10:13 : net-snmp can do retry by itself. Give '-r 3' to tell it retry 3 times.
+2023-11-21 11:10:13 : Force close Run process with retry 1 0 IS FAIL
+2023-11-21 11:10:33 : !!! reget !!! times:1   at 11:10:33
+2023-11-21 11:10:53 : !!! reget !!! times:2   at 11:10:53
+2023-11-21 11:11:13 : !!! reget !!! times:3   at 11:11:13
+2023-11-21 11:11:13 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 11:11:13 : 		tone test pass "8XX--XXX--XXX--XXX"
+2023-11-21 11:11:56 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 11:11:56 : 		Tone value set :pound
+2023-11-21 11:11:57 : 		Tone Expected value:"#XX--XXX--XXX--XXX"
+2023-11-21 11:11:58 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:12:02 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:12:06 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 11:12:10 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 11:12:14 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 11:12:18 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 11:12:18 : 		tone test pass "#XX--XXX--XXX--XXX"
+2023-11-21 11:12:40 : Check setup status end 
+2023-11-21 11:12:42 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:12:42 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 50
+2023-11-21 11:12:45 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:12:45 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 50
+2023-11-21 11:12:48 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:12:48 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 51
+2023-11-21 11:12:51 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:12:51 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 51
+2023-11-21 11:12:57 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:13:01 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:13:06 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:13:10 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:13:10 : 	TSI Mapping clear
+2023-11-21 11:13:10 : ---test end---
+2023-11-21 11:13:10 : ---------Round@     3-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 11:13:10
+2023-11-21 11:13:10 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 11:13:11 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 11:13:11 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 11:13:12 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 11:13:43 : 	Scan voice ts 
+2023-11-21 11:13:43 : 	Scan voice ts:1 enable
+2023-11-21 11:13:44 : 	Scan voice ts:2 disable
+2023-11-21 11:13:44 : 	Scan voice ts:3 disable
+2023-11-21 11:13:45 : 	Scan voice ts:4 disable
+2023-11-21 11:13:46 : 	Scan voice ts:5 disable
+2023-11-21 11:13:46 : 	Scan voice ts:6 disable
+2023-11-21 11:13:47 : 	Scan voice ts:7 disable
+2023-11-21 11:13:47 : 	Scan voice ts:8 disable
+2023-11-21 11:13:48 : 	Scan voice ts:9 disable
+2023-11-21 11:13:49 : 	Scan voice ts:10 disable
+2023-11-21 11:13:49 : 	Scan voice ts:11 disable
+2023-11-21 11:13:50 : 	Scan voice ts:12 disable
+2023-11-21 11:13:50 : ******current test $Aulaw=a-law $Impedance=900-ohm $Gain_mode=default
+2023-11-21 11:13:53 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 11:13:59 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 11:14:02 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 50	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:14:05 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 50	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:14:08 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 51	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:14:11 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 51	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:14:13 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:14:14 : DUT 1 (AM3440_CCPA_pw_connect) bid:50 connect to ecid:22868
+2023-11-21 11:14:14 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 11:14:16 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:14:17 : DUT 2 (AM3440_CCPA_pw_connect) bid:50 connect to ecid:22868
+2023-11-21 11:14:17 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 11:14:19 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:14:19 : DUT 2 (AM3440_CCPA_pw_connect) bid:51 connect to ecid:22869
+2023-11-21 11:14:19 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 11:14:22 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:14:22 : DUT 1 (AM3440_CCPA_pw_connect) bid:51 connect to ecid:22869
+2023-11-21 11:14:23 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 11:15:23 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 11:15:24 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 11:15:24 : Check setup status start 
+2023-11-21 11:15:45 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 11:15:45 : 		Tone value set :D
+2023-11-21 11:15:46 : 		Tone Expected value:"DXX--XXX--XXX--XXX"
+2023-11-21 11:15:47 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:15:52 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:15:56 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 11:16:00 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 11:16:04 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 11:16:09 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 11:16:09 : 		tone test pass "DXX--XXX--XXX--XXX"
+2023-11-21 11:16:51 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 11:16:51 : 		Tone value set :n4
+2023-11-21 11:16:53 : 		Tone Expected value:"4XX--XXX--XXX--XXX"
+2023-11-21 11:16:54 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:16:58 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:17:02 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 11:17:07 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 11:17:11 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 11:17:15 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 11:17:15 : 		tone test pass "4XX--XXX--XXX--XXX"
+2023-11-21 11:17:56 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 11:17:56 : 		Tone value set :n8
+2023-11-21 11:17:58 : 		Tone Expected value:"8XX--XXX--XXX--XXX"
+2023-11-21 11:17:59 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:18:03 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:18:07 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 11:18:12 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 11:18:16 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 11:18:20 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 11:18:20 : 		tone test pass "8XX--XXX--XXX--XXX"
+2023-11-21 11:19:02 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 11:19:02 : 		Tone value set :pound
+2023-11-21 11:19:03 : 		Tone Expected value:"#XX--XXX--XXX--XXX"
+2023-11-21 11:19:04 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:19:08 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:19:12 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 11:19:16 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 11:19:20 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 11:19:25 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 11:19:25 : 		tone test pass "#XX--XXX--XXX--XXX"
+2023-11-21 11:19:46 : Check setup status end 
+2023-11-21 11:19:48 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:19:48 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 50
+2023-11-21 11:19:51 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:19:51 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 50
+2023-11-21 11:19:54 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:19:54 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 51
+2023-11-21 11:19:56 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:19:56 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 51
+2023-11-21 11:20:02 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:20:06 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:20:11 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:20:16 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:20:16 : 	TSI Mapping clear
+2023-11-21 11:20:16 : ---test end---
+2023-11-21 11:20:16 : ---------Round@     3-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 11:20:16
+2023-11-21 11:20:16 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 11:20:16 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 11:20:17 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 11:20:18 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 11:20:48 : 	Scan voice ts 
+2023-11-21 11:20:49 : 	Scan voice ts:1 enable
+2023-11-21 11:20:50 : 	Scan voice ts:2 disable
+2023-11-21 11:20:50 : 	Scan voice ts:3 disable
+2023-11-21 11:20:51 : 	Scan voice ts:4 disable
+2023-11-21 11:20:51 : 	Scan voice ts:5 disable
+2023-11-21 11:20:52 : 	Scan voice ts:6 disable
+2023-11-21 11:20:53 : 	Scan voice ts:7 disable
+2023-11-21 11:20:53 : 	Scan voice ts:8 disable
+2023-11-21 11:20:54 : 	Scan voice ts:9 disable
+2023-11-21 11:20:54 : 	Scan voice ts:10 disable
+2023-11-21 11:20:55 : 	Scan voice ts:11 disable
+2023-11-21 11:20:55 : 	Scan voice ts:12 disable
+2023-11-21 11:20:55 : ******current test $Aulaw=a-law $Impedance=600-ohm $Gain_mode=default
+2023-11-21 11:21:01 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 11:21:06 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 11:21:09 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 50	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:21:12 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 50	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:21:15 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 51	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:21:18 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 51	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:21:20 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:21:21 : DUT 1 (AM3440_CCPA_pw_connect) bid:50 connect to ecid:22868
+2023-11-21 11:21:21 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 11:21:23 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:21:24 : DUT 2 (AM3440_CCPA_pw_connect) bid:50 connect to ecid:22868
+2023-11-21 11:21:24 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 11:21:26 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:21:26 : DUT 2 (AM3440_CCPA_pw_connect) bid:51 connect to ecid:22869
+2023-11-21 11:21:26 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:C5:02:7E Sec Ip/Mac:00:50:C6:C5:00:14
+2023-11-21 11:21:29 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:21:29 : DUT 1 (AM3440_CCPA_pw_connect) bid:51 connect to ecid:22869
+2023-11-21 11:21:29 : 		Format:Cesopsn ,Type:Cesoeth ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:00:50:C6:CC:00:7A Sec Ip/Mac:00:50:C6:CC:00:DA
+2023-11-21 11:22:30 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 11:22:30 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 11:22:30 : Check setup status start 
+2023-11-21 11:22:51 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 11:22:51 : 		Tone value set :D
+2023-11-21 11:22:52 : 		Tone Expected value:"DXX--XXX--XXX--XXX"
+2023-11-21 11:22:53 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:22:58 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:23:02 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 11:23:06 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 11:23:10 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 11:23:14 : 		Tone result:        "DXX--XXX--XXX--XXX"
+2023-11-21 11:23:14 : 		tone test pass "DXX--XXX--XXX--XXX"
+2023-11-21 11:23:57 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 11:23:57 : 		Tone value set :n4
+2023-11-21 11:23:57 : 		Tone Expected value:"4XX--XXX--XXX--XXX"
+2023-11-21 11:23:59 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:24:03 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:24:07 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 11:24:11 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 11:24:16 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 11:24:20 : 		Tone result:        "4XX--XXX--XXX--XXX"
+2023-11-21 11:24:20 : 		tone test pass "4XX--XXX--XXX--XXX"
+2023-11-21 11:25:01 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 11:25:01 : 		Tone value set :n8
+2023-11-21 11:25:03 : 		Tone Expected value:"8XX--XXX--XXX--XXX"
+2023-11-21 11:25:04 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:25:08 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:25:12 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 11:25:16 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 11:25:20 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 11:25:24 : 		Tone result:        "8XX--XXX--XXX--XXX"
+2023-11-21 11:25:24 : 		tone test pass "8XX--XXX--XXX--XXX"
+2023-11-21 11:26:05 : DUT 1 (AM3440_CCPA_fxsToneTest)  Slot:6
+2023-11-21 11:26:05 : 		Tone value set :pound
+2023-11-21 11:26:06 : 		Tone Expected value:"#XX--XXX--XXX--XXX"
+2023-11-21 11:26:07 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:26:12 : 		Tone result:        "XXX--XXX--XXX--XXX"
+2023-11-21 11:26:16 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 11:26:20 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 11:26:24 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 11:26:29 : 		Tone result:        "#XX--XXX--XXX--XXX"
+2023-11-21 11:26:29 : 		tone test pass "#XX--XXX--XXX--XXX"
+2023-11-21 11:26:50 : Check setup status end 
+2023-11-21 11:26:52 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:26:52 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 50
+2023-11-21 11:26:55 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:26:55 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 50
+2023-11-21 11:26:58 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:26:58 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 51
+2023-11-21 11:27:00 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:27:00 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 51
+2023-11-21 11:27:05 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:27:10 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:27:15 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:27:19 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:27:19 : 	TSI Mapping clear
+2023-11-21 11:27:19 : ---test end---
+2023-11-21 11:27:21 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:27:21 : DUT 1 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 11:27:25 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:27:25 : DUT 2 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 11:27:28 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:27:28 : DUT 1 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 11:27:31 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:27:31 : DUT 2 (AM3440_CCPA_pw_connect) del all bundle 
+2023-11-21 11:27:36 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:27:41 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:27:45 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:27:50 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:27:50 : 	TSI Mapping clear
+2023-11-21 11:27:50 : ---------Round@     4-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 11:27:50
+2023-11-21 11:27:50 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 11:27:50 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 11:27:51 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 11:27:51 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 11:28:22 : 	Scan voice ts 
+2023-11-21 11:28:23 : 	Scan voice ts:1 enable
+2023-11-21 11:28:23 : 	Scan voice ts:2 disable
+2023-11-21 11:28:24 : 	Scan voice ts:3 disable
+2023-11-21 11:28:24 : 	Scan voice ts:4 disable
+2023-11-21 11:28:25 : 	Scan voice ts:5 disable
+2023-11-21 11:28:26 : 	Scan voice ts:6 disable
+2023-11-21 11:28:26 : 	Scan voice ts:7 disable
+2023-11-21 11:28:27 : 	Scan voice ts:8 disable
+2023-11-21 11:28:27 : 	Scan voice ts:9 disable
+2023-11-21 11:28:28 : 	Scan voice ts:10 disable
+2023-11-21 11:28:29 : 	Scan voice ts:11 disable
+2023-11-21 11:28:29 : 	Scan voice ts:12 disable
+2023-11-21 11:28:29 : ******current test $Aulaw=u-law $Impedance=900-ohm $Gain_mode=default
+2023-11-21 11:28:33 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 11:28:38 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 11:28:41 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 29	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:28:44 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 29	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:28:47 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 30	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:28:50 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 30	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:28:52 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:28:53 : DUT 1 (AM3440_CCPA_pw_connect) bid:29 connect to ecid:23932
+2023-11-21 11:28:53 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 11:28:55 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:28:56 : DUT 2 (AM3440_CCPA_pw_connect) bid:29 connect to ecid:23932
+2023-11-21 11:28:56 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 11:28:58 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:28:58 : DUT 2 (AM3440_CCPA_pw_connect) bid:30 connect to ecid:23933
+2023-11-21 11:28:58 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 11:29:01 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:29:01 : DUT 1 (AM3440_CCPA_pw_connect) bid:30 connect to ecid:23933
+2023-11-21 11:29:01 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 11:30:02 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 11:30:02 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 11:30:02 : Check setup status start 
+2023-11-21 11:30:22 : ********* TS:1 *********
+2023-11-21 11:30:27 : 	fxopPortStatus ringing=no
+2023-11-21 11:30:28 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 11:31:09 : ********* TS:1 *********
+2023-11-21 11:31:25 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 11:31:29 : 		Table:bert
+2023-11-21 11:31:29 : 		Table:Syn
+2023-11-21 11:31:29 : 		Table:Bit error:0
+2023-11-21 11:31:29 : 		Table:Time12
+2023-11-21 11:31:33 : 		Table:bert
+2023-11-21 11:31:33 : 		Table:Sync
+2023-11-21 11:31:33 : 		Table:Bit error:0
+2023-11-21 11:31:33 : 		Table:Time12
+2023-11-21 11:31:33 : 		bert test Pass
+2023-11-21 11:32:04 : Check setup status end 
+2023-11-21 11:32:07 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:32:07 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 29
+2023-11-21 11:32:10 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:32:10 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 29
+2023-11-21 11:32:13 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:32:13 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 30
+2023-11-21 11:32:16 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:32:16 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 30
+2023-11-21 11:32:24 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:32:28 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:32:34 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:32:38 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:32:38 : 	TSI Mapping clear
+2023-11-21 11:32:38 : ---test end---
+2023-11-21 11:32:38 : ---------Round@     4-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 11:32:38
+2023-11-21 11:32:38 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 11:32:39 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 11:32:40 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 11:32:40 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 11:33:11 : 	Scan voice ts 
+2023-11-21 11:33:11 : 	Scan voice ts:1 enable
+2023-11-21 11:33:12 : 	Scan voice ts:2 disable
+2023-11-21 11:33:13 : 	Scan voice ts:3 disable
+2023-11-21 11:33:13 : 	Scan voice ts:4 disable
+2023-11-21 11:33:14 : 	Scan voice ts:5 disable
+2023-11-21 11:33:14 : 	Scan voice ts:6 disable
+2023-11-21 11:33:15 : 	Scan voice ts:7 disable
+2023-11-21 11:33:15 : 	Scan voice ts:8 disable
+2023-11-21 11:33:16 : 	Scan voice ts:9 disable
+2023-11-21 11:33:17 : 	Scan voice ts:10 disable
+2023-11-21 11:33:17 : 	Scan voice ts:11 disable
+2023-11-21 11:33:18 : 	Scan voice ts:12 disable
+2023-11-21 11:33:18 : ******current test $Aulaw=u-law $Impedance=600-ohm $Gain_mode=default
+2023-11-21 11:33:22 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 11:33:27 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 11:33:30 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 29	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:33:34 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 29	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:33:37 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 30	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:33:40 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 30	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:33:42 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:33:43 : DUT 1 (AM3440_CCPA_pw_connect) bid:29 connect to ecid:23932
+2023-11-21 11:33:43 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 11:33:45 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:33:46 : DUT 2 (AM3440_CCPA_pw_connect) bid:29 connect to ecid:23932
+2023-11-21 11:33:46 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 11:33:48 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:33:49 : DUT 2 (AM3440_CCPA_pw_connect) bid:30 connect to ecid:23933
+2023-11-21 11:33:49 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 11:33:51 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:33:52 : DUT 1 (AM3440_CCPA_pw_connect) bid:30 connect to ecid:23933
+2023-11-21 11:33:52 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 11:34:52 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 11:34:53 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 11:34:53 : Check setup status start 
+2023-11-21 11:35:14 : ********* TS:1 *********
+2023-11-21 11:35:19 : 	fxopPortStatus ringing=no
+2023-11-21 11:35:20 : 	fxopPortStatus ringing=yes,pass!
+2023-11-21 11:36:01 : ********* TS:1 *********
+2023-11-21 11:36:17 : DUT 1 (AM3440_CCPA_Get_FxsBert_Snmp) begin
+2023-11-21 11:36:20 : 		Table:bert
+2023-11-21 11:36:20 : 		Table:Syn
+2023-11-21 11:36:20 : 		Table:Bit error:0
+2023-11-21 11:36:20 : 		Table:Time11
+2023-11-21 11:36:24 : 		Table:bert
+2023-11-21 11:36:24 : 		Table:Sync
+2023-11-21 11:36:24 : 		Table:Bit error:0
+2023-11-21 11:36:24 : 		Table:Time11
+2023-11-21 11:36:24 : 		bert test Pass
+2023-11-21 11:36:55 : Check setup status end 
+2023-11-21 11:36:57 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:36:57 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 29
+2023-11-21 11:37:00 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:37:00 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 29
+2023-11-21 11:37:03 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:37:03 : DUT 2 (AM3440_CCPA_pw_connect) del bundle 30
+2023-11-21 11:37:06 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:37:06 : DUT 1 (AM3440_CCPA_pw_connect) del bundle 30
+2023-11-21 11:37:11 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:37:16 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  Null Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:37:21 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:37:26 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  FE1 Slot a ,port 1	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:37:26 : 	TSI Mapping clear
+2023-11-21 11:37:26 : ---test end---
+2023-11-21 11:37:26 : ---------Round@     4-----Begin----fxs/fxo/fxs/fxo  _voice_slot   2023/11/21 上午 11:37:26
+2023-11-21 11:37:26 : DUT 1 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 11:37:27 : DUT 1 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 11:37:27 : DUT 2 (AM3440_CCPA_fxs_loaddefault)
+2023-11-21 11:37:28 : DUT 2 (AM3440_CCPA_fxo_loaddefault)
+2023-11-21 11:37:58 : 	Scan voice ts 
+2023-11-21 11:37:59 : 	Scan voice ts:1 enable
+2023-11-21 11:37:59 : 	Scan voice ts:2 disable
+2023-11-21 11:38:00 : 	Scan voice ts:3 disable
+2023-11-21 11:38:01 : 	Scan voice ts:4 disable
+2023-11-21 11:38:01 : 	Scan voice ts:5 disable
+2023-11-21 11:38:02 : 	Scan voice ts:6 disable
+2023-11-21 11:38:02 : 	Scan voice ts:7 disable
+2023-11-21 11:38:03 : 	Scan voice ts:8 disable
+2023-11-21 11:38:04 : 	Scan voice ts:9 disable
+2023-11-21 11:38:04 : 	Scan voice ts:10 disable
+2023-11-21 11:38:05 : 	Scan voice ts:11 disable
+2023-11-21 11:38:05 : 	Scan voice ts:12 disable
+2023-11-21 11:38:05 : ******current test $Aulaw=a-law $Impedance=900-ohm $Gain_mode=default
+2023-11-21 11:38:10 : 	set Fxs ALL Port CFG (Aulaw,Imp)
+2023-11-21 11:38:15 : 	set Fxo ALL Port CFG (Aulaw,Imp)
+2023-11-21 11:38:18 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 29	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:38:20 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 29	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:38:23 : DUT 2 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXS Slot 6  ,port 1 to  pw Slot pw ,port 30	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:38:26 : DUT 1 (AM3440_CCPA_tsi_cfg_By_Snmp) from FXO Slot 5  ,port 1 to  pw Slot pw ,port 30	Tar_TS:1 Src_TS:1 TS#=12 Tsi_Type:voice
+2023-11-21 11:38:29 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:38:29 : DUT 1 (AM3440_CCPA_pw_connect) bid:29 connect to ecid:23932
+2023-11-21 11:38:29 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 11:38:32 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:38:33 : DUT 2 (AM3440_CCPA_pw_connect) bid:29 connect to ecid:23932
+2023-11-21 11:38:33 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 11:38:35 : DUT 2 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:38:36 : DUT 2 (AM3440_CCPA_pw_connect) bid:30 connect to ecid:23933
+2023-11-21 11:38:36 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.1 Sec Ip/Mac:31.31.31.11
+2023-11-21 11:38:38 : DUT 1 (AM3440_CCPA_Get_DaulCtrlInfo_log) 	HW:Exist SW:Exist  Sync:Sync slot at left
+2023-11-21 11:38:39 : DUT 1 (AM3440_CCPA_pw_connect) bid:30 connect to ecid:23933
+2023-11-21 11:38:39 : 		Format:Cesopsn ,Type:Ip ,Frame:E1CAS TS#:12 ,Frame#:4 ,Pri Ip/Mac:31.31.31.2 Sec Ip/Mac:31.31.31.22
+2023-11-21 11:39:39 : DUT 1 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 11:39:40 : DUT 2 (AM3440_CCPA_pw_status_Clear)
+2023-11-21 11:39:40 : Check setup status start 

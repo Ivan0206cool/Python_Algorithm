@@ -13,6 +13,9 @@ import os
 from pathlib import Path
 from datetime import datetime
 
+
+
+
 def get_card_config_action(info):
     if "init" in info:
         card = ""
@@ -97,18 +100,18 @@ def get_dut_info(input_report_path):
                 print(ctrl_sw_ver)
                 if text_line.split('=')[2].split(" ")[0].split("L")[1] == "1":  # ctrl1
                     print(text_line)
-                    ctrl_fpga1_ver = text_line.split('FPGA1=')[1].split(" ")[0]
-                    ctrl_fpga2_ver = text_line.split('FPGA2=')[1].split(" ")[0]
-                    ctrl_cpld_ver = text_line.split('CPLD=')[1].split(" ")[0]
+                    # ctrl_fpga1_ver = text_line.split('FPGA1=')[1].split(" ")[0]
+                    # ctrl_fpga2_ver = text_line.split('FPGA2=')[1].split(" ")[0]
+                    # ctrl_cpld_ver = text_line.split('CPLD=')[1].split(" ")[0]
                     dut_info[dut_num]["Slot Info"].append(
                         {
                             "Name": "Ctrl 1",
                             "HW Version": ctrl_hw_ver,
                             "SW Version": ctrl_sw_ver,
                             "Serial Version": ctrl_serial_ver,
-                            "FPGA1 Version": ctrl_fpga1_ver,
-                            "FPGA2 Version": ctrl_fpga2_ver,
-                            "CPLD Version": ctrl_cpld_ver
+                            # "FPGA1 Version": ctrl_fpga1_ver,
+                            # "FPGA2 Version": ctrl_fpga2_ver,
+                            # "CPLD Version": ctrl_cpld_ver
                         })
                 else:
                     dut_info[dut_num]["Slot Info"].append(
@@ -120,6 +123,7 @@ def get_dut_info(input_report_path):
                         })
             elif "slot" in dut_slot:
                 slot_info = re.findall(r'slot:(.*)\s+ver', text_line)
+                print(slot_info)
                 slot_num = str(slot_info).split()[1].strip()
                 slot_card_type = str(slot_info).split()[2].strip()
                 slot_ver = text_line.split('ver:')[1].split('"')[1]
@@ -1005,11 +1009,11 @@ def IP6704_50ms_result_parse(time_stamp, text_line, f_read):
     return result_str, result
 # === file path
 date = datetime.today().strftime('%m%d')
-file_path = F"C:/Users/User/Desktop/VScode_Project/Python_Algorithm"
-excel_path = Path(F'C:/Users/User/Desktop/VScode_Project/Python_Algorithm/summary_json_parser_{date}.xlsx')
+file_path = F"D:/autotest/G7800"
+excel_path = Path(F'D:/autotest/G7800/summary_json_parser_{date}.xlsx')
 # with open(F"{file_path}/test_result_modified.json",'r') as fr1:
 #     test_result = json.load(fr1)
-report_log = F"{file_path}/Report_log_2.txt"
+report_log = F"{file_path}/Report_log.txt"
 dut_info = get_dut_info(report_log)
 # === file path
 

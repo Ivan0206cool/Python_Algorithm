@@ -1,0 +1,135 @@
+2023-11-30 17:09:53 : begin
+2023-11-30 17:09:53 : DUT1 is LOOP CCPB_2ge-A ,slot#16
+2023-11-30 17:09:54 : DUT2 is LOOP CCPA-A ,slot#16
+2023-11-30 17:09:57 : DUT:1 ctrl : sw:"V23.11.01 (0010)" serial:479 hw: "Ver.C, FPGA1:V16(7), FPGA2:V14(10), CPLD:V3(2) "
+2023-11-30 17:09:57 : DUT:1 ctrl2: sw:"N/A" serial:0 hw: "N/A"
+2023-11-30 17:10:00 : DUT:1 slot: 11 QE1        ver:"V3.10.02 (0046)"
+2023-11-30 17:10:01 : DUT:1 slot: 10 QE1        ver:"V3.10.02 (0046)"
+2023-11-30 17:10:02 : DUT:1 slot: 9  QE1        ver:"V3.10.02 (0046)"
+2023-11-30 17:10:03 : DUT:1 slot: 8  QE1        ver:"V3.10.02 (0046)"
+2023-11-30 17:10:07 : DUT:1 slot: 5  Rs232_8    ver:"V1.08.01 (0001)"
+2023-11-30 17:10:11 : DUT:1 slot: 2  QT1        ver:"V3.10.01 (0012)"
+2023-11-30 17:10:19 : DUT:2 ctrl : sw:"V12.16.01 (0024)" serial:612 hw: "Ver.C, FPGA1:V16(7), FPGA2:V14(10), CPLD:V3(2) "
+2023-11-30 17:10:19 : DUT:2 ctrl2: sw:"N/A" serial:0 hw: "N/A"
+2023-11-30 17:10:20 : DUT:2 slot: 12 Rs232_8    ver:"V1.08.01 (0001)"
+2023-11-30 17:10:21 : DUT:2 slot: 11 RS232A     ver:"V1.01.01 (0014) HW Ver.B FPGA:V1(4)"
+2023-11-30 17:10:27 : DUT:2 slot: 6  QE1        ver:"V3.10.02 (0046)"
+2023-11-30 17:10:29 : DUT:2 slot: 5  QE1        ver:"V3.10.02 (0046)"
+2023-11-30 17:10:30 : DUT:2 slot: 4  QE1        ver:"V3.10.01 (0012)"
+2023-11-30 17:10:31 : DUT:2 slot: 3  QE1        ver:"V3.10.01 (0012)"
+2023-11-30 17:10:32 : DUT:2 slot: 2  QT1        ver:"V3.10.01 (0012)"
+2023-11-30 17:13:12 : DUT 1 CurrCLK:master   ClkRecover:manul	slot Slot2	port Port4
+2023-11-30 17:13:24 : DUT 2 CurrCLK:master   ClkRecover:manul	slot Internal	port None
+2023-11-30 17:13:24 : --------8RS232 ---------ROUND:1 TEST BEGIN
+2023-11-30 17:13:47 : DUT 1&2 Set_8RS232_cfg Rate: 9.6k Async-8
+2023-11-30 17:14:42 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=7 Pri Bundle=4 JBUR=0 JBOR=0 JBMIN=8.0 JBMAX=9.8 JBDP=8.8 LBitCnt=0 RBitCnt=0 TxGood=6429 RxGood=6430 RxLost=0 Link=up SizeErr=no
+2023-11-30 17:14:44 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=7 Pri Bundle=4 JBUR=0 JBOR=0 JBMIN=8.0 JBMAX=9.8 JBDP=9.7 LBitCnt=0 RBitCnt=0 TxGood=7102 RxGood=7103 RxLost=0 Link=up SizeErr=no
+2023-11-30 17:14:45 : DUT 1 (AM3440_CCPA_Get_PW_Statist_log)  bid_idx=4 Eth1LinkStat=up Eth2Linkstat=up Eth1RxSeqNum=24759 Eth2RxSeqNum=24759 Eth1RxSeqLos=0 Eth2RxSeqLos=0 Eth1RxJBLos=0 Eth2RxJBLos=0 DiffDelay="0."
+2023-11-30 17:14:45 : DUT 2 (AM3440_CCPA_Get_PW_Statist_log)  bid_idx=4 Eth1LinkStat=up Eth2Linkstat=up Eth1RxSeqNum=25644 Eth2RxSeqNum=25644 Eth1RxSeqLos=0 Eth2RxSeqLos=0 Eth1RxJBLos=0 Eth2RxJBLos=0 DiffDelay="0."
+2023-11-30 17:14:45 : Check RS485 slot status on DUT 1 start
+2023-11-30 17:14:46 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 2 TXcount=592781 RXcount=592775 NoRXcount=6 TimeOutCount=6 AliveCount=592775 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-t1
+2023-11-30 17:14:46 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 5 TXcount=461346 RXcount=444634 NoRXcount=16712 TimeOutCount=16712 AliveCount=444634 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=rs232-8
+2023-11-30 17:14:46 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 8 TXcount=606878 RXcount=606873 NoRXcount=5 TimeOutCount=5 AliveCount=606873 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:14:47 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 9 TXcount=605920 RXcount=605915 NoRXcount=5 TimeOutCount=5 AliveCount=605915 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:14:47 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 10 TXcount=605886 RXcount=605881 NoRXcount=5 TimeOutCount=5 AliveCount=605881 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:14:48 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 11 TXcount=603363 RXcount=603358 NoRXcount=5 TimeOutCount=5 AliveCount=603358 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:14:48 : Check RS485 slot status on DUT 1 end
+2023-11-30 17:14:48 : (AM3440_CCPA_Get_Rs485_statist) DUT 1 Break=0 Framing=0 Parity=0 Overrun=0 FCSerror=0 Sliperr=0 Buffererror=0 CmdCounterror=0 CmdtooLong=0 Interrput=3459453 Record=514156
+2023-11-30 17:14:48 : Check RS485 slot status on DUT 2 start
+2023-11-30 17:14:49 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 2 TXcount=579691 RXcount=579686 NoRXcount=5 TimeOutCount=5 AliveCount=579686 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-t1
+2023-11-30 17:14:49 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 3 TXcount=592940 RXcount=592935 NoRXcount=5 TimeOutCount=5 AliveCount=592935 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:14:50 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 4 TXcount=592911 RXcount=592906 NoRXcount=5 TimeOutCount=5 AliveCount=592906 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:14:50 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 5 TXcount=592871 RXcount=592866 NoRXcount=5 TimeOutCount=5 AliveCount=592866 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:14:50 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 6 TXcount=590448 RXcount=590443 NoRXcount=5 TimeOutCount=5 AliveCount=590443 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:14:51 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 11 TXcount=408972 RXcount=387960 NoRXcount=21012 TimeOutCount=21012 AliveCount=387960 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=rs232a
+2023-11-30 17:14:51 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 12 TXcount=439767 RXcount=421953 NoRXcount=17814 TimeOutCount=17814 AliveCount=421953 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=rs232-8
+2023-11-30 17:14:51 : Check RS485 slot status on DUT 2 end
+2023-11-30 17:14:52 : (AM3440_CCPA_Get_Rs485_statist) DUT 2 Break=0 Framing=0 Parity=0 Overrun=0 FCSerror=0 Sliperr=0 Buffererror=0 CmdCounterror=0 CmdtooLong=0 Interrput=3758773 Record=514076
+2023-11-30 17:14:52 :     -----Fireberd 2 result get-----
+2023-11-30 17:15:00 :     Fireberd check PASS.	24
+2023-11-30 17:15:08 : --------8RS232 --------- TEST END
+2023-11-30 17:15:08 : --------8RS232 ---------ROUND:1 TEST BEGIN
+2023-11-30 17:15:31 : DUT 1&2 Set_8RS232_cfg Rate: 9.6k Async-9
+2023-11-30 17:16:26 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=7 Pri Bundle=4 JBUR=0 JBOR=0 JBMIN=8.0 JBMAX=9.8 JBDP=8.1 LBitCnt=0 RBitCnt=0 TxGood=6595 RxGood=6594 RxLost=0 Link=up SizeErr=no
+2023-11-30 17:16:28 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=7 Pri Bundle=4 JBUR=0 JBOR=0 JBMIN=8.0 JBMAX=9.8 JBDP=8.1 LBitCnt=0 RBitCnt=0 TxGood=7273 RxGood=7273 RxLost=0 Link=up SizeErr=no
+2023-11-30 17:16:28 : DUT 1 (AM3440_CCPA_Get_PW_Statist_log)  bid_idx=4 Eth1LinkStat=up Eth2Linkstat=up Eth1RxSeqNum=58902 Eth2RxSeqNum=58902 Eth1RxSeqLos=0 Eth2RxSeqLos=0 Eth1RxJBLos=0 Eth2RxJBLos=0 DiffDelay="0."
+2023-11-30 17:16:29 : DUT 2 (AM3440_CCPA_Get_PW_Statist_log)  bid_idx=4 Eth1LinkStat=up Eth2Linkstat=up Eth1RxSeqNum=60283 Eth2RxSeqNum=60283 Eth1RxSeqLos=0 Eth2RxSeqLos=0 Eth1RxJBLos=0 Eth2RxJBLos=0 DiffDelay="0."
+2023-11-30 17:16:29 : Check RS485 slot status on DUT 1 start
+2023-11-30 17:16:29 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 2 TXcount=593015 RXcount=593009 NoRXcount=6 TimeOutCount=6 AliveCount=593009 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-t1
+2023-11-30 17:16:29 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 5 TXcount=461604 RXcount=444892 NoRXcount=16712 TimeOutCount=16712 AliveCount=444892 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=rs232-8
+2023-11-30 17:16:30 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 8 TXcount=607113 RXcount=607108 NoRXcount=5 TimeOutCount=5 AliveCount=607108 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:16:30 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 9 TXcount=606154 RXcount=606149 NoRXcount=5 TimeOutCount=5 AliveCount=606149 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:16:31 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 10 TXcount=606120 RXcount=606115 NoRXcount=5 TimeOutCount=5 AliveCount=606115 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:16:31 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 11 TXcount=603598 RXcount=603593 NoRXcount=5 TimeOutCount=5 AliveCount=603592 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:16:31 : Check RS485 slot status on DUT 1 end
+2023-11-30 17:16:31 : (AM3440_CCPA_Get_Rs485_statist) DUT 1 Break=0 Framing=0 Parity=0 Overrun=0 FCSerror=0 Sliperr=0 Buffererror=0 CmdCounterror=0 CmdtooLong=0 Interrput=3460884 Record=514362
+2023-11-30 17:16:32 : Check RS485 slot status on DUT 2 start
+2023-11-30 17:16:32 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 2 TXcount=579913 RXcount=579908 NoRXcount=5 TimeOutCount=5 AliveCount=579908 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-t1
+2023-11-30 17:16:33 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 3 TXcount=593162 RXcount=593157 NoRXcount=5 TimeOutCount=5 AliveCount=593157 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:16:33 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 4 TXcount=593133 RXcount=593128 NoRXcount=5 TimeOutCount=5 AliveCount=593128 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:16:33 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 5 TXcount=593092 RXcount=593087 NoRXcount=5 TimeOutCount=5 AliveCount=593087 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:16:34 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 6 TXcount=590668 RXcount=590663 NoRXcount=5 TimeOutCount=5 AliveCount=590663 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:16:34 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 11 TXcount=409184 RXcount=388172 NoRXcount=21012 TimeOutCount=21012 AliveCount=388172 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=rs232a
+2023-11-30 17:16:35 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 12 TXcount=440013 RXcount=422199 NoRXcount=17814 TimeOutCount=17814 AliveCount=422199 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=rs232-8
+2023-11-30 17:16:35 : Check RS485 slot status on DUT 2 end
+2023-11-30 17:16:35 : (AM3440_CCPA_Get_Rs485_statist) DUT 2 Break=0 Framing=0 Parity=0 Overrun=0 FCSerror=0 Sliperr=0 Buffererror=0 CmdCounterror=0 CmdtooLong=0 Interrput=3760337 Record=514282
+2023-11-30 17:16:35 :     -----Fireberd 2 result get-----
+2023-11-30 17:16:43 :     Fireberd check PASS.	24
+2023-11-30 17:16:52 : --------8RS232 --------- TEST END
+2023-11-30 17:16:52 : --------8RS232 ---------ROUND:1 TEST BEGIN
+2023-11-30 17:17:13 : DUT 1&2 Set_8RS232_cfg Rate: 9.6k Async-10
+2023-11-30 17:18:09 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=7 Pri Bundle=4 JBUR=0 JBOR=0 JBMIN=8.0 JBMAX=9.8 JBDP=9.5 LBitCnt=0 RBitCnt=0 TxGood=6220 RxGood=6220 RxLost=0 Link=up SizeErr=no
+2023-11-30 17:18:11 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=7 Pri Bundle=4 JBUR=0 JBOR=0 JBMIN=8.0 JBMAX=9.8 JBDP=9.8 LBitCnt=0 RBitCnt=0 TxGood=7413 RxGood=7413 RxLost=0 Link=up SizeErr=no
+2023-11-30 17:18:11 : DUT 1 (AM3440_CCPA_Get_PW_Statist_log)  bid_idx=4 Eth1LinkStat=up Eth2Linkstat=up Eth1RxSeqNum=27758 Eth2RxSeqNum=27758 Eth1RxSeqLos=0 Eth2RxSeqLos=0 Eth1RxJBLos=0 Eth2RxJBLos=0 DiffDelay="0."
+2023-11-30 17:18:11 : DUT 2 (AM3440_CCPA_Get_PW_Statist_log)  bid_idx=4 Eth1LinkStat=up Eth2Linkstat=up Eth1RxSeqNum=29138 Eth2RxSeqNum=29138 Eth1RxSeqLos=0 Eth2RxSeqLos=0 Eth1RxJBLos=0 Eth2RxJBLos=0 DiffDelay="0."
+2023-11-30 17:18:11 : Check RS485 slot status on DUT 1 start
+2023-11-30 17:18:12 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 2 TXcount=593245 RXcount=593239 NoRXcount=6 TimeOutCount=6 AliveCount=593239 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-t1
+2023-11-30 17:18:12 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 5 TXcount=461867 RXcount=445155 NoRXcount=16712 TimeOutCount=16712 AliveCount=445155 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=rs232-8
+2023-11-30 17:18:13 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 8 TXcount=607343 RXcount=607338 NoRXcount=5 TimeOutCount=5 AliveCount=607338 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:18:13 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 9 TXcount=606385 RXcount=606380 NoRXcount=5 TimeOutCount=5 AliveCount=606380 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:18:13 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 10 TXcount=606351 RXcount=606346 NoRXcount=5 TimeOutCount=5 AliveCount=606346 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:18:14 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 11 TXcount=603829 RXcount=603824 NoRXcount=5 TimeOutCount=5 AliveCount=603824 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:18:14 : Check RS485 slot status on DUT 1 end
+2023-11-30 17:18:14 : (AM3440_CCPA_Get_Rs485_statist) DUT 1 Break=0 Framing=0 Parity=0 Overrun=0 FCSerror=0 Sliperr=0 Buffererror=0 CmdCounterror=0 CmdtooLong=0 Interrput=3462304 Record=514568
+2023-11-30 17:18:15 : Check RS485 slot status on DUT 2 start
+2023-11-30 17:18:15 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 2 TXcount=580131 RXcount=580126 NoRXcount=5 TimeOutCount=5 AliveCount=580125 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-t1
+2023-11-30 17:18:15 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 3 TXcount=593379 RXcount=593374 NoRXcount=5 TimeOutCount=5 AliveCount=593374 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:18:16 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 4 TXcount=593350 RXcount=593345 NoRXcount=5 TimeOutCount=5 AliveCount=593344 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:18:16 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 5 TXcount=593309 RXcount=593304 NoRXcount=5 TimeOutCount=5 AliveCount=593304 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:18:17 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 6 TXcount=590886 RXcount=590881 NoRXcount=5 TimeOutCount=5 AliveCount=590881 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:18:17 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 11 TXcount=409402 RXcount=388389 NoRXcount=21012 TimeOutCount=21012 AliveCount=388389 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=rs232a
+2023-11-30 17:18:17 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 12 TXcount=440259 RXcount=422445 NoRXcount=17814 TimeOutCount=17814 AliveCount=422445 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=rs232-8
+2023-11-30 17:18:17 : Check RS485 slot status on DUT 2 end
+2023-11-30 17:18:18 : (AM3440_CCPA_Get_Rs485_statist) DUT 2 Break=0 Framing=0 Parity=0 Overrun=0 FCSerror=0 Sliperr=0 Buffererror=0 CmdCounterror=0 CmdtooLong=0 Interrput=3761888 Record=514488
+2023-11-30 17:18:18 :     -----Fireberd 2 result get-----
+2023-11-30 17:18:26 :     Fireberd check PASS.	24
+2023-11-30 17:18:34 : --------8RS232 --------- TEST END
+2023-11-30 17:18:34 : --------8RS232 ---------ROUND:1 TEST BEGIN
+2023-11-30 17:18:57 : DUT 1&2 Set_8RS232_cfg Rate: 19.2k Async-8
+2023-11-30 17:19:53 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=7 Pri Bundle=4 JBUR=0 JBOR=0 JBMIN=8.0 JBMAX=9.8 JBDP=9.2 LBitCnt=0 RBitCnt=0 TxGood=6565 RxGood=6565 RxLost=0 Link=up SizeErr=no
+2023-11-30 17:19:55 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=7 Pri Bundle=4 JBUR=0 JBOR=0 JBMIN=8.0 JBMAX=9.8 JBDP=8.2 LBitCnt=0 RBitCnt=0 TxGood=7257 RxGood=7257 RxLost=0 Link=up SizeErr=no
+2023-11-30 17:19:55 : DUT 1 (AM3440_CCPA_Get_PW_Statist_log)  bid_idx=4 Eth1LinkStat=up Eth2Linkstat=up Eth1RxSeqNum=62199 Eth2RxSeqNum=62199 Eth1RxSeqLos=0 Eth2RxSeqLos=0 Eth1RxJBLos=0 Eth2RxJBLos=0 DiffDelay="0."
+2023-11-30 17:19:56 : DUT 2 (AM3440_CCPA_Get_PW_Statist_log)  bid_idx=4 Eth1LinkStat=up Eth2Linkstat=up Eth1RxSeqNum=63555 Eth2RxSeqNum=63555 Eth1RxSeqLos=0 Eth2RxSeqLos=0 Eth1RxJBLos=0 Eth2RxJBLos=0 DiffDelay="0."
+2023-11-30 17:19:56 : Check RS485 slot status on DUT 1 start
+2023-11-30 17:19:56 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 2 TXcount=593480 RXcount=593474 NoRXcount=6 TimeOutCount=6 AliveCount=593473 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-t1
+2023-11-30 17:19:57 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 5 TXcount=462135 RXcount=445423 NoRXcount=16712 TimeOutCount=16712 AliveCount=445423 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=rs232-8
+2023-11-30 17:19:57 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 8 TXcount=607577 RXcount=607572 NoRXcount=5 TimeOutCount=5 AliveCount=607572 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:19:57 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 9 TXcount=606619 RXcount=606614 NoRXcount=5 TimeOutCount=5 AliveCount=606614 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:19:58 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 10 TXcount=606585 RXcount=606580 NoRXcount=5 TimeOutCount=5 AliveCount=606580 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:19:58 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 11 TXcount=604062 RXcount=604057 NoRXcount=5 TimeOutCount=5 AliveCount=604057 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:19:58 : Check RS485 slot status on DUT 1 end
+2023-11-30 17:19:59 : (AM3440_CCPA_Get_Rs485_statist) DUT 1 Break=0 Framing=0 Parity=0 Overrun=0 FCSerror=0 Sliperr=0 Buffererror=0 CmdCounterror=0 CmdtooLong=0 Interrput=3463740 Record=514776
+2023-11-30 17:19:59 : Check RS485 slot status on DUT 2 start
+2023-11-30 17:19:59 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 2 TXcount=580350 RXcount=580345 NoRXcount=5 TimeOutCount=5 AliveCount=580345 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-t1
+2023-11-30 17:20:00 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 3 TXcount=593599 RXcount=593594 NoRXcount=5 TimeOutCount=5 AliveCount=593594 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:20:00 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 4 TXcount=593570 RXcount=593565 NoRXcount=5 TimeOutCount=5 AliveCount=593565 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:20:01 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 5 TXcount=593530 RXcount=593525 NoRXcount=5 TimeOutCount=5 AliveCount=593525 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:20:01 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 6 TXcount=591107 RXcount=591102 NoRXcount=5 TimeOutCount=5 AliveCount=591102 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-11-30 17:20:01 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 11 TXcount=409623 RXcount=388611 NoRXcount=21012 TimeOutCount=21012 AliveCount=388610 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=rs232a
+2023-11-30 17:20:02 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 12 TXcount=440511 RXcount=422697 NoRXcount=17814 TimeOutCount=17814 AliveCount=422697 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=rs232-8
+2023-11-30 17:20:02 : Check RS485 slot status on DUT 2 end
+2023-11-30 17:20:02 : (AM3440_CCPA_Get_Rs485_statist) DUT 2 Break=0 Framing=0 Parity=0 Overrun=0 FCSerror=0 Sliperr=0 Buffererror=0 CmdCounterror=0 CmdtooLong=0 Interrput=3763461 Record=514696
+2023-11-30 17:20:02 :     -----Fireberd 2 result get-----
+2023-11-30 17:20:11 :     Fireberd check PASS.	24
+2023-11-30 17:20:18 : --------8RS232 --------- TEST END
+2023-11-30 17:20:18 : --------8RS232 ---------ROUND:1 TEST BEGIN

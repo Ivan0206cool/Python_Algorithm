@@ -1,0 +1,49 @@
+{
+    "Bert": {
+        "Total": 468,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "pass": 467,
+                "fail": 1,
+                "fail_item": [
+                    {
+                        "Time": "2023-11-16 01:45:10",
+                        "Bit Error": "0",
+                        "Error ID": "0145",
+                        "Elapsed Time": "15"
+                    }
+                ]
+            }
+        }
+    },
+    "Ring": {
+        "Total": 474,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "pass": 474,
+                "fail": 0,
+                "fail_item": []
+            }
+        }
+    },
+    "Tone": {
+        "Total": 160,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "pass": 160,
+                "fail": 0,
+                "fail_item": []
+            }
+        }
+    },
+    "50ms": {
+        "Total": 0,
+        "Items": {
+            "FXO-no define-Check setup status": {
+                "pass": 0,
+                "fail": 0,
+                "fail_item": []
+            }
+        }
+    }
+}

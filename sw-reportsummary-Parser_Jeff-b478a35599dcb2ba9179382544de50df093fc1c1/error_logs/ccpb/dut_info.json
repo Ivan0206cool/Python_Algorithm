@@ -1,0 +1,114 @@
+{
+    "1": {
+        "Chassis": "GE G7800-A",
+        "Total slots": "16",
+        "Slot Info": [
+            {
+                "Name": "Ctrl 1",
+                "HW Version": "V50.01.01 (0095)",
+                "SW Version": "V50.01.01 (0095)",
+                "Serial Version": "48 hw: \"Ver.B, FPGA1:V16(18), FPGA2:V14(10), CPLD:V3(1) \"",
+                "FPGA1 Version": "V16(18)",
+                "FPGA2 Version": "V14(10)",
+                "CPLD Version": "V3(1)"
+            },
+            {
+                "Name": "Ctrl 2",
+                "HW Version": "V50.01.01 (0095)",
+                "SW Version": "V50.01.01 (0095)",
+                "Serial Version": "45 hw: \"Ver.B\""
+            },
+            {
+                "Name": "Slot 10",
+                "Card Type": "EM",
+                "Version": " (brand mismatch)"
+            },
+            {
+                "Name": "Slot 9",
+                "Card Type": "EM",
+                "Version": " (brand mismatch)"
+            },
+            {
+                "Name": "Slot 8",
+                "Card Type": "QE1",
+                "Version": "V3.10.02 (0046)"
+            },
+            {
+                "Name": "Slot 6",
+                "Card Type": "Rs232_8",
+                "Version": " (brand mismatch)"
+            },
+            {
+                "Name": "Slot 3",
+                "Card Type": "QT1",
+                "Version": "V3.10.06 (0096)"
+            },
+            {
+                "Name": "Slot f",
+                "Card Type": "Q4wem",
+                "Version": ""
+            },
+            {
+                "Name": "Slot d",
+                "Card Type": "FT1",
+                "Version": "V4.04.06 (0004), HW: G, FPGA: 52"
+            },
+            {
+                "Name": "Slot b",
+                "Card Type": "Fom",
+                "Version": "FPGA:I HW:B"
+            },
+            {
+                "Name": "Slot a",
+                "Card Type": "MQT1",
+                "Version": "V2.01.01 (0024)"
+            }
+        ]
+    },
+    "2": {
+        "Chassis": "GE G7800-A",
+        "Total slots": "16",
+        "Slot Info": [
+            {
+                "Name": "Ctrl 1",
+                "HW Version": "V50.01.01 (0095)",
+                "SW Version": "V50.01.01 (0095)",
+                "Serial Version": "46 hw: \"Ver.B, FPGA1:V16(18), FPGA2:V14(10), CPLD:V3(1) \"",
+                "FPGA1 Version": "V16(18)",
+                "FPGA2 Version": "V14(10)",
+                "CPLD Version": "V3(1)"
+            },
+            {
+                "Name": "Ctrl 2",
+                "HW Version": "N/A",
+                "SW Version": "N/A",
+                "Serial Version": "0 hw: \"N/A\""
+            },
+            {
+                "Name": "Slot 6",
+                "Card Type": "Rs232_8",
+                "Version": " (brand mismatch)"
+            },
+            {
+                "Name": "Slot 3",
+                "Card Type": "QT1",
+                "Version": "V3.10.06 (0096)"
+            },
+            {
+                "Name": "Slot 1",
+                "Card Type": "QE1",
+                "Version": "V3.10.01 (0012)"
+            },
+            {
+                "Name": "Slot d",
+                "Card Type": "Q4wem",
+                "Version": ""
+            }
+        ]
+    },
+    "3": {
+        "Chassis": "LOOP IP6704_DACS-A",
+        "Total slots": "4",
+        "Slot Info": []
+    }
+}

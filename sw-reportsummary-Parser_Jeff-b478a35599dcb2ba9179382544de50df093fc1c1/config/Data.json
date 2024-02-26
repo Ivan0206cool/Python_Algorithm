@@ -1,0 +1,110 @@
+{
+	"Device": {
+		"Name":"LOOP AM3440-A",
+		"HW":"Ver.C",
+		"FPGA1":"V12(23)",
+		"FPGA2":"V9(35)",
+		"CPLD":"V2(1)",
+		"SW":"V12.09.01 (0012)"
+
+	},
+	"Display":{
+		"Performance Report":[
+			"Reserve"
+		],
+		"Health Check":[
+			"dbg snmp table",
+			"BufFull",
+			"Wireshark",
+			"DPLL",
+			"BPSync",
+			"HDLC",
+			"Rs485Delay",
+			"Rs485",
+			"Rs485TxRxOverlap",
+			"Acr ",
+			"Clock",
+			"PwStatus",
+			"PwStandbyStatus",
+			"Pw_Seq_err",
+			"CPU temperature",
+			"Irc2Timeout",
+			"Irc2RemoteTimeout",
+			"IrcIntcMask",
+			"CPU Loading "
+		]
+	},
+	"Ctrl Regression":{
+		"System Setup":[
+			"Inband",
+			"Uplink",
+			"SNMP",
+			"TELNET",
+			"SSH",
+			"HTTP(web skip)",
+			"Link Backup",
+			"E1T1 Port Portection",
+			"DS0-SNCP",
+			"any_ds1",
+			"PDH-Ring Network",
+			"TSI Map",
+			"tsi_in_out(T1 Signaling)",
+			"tsi_in_out(AU_Law)",
+			"Command Line",
+			"SNTP Setup",
+			"SYSLOG Setup",
+			"Power Setup",
+			"RADIUS Setup",
+			"Tone"
+		],
+		"Alarm Trap/Alarm Queue":[
+			"Reserve"
+		],
+		"Firmware Transfer":[
+			"Reserve"
+		],
+		"Clock Source Setup":[
+			"Reserve"
+		],
+		"Bit Error Rate Test":[
+			"Bert"
+		],
+		"PseudoWire Setup":[
+			"Reserve"
+		],
+		"Controller Reset":[
+			"Reserve"
+		]
+	},
+	"Card Regression":{
+		"Cisco Network":[
+			"qe1",
+			"fe1",
+			"mqe1",
+			"4c37",
+			"8cd",
+			"fom",
+			"1foma",
+			"3_e1",
+			"t1",
+			"ft1",
+			"mqt1",
+			"3_t1",
+			"rs232",
+			"ocudp",
+			"8udte",
+			"6udte",
+			"fxs",
+			"fxo",
+			"qfxs",
+			"qfxo",
+			"em",
+			"qem",
+			"mag",
+			"qmag",
+			"rta",
+			"rtb",
+			"drg"
+		]
+	}
+}

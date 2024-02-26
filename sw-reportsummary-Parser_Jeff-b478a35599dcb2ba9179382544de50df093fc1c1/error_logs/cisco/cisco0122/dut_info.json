@@ -1,0 +1,191 @@
+{
+    "1": {
+        "Chassis": "LOOP CCPA-A",
+        "Total slots": "16",
+        "Slot Info": [
+            {
+                "Name": "Ctrl 1",
+                "HW Version": "V12.16.01 (0097)",
+                "SW Version": "V12.16.01 (0097)",
+                "Serial Version": "211 hw: \"Ver.C, FPGA1:V16(15), FPGA2:V14(10), CPLD:V3(2) \"",
+                "FPGA1 Version": "V16(15)",
+                "FPGA2 Version": "V14(10)",
+                "CPLD Version": "V3(2)"
+            },
+            {
+                "Name": "Ctrl 2",
+                "HW Version": "V12.16.01 (0097)",
+                "SW Version": "V12.16.01 (0097)",
+                "Serial Version": "186 hw: \"Ver.C\""
+            },
+            {
+                "Name": "Slot 12",
+                "Card Type": "QE1",
+                "Version": "V3.10.01 (0012)"
+            },
+            {
+                "Name": "Slot 11",
+                "Card Type": "Ls_optical']",
+                "Version": "FPGA:F HW:B"
+            },
+            {
+                "Name": "Slot 10",
+                "Card Type": "QE1",
+                "Version": "V3.10.01 (0012)"
+            },
+            {
+                "Name": "Slot 9",
+                "Card Type": "Ls_optical']",
+                "Version": "FPGA:F HW:B"
+            },
+            {
+                "Name": "Slot 6",
+                "Card Type": "FXS",
+                "Version": "V4.09.02 (0003) Ver.P FPGA:V8(10)"
+            },
+            {
+                "Name": "Slot 5",
+                "Card Type": "FXO",
+                "Version": "V3.05.01 (0069) HW Ver.H FPGA :V10(4)"
+            },
+            {
+                "Name": "Slot c",
+                "Card Type": "clka",
+                "Version": ""
+            }
+        ]
+    },
+    "2": {
+        "Chassis": "LOOP CCPB_2ge-A",
+        "Total slots": "16",
+        "Slot Info": [
+            {
+                "Name": "Ctrl 1",
+                "HW Version": "V23.12.01 (0097)",
+                "SW Version": "V23.12.01 (0097)",
+                "Serial Version": "750 hw: \"Ver.C, FPGA1:V16(15), FPGA2:V14(10), CPLD:V3(2) \"",
+                "FPGA1 Version": "V16(15)",
+                "FPGA2 Version": "V14(10)",
+                "CPLD Version": "V3(2)"
+            },
+            {
+                "Name": "Ctrl 2",
+                "HW Version": "V23.12.01 (0097)",
+                "SW Version": "V23.12.01 (0097)",
+                "Serial Version": "742 hw: \"Ver.C\""
+            },
+            {
+                "Name": "Slot 12",
+                "Card Type": "QE1",
+                "Version": "V3.10.01 (0012)"
+            },
+            {
+                "Name": "Slot 10",
+                "Card Type": "QE1",
+                "Version": "V3.10.01 (0012)"
+            },
+            {
+                "Name": "Slot 9",
+                "Card Type": "Ls_optical']",
+                "Version": "FPGA:F HW:B"
+            },
+            {
+                "Name": "Slot 6",
+                "Card Type": "FXS",
+                "Version": "V4.09.02 (0003) Ver.P FPGA:V8(10)"
+            },
+            {
+                "Name": "Slot 5",
+                "Card Type": "FXO",
+                "Version": "V3.05.01 (0069) HW Ver.H FPGA :V10(4)"
+            }
+        ]
+    },
+    "3": {
+        "Chassis": "LOOP CCPA-A",
+        "Total slots": "16",
+        "Slot Info": [
+            {
+                "Name": "Ctrl 1",
+                "HW Version": "V12.16.01 (0097)",
+                "SW Version": "V12.16.01 (0097)",
+                "Serial Version": "1004 hw: \"Ver.C, FPGA1:V16(15), FPGA2:V14(10), CPLD:V2(1) \"",
+                "FPGA1 Version": "V16(15)",
+                "FPGA2 Version": "V14(10)",
+                "CPLD Version": "V2(1)"
+            },
+            {
+                "Name": "Ctrl 2",
+                "HW Version": "V12.16.01 (0097)",
+                "SW Version": "V12.16.01 (0097)",
+                "Serial Version": "1005 hw: \"Ver.C\""
+            },
+            {
+                "Name": "Slot 12",
+                "Card Type": "QE1",
+                "Version": "V3.10.01 (0012)"
+            },
+            {
+                "Name": "Slot 10",
+                "Card Type": "QE1",
+                "Version": "V3.10.01 (0012)"
+            },
+            {
+                "Name": "Slot 9",
+                "Card Type": "Ls_optical']",
+                "Version": "FPGA:F HW:B"
+            },
+            {
+                "Name": "Slot c",
+                "Card Type": "QFXO",
+                "Version": "V1.01.03 (0001)Ver.D, FPGA :V2(5)"
+            }
+        ]
+    },
+    "4": {
+        "Chassis": "LOOP CCPA-A",
+        "Total slots": "16",
+        "Slot Info": [
+            {
+                "Name": "Ctrl 1",
+                "HW Version": "V12.16.01 (0097)",
+                "SW Version": "V12.16.01 (0097)",
+                "Serial Version": "1001 hw: \"Ver.C, FPGA1:V16(15), FPGA2:V14(10), CPLD:V2(1) \"",
+                "FPGA1 Version": "V16(15)",
+                "FPGA2 Version": "V14(10)",
+                "CPLD Version": "V2(1)"
+            },
+            {
+                "Name": "Ctrl 2",
+                "HW Version": "V12.16.01 (0097)",
+                "SW Version": "V12.16.01 (0097)",
+                "Serial Version": "1003 hw: \"Ver.C\""
+            },
+            {
+                "Name": "Slot 12",
+                "Card Type": "QE1",
+                "Version": "V3.10.01 (0012)"
+            },
+            {
+                "Name": "Slot 11",
+                "Card Type": "Ls_optical']",
+                "Version": "FPGA:F HW:B"
+            },
+            {
+                "Name": "Slot 10",
+                "Card Type": "QE1",
+                "Version": "V3.10.01 (0012)"
+            },
+            {
+                "Name": "Slot 9",
+                "Card Type": "Ls_optical']",
+                "Version": "FPGA:F HW:B"
+            },
+            {
+                "Name": "Slot c",
+                "Card Type": "QFXS",
+                "Version": " V1.05.09 (0027)VER.D FPGA:V10(1)"
+            }
+        ]
+    }
+}

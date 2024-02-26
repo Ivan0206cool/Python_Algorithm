@@ -1,0 +1,149 @@
+{
+    "1": {
+        "Chassis": "GE G7800-A",
+        "Total slots": "16",
+        "Slot Info": [
+            {
+                "Name": "Ctrl 1",
+                "HW Version": "V50.16.01 (0023)",
+                "SW Version": "V50.16.01 (0023)",
+                "Serial Version": "9 hw: \"Ver.A, FPGA1:V16(8), FPGA2:V14(10), CPLD:V64(64) \"",
+                "FPGA1 Version": "V16(8)",
+                "FPGA2 Version": "V14(10)",
+                "CPLD Version": "V64(64)"
+            },
+            {
+                "Name": "Ctrl 2",
+                "HW Version": "V50.16.01 (0023)",
+                "SW Version": "V50.16.01 (0023)",
+                "Serial Version": "13 hw: \"Ver.A\""
+            },
+            {
+                "Name": "Slot 10",
+                "Card Type": "FXS",
+                "Version": "V4.09.02 (0003) Ver.P FPGA:V8(10)"
+            },
+            {
+                "Name": "Slot 9",
+                "Card Type": "FXO",
+                "Version": "V3.05.01 (0069) HW Ver.H FPGA :V8(4)"
+            },
+            {
+                "Name": "Slot 8",
+                "Card Type": "QT1",
+                "Version": "V3.10.02 (0046)"
+            },
+            {
+                "Name": "Slot 7",
+                "Card Type": "Rs232_8",
+                "Version": "V1.08.01 (0001)"
+            },
+            {
+                "Name": "Slot 6",
+                "Card Type": "Oct_rt_b",
+                "Version": "V1.10.04 (01)"
+            },
+            {
+                "Name": "Slot 2",
+                "Card Type": "QE1",
+                "Version": "V3.10.02 (0046)"
+            },
+            {
+                "Name": "Slot 1",
+                "Card Type": "QE1",
+                "Version": "V3.10.02 (0046)"
+            },
+            {
+                "Name": "Slot f",
+                "Card Type": "Q4wem",
+                "Version": ""
+            },
+            {
+                "Name": "Slot d",
+                "Card Type": "3rs232",
+                "Version": "V1.01.01(0076)"
+            },
+            {
+                "Name": "Slot b",
+                "Card Type": "MQT1",
+                "Version": "V2.01.01 (0024)"
+            }
+        ]
+    },
+    "2": {
+        "Chassis": "GE G7800-A",
+        "Total slots": "16",
+        "Slot Info": [
+            {
+                "Name": "Ctrl 1",
+                "HW Version": "V50.16.01 (0023)",
+                "SW Version": "V50.16.01 (0023)",
+                "Serial Version": "4 hw: \"Ver.A, FPGA1:V16(8), FPGA2:V14(10), CPLD:V64(64) \"",
+                "FPGA1 Version": "V16(8)",
+                "FPGA2 Version": "V14(10)",
+                "CPLD Version": "V64(64)"
+            },
+            {
+                "Name": "Ctrl 2",
+                "HW Version": "V50.16.01 (0023)",
+                "SW Version": "V50.16.01 (0023)",
+                "Serial Version": "6 hw: \"Ver.A\""
+            },
+            {
+                "Name": "Slot 10",
+                "Card Type": "FXO",
+                "Version": "V3.05.01 (0069) HW Ver.H FPGA :V10(4)"
+            },
+            {
+                "Name": "Slot 9",
+                "Card Type": "FXS",
+                "Version": "V4.09.02 (0003) Ver.P FPGA:V8(10)"
+            },
+            {
+                "Name": "Slot 8",
+                "Card Type": "QT1",
+                "Version": "V3.10.02 (0046)"
+            },
+            {
+                "Name": "Slot 3",
+                "Card Type": "Ls_optical']",
+                "Version": "FPGA:F HW:B"
+            },
+            {
+                "Name": "Slot 2",
+                "Card Type": "QE1",
+                "Version": "V3.10.02 (0046)"
+            },
+            {
+                "Name": "Slot 1",
+                "Card Type": "QE1",
+                "Version": "V3.10.02 (0046)"
+            },
+            {
+                "Name": "Slot f",
+                "Card Type": "FE1",
+                "Version": "V4.03.04 (0010), HW: G, FPGA: 09"
+            },
+            {
+                "Name": "Slot e",
+                "Card Type": "Ls_optical']",
+                "Version": "FPGA:2(1) HW:B"
+            },
+            {
+                "Name": "Slot c",
+                "Card Type": "FE1",
+                "Version": "V4.03.04 (0010), HW: G, FPGA: 09"
+            },
+            {
+                "Name": "Slot b",
+                "Card Type": "Fom",
+                "Version": "FPGA:I HW:B"
+            },
+            {
+                "Name": "Slot a",
+                "Card Type": "MQE1",
+                "Version": "V2.01.01 (0024)"
+            }
+        ]
+    }
+}

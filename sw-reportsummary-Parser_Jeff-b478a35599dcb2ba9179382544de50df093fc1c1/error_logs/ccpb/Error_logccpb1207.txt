@@ -1,0 +1,1530 @@
+2023-12-07 09:13:47 : begin
+2023-12-07 09:13:48 : DUT1 is LOOP CCPB_2ge-A ,slot#16
+2023-12-07 09:13:49 : DUT2 is LOOP CCPB_2ge-A ,slot#16
+2023-12-07 09:13:51 : DUT:1 ctrl : sw:"V23.11.01 (0010)" serial:203 hw: "Ver.C, FPGA1:V16(7), FPGA2:V14(10), CPLD:V3(2) "
+2023-12-07 09:13:51 : DUT:1 ctrl2: sw:"N/A" serial:0 hw: "N/A"
+2023-12-07 09:13:59 : DUT:1 slot: 7  QT1        ver:"V3.10.01 (0012)"
+2023-12-07 09:14:03 : DUT:1 slot: 4  QE1        ver:"V3.10.01 (0012)"
+2023-12-07 09:14:04 : DUT:1 slot: 3  QE1        ver:"V3.10.01 (0012)"
+2023-12-07 09:14:09 : DUT:1 slot: c  FT1        ver:" (mismatch)(card type)"
+2023-12-07 09:14:14 : DUT:2 ctrl : sw:"V23.11.01 (0010)" serial:478 hw: "Ver.C, FPGA1:V16(7), FPGA2:V14(10), CPLD:V3(2) "
+2023-12-07 09:14:14 : DUT:2 ctrl2: sw:"V23.11.01 (0010)" serial:476 hw: "Ver.C"
+2023-12-07 09:14:21 : DUT:2 slot: 7  QT1        ver:"V3.10.01 (0012)"
+2023-12-07 09:14:24 : DUT:2 slot: 4  QE1        ver:"V3.10.01 (0012)"
+2023-12-07 09:14:26 : DUT:2 slot: 3  QE1        ver:"V3.10.01 (0012)"
+2023-12-07 09:14:32 : DUT:2 slot: b  FE1        ver:"V4.03.04 (0010), HW: G, FPGA: 09"
+2023-12-07 09:19:37 : DUT 1 CurrCLK:Internal   ClkRecover:manul	slot Slot3	port Port4
+2023-12-07 09:19:49 : DUT 2 CurrCLK:Internal   ClkRecover:manul	slot Slot3	port Port4
+2023-12-07 09:22:35 : DUT 1 (AM3440_CCPA_Get_dpllStabdbyStatus_log)  InputStatus:Ooflos LockStatus:Unlock CalStatus:Normal InputSticky:Oof LockSticky:Lock CalSticky:Normal
+2023-12-07 09:25:13 : DUT 2 (AM3440_CCPA_Get_dpllStabdbyStatus_log)  InputStatus:Normal LockStatus:Lock CalStatus:Normal InputSticky:Oof LockSticky:Lock CalSticky:Normal
+2023-12-07 09:26:28 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.5 LBitCnt=32 RBitCnt=0 TxGood=15612 RxGood=15612 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:26:36 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=3340 RxGood=3340 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:26:43 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.7 LBitCnt=7 RBitCnt=0 TxGood=3141 RxGood=3141 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:26:51 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.7 LBitCnt=7 RBitCnt=0 TxGood=3437 RxGood=3437 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:26:58 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=3178 RxGood=3178 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:27:06 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.7 LBitCnt=7 RBitCnt=0 TxGood=3436 RxGood=3436 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:27:13 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.7 LBitCnt=7 RBitCnt=0 TxGood=3201 RxGood=3201 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:27:20 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=3040 RxGood=3040 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:27:28 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=3324 RxGood=3324 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:27:35 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.6 LBitCnt=7 RBitCnt=0 TxGood=3119 RxGood=3119 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:27:43 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.6 LBitCnt=7 RBitCnt=0 TxGood=3364 RxGood=3364 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:27:45 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.6 LBitCnt=9 RBitCnt=0 TxGood=0 RxGood=4364 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:27:52 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3145 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:28:00 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3460 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:28:07 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3242 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:28:14 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3032 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:28:22 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3348 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:28:29 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.6 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3170 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:28:37 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.6 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3490 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:28:44 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3260 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:28:51 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3064 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:28:59 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3364 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:29:01 : DUT 1 CTRL-2 (AM3440_CCPA_pw_Standbystatus_get_log)   bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=9.7 LBitCnt=9 RBitCnt=0 TxGood=4068 RxGood=4068 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:29:03 : DUT 1 CTRL-2 (AM3440_CCPA_pw_Standbystatus_get_log)   bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=9.7 LBitCnt=11 RBitCnt=0 TxGood=0 RxGood=5068 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:29:05 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=13 RBitCnt=0 TxGood=6364 RxGood=6364 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:29:12 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.2 LBitCnt=7 RBitCnt=0 TxGood=3251 RxGood=3251 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:29:19 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=3046 RxGood=3046 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:29:27 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=3367 RxGood=3367 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:29:34 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.2 LBitCnt=7 RBitCnt=0 TxGood=3160 RxGood=3160 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:29:42 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.1 LBitCnt=7 RBitCnt=0 TxGood=3444 RxGood=3444 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:29:49 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=3225 RxGood=3225 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:29:57 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=8 RBitCnt=0 TxGood=3511 RxGood=3511 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:30:04 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.1 LBitCnt=7 RBitCnt=0 TxGood=3288 RxGood=3288 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:30:12 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.1 LBitCnt=7 RBitCnt=0 TxGood=3329 RxGood=3329 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:30:19 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=3134 RxGood=3134 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:30:21 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=9 RBitCnt=0 TxGood=0 RxGood=4133 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:30:29 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3445 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:30:36 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3235 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:30:43 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=7.8 JBMAX=9.7 JBDP=8.2 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3028 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:30:51 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.7 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3328 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:30:58 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.7 JBDP=8.1 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3122 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:31:06 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=8.0 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3411 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:31:13 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=8.2 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3234 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:31:21 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=8.2 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3493 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:31:28 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=8.0 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3280 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:31:35 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=8.2 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3080 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:31:37 : DUT 1 CTRL-2 (AM3440_CCPA_pw_Standbystatus_get_log)   bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=8.6 LBitCnt=9 RBitCnt=0 TxGood=4286 RxGood=4286 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:31:39 : DUT 1 CTRL-2 (AM3440_CCPA_pw_Standbystatus_get_log)   bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=8.6 LBitCnt=11 RBitCnt=0 TxGood=0 RxGood=5286 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:31:41 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.5 LBitCnt=13 RBitCnt=0 TxGood=6080 RxGood=6080 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:31:49 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.5 LBitCnt=7 RBitCnt=0 TxGood=3331 RxGood=3331 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:31:56 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.2 LBitCnt=7 RBitCnt=0 TxGood=3033 RxGood=3033 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:32:04 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.2 LBitCnt=7 RBitCnt=0 TxGood=3331 RxGood=3331 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:32:11 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.5 LBitCnt=7 RBitCnt=0 TxGood=3129 RxGood=3129 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:32:19 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.3 LBitCnt=7 RBitCnt=0 TxGood=3402 RxGood=3402 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:32:26 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.5 LBitCnt=7 RBitCnt=0 TxGood=3191 RxGood=3191 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:32:34 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.2 LBitCnt=7 RBitCnt=0 TxGood=3413 RxGood=3413 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:32:41 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.0 LBitCnt=7 RBitCnt=0 TxGood=3185 RxGood=3185 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:32:49 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.3 LBitCnt=7 RBitCnt=0 TxGood=3452 RxGood=3452 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:32:56 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.1 LBitCnt=7 RBitCnt=0 TxGood=3254 RxGood=3254 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:32:58 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.2 LBitCnt=9 RBitCnt=0 TxGood=0 RxGood=4255 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:33:05 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3042 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:33:13 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3325 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:33:20 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.0 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3128 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:33:28 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.1 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3400 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:33:35 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.2 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3200 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:33:43 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3465 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:33:50 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.0 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3213 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:33:58 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.2 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3026 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:34:05 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.2 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3300 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:34:12 : DUT 1 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=9.1 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3069 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:34:14 : DUT 1 CTRL-2 (AM3440_CCPA_pw_Standbystatus_get_log)   bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=8.7 LBitCnt=9 RBitCnt=0 TxGood=4275 RxGood=4275 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:34:16 : DUT 1 CTRL-2 (AM3440_CCPA_pw_Standbystatus_get_log)   bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=7.7 JBMAX=9.6 JBDP=8.1 LBitCnt=11 RBitCnt=0 TxGood=0 RxGood=5274 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:34:18 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=8.1 JBMAX=10.2 JBDP=10.0 LBitCnt=99 RBitCnt=0 TxGood=250329 RxGood=250329 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:34:26 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.8 LBitCnt=7 RBitCnt=0 TxGood=3331 RxGood=3331 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:34:33 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.6 LBitCnt=7 RBitCnt=0 TxGood=3158 RxGood=3158 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:34:41 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.3 LBitCnt=7 RBitCnt=0 TxGood=3443 RxGood=3443 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:34:48 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.5 LBitCnt=7 RBitCnt=0 TxGood=3226 RxGood=3226 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:34:55 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.3 LBitCnt=7 RBitCnt=0 TxGood=3490 RxGood=3490 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:35:03 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=8.7 LBitCnt=7 RBitCnt=0 TxGood=3275 RxGood=3275 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:35:10 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.1 LBitCnt=7 RBitCnt=0 TxGood=3048 RxGood=3048 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:35:18 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=8.8 LBitCnt=7 RBitCnt=0 TxGood=3317 RxGood=3317 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:35:25 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=3079 RxGood=3079 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:35:33 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=10.1 LBitCnt=7 RBitCnt=0 TxGood=3367 RxGood=3368 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:35:35 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=10.2 LBitCnt=9 RBitCnt=0 TxGood=0 RxGood=4367 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:35:42 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3150 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:35:50 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=10.2 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3400 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:35:57 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.6 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3205 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:36:05 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.6 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3347 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:36:12 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=10.0 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3146 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:36:20 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.7 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3428 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:36:27 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.0 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3218 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:36:34 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.1 LBitCnt=8 RBitCnt=0 TxGood=0 RxGood=3525 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:36:42 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.0 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3306 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:36:49 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=8.8 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3047 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:36:52 : DUT 2 CTRL-2 (AM3440_CCPA_pw_Standbystatus_get_log)   bid_idx=119 Pri Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.5 LBitCnt=9 RBitCnt=0 TxGood=4205 RxGood=4205 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:36:54 : DUT 2 CTRL-2 (AM3440_CCPA_pw_Standbystatus_get_log)   bid_idx=120 Sec Bundle=60 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=8.5 LBitCnt=11 RBitCnt=0 TxGood=0 RxGood=5204 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:36:56 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=8.8 LBitCnt=14 RBitCnt=0 TxGood=6547 RxGood=6547 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:37:03 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=3150 RxGood=3150 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:37:11 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=3381 RxGood=3381 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:37:18 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=3158 RxGood=3158 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:37:25 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=8.3 LBitCnt=7 RBitCnt=0 TxGood=3439 RxGood=3439 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:37:33 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=10.0 LBitCnt=7 RBitCnt=0 TxGood=3222 RxGood=3222 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:37:40 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=10.0 LBitCnt=7 RBitCnt=0 TxGood=3013 RxGood=3013 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:37:48 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.7 LBitCnt=7 RBitCnt=0 TxGood=3293 RxGood=3293 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:37:55 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.6 LBitCnt=7 RBitCnt=0 TxGood=3071 RxGood=3071 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:38:03 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.5 LBitCnt=7 RBitCnt=0 TxGood=3362 RxGood=3362 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:38:10 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.5 LBitCnt=7 RBitCnt=0 TxGood=3194 RxGood=3194 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:38:12 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.5 LBitCnt=9 RBitCnt=0 TxGood=0 RxGood=4193 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:38:20 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.2 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3461 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:38:27 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=8.8 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3209 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:38:34 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.2 JBDP=9.0 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3017 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:38:42 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.3 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3304 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:38:49 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=8.3 JBMAX=10.3 JBDP=8.7 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3135 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:38:57 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=8.6 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3435 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:39:04 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3218 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:39:11 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=10.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3488 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:39:19 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=10.2 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3300 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:39:26 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=10.0 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3115 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:39:28 : DUT 2 CTRL-2 (AM3440_CCPA_pw_Standbystatus_get_log)   bid_idx=121 Pri Bundle=61 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.2 LBitCnt=9 RBitCnt=0 TxGood=4273 RxGood=4273 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:39:30 : DUT 2 CTRL-2 (AM3440_CCPA_pw_Standbystatus_get_log)   bid_idx=122 Sec Bundle=61 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.8 LBitCnt=11 RBitCnt=0 TxGood=0 RxGood=5274 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:39:32 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=8.8 LBitCnt=13 RBitCnt=0 TxGood=6114 RxGood=6114 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:39:40 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.0 LBitCnt=7 RBitCnt=0 TxGood=3406 RxGood=3406 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:39:47 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.0 LBitCnt=7 RBitCnt=0 TxGood=3191 RxGood=3191 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:39:54 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=8.7 LBitCnt=7 RBitCnt=0 TxGood=3017 RxGood=3017 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:40:02 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=8.6 LBitCnt=7 RBitCnt=0 TxGood=3321 RxGood=3321 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:40:09 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=3101 RxGood=3101 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:40:17 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=10.0 LBitCnt=7 RBitCnt=0 TxGood=3385 RxGood=3385 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:40:24 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=10.1 LBitCnt=7 RBitCnt=0 TxGood=3193 RxGood=3193 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:40:31 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.8 LBitCnt=7 RBitCnt=0 TxGood=3017 RxGood=3017 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:40:39 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.8 LBitCnt=7 RBitCnt=0 TxGood=3326 RxGood=3326 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:40:46 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.7 LBitCnt=7 RBitCnt=0 TxGood=3148 RxGood=3148 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:40:48 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.5 LBitCnt=9 RBitCnt=0 TxGood=0 RxGood=4148 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:40:55 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3460 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:41:03 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.3 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3259 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:41:10 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.1 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3055 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:41:18 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.0 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3344 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:41:25 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.0 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3158 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:41:32 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=8.8 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3481 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:41:40 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3297 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:41:47 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=8.6 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3116 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:41:55 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=8.5 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3395 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:42:02 : DUT 2 CTRL-1 (AM3440_CCPA_pw_status_get)              bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=10.0 LBitCnt=7 RBitCnt=0 TxGood=0 RxGood=3151 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:42:04 : DUT 2 CTRL-2 (AM3440_CCPA_pw_Standbystatus_get_log)   bid_idx=123 Pri Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.5 LBitCnt=9 RBitCnt=0 TxGood=4310 RxGood=4310 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:42:06 : DUT 2 CTRL-2 (AM3440_CCPA_pw_Standbystatus_get_log)   bid_idx=124 Sec Bundle=62 JBUR=0 JBOR=0 JBMIN=8.5 JBMAX=10.3 JBDP=9.3 LBitCnt=11 RBitCnt=0 TxGood=0 RxGood=5310 RxLost=0 Link=up SizeErr=no
+2023-12-07 09:42:07 : DUT 1 (AM3440_CCPA_Get_PW_Working_Statist_log)  bid_idx=60 Pri Eth1LinkStat=up Eth1RxSeqNum=60659 Eth1RxSeqLos=0 Eth1RxJBLos=0 DiffDelay="20."
+2023-12-07 09:42:07 : DUT 1 (AM3440_CCPA_Get_PW_Working_Statist_log)  bid_idx=60 Sec Eth2Linkstat=up Eth2RxSeqNum=60659 Eth2RxSeqLos=0 Eth2RxJBLos=0 DiffDelay="20."
+2023-12-07 09:42:07 : DUT 2 (AM3440_CCPA_Get_PW_Working_Statist_log)  bid_idx=60 Pri Eth1LinkStat=up Eth1RxSeqNum=61583 Eth1RxSeqLos=0 Eth1RxJBLos=0 DiffDelay="24."
+2023-12-07 09:42:08 : DUT 2 (AM3440_CCPA_Get_PW_Working_Statist_log)  bid_idx=60 Sec Eth2Linkstat=up Eth2RxSeqNum=62084 Eth2RxSeqLos=0 Eth2RxJBLos=0 DiffDelay="24."
+2023-12-07 09:42:08 : DUT 1 (AM3440_CCPA_Get_PW_Standby_Statist_log)  bid_idx=60 Pri Eth1LinkStat=down Eth1RxSeqNum=0 Eth1RxSeqLos=0 Eth1RxJBLos=0 DiffDelay="na."
+2023-12-07 09:42:09 : DUT 1 (AM3440_CCPA_Get_PW_Standby_Statist_log)  bid_idx=60 Sec Eth2Linkstat=down Eth2RxSeqNum=0 Eth2RxSeqLos=0 Eth2RxJBLos=0 DiffDelay="na."
+2023-12-07 09:42:09 : DUT 2 (AM3440_CCPA_Get_PW_Standby_Statist_log)  bid_idx=60 Pri Eth1LinkStat=down Eth1RxSeqNum=0 Eth1RxSeqLos=0 Eth1RxJBLos=0 DiffDelay="na."
+2023-12-07 09:42:09 : DUT 2 (AM3440_CCPA_Get_PW_Standby_Statist_log)  bid_idx=60 Sec Eth2Linkstat=down Eth2RxSeqNum=0 Eth2RxSeqLos=0 Eth2RxJBLos=0 DiffDelay="na."
+2023-12-07 09:42:10 : DUT 1 (AM3440_CCPA_Get_PW_Working_Statist_log)  bid_idx=61 Pri Eth1LinkStat=up Eth1RxSeqNum=60133 Eth1RxSeqLos=0 Eth1RxJBLos=0 DiffDelay="25."
+2023-12-07 09:42:10 : DUT 1 (AM3440_CCPA_Get_PW_Working_Statist_log)  bid_idx=61 Sec Eth2Linkstat=up Eth2RxSeqNum=60133 Eth2RxSeqLos=0 Eth2RxJBLos=0 DiffDelay="25."
+2023-12-07 09:42:11 : DUT 2 (AM3440_CCPA_Get_PW_Working_Statist_log)  bid_idx=61 Pri Eth1LinkStat=up Eth1RxSeqNum=61581 Eth1RxSeqLos=0 Eth1RxJBLos=0 DiffDelay="24."
+2023-12-07 09:42:11 : DUT 2 (AM3440_CCPA_Get_PW_Working_Statist_log)  bid_idx=61 Sec Eth2Linkstat=up Eth2RxSeqNum=61581 Eth2RxSeqLos=0 Eth2RxJBLos=0 DiffDelay="24."
+2023-12-07 09:42:11 : DUT 1 (AM3440_CCPA_Get_PW_Standby_Statist_log)  bid_idx=61 Pri Eth1LinkStat=down Eth1RxSeqNum=0 Eth1RxSeqLos=0 Eth1RxJBLos=0 DiffDelay="na."
+2023-12-07 09:42:12 : DUT 1 (AM3440_CCPA_Get_PW_Standby_Statist_log)  bid_idx=61 Sec Eth2Linkstat=down Eth2RxSeqNum=0 Eth2RxSeqLos=0 Eth2RxJBLos=0 DiffDelay="na."
+2023-12-07 09:42:12 : DUT 2 (AM3440_CCPA_Get_PW_Standby_Statist_log)  bid_idx=61 Pri Eth1LinkStat=down Eth1RxSeqNum=0 Eth1RxSeqLos=0 Eth1RxJBLos=0 DiffDelay="na."
+2023-12-07 09:42:12 : DUT 2 (AM3440_CCPA_Get_PW_Standby_Statist_log)  bid_idx=61 Sec Eth2Linkstat=down Eth2RxSeqNum=0 Eth2RxSeqLos=0 Eth2RxJBLos=0 DiffDelay="na."
+2023-12-07 09:42:13 : DUT 1 (AM3440_CCPA_Get_PW_Working_Statist_log)  bid_idx=62 Pri Eth1LinkStat=up Eth1RxSeqNum=59572 Eth1RxSeqLos=0 Eth1RxJBLos=0 DiffDelay="24."
+2023-12-07 09:42:13 : DUT 1 (AM3440_CCPA_Get_PW_Working_Statist_log)  bid_idx=62 Sec Eth2Linkstat=up Eth2RxSeqNum=59572 Eth2RxSeqLos=0 Eth2RxJBLos=0 DiffDelay="24."
+2023-12-07 09:42:14 : DUT 2 (AM3440_CCPA_Get_PW_Working_Statist_log)  bid_idx=62 Pri Eth1LinkStat=up Eth1RxSeqNum=61027 Eth1RxSeqLos=0 Eth1RxJBLos=0 DiffDelay="20."
+2023-12-07 09:42:14 : DUT 2 (AM3440_CCPA_Get_PW_Working_Statist_log)  bid_idx=62 Sec Eth2Linkstat=up Eth2RxSeqNum=61027 Eth2RxSeqLos=0 Eth2RxJBLos=0 DiffDelay="20."
+2023-12-07 09:42:14 : DUT 1 (AM3440_CCPA_Get_PW_Standby_Statist_log)  bid_idx=62 Pri Eth1LinkStat=down Eth1RxSeqNum=0 Eth1RxSeqLos=0 Eth1RxJBLos=0 DiffDelay="na."
+2023-12-07 09:42:15 : DUT 1 (AM3440_CCPA_Get_PW_Standby_Statist_log)  bid_idx=62 Sec Eth2Linkstat=down Eth2RxSeqNum=0 Eth2RxSeqLos=0 Eth2RxJBLos=0 DiffDelay="na."
+2023-12-07 09:42:15 : DUT 2 (AM3440_CCPA_Get_PW_Standby_Statist_log)  bid_idx=62 Pri Eth1LinkStat=down Eth1RxSeqNum=0 Eth1RxSeqLos=0 Eth1RxJBLos=0 DiffDelay="na."
+2023-12-07 09:42:16 : DUT 2 (AM3440_CCPA_Get_PW_Standby_Statist_log)  bid_idx=62 Sec Eth2Linkstat=down Eth2RxSeqNum=0 Eth2RxSeqLos=0 Eth2RxJBLos=0 DiffDelay="na."
+2023-12-07 09:42:17 : DUT1 AM3440_CCPA_Rs485Delay_Clear_Snmp
+2023-12-07 09:42:27 : Check RS485 slot status on DUT 1 start
+2023-12-07 09:42:27 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot C TXcount=30 RXcount=30 NoRXcount=0 TimeOutCount=0 AliveCount=30 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=ft1
+2023-12-07 09:42:28 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 3 TXcount=31 RXcount=31 NoRXcount=0 TimeOutCount=0 AliveCount=31 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-12-07 09:42:28 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 4 TXcount=32 RXcount=32 NoRXcount=0 TimeOutCount=0 AliveCount=32 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-12-07 09:42:29 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 1 slot 7 TXcount=32 RXcount=32 NoRXcount=0 TimeOutCount=0 AliveCount=32 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-t1
+2023-12-07 09:42:29 : Check RS485 slot status on DUT 1 end
+2023-12-07 09:42:29 : (AM3440_CCPA_Get_Rs485_statist) DUT 1 Break=0 Framing=0 Parity=0 Overrun=0 FCSerror=0 Sliperr=0 Buffererror=0 CmdCounterror=0 CmdtooLong=0 Interrput=136 Record=24
+2023-12-07 09:42:29 : DUT2 AM3440_CCPA_Rs485Delay_Clear_Snmp
+2023-12-07 09:42:39 : Check RS485 slot status on DUT 2 start
+2023-12-07 09:42:40 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot B TXcount=30 RXcount=30 NoRXcount=0 TimeOutCount=0 AliveCount=30 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=fe1
+2023-12-07 09:42:40 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 3 TXcount=31 RXcount=31 NoRXcount=0 TimeOutCount=0 AliveCount=31 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-12-07 09:42:41 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 4 TXcount=32 RXcount=32 NoRXcount=0 TimeOutCount=0 AliveCount=32 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-e1
+2023-12-07 09:42:41 : (AM3440_CCPA_rs485_get_statist_by_slot) DUT 2 slot 7 TXcount=33 RXcount=33 NoRXcount=0 TimeOutCount=0 AliveCount=33 NonAliveCount=0 OverSizeCount=0 InitCount=32 BadCMDCount=0 BadCMDNUM=0 SlotModel=quad-t1
+2023-12-07 09:42:41 : Check RS485 slot status on DUT 2 end
+2023-12-07 09:42:41 : (AM3440_CCPA_Get_Rs485_statist) DUT 2 Break=0 Framing=0 Parity=0 Overrun=0 FCSerror=0 Sliperr=0 Buffererror=0 CmdCounterror=0 CmdtooLong=0 Interrput=139 Record=26
+2023-12-07 09:42:45 : tsi_in_out TEST Begin
+2023-12-07 09:42:50 : PW bundle setting with frameE1CAS
+2023-12-07 09:42:50 : Check PW bundle tsi data
+2023-12-07 09:42:50 : --Round:1--
+2023-12-07 09:43:16 :     TSI DATA TS:0 set outData=30 get inData=30 --pass
+2023-12-07 09:43:17 :     TSI DATA TS:1 set outData=30 get inData=30 --pass
+2023-12-07 09:43:19 :     TSI DATA TS:2 set outData=30 get inData=30 --pass
+2023-12-07 09:43:21 :     TSI DATA TS:3 set outData=30 get inData=30 --pass
+2023-12-07 09:43:23 :     TSI DATA TS:4 set outData=30 get inData=30 --pass
+2023-12-07 09:43:24 :     TSI DATA TS:5 set outData=30 get inData=30 --pass
+2023-12-07 09:43:26 :     TSI DATA TS:6 set outData=30 get inData=30 --pass
+2023-12-07 09:43:28 :     TSI DATA TS:7 set outData=30 get inData=30 --pass
+2023-12-07 09:43:30 :     TSI DATA TS:8 set outData=30 get inData=30 --pass
+2023-12-07 09:43:31 :     TSI DATA TS:9 set outData=30 get inData=30 --pass
+2023-12-07 09:43:33 :     TSI DATA TS:10 set outData=30 get inData=30 --pass
+2023-12-07 09:43:35 :     TSI DATA TS:11 set outData=30 get inData=30 --pass
+2023-12-07 09:43:37 :     TSI DATA TS:12 set outData=30 get inData=30 --pass
+2023-12-07 09:43:38 :     TSI DATA TS:13 set outData=30 get inData=30 --pass
+2023-12-07 09:43:40 :     TSI DATA TS:14 set outData=30 get inData=30 --pass
+2023-12-07 09:43:42 :     TSI DATA TS:15 set outData=30 get inData=30 --pass
+2023-12-07 09:43:44 :     TSI DATA TS:16 set outData=30 get inData=30 --pass
+2023-12-07 09:43:45 :     TSI DATA TS:17 set outData=30 get inData=30 --pass
+2023-12-07 09:43:47 :     TSI DATA TS:18 set outData=30 get inData=30 --pass
+2023-12-07 09:43:49 :     TSI DATA TS:19 set outData=30 get inData=30 --pass
+2023-12-07 09:43:50 :     TSI DATA TS:20 set outData=30 get inData=30 --pass
+2023-12-07 09:43:52 :     TSI DATA TS:21 set outData=30 get inData=30 --pass
+2023-12-07 09:43:54 :     TSI DATA TS:22 set outData=30 get inData=30 --pass
+2023-12-07 09:43:56 :     TSI DATA TS:23 set outData=30 get inData=30 --pass
+2023-12-07 09:43:57 :     TSI DATA TS:24 set outData=30 get inData=30 --pass
+2023-12-07 09:43:59 :     TSI DATA TS:25 set outData=30 get inData=30 --pass
+2023-12-07 09:44:01 :     TSI DATA TS:26 set outData=30 get inData=30 --pass
+2023-12-07 09:44:03 :     TSI DATA TS:27 set outData=30 get inData=30 --pass
+2023-12-07 09:44:04 :     TSI DATA TS:28 set outData=30 get inData=30 --pass
+2023-12-07 09:44:06 :     TSI DATA TS:29 set outData=30 get inData=30 --pass
+2023-12-07 09:44:06 : Check PW bundle tsi signalling
+2023-12-07 09:44:06 : --Round:1--
+2023-12-07 09:44:34 :     TSI CAS TS:0 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:44:36 :     TSI CAS TS:1 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:44:38 :     TSI CAS TS:2 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:44:41 :     TSI CAS TS:3 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:44:43 :     TSI CAS TS:4 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:44:45 :     TSI CAS TS:5 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:44:47 :     TSI CAS TS:6 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:44:50 :     TSI CAS TS:7 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:44:52 :     TSI CAS TS:8 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:44:54 :     TSI CAS TS:9 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:44:56 :     TSI CAS TS:10 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:44:58 :     TSI CAS TS:11 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:01 :     TSI CAS TS:12 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:03 :     TSI CAS TS:13 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:05 :     TSI CAS TS:14 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:07 :     TSI CAS TS:15 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:09 :     TSI CAS TS:16 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:12 :     TSI CAS TS:17 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:14 :     TSI CAS TS:18 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:16 :     TSI CAS TS:19 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:18 :     TSI CAS TS:20 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:21 :     TSI CAS TS:21 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:23 :     TSI CAS TS:22 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:25 :     TSI CAS TS:23 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:27 :     TSI CAS TS:24 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:29 :     TSI CAS TS:25 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:32 :     TSI CAS TS:26 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:34 :     TSI CAS TS:27 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:36 :     TSI CAS TS:28 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:38 :     TSI CAS TS:29 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:45:40 :     TSI CAS TS:30 set outCAS=AA get inCAS=00 --pass
+2023-12-07 09:45:43 :     TSI CAS TS:31 set outCAS=AA get inCAS=00 --pass
+2023-12-07 09:45:51 : PW bundle setting with frameT1CAS
+2023-12-07 09:45:51 : Check PW bundle tsi data
+2023-12-07 09:45:51 : --Round:1--
+2023-12-07 09:46:12 :     TSI DATA TS:0 set outData=30 get inData=30 --pass
+2023-12-07 09:46:13 :     TSI DATA TS:1 set outData=30 get inData=30 --pass
+2023-12-07 09:46:15 :     TSI DATA TS:2 set outData=30 get inData=30 --pass
+2023-12-07 09:46:17 :     TSI DATA TS:3 set outData=30 get inData=30 --pass
+2023-12-07 09:46:19 :     TSI DATA TS:4 set outData=30 get inData=30 --pass
+2023-12-07 09:46:20 :     TSI DATA TS:5 set outData=30 get inData=30 --pass
+2023-12-07 09:46:22 :     TSI DATA TS:6 set outData=30 get inData=30 --pass
+2023-12-07 09:46:24 :     TSI DATA TS:7 set outData=30 get inData=30 --pass
+2023-12-07 09:46:25 :     TSI DATA TS:8 set outData=30 get inData=30 --pass
+2023-12-07 09:46:27 :     TSI DATA TS:9 set outData=30 get inData=30 --pass
+2023-12-07 09:46:29 :     TSI DATA TS:10 set outData=30 get inData=30 --pass
+2023-12-07 09:46:30 :     TSI DATA TS:11 set outData=30 get inData=30 --pass
+2023-12-07 09:46:32 :     TSI DATA TS:12 set outData=30 get inData=30 --pass
+2023-12-07 09:46:34 :     TSI DATA TS:13 set outData=30 get inData=30 --pass
+2023-12-07 09:46:35 :     TSI DATA TS:14 set outData=30 get inData=30 --pass
+2023-12-07 09:46:37 :     TSI DATA TS:15 set outData=30 get inData=30 --pass
+2023-12-07 09:46:39 :     TSI DATA TS:16 set outData=30 get inData=30 --pass
+2023-12-07 09:46:41 :     TSI DATA TS:17 set outData=30 get inData=30 --pass
+2023-12-07 09:46:42 :     TSI DATA TS:18 set outData=30 get inData=30 --pass
+2023-12-07 09:46:44 :     TSI DATA TS:19 set outData=30 get inData=30 --pass
+2023-12-07 09:46:46 :     TSI DATA TS:20 set outData=30 get inData=30 --pass
+2023-12-07 09:46:47 :     TSI DATA TS:21 set outData=30 get inData=30 --pass
+2023-12-07 09:46:49 :     TSI DATA TS:22 set outData=30 get inData=30 --pass
+2023-12-07 09:46:51 :     TSI DATA TS:23 set outData=30 get inData=30 --pass
+2023-12-07 09:46:51 : Check PW bundle tsi signalling
+2023-12-07 09:46:51 : --Round:1--
+2023-12-07 09:47:12 :     TSI CAS TS:0 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:14 :     TSI CAS TS:1 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:16 :     TSI CAS TS:2 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:18 :     TSI CAS TS:3 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:21 :     TSI CAS TS:4 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:23 :     TSI CAS TS:5 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:25 :     TSI CAS TS:6 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:27 :     TSI CAS TS:7 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:30 :     TSI CAS TS:8 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:32 :     TSI CAS TS:9 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:34 :     TSI CAS TS:10 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:36 :     TSI CAS TS:11 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:38 :     TSI CAS TS:12 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:41 :     TSI CAS TS:13 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:43 :     TSI CAS TS:14 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:45 :     TSI CAS TS:15 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:47 :     TSI CAS TS:16 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:49 :     TSI CAS TS:17 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:52 :     TSI CAS TS:18 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:54 :     TSI CAS TS:19 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:56 :     TSI CAS TS:20 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:47:58 :     TSI CAS TS:21 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:48:00 :     TSI CAS TS:22 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:48:03 :     TSI CAS TS:23 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:48:08 : Current test card:QT1 cfg:D4
+2023-12-07 09:48:12 : Check card tsi data
+2023-12-07 09:48:12 : --Round:1--
+2023-12-07 09:48:33 :     TSI DATA TS:1 set outData=10 get inData=10 --pass
+2023-12-07 09:48:34 :     TSI DATA TS:2 set outData=10 get inData=10 --pass
+2023-12-07 09:48:36 :     TSI DATA TS:3 set outData=10 get inData=10 --pass
+2023-12-07 09:48:38 :     TSI DATA TS:4 set outData=10 get inData=10 --pass
+2023-12-07 09:48:40 :     TSI DATA TS:5 set outData=10 get inData=11 --pass
+2023-12-07 09:48:41 :     TSI DATA TS:6 set outData=10 get inData=10 --pass
+2023-12-07 09:48:43 :     TSI DATA TS:7 set outData=10 get inData=10 --pass
+2023-12-07 09:48:45 :     TSI DATA TS:8 set outData=10 get inData=10 --pass
+2023-12-07 09:48:46 :     TSI DATA TS:9 set outData=10 get inData=10 --pass
+2023-12-07 09:48:48 :     TSI DATA TS:10 set outData=10 get inData=10 --pass
+2023-12-07 09:48:50 :     TSI DATA TS:11 set outData=10 get inData=10 --pass
+2023-12-07 09:48:51 :     TSI DATA TS:12 set outData=10 get inData=10 --pass
+2023-12-07 09:48:53 :     TSI DATA TS:13 set outData=10 get inData=10 --pass
+2023-12-07 09:48:55 :     TSI DATA TS:14 set outData=10 get inData=10 --pass
+2023-12-07 09:48:57 :     TSI DATA TS:15 set outData=10 get inData=11 --pass
+2023-12-07 09:48:58 :     TSI DATA TS:16 set outData=10 get inData=10 --pass
+2023-12-07 09:49:00 :     TSI DATA TS:17 set outData=10 get inData=10 --pass
+2023-12-07 09:49:02 :     TSI DATA TS:18 set outData=10 get inData=10 --pass
+2023-12-07 09:49:03 :     TSI DATA TS:19 set outData=10 get inData=11 --pass
+2023-12-07 09:49:05 :     TSI DATA TS:20 set outData=10 get inData=10 --pass
+2023-12-07 09:49:07 :     TSI DATA TS:21 set outData=10 get inData=11 --pass
+2023-12-07 09:49:09 :     TSI DATA TS:22 set outData=10 get inData=10 --pass
+2023-12-07 09:49:10 :     TSI DATA TS:23 set outData=10 get inData=10 --pass
+2023-12-07 09:49:12 :     TSI DATA TS:24 set outData=10 get inData=10 --pass
+2023-12-07 09:49:12 : Check card tsi signalling
+2023-12-07 09:49:12 : --Round:1--
+2023-12-07 09:49:33 :     TSI CAS TS:1 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:49:35 :     TSI CAS TS:2 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:49:38 :     TSI CAS TS:3 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:49:40 :     TSI CAS TS:4 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:49:42 :     TSI CAS TS:5 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:49:44 :     TSI CAS TS:6 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:49:47 :     TSI CAS TS:7 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:49:49 :     TSI CAS TS:8 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:49:51 :     TSI CAS TS:9 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:49:53 :     TSI CAS TS:10 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:49:55 :     TSI CAS TS:11 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:49:58 :     TSI CAS TS:12 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:50:00 :     TSI CAS TS:13 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:50:02 :     TSI CAS TS:14 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:50:04 :     TSI CAS TS:15 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:50:06 :     TSI CAS TS:16 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:50:09 :     TSI CAS TS:17 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:50:11 :     TSI CAS TS:18 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:50:13 :     TSI CAS TS:19 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:50:15 :     TSI CAS TS:20 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:50:18 :     TSI CAS TS:21 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:50:20 :     TSI CAS TS:22 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:50:22 :     TSI CAS TS:23 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:50:24 :     TSI CAS TS:24 set outCAS=55 get inCAS=55 --pass
+2023-12-07 09:50:33 : Check cross connect tsi data
+2023-12-07 09:50:33 : --Round:1--
+2023-12-07 09:50:54 :     TSI DATA TS:0 set outData=20 get inData=20 --pass
+2023-12-07 09:50:56 :     TSI DATA TS:1 set outData=20 get inData=20 --pass
+2023-12-07 09:50:58 :     TSI DATA TS:2 set outData=20 get inData=20 --pass
+2023-12-07 09:50:59 :     TSI DATA TS:3 set outData=20 get inData=20 --pass
+2023-12-07 09:51:01 :     TSI DATA TS:4 set outData=20 get inData=20 --pass
+2023-12-07 09:51:03 :     TSI DATA TS:5 set outData=20 get inData=20 --pass
+2023-12-07 09:51:05 :     TSI DATA TS:6 set outData=20 get inData=20 --pass
+2023-12-07 09:51:06 :     TSI DATA TS:7 set outData=20 get inData=20 --pass
+2023-12-07 09:51:08 :     TSI DATA TS:8 set outData=20 get inData=20 --pass
+2023-12-07 09:51:10 :     TSI DATA TS:9 set outData=20 get inData=20 --pass
+2023-12-07 09:51:12 :     TSI DATA TS:10 set outData=20 get inData=20 --pass
+2023-12-07 09:51:13 :     TSI DATA TS:11 set outData=20 get inData=20 --pass
+2023-12-07 09:51:15 :     TSI DATA TS:12 set outData=20 get inData=20 --pass
+2023-12-07 09:51:17 :     TSI DATA TS:13 set outData=20 get inData=20 --pass
+2023-12-07 09:51:19 :     TSI DATA TS:14 set outData=20 get inData=20 --pass
+2023-12-07 09:51:20 :     TSI DATA TS:15 set outData=20 get inData=20 --pass
+2023-12-07 09:51:22 :     TSI DATA TS:16 set outData=20 get inData=20 --pass
+2023-12-07 09:51:24 :     TSI DATA TS:17 set outData=20 get inData=20 --pass
+2023-12-07 09:51:25 :     TSI DATA TS:18 set outData=20 get inData=20 --pass
+2023-12-07 09:51:27 :     TSI DATA TS:19 set outData=20 get inData=20 --pass
+2023-12-07 09:51:29 :     TSI DATA TS:20 set outData=20 get inData=20 --pass
+2023-12-07 09:51:30 :     TSI DATA TS:21 set outData=20 get inData=20 --pass
+2023-12-07 09:51:32 :     TSI DATA TS:22 set outData=20 get inData=20 --pass
+2023-12-07 09:51:34 :     TSI DATA TS:23 set outData=20 get inData=20 --pass
+2023-12-07 09:51:34 : Check cross connect tsi signalling
+2023-12-07 09:51:34 : --Round:1--
+2023-12-07 09:51:56 :     TSI CAS TS:0 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:51:58 :     TSI CAS TS:1 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:00 :     TSI CAS TS:2 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:02 :     TSI CAS TS:3 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:04 :     TSI CAS TS:4 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:07 :     TSI CAS TS:5 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:09 :     TSI CAS TS:6 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:11 :     TSI CAS TS:7 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:13 :     TSI CAS TS:8 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:15 :     TSI CAS TS:9 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:18 :     TSI CAS TS:10 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:20 :     TSI CAS TS:11 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:22 :     TSI CAS TS:12 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:24 :     TSI CAS TS:13 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:26 :     TSI CAS TS:14 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:29 :     TSI CAS TS:15 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:31 :     TSI CAS TS:16 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:33 :     TSI CAS TS:17 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:35 :     TSI CAS TS:18 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:37 :     TSI CAS TS:19 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:40 :     TSI CAS TS:20 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:42 :     TSI CAS TS:21 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:44 :     TSI CAS TS:22 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:46 :     TSI CAS TS:23 set outCAS=FF get inCAS=FF --pass
+2023-12-07 09:52:54 : Current test card:QT1 cfg:ESF
+2023-12-07 09:52:57 : Check card tsi data
+2023-12-07 09:52:57 : --Round:1--
+2023-12-07 09:53:18 :     TSI DATA TS:1 set outData=20 get inData=20 --pass
+2023-12-07 09:53:20 :     TSI DATA TS:2 set outData=20 get inData=21 --pass
+2023-12-07 09:53:21 :     TSI DATA TS:3 set outData=20 get inData=20 --pass
+2023-12-07 09:53:23 :     TSI DATA TS:4 set outData=20 get inData=21 --pass
+2023-12-07 09:53:25 :     TSI DATA TS:5 set outData=20 get inData=21 --pass
+2023-12-07 09:53:26 :     TSI DATA TS:6 set outData=20 get inData=20 --pass
+2023-12-07 09:53:28 :     TSI DATA TS:7 set outData=20 get inData=20 --pass
+2023-12-07 09:53:30 :     TSI DATA TS:8 set outData=20 get inData=20 --pass
+2023-12-07 09:53:32 :     TSI DATA TS:9 set outData=20 get inData=20 --pass
+2023-12-07 09:53:33 :     TSI DATA TS:10 set outData=20 get inData=20 --pass
+2023-12-07 09:53:35 :     TSI DATA TS:11 set outData=20 get inData=21 --pass
+2023-12-07 09:53:37 :     TSI DATA TS:12 set outData=20 get inData=20 --pass
+2023-12-07 09:53:38 :     TSI DATA TS:13 set outData=20 get inData=20 --pass
+2023-12-07 09:53:40 :     TSI DATA TS:14 set outData=20 get inData=20 --pass
+2023-12-07 09:53:42 :     TSI DATA TS:15 set outData=20 get inData=20 --pass
+2023-12-07 09:53:43 :     TSI DATA TS:16 set outData=20 get inData=20 --pass
+2023-12-07 09:53:45 :     TSI DATA TS:17 set outData=20 get inData=21 --pass
+2023-12-07 09:53:47 :     TSI DATA TS:18 set outData=20 get inData=20 --pass
+2023-12-07 09:53:49 :     TSI DATA TS:19 set outData=20 get inData=20 --pass
+2023-12-07 09:53:50 :     TSI DATA TS:20 set outData=20 get inData=20 --pass
+2023-12-07 09:53:52 :     TSI DATA TS:21 set outData=20 get inData=20 --pass
+2023-12-07 09:53:54 :     TSI DATA TS:22 set outData=20 get inData=20 --pass
+2023-12-07 09:53:55 :     TSI DATA TS:23 set outData=20 get inData=20 --pass
+2023-12-07 09:53:57 :     TSI DATA TS:24 set outData=20 get inData=20 --pass
+2023-12-07 09:53:57 : Check card tsi signalling
+2023-12-07 09:53:57 : --Round:1--
+2023-12-07 09:54:18 :     TSI CAS TS:1 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:20 :     TSI CAS TS:2 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:22 :     TSI CAS TS:3 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:25 :     TSI CAS TS:4 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:27 :     TSI CAS TS:5 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:29 :     TSI CAS TS:6 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:31 :     TSI CAS TS:7 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:33 :     TSI CAS TS:8 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:36 :     TSI CAS TS:9 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:38 :     TSI CAS TS:10 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:40 :     TSI CAS TS:11 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:42 :     TSI CAS TS:12 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:44 :     TSI CAS TS:13 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:47 :     TSI CAS TS:14 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:49 :     TSI CAS TS:15 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:51 :     TSI CAS TS:16 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:53 :     TSI CAS TS:17 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:55 :     TSI CAS TS:18 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:54:58 :     TSI CAS TS:19 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:55:00 :     TSI CAS TS:20 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:55:02 :     TSI CAS TS:21 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:55:04 :     TSI CAS TS:22 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:55:06 :     TSI CAS TS:23 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:55:09 :     TSI CAS TS:24 set outCAS=05 get inCAS=55 --pass
+2023-12-07 09:55:18 : Check cross connect tsi data
+2023-12-07 09:55:18 : --Round:1--
+2023-12-07 09:55:39 :     TSI DATA TS:0 set outData=20 get inData=20 --pass
+2023-12-07 09:55:40 :     TSI DATA TS:1 set outData=20 get inData=20 --pass
+2023-12-07 09:55:42 :     TSI DATA TS:2 set outData=20 get inData=21 --pass
+2023-12-07 09:55:44 :     TSI DATA TS:3 set outData=20 get inData=20 --pass
+2023-12-07 09:55:46 :     TSI DATA TS:4 set outData=20 get inData=20 --pass
+2023-12-07 09:55:47 :     TSI DATA TS:5 set outData=20 get inData=20 --pass
+2023-12-07 09:55:49 :     TSI DATA TS:6 set outData=20 get inData=20 --pass
+2023-12-07 09:55:51 :     TSI DATA TS:7 set outData=20 get inData=20 --pass
+2023-12-07 09:55:53 :     TSI DATA TS:8 set outData=20 get inData=20 --pass
+2023-12-07 09:55:54 :     TSI DATA TS:9 set outData=20 get inData=20 --pass
+2023-12-07 09:55:56 :     TSI DATA TS:10 set outData=20 get inData=20 --pass
+2023-12-07 09:55:58 :     TSI DATA TS:11 set outData=20 get inData=21 --pass
+2023-12-07 09:56:00 :     TSI DATA TS:12 set outData=20 get inData=20 --pass
+2023-12-07 09:56:01 :     TSI DATA TS:13 set outData=20 get inData=20 --pass
+2023-12-07 09:56:03 :     TSI DATA TS:14 set outData=20 get inData=20 --pass
+2023-12-07 09:56:05 :     TSI DATA TS:15 set outData=20 get inData=21 --pass
+2023-12-07 09:56:06 :     TSI DATA TS:16 set outData=20 get inData=21 --pass
+2023-12-07 09:56:08 :     TSI DATA TS:17 set outData=20 get inData=20 --pass
+2023-12-07 09:56:10 :     TSI DATA TS:18 set outData=20 get inData=20 --pass
+2023-12-07 09:56:12 :     TSI DATA TS:19 set outData=20 get inData=21 --pass
+2023-12-07 09:56:13 :     TSI DATA TS:20 set outData=20 get inData=20 --pass
+2023-12-07 09:56:15 :     TSI DATA TS:21 set outData=20 get inData=21 --pass
+2023-12-07 09:56:17 :     TSI DATA TS:22 set outData=20 get inData=20 --pass
+2023-12-07 09:56:18 :     TSI DATA TS:23 set outData=20 get inData=20 --pass
+2023-12-07 09:56:18 : Check cross connect tsi signalling
+2023-12-07 09:56:18 : --Round:1--
+2023-12-07 09:56:40 :     TSI CAS TS:0 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:56:42 :     TSI CAS TS:1 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:56:44 :     TSI CAS TS:2 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:56:47 :     TSI CAS TS:3 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:56:49 :     TSI CAS TS:4 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:56:51 :     TSI CAS TS:5 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:56:53 :     TSI CAS TS:6 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:56:55 :     TSI CAS TS:7 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:56:58 :     TSI CAS TS:8 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:00 :     TSI CAS TS:9 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:02 :     TSI CAS TS:10 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:04 :     TSI CAS TS:11 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:07 :     TSI CAS TS:12 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:09 :     TSI CAS TS:13 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:11 :     TSI CAS TS:14 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:13 :     TSI CAS TS:15 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:15 :     TSI CAS TS:16 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:18 :     TSI CAS TS:17 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:20 :     TSI CAS TS:18 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:22 :     TSI CAS TS:19 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:24 :     TSI CAS TS:20 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:26 :     TSI CAS TS:21 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:29 :     TSI CAS TS:22 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:31 :     TSI CAS TS:23 set outCAS=0C get inCAS=CC --pass
+2023-12-07 09:57:39 : Current test card:FT1 cfg:D4
+2023-12-07 09:57:42 : Check card tsi data
+2023-12-07 09:57:42 : --Round:1--
+2023-12-07 09:58:03 :     TSI DATA TS:1 set outData=20 get inData=20 --pass
+2023-12-07 09:58:05 :     TSI DATA TS:2 set outData=20 get inData=21 --pass
+2023-12-07 09:58:07 :     TSI DATA TS:3 set outData=20 get inData=21 --pass
+2023-12-07 09:58:09 :     TSI DATA TS:4 set outData=20 get inData=20 --pass
+2023-12-07 09:58:10 :     TSI DATA TS:5 set outData=20 get inData=20 --pass
+2023-12-07 09:58:12 :     TSI DATA TS:6 set outData=20 get inData=20 --pass
+2023-12-07 09:58:14 :     TSI DATA TS:7 set outData=20 get inData=20 --pass
+2023-12-07 09:58:16 :     TSI DATA TS:8 set outData=20 get inData=20 --pass
+2023-12-07 09:58:17 :     TSI DATA TS:9 set outData=20 get inData=20 --pass
+2023-12-07 09:58:19 :     TSI DATA TS:10 set outData=20 get inData=20 --pass
+2023-12-07 09:58:21 :     TSI DATA TS:11 set outData=20 get inData=20 --pass
+2023-12-07 09:58:22 :     TSI DATA TS:12 set outData=20 get inData=21 --pass
+2023-12-07 09:58:24 :     TSI DATA TS:13 set outData=20 get inData=20 --pass
+2023-12-07 09:58:26 :     TSI DATA TS:14 set outData=20 get inData=21 --pass
+2023-12-07 09:58:27 :     TSI DATA TS:15 set outData=20 get inData=20 --pass
+2023-12-07 09:58:29 :     TSI DATA TS:16 set outData=20 get inData=20 --pass
+2023-12-07 09:58:31 :     TSI DATA TS:17 set outData=20 get inData=20 --pass
+2023-12-07 09:58:32 :     TSI DATA TS:18 set outData=20 get inData=20 --pass
+2023-12-07 09:58:34 :     TSI DATA TS:19 set outData=20 get inData=20 --pass
+2023-12-07 09:58:36 :     TSI DATA TS:20 set outData=20 get inData=20 --pass
+2023-12-07 09:58:37 :     TSI DATA TS:21 set outData=20 get inData=20 --pass
+2023-12-07 09:58:39 :     TSI DATA TS:22 set outData=20 get inData=20 --pass
+2023-12-07 09:58:41 :     TSI DATA TS:23 set outData=20 get inData=20 --pass
+2023-12-07 09:58:43 :     TSI DATA TS:24 set outData=20 get inData=21 --pass
+2023-12-07 09:58:43 : Check card tsi signalling
+2023-12-07 09:58:43 : --Round:1--
+2023-12-07 09:59:04 :     TSI CAS TS:1 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:06 :     TSI CAS TS:2 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:08 :     TSI CAS TS:3 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:10 :     TSI CAS TS:4 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:13 :     TSI CAS TS:5 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:15 :     TSI CAS TS:6 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:17 :     TSI CAS TS:7 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:19 :     TSI CAS TS:8 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:21 :     TSI CAS TS:9 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:24 :     TSI CAS TS:10 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:26 :     TSI CAS TS:11 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:28 :     TSI CAS TS:12 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:30 :     TSI CAS TS:13 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:32 :     TSI CAS TS:14 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:35 :     TSI CAS TS:15 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:37 :     TSI CAS TS:16 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:39 :     TSI CAS TS:17 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:41 :     TSI CAS TS:18 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:44 :     TSI CAS TS:19 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:46 :     TSI CAS TS:20 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:48 :     TSI CAS TS:21 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:50 :     TSI CAS TS:22 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:52 :     TSI CAS TS:23 set outCAS=AA get inCAS=AA --pass
+2023-12-07 09:59:54 :     TSI CAS TS:24 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:00:04 : Check cross connect tsi data
+2023-12-07 10:00:04 : --Round:1--
+2023-12-07 10:00:24 :     TSI DATA TS:0 set outData=20 get inData=20 --pass
+2023-12-07 10:00:26 :     TSI DATA TS:1 set outData=20 get inData=20 --pass
+2023-12-07 10:00:28 :     TSI DATA TS:2 set outData=20 get inData=21 --pass
+2023-12-07 10:00:30 :     TSI DATA TS:3 set outData=20 get inData=20 --pass
+2023-12-07 10:00:31 :     TSI DATA TS:4 set outData=20 get inData=20 --pass
+2023-12-07 10:00:33 :     TSI DATA TS:5 set outData=20 get inData=20 --pass
+2023-12-07 10:00:35 :     TSI DATA TS:6 set outData=20 get inData=20 --pass
+2023-12-07 10:00:36 :     TSI DATA TS:7 set outData=20 get inData=20 --pass
+2023-12-07 10:00:38 :     TSI DATA TS:8 set outData=20 get inData=20 --pass
+2023-12-07 10:00:40 :     TSI DATA TS:9 set outData=20 get inData=21 --pass
+2023-12-07 10:00:42 :     TSI DATA TS:10 set outData=20 get inData=20 --pass
+2023-12-07 10:00:43 :     TSI DATA TS:11 set outData=20 get inData=20 --pass
+2023-12-07 10:00:45 :     TSI DATA TS:12 set outData=20 get inData=21 --pass
+2023-12-07 10:00:47 :     TSI DATA TS:13 set outData=20 get inData=20 --pass
+2023-12-07 10:00:49 :     TSI DATA TS:14 set outData=20 get inData=20 --pass
+2023-12-07 10:00:50 :     TSI DATA TS:15 set outData=20 get inData=20 --pass
+2023-12-07 10:00:52 :     TSI DATA TS:16 set outData=20 get inData=20 --pass
+2023-12-07 10:00:54 :     TSI DATA TS:17 set outData=20 get inData=20 --pass
+2023-12-07 10:00:55 :     TSI DATA TS:18 set outData=20 get inData=20 --pass
+2023-12-07 10:00:57 :     TSI DATA TS:19 set outData=20 get inData=21 --pass
+2023-12-07 10:00:59 :     TSI DATA TS:20 set outData=20 get inData=20 --pass
+2023-12-07 10:01:01 :     TSI DATA TS:21 set outData=20 get inData=20 --pass
+2023-12-07 10:01:02 :     TSI DATA TS:22 set outData=20 get inData=20 --pass
+2023-12-07 10:01:04 :     TSI DATA TS:23 set outData=20 get inData=21 --pass
+2023-12-07 10:01:04 : Check cross connect tsi signalling
+2023-12-07 10:01:04 : --Round:1--
+2023-12-07 10:01:25 :     TSI CAS TS:0 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:28 :     TSI CAS TS:1 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:30 :     TSI CAS TS:2 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:32 :     TSI CAS TS:3 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:34 :     TSI CAS TS:4 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:37 :     TSI CAS TS:5 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:39 :     TSI CAS TS:6 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:41 :     TSI CAS TS:7 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:43 :     TSI CAS TS:8 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:45 :     TSI CAS TS:9 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:48 :     TSI CAS TS:10 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:50 :     TSI CAS TS:11 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:52 :     TSI CAS TS:12 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:54 :     TSI CAS TS:13 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:57 :     TSI CAS TS:14 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:01:59 :     TSI CAS TS:15 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:02:01 :     TSI CAS TS:16 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:02:03 :     TSI CAS TS:17 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:02:06 :     TSI CAS TS:18 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:02:08 :     TSI CAS TS:19 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:02:10 :     TSI CAS TS:20 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:02:12 :     TSI CAS TS:21 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:02:15 :     TSI CAS TS:22 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:02:17 :     TSI CAS TS:23 set outCAS=AA get inCAS=AA --pass
+2023-12-07 10:02:25 : Current test card:FT1 cfg:ESF
+2023-12-07 10:02:28 : Check card tsi data
+2023-12-07 10:02:28 : --Round:1--
+2023-12-07 10:02:49 :     TSI DATA TS:1 set outData=10 get inData=10 --pass
+2023-12-07 10:02:51 :     TSI DATA TS:2 set outData=10 get inData=10 --pass
+2023-12-07 10:02:52 :     TSI DATA TS:3 set outData=10 get inData=10 --pass
+2023-12-07 10:02:54 :     TSI DATA TS:4 set outData=10 get inData=10 --pass
+2023-12-07 10:02:56 :     TSI DATA TS:5 set outData=10 get inData=10 --pass
+2023-12-07 10:02:57 :     TSI DATA TS:6 set outData=10 get inData=11 --pass
+2023-12-07 10:02:59 :     TSI DATA TS:7 set outData=10 get inData=10 --pass
+2023-12-07 10:03:01 :     TSI DATA TS:8 set outData=10 get inData=10 --pass
+2023-12-07 10:03:03 :     TSI DATA TS:9 set outData=10 get inData=10 --pass
+2023-12-07 10:03:04 :     TSI DATA TS:10 set outData=10 get inData=11 --pass
+2023-12-07 10:03:06 :     TSI DATA TS:11 set outData=10 get inData=10 --pass
+2023-12-07 10:03:08 :     TSI DATA TS:12 set outData=10 get inData=10 --pass
+2023-12-07 10:03:09 :     TSI DATA TS:13 set outData=10 get inData=10 --pass
+2023-12-07 10:03:11 :     TSI DATA TS:14 set outData=10 get inData=10 --pass
+2023-12-07 10:03:13 :     TSI DATA TS:15 set outData=10 get inData=10 --pass
+2023-12-07 10:03:15 :     TSI DATA TS:16 set outData=10 get inData=10 --pass
+2023-12-07 10:03:16 :     TSI DATA TS:17 set outData=10 get inData=11 --pass
+2023-12-07 10:03:18 :     TSI DATA TS:18 set outData=10 get inData=10 --pass
+2023-12-07 10:03:20 :     TSI DATA TS:19 set outData=10 get inData=10 --pass
+2023-12-07 10:03:21 :     TSI DATA TS:20 set outData=10 get inData=10 --pass
+2023-12-07 10:03:23 :     TSI DATA TS:21 set outData=10 get inData=10 --pass
+2023-12-07 10:03:25 :     TSI DATA TS:22 set outData=10 get inData=10 --pass
+2023-12-07 10:03:26 :     TSI DATA TS:23 set outData=10 get inData=11 --pass
+2023-12-07 10:03:28 :     TSI DATA TS:24 set outData=10 get inData=10 --pass
+2023-12-07 10:03:28 : Check card tsi signalling
+2023-12-07 10:03:28 : --Round:1--
+2023-12-07 10:03:49 :     TSI CAS TS:1 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:03:51 :     TSI CAS TS:2 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:03:54 :     TSI CAS TS:3 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:03:56 :     TSI CAS TS:4 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:03:58 :     TSI CAS TS:5 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:00 :     TSI CAS TS:6 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:03 :     TSI CAS TS:7 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:05 :     TSI CAS TS:8 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:07 :     TSI CAS TS:9 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:09 :     TSI CAS TS:10 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:11 :     TSI CAS TS:11 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:14 :     TSI CAS TS:12 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:16 :     TSI CAS TS:13 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:18 :     TSI CAS TS:14 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:20 :     TSI CAS TS:15 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:22 :     TSI CAS TS:16 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:24 :     TSI CAS TS:17 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:27 :     TSI CAS TS:18 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:29 :     TSI CAS TS:19 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:31 :     TSI CAS TS:20 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:33 :     TSI CAS TS:21 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:35 :     TSI CAS TS:22 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:38 :     TSI CAS TS:23 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:40 :     TSI CAS TS:24 set outCAS=05 get inCAS=55 --pass
+2023-12-07 10:04:49 : Check cross connect tsi data
+2023-12-07 10:04:49 : --Round:1--
+2023-12-07 10:05:10 :     TSI DATA TS:0 set outData=AA get inData=AA --pass
+2023-12-07 10:05:12 :     TSI DATA TS:1 set outData=AA get inData=AA --pass
+2023-12-07 10:05:13 :     TSI DATA TS:2 set outData=AA get inData=AA --pass
+2023-12-07 10:05:15 :     TSI DATA TS:3 set outData=AA get inData=AA --pass
+2023-12-07 10:05:17 :     TSI DATA TS:4 set outData=AA get inData=AA --pass
+2023-12-07 10:05:19 :     TSI DATA TS:5 set outData=AA get inData=AA --pass
+2023-12-07 10:05:20 :     TSI DATA TS:6 set outData=AA get inData=AA --pass
+2023-12-07 10:05:22 :     TSI DATA TS:7 set outData=AA get inData=AA --pass
+2023-12-07 10:05:24 :     TSI DATA TS:8 set outData=AA get inData=AA --pass
+2023-12-07 10:05:25 :     TSI DATA TS:9 set outData=AA get inData=AA --pass
+2023-12-07 10:05:27 :     TSI DATA TS:10 set outData=AA get inData=AA --pass
+2023-12-07 10:05:29 :     TSI DATA TS:11 set outData=AA get inData=AA --pass
+2023-12-07 10:05:31 :     TSI DATA TS:12 set outData=AA get inData=AA --pass
+2023-12-07 10:05:32 :     TSI DATA TS:13 set outData=AA get inData=AA --pass
+2023-12-07 10:05:34 :     TSI DATA TS:14 set outData=AA get inData=AA --pass
+2023-12-07 10:05:36 :     TSI DATA TS:15 set outData=AA get inData=AA --pass
+2023-12-07 10:05:37 :     TSI DATA TS:16 set outData=AA get inData=AA --pass
+2023-12-07 10:05:39 :     TSI DATA TS:17 set outData=AA get inData=AA --pass
+2023-12-07 10:05:41 :     TSI DATA TS:18 set outData=AA get inData=AA --pass
+2023-12-07 10:05:43 :     TSI DATA TS:19 set outData=AA get inData=AA --pass
+2023-12-07 10:05:44 :     TSI DATA TS:20 set outData=AA get inData=AA --pass
+2023-12-07 10:05:46 :     TSI DATA TS:21 set outData=AA get inData=AA --pass
+2023-12-07 10:05:48 :     TSI DATA TS:22 set outData=AA get inData=AA --pass
+2023-12-07 10:05:49 :     TSI DATA TS:23 set outData=AA get inData=AA --pass
+2023-12-07 10:05:49 : Check cross connect tsi signalling
+2023-12-07 10:05:49 : --Round:1--
+2023-12-07 10:06:10 :     TSI CAS TS:0 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:13 :     TSI CAS TS:1 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:15 :     TSI CAS TS:2 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:17 :     TSI CAS TS:3 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:19 :     TSI CAS TS:4 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:21 :     TSI CAS TS:5 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:23 :     TSI CAS TS:6 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:26 :     TSI CAS TS:7 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:28 :     TSI CAS TS:8 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:30 :     TSI CAS TS:9 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:32 :     TSI CAS TS:10 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:35 :     TSI CAS TS:11 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:37 :     TSI CAS TS:12 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:39 :     TSI CAS TS:13 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:41 :     TSI CAS TS:14 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:43 :     TSI CAS TS:15 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:46 :     TSI CAS TS:16 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:48 :     TSI CAS TS:17 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:50 :     TSI CAS TS:18 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:52 :     TSI CAS TS:19 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:54 :     TSI CAS TS:20 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:57 :     TSI CAS TS:21 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:06:59 :     TSI CAS TS:22 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:07:01 :     TSI CAS TS:23 set outCAS=0E get inCAS=EE --pass
+2023-12-07 10:07:08 : Current test card:QE1 cfg:E1CAS
+2023-12-07 10:07:15 : Check card tsi data
+2023-12-07 10:07:15 : --Round:1--
+2023-12-07 10:07:44 :     TSI DATA TS:1 set outData=10 get inData=FF --fail
+2023-12-07 10:07:50 :     TSI DATA TS:2 set outData=10 get inData=FF --fail
+2023-12-07 10:07:55 :     TSI DATA TS:3 set outData=10 get inData=FF --fail
+2023-12-07 10:08:00 :     TSI DATA TS:4 set outData=10 get inData=FF --fail
+2023-12-07 10:08:06 :     TSI DATA TS:5 set outData=10 get inData=FF --fail
+2023-12-07 10:08:11 :     TSI DATA TS:6 set outData=10 get inData=FF --fail
+2023-12-07 10:08:16 :     TSI DATA TS:7 set outData=10 get inData=FF --fail
+2023-12-07 10:08:22 :     TSI DATA TS:8 set outData=10 get inData=FF --fail
+2023-12-07 10:08:27 :     TSI DATA TS:9 set outData=10 get inData=FF --fail
+2023-12-07 10:08:32 :     TSI DATA TS:10 set outData=10 get inData=FF --fail
+2023-12-07 10:08:37 :     TSI DATA TS:11 set outData=10 get inData=FF --fail
+2023-12-07 10:08:43 :     TSI DATA TS:12 set outData=10 get inData=FF --fail
+2023-12-07 10:08:48 :     TSI DATA TS:13 set outData=10 get inData=FF --fail
+2023-12-07 10:08:53 :     TSI DATA TS:14 set outData=10 get inData=FF --fail
+2023-12-07 10:08:58 :     TSI DATA TS:15 set outData=10 get inData=FF --fail
+2023-12-07 10:09:04 :     TSI DATA TS:17 set outData=10 get inData=FF --fail
+2023-12-07 10:09:09 :     TSI DATA TS:18 set outData=10 get inData=FF --fail
+2023-12-07 10:09:14 :     TSI DATA TS:19 set outData=10 get inData=FF --fail
+2023-12-07 10:09:19 :     TSI DATA TS:20 set outData=10 get inData=FF --fail
+2023-12-07 10:09:25 :     TSI DATA TS:21 set outData=10 get inData=FF --fail
+2023-12-07 10:09:30 :     TSI DATA TS:22 set outData=10 get inData=FF --fail
+2023-12-07 10:09:35 :     TSI DATA TS:23 set outData=10 get inData=FF --fail
+2023-12-07 10:09:41 :     TSI DATA TS:24 set outData=10 get inData=FF --fail
+2023-12-07 10:09:46 :     TSI DATA TS:25 set outData=10 get inData=FF --fail
+2023-12-07 10:09:51 :     TSI DATA TS:26 set outData=10 get inData=FF --fail
+2023-12-07 10:09:56 :     TSI DATA TS:27 set outData=10 get inData=FF --fail
+2023-12-07 10:10:02 :     TSI DATA TS:28 set outData=10 get inData=FF --fail
+2023-12-07 10:10:07 :     TSI DATA TS:29 set outData=10 get inData=FF --fail
+2023-12-07 10:10:12 :     TSI DATA TS:30 set outData=10 get inData=FF --fail
+2023-12-07 10:10:18 :     TSI DATA TS:31 set outData=10 get inData=FF --fail
+2023-12-07 10:10:18 : Check card tsi signalling
+2023-12-07 10:10:18 : --Round:1--
+2023-12-07 10:10:48 :     TSI CAS TS:1 set outCAS=0C get inCAS=1D --fail
+2023-12-07 10:10:53 :     TSI CAS TS:2 set outCAS=0C get inCAS=BD --fail
+2023-12-07 10:10:59 :     TSI CAS TS:3 set outCAS=0C get inCAS=8D --fail
+2023-12-07 10:11:05 :     TSI CAS TS:4 set outCAS=0C get inCAS=9D --fail
+2023-12-07 10:11:11 :     TSI CAS TS:5 set outCAS=0C get inCAS=8D --fail
+2023-12-07 10:11:17 :     TSI CAS TS:6 set outCAS=0C get inCAS=8D --fail
+2023-12-07 10:11:22 :     TSI CAS TS:7 set outCAS=0C get inCAS=8D --fail
+2023-12-07 10:11:28 :     TSI CAS TS:8 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:11:34 :     TSI CAS TS:9 set outCAS=0C get inCAS=8D --fail
+2023-12-07 10:11:40 :     TSI CAS TS:10 set outCAS=0C get inCAS=AD --fail
+2023-12-07 10:11:46 :     TSI CAS TS:11 set outCAS=0C get inCAS=2D --fail
+2023-12-07 10:11:52 :     TSI CAS TS:12 set outCAS=0C get inCAS=9D --fail
+2023-12-07 10:11:57 :     TSI CAS TS:13 set outCAS=0C get inCAS=ED --fail
+2023-12-07 10:12:03 :     TSI CAS TS:14 set outCAS=0C get inCAS=0D --fail
+2023-12-07 10:12:09 :     TSI CAS TS:15 set outCAS=0C get inCAS=0D --fail
+2023-12-07 10:12:15 :     TSI CAS TS:17 set outCAS=0C get inCAS=7D --fail
+2023-12-07 10:12:20 :     TSI CAS TS:18 set outCAS=0C get inCAS=8D --fail
+2023-12-07 10:12:26 :     TSI CAS TS:19 set outCAS=0C get inCAS=1D --fail
+2023-12-07 10:12:32 :     TSI CAS TS:20 set outCAS=0C get inCAS=4D --fail
+2023-12-07 10:12:38 :     TSI CAS TS:21 set outCAS=0C get inCAS=0D --fail
+2023-12-07 10:12:44 :     TSI CAS TS:22 set outCAS=0C get inCAS=0D --fail
+2023-12-07 10:12:50 :     TSI CAS TS:23 set outCAS=0C get inCAS=0D --fail
+2023-12-07 10:12:55 :     TSI CAS TS:24 set outCAS=0C get inCAS=9D --fail
+2023-12-07 10:13:01 :     TSI CAS TS:25 set outCAS=0C get inCAS=9D --fail
+2023-12-07 10:13:07 :     TSI CAS TS:26 set outCAS=0C get inCAS=0D --fail
+2023-12-07 10:13:13 :     TSI CAS TS:27 set outCAS=0C get inCAS=1D --fail
+2023-12-07 10:13:19 :     TSI CAS TS:28 set outCAS=0C get inCAS=2D --fail
+2023-12-07 10:13:24 :     TSI CAS TS:29 set outCAS=0C get inCAS=4D --fail
+2023-12-07 10:13:30 :     TSI CAS TS:30 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:13:36 :     TSI CAS TS:31 set outCAS=0C get inCAS=4D --fail
+2023-12-07 10:13:51 : Check cross connect tsi data
+2023-12-07 10:13:51 : --Round:1--
+2023-12-07 10:14:21 :     TSI DATA TS:0 set outData=20 get inData=FF --fail
+2023-12-07 10:14:26 :     TSI DATA TS:1 set outData=20 get inData=FF --fail
+2023-12-07 10:14:31 :     TSI DATA TS:2 set outData=20 get inData=FF --fail
+2023-12-07 10:14:37 :     TSI DATA TS:3 set outData=20 get inData=FF --fail
+2023-12-07 10:14:42 :     TSI DATA TS:4 set outData=20 get inData=FF --fail
+2023-12-07 10:14:47 :     TSI DATA TS:5 set outData=20 get inData=FF --fail
+2023-12-07 10:14:53 :     TSI DATA TS:6 set outData=20 get inData=FF --fail
+2023-12-07 10:14:58 :     TSI DATA TS:7 set outData=20 get inData=FF --fail
+2023-12-07 10:15:03 :     TSI DATA TS:8 set outData=20 get inData=FF --fail
+2023-12-07 10:15:09 :     TSI DATA TS:9 set outData=20 get inData=FF --fail
+2023-12-07 10:15:14 :     TSI DATA TS:10 set outData=20 get inData=FF --fail
+2023-12-07 10:15:19 :     TSI DATA TS:11 set outData=20 get inData=FF --fail
+2023-12-07 10:15:24 :     TSI DATA TS:12 set outData=20 get inData=FF --fail
+2023-12-07 10:15:30 :     TSI DATA TS:13 set outData=20 get inData=FF --fail
+2023-12-07 10:15:35 :     TSI DATA TS:14 set outData=20 get inData=FF --fail
+2023-12-07 10:15:40 :     TSI DATA TS:15 set outData=20 get inData=FF --fail
+2023-12-07 10:15:46 :     TSI DATA TS:17 set outData=20 get inData=FF --fail
+2023-12-07 10:15:51 :     TSI DATA TS:18 set outData=20 get inData=FF --fail
+2023-12-07 10:15:56 :     TSI DATA TS:19 set outData=20 get inData=FF --fail
+2023-12-07 10:16:02 :     TSI DATA TS:20 set outData=20 get inData=FF --fail
+2023-12-07 10:16:07 :     TSI DATA TS:21 set outData=20 get inData=FF --fail
+2023-12-07 10:16:12 :     TSI DATA TS:22 set outData=20 get inData=FF --fail
+2023-12-07 10:16:17 :     TSI DATA TS:23 set outData=20 get inData=FF --fail
+2023-12-07 10:16:23 :     TSI DATA TS:24 set outData=20 get inData=FF --fail
+2023-12-07 10:16:28 :     TSI DATA TS:25 set outData=20 get inData=FF --fail
+2023-12-07 10:16:33 :     TSI DATA TS:26 set outData=20 get inData=FF --fail
+2023-12-07 10:16:39 :     TSI DATA TS:27 set outData=20 get inData=FF --fail
+2023-12-07 10:16:44 :     TSI DATA TS:28 set outData=20 get inData=FF --fail
+2023-12-07 10:16:49 :     TSI DATA TS:29 set outData=20 get inData=FF --fail
+2023-12-07 10:16:49 : Check cross connect tsi signalling
+2023-12-07 10:16:49 : --Round:1--
+2023-12-07 10:17:18 :     TSI CAS TS:0 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:17:24 :     TSI CAS TS:1 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:17:30 :     TSI CAS TS:2 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:17:36 :     TSI CAS TS:3 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:17:42 :     TSI CAS TS:4 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:17:48 :     TSI CAS TS:5 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:17:54 :     TSI CAS TS:6 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:17:59 :     TSI CAS TS:7 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:18:05 :     TSI CAS TS:8 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:18:11 :     TSI CAS TS:9 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:18:17 :     TSI CAS TS:10 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:18:23 :     TSI CAS TS:11 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:18:29 :     TSI CAS TS:12 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:18:35 :     TSI CAS TS:13 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:18:40 :     TSI CAS TS:14 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:18:46 :     TSI CAS TS:16 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:18:52 :     TSI CAS TS:17 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:18:58 :     TSI CAS TS:18 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:19:04 :     TSI CAS TS:19 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:19:10 :     TSI CAS TS:20 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:19:15 :     TSI CAS TS:21 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:19:21 :     TSI CAS TS:22 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:19:27 :     TSI CAS TS:23 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:19:33 :     TSI CAS TS:24 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:19:39 :     TSI CAS TS:25 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:19:44 :     TSI CAS TS:26 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:19:50 :     TSI CAS TS:27 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:19:56 :     TSI CAS TS:28 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:20:02 :     TSI CAS TS:29 set outCAS=0E get inCAS=DD --fail
+2023-12-07 10:20:12 : Current test card:FE1 cfg:E1CAS
+2023-12-07 10:20:19 : Check card tsi data
+2023-12-07 10:20:19 : --Round:1--
+2023-12-07 10:20:49 :     TSI DATA TS:1 set outData=30 get inData=7B --fail
+2023-12-07 10:20:54 :     TSI DATA TS:2 set outData=30 get inData=FF --fail
+2023-12-07 10:20:59 :     TSI DATA TS:3 set outData=30 get inData=FF --fail
+2023-12-07 10:21:05 :     TSI DATA TS:4 set outData=30 get inData=ED --fail
+2023-12-07 10:21:10 :     TSI DATA TS:5 set outData=30 get inData=DB --fail
+2023-12-07 10:21:15 :     TSI DATA TS:6 set outData=30 get inData=FF --fail
+2023-12-07 10:21:20 :     TSI DATA TS:7 set outData=30 get inData=FF --fail
+2023-12-07 10:21:25 :     TSI DATA TS:8 set outData=30 get inData=FF --fail
+2023-12-07 10:21:31 :     TSI DATA TS:9 set outData=30 get inData=FF --fail
+2023-12-07 10:21:36 :     TSI DATA TS:10 set outData=30 get inData=FF --fail
+2023-12-07 10:21:41 :     TSI DATA TS:11 set outData=30 get inData=FF --fail
+2023-12-07 10:21:47 :     TSI DATA TS:12 set outData=30 get inData=FF --fail
+2023-12-07 10:21:52 :     TSI DATA TS:13 set outData=30 get inData=ED --fail
+2023-12-07 10:21:57 :     TSI DATA TS:14 set outData=30 get inData=F7 --fail
+2023-12-07 10:22:03 :     TSI DATA TS:15 set outData=30 get inData=FF --fail
+2023-12-07 10:22:08 :     TSI DATA TS:17 set outData=30 get inData=FF --fail
+2023-12-07 10:22:13 :     TSI DATA TS:18 set outData=30 get inData=FF --fail
+2023-12-07 10:22:18 :     TSI DATA TS:19 set outData=30 get inData=F6 --fail
+2023-12-07 10:22:24 :     TSI DATA TS:20 set outData=30 get inData=FF --fail
+2023-12-07 10:22:29 :     TSI DATA TS:21 set outData=30 get inData=FF --fail
+2023-12-07 10:22:34 :     TSI DATA TS:22 set outData=30 get inData=FF --fail
+2023-12-07 10:22:40 :     TSI DATA TS:23 set outData=30 get inData=FF --fail
+2023-12-07 10:22:45 :     TSI DATA TS:24 set outData=30 get inData=FF --fail
+2023-12-07 10:22:51 :     TSI DATA TS:25 set outData=30 get inData=FF --fail
+2023-12-07 10:22:56 :     TSI DATA TS:26 set outData=30 get inData=FF --fail
+2023-12-07 10:23:01 :     TSI DATA TS:27 set outData=30 get inData=ED --fail
+2023-12-07 10:23:07 :     TSI DATA TS:28 set outData=30 get inData=BD --fail
+2023-12-07 10:23:12 :     TSI DATA TS:29 set outData=30 get inData=FF --fail
+2023-12-07 10:23:17 :     TSI DATA TS:30 set outData=30 get inData=FF --fail
+2023-12-07 10:23:22 :     TSI DATA TS:31 set outData=30 get inData=FB --fail
+2023-12-07 10:23:22 : Check card tsi signalling
+2023-12-07 10:23:22 : --Round:1--
+2023-12-07 10:23:52 :     TSI CAS TS:1 set outCAS=0C get inCAS=BB --fail
+2023-12-07 10:23:58 :     TSI CAS TS:2 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:24:04 :     TSI CAS TS:3 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:24:10 :     TSI CAS TS:4 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:24:15 :     TSI CAS TS:5 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:24:21 :     TSI CAS TS:6 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:24:27 :     TSI CAS TS:7 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:24:33 :     TSI CAS TS:8 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:24:39 :     TSI CAS TS:9 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:24:45 :     TSI CAS TS:10 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:24:50 :     TSI CAS TS:11 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:24:56 :     TSI CAS TS:12 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:25:02 :     TSI CAS TS:13 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:25:08 :     TSI CAS TS:14 set outCAS=0C get inCAS=FF --fail
+2023-12-07 10:25:14 :     TSI CAS TS:15 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:25:19 :     TSI CAS TS:17 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:25:25 :     TSI CAS TS:18 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:25:31 :     TSI CAS TS:19 set outCAS=0C get inCAS=66 --fail
+2023-12-07 10:25:37 :     TSI CAS TS:20 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:25:43 :     TSI CAS TS:21 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:25:49 :     TSI CAS TS:22 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:25:54 :     TSI CAS TS:23 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:26:00 :     TSI CAS TS:24 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:26:06 :     TSI CAS TS:25 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:26:12 :     TSI CAS TS:26 set outCAS=0C get inCAS=BB --fail
+2023-12-07 10:26:18 :     TSI CAS TS:27 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:26:24 :     TSI CAS TS:28 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:26:30 :     TSI CAS TS:29 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:26:35 :     TSI CAS TS:30 set outCAS=0C get inCAS=BB --fail
+2023-12-07 10:26:41 :     TSI CAS TS:31 set outCAS=0C get inCAS=DD --fail
+2023-12-07 10:26:56 : Check cross connect tsi data
+2023-12-07 10:26:56 : --Round:1--
+2023-12-07 10:27:25 :     TSI DATA TS:0 set outData=AA get inData=FF --fail
+2023-12-07 10:27:30 :     TSI DATA TS:1 set outData=AA get inData=FF --fail
+2023-12-07 10:27:36 :     TSI DATA TS:2 set outData=AA get inData=FF --fail
+2023-12-07 10:27:41 :     TSI DATA TS:3 set outData=AA get inData=FF --fail
+2023-12-07 10:27:46 :     TSI DATA TS:4 set outData=AA get inData=FF --fail
+2023-12-07 10:27:51 :     TSI DATA TS:5 set outData=AA get inData=FF --fail
+2023-12-07 10:27:57 :     TSI DATA TS:6 set outData=AA get inData=FF --fail
+2023-12-07 10:28:02 :     TSI DATA TS:7 set outData=AA get inData=FF --fail
+2023-12-07 10:28:07 :     TSI DATA TS:8 set outData=AA get inData=FF --fail
+2023-12-07 10:28:13 :     TSI DATA TS:9 set outData=AA get inData=FF --fail
+2023-12-07 10:28:18 :     TSI DATA TS:10 set outData=AA get inData=FF --fail
+2023-12-07 10:28:24 :     TSI DATA TS:11 set outData=AA get inData=FF --fail
+2023-12-07 10:28:29 :     TSI DATA TS:12 set outData=AA get inData=FF --fail
+2023-12-07 10:28:34 :     TSI DATA TS:13 set outData=AA get inData=FF --fail
+2023-12-07 10:28:40 :     TSI DATA TS:14 set outData=AA get inData=FF --fail
+2023-12-07 10:28:45 :     TSI DATA TS:15 set outData=AA get inData=FF --fail
+2023-12-07 10:28:50 :     TSI DATA TS:17 set outData=AA get inData=FF --fail
+2023-12-07 10:28:56 :     TSI DATA TS:18 set outData=AA get inData=FF --fail
+2023-12-07 10:29:01 :     TSI DATA TS:19 set outData=AA get inData=FF --fail
+2023-12-07 10:29:06 :     TSI DATA TS:20 set outData=AA get inData=FF --fail
+2023-12-07 10:29:12 :     TSI DATA TS:21 set outData=AA get inData=FF --fail
+2023-12-07 10:29:17 :     TSI DATA TS:22 set outData=AA get inData=FF --fail
+2023-12-07 10:29:22 :     TSI DATA TS:23 set outData=AA get inData=FF --fail
+2023-12-07 10:29:28 :     TSI DATA TS:24 set outData=AA get inData=FF --fail
+2023-12-07 10:29:33 :     TSI DATA TS:25 set outData=AA get inData=FF --fail
+2023-12-07 10:29:38 :     TSI DATA TS:26 set outData=AA get inData=FF --fail
+2023-12-07 10:29:44 :     TSI DATA TS:27 set outData=AA get inData=FF --fail
+2023-12-07 10:29:49 :     TSI DATA TS:28 set outData=AA get inData=FF --fail
+2023-12-07 10:29:54 :     TSI DATA TS:29 set outData=AA get inData=FF --fail
+2023-12-07 10:29:54 : Check cross connect tsi signalling
+2023-12-07 10:29:54 : --Round:1--
+2023-12-07 10:30:23 :     TSI CAS TS:0 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:30:29 :     TSI CAS TS:1 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:30:35 :     TSI CAS TS:2 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:30:41 :     TSI CAS TS:3 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:30:47 :     TSI CAS TS:4 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:30:52 :     TSI CAS TS:5 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:30:58 :     TSI CAS TS:6 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:31:04 :     TSI CAS TS:7 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:31:10 :     TSI CAS TS:8 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:31:15 :     TSI CAS TS:9 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:31:21 :     TSI CAS TS:10 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:31:27 :     TSI CAS TS:11 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:31:33 :     TSI CAS TS:12 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:31:39 :     TSI CAS TS:13 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:31:45 :     TSI CAS TS:14 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:31:51 :     TSI CAS TS:16 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:31:57 :     TSI CAS TS:17 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:32:02 :     TSI CAS TS:18 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:32:08 :     TSI CAS TS:19 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:32:14 :     TSI CAS TS:20 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:32:20 :     TSI CAS TS:21 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:32:26 :     TSI CAS TS:22 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:32:32 :     TSI CAS TS:23 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:32:38 :     TSI CAS TS:24 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:32:43 :     TSI CAS TS:25 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:32:49 :     TSI CAS TS:26 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:32:55 :     TSI CAS TS:27 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:33:01 :     TSI CAS TS:28 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:33:07 :     TSI CAS TS:29 set outCAS=0A get inCAS=DD --fail
+2023-12-07 10:33:15 : tsi_in_out TEST End
+2023-12-07 10:33:15 : E1/T1 au_law TEST Begin
+2023-12-07 10:33:15 : 	au-law convert test [QE1/QT1]
+2023-12-07 10:33:46 :     TSI u-law to a-law (T1 to E1) get pass. TS:1 set:00, get:2A
+2023-12-07 10:33:47 :     TSI u-law to a-law (T1 to E1) get pass. TS:2 set:01, get:2B
+2023-12-07 10:33:49 :     TSI u-law to a-law (T1 to E1) get pass. TS:3 set:02, get:28
+2023-12-07 10:33:50 :     TSI u-law to a-law (T1 to E1) get pass. TS:4 set:03, get:29
+2023-12-07 10:33:52 :     TSI u-law to a-law (T1 to E1) get pass. TS:5 set:04, get:2E
+2023-12-07 10:33:53 :     TSI u-law to a-law (T1 to E1) get pass. TS:6 set:05, get:2F
+2023-12-07 10:33:55 :     TSI u-law to a-law (T1 to E1) get pass. TS:7 set:06, get:2C
+2023-12-07 10:33:56 :     TSI u-law to a-law (T1 to E1) get pass. TS:8 set:07, get:2D
+2023-12-07 10:33:58 :     TSI u-law to a-law (T1 to E1) get pass. TS:9 set:08, get:22
+2023-12-07 10:33:59 :     TSI u-law to a-law (T1 to E1) get pass. TS:10 set:09, get:23
+2023-12-07 10:34:01 :     TSI u-law to a-law (T1 to E1) get pass. TS:11 set:0A, get:20
+2023-12-07 10:34:02 :     TSI u-law to a-law (T1 to E1) get pass. TS:12 set:0B, get:21
+2023-12-07 10:34:04 :     TSI u-law to a-law (T1 to E1) get pass. TS:13 set:0C, get:26
+2023-12-07 10:34:05 :     TSI u-law to a-law (T1 to E1) get pass. TS:14 set:0D, get:27
+2023-12-07 10:34:07 :     TSI u-law to a-law (T1 to E1) get pass. TS:15 set:0E, get:24
+2023-12-07 10:34:08 :     TSI u-law to a-law (T1 to E1) get pass. TS:16 set:0F, get:25
+2023-12-07 10:34:10 :     TSI u-law to a-law (T1 to E1) get pass. TS:17 set:10, get:3A
+2023-12-07 10:34:11 :     TSI u-law to a-law (T1 to E1) get pass. TS:18 set:11, get:3B
+2023-12-07 10:34:13 :     TSI u-law to a-law (T1 to E1) get pass. TS:19 set:12, get:38
+2023-12-07 10:34:14 :     TSI u-law to a-law (T1 to E1) get pass. TS:20 set:13, get:39
+2023-12-07 10:34:16 :     TSI u-law to a-law (T1 to E1) get pass. TS:21 set:14, get:3E
+2023-12-07 10:34:17 :     TSI u-law to a-law (T1 to E1) get pass. TS:22 set:15, get:3F
+2023-12-07 10:34:19 :     TSI u-law to a-law (T1 to E1) get pass. TS:23 set:16, get:3C
+2023-12-07 10:34:20 :     TSI u-law to a-law (T1 to E1) get pass. TS:24 set:17, get:3D
+2023-12-07 10:34:41 :     TSI u-law to a-law (T1 to E1) get pass. TS:1 set:18, get:32
+2023-12-07 10:34:42 :     TSI u-law to a-law (T1 to E1) get pass. TS:2 set:19, get:33
+2023-12-07 10:34:44 :     TSI u-law to a-law (T1 to E1) get pass. TS:3 set:1A, get:30
+2023-12-07 10:34:45 :     TSI u-law to a-law (T1 to E1) get pass. TS:4 set:1B, get:31
+2023-12-07 10:34:47 :     TSI u-law to a-law (T1 to E1) get pass. TS:5 set:1C, get:36
+2023-12-07 10:34:48 :     TSI u-law to a-law (T1 to E1) get pass. TS:6 set:1D, get:37
+2023-12-07 10:34:50 :     TSI u-law to a-law (T1 to E1) get pass. TS:7 set:1E, get:34
+2023-12-07 10:34:51 :     TSI u-law to a-law (T1 to E1) get pass. TS:8 set:1F, get:35
+2023-12-07 10:34:53 :     TSI u-law to a-law (T1 to E1) get pass. TS:9 set:20, get:0A
+2023-12-07 10:34:54 :     TSI u-law to a-law (T1 to E1) get pass. TS:10 set:21, get:0B
+2023-12-07 10:34:56 :     TSI u-law to a-law (T1 to E1) get pass. TS:11 set:22, get:08
+2023-12-07 10:34:57 :     TSI u-law to a-law (T1 to E1) get pass. TS:12 set:23, get:09
+2023-12-07 10:34:59 :     TSI u-law to a-law (T1 to E1) get pass. TS:13 set:24, get:0E
+2023-12-07 10:35:00 :     TSI u-law to a-law (T1 to E1) get pass. TS:14 set:25, get:0F
+2023-12-07 10:35:02 :     TSI u-law to a-law (T1 to E1) get pass. TS:15 set:26, get:0C
+2023-12-07 10:35:03 :     TSI u-law to a-law (T1 to E1) get pass. TS:16 set:27, get:0D
+2023-12-07 10:35:05 :     TSI u-law to a-law (T1 to E1) get pass. TS:17 set:28, get:02
+2023-12-07 10:35:06 :     TSI u-law to a-law (T1 to E1) get pass. TS:18 set:29, get:03
+2023-12-07 10:35:08 :     TSI u-law to a-law (T1 to E1) get pass. TS:19 set:2A, get:00
+2023-12-07 10:35:09 :     TSI u-law to a-law (T1 to E1) get pass. TS:20 set:2B, get:01
+2023-12-07 10:35:11 :     TSI u-law to a-law (T1 to E1) get pass. TS:21 set:2C, get:06
+2023-12-07 10:35:12 :     TSI u-law to a-law (T1 to E1) get pass. TS:22 set:2D, get:07
+2023-12-07 10:35:14 :     TSI u-law to a-law (T1 to E1) get pass. TS:23 set:2E, get:04
+2023-12-07 10:35:15 :     TSI u-law to a-law (T1 to E1) get pass. TS:24 set:2F, get:05
+2023-12-07 10:35:36 :     TSI u-law to a-law (T1 to E1) get pass. TS:1 set:30, get:1B
+2023-12-07 10:35:38 :     TSI u-law to a-law (T1 to E1) get pass. TS:2 set:31, get:18
+2023-12-07 10:35:39 :     TSI u-law to a-law (T1 to E1) get pass. TS:3 set:32, get:19
+2023-12-07 10:35:41 :     TSI u-law to a-law (T1 to E1) get pass. TS:4 set:33, get:1E
+2023-12-07 10:35:42 :     TSI u-law to a-law (T1 to E1) get pass. TS:5 set:34, get:1F
+2023-12-07 10:35:44 :     TSI u-law to a-law (T1 to E1) get pass. TS:6 set:35, get:1C
+2023-12-07 10:35:45 :     TSI u-law to a-law (T1 to E1) get pass. TS:7 set:36, get:1D
+2023-12-07 10:35:47 :     TSI u-law to a-law (T1 to E1) get pass. TS:8 set:37, get:12
+2023-12-07 10:35:48 :     TSI u-law to a-law (T1 to E1) get pass. TS:9 set:38, get:13
+2023-12-07 10:35:50 :     TSI u-law to a-law (T1 to E1) get pass. TS:10 set:39, get:10
+2023-12-07 10:35:51 :     TSI u-law to a-law (T1 to E1) get pass. TS:11 set:3A, get:11
+2023-12-07 10:35:53 :     TSI u-law to a-law (T1 to E1) get pass. TS:12 set:3B, get:16
+2023-12-07 10:35:54 :     TSI u-law to a-law (T1 to E1) get pass. TS:13 set:3C, get:17
+2023-12-07 10:35:56 :     TSI u-law to a-law (T1 to E1) get pass. TS:14 set:3D, get:14
+2023-12-07 10:35:57 :     TSI u-law to a-law (T1 to E1) get pass. TS:15 set:3E, get:15
+2023-12-07 10:35:59 :     TSI u-law to a-law (T1 to E1) get pass. TS:16 set:3F, get:6A
+2023-12-07 10:36:00 :     TSI u-law to a-law (T1 to E1) get pass. TS:17 set:40, get:68
+2023-12-07 10:36:02 :     TSI u-law to a-law (T1 to E1) get pass. TS:18 set:41, get:69
+2023-12-07 10:36:03 :     TSI u-law to a-law (T1 to E1) get pass. TS:19 set:42, get:6E
+2023-12-07 10:36:05 :     TSI u-law to a-law (T1 to E1) get pass. TS:20 set:43, get:6F
+2023-12-07 10:36:06 :     TSI u-law to a-law (T1 to E1) get pass. TS:21 set:44, get:6C
+2023-12-07 10:36:08 :     TSI u-law to a-law (T1 to E1) get pass. TS:22 set:45, get:6D
+2023-12-07 10:36:09 :     TSI u-law to a-law (T1 to E1) get pass. TS:23 set:46, get:62
+2023-12-07 10:36:11 :     TSI u-law to a-law (T1 to E1) get pass. TS:24 set:47, get:63
+2023-12-07 10:36:32 :     TSI u-law to a-law (T1 to E1) get pass. TS:1 set:48, get:60
+2023-12-07 10:36:33 :     TSI u-law to a-law (T1 to E1) get pass. TS:2 set:49, get:61
+2023-12-07 10:36:35 :     TSI u-law to a-law (T1 to E1) get pass. TS:3 set:4A, get:66
+2023-12-07 10:36:36 :     TSI u-law to a-law (T1 to E1) get pass. TS:4 set:4B, get:67
+2023-12-07 10:36:38 :     TSI u-law to a-law (T1 to E1) get pass. TS:5 set:4C, get:64
+2023-12-07 10:36:39 :     TSI u-law to a-law (T1 to E1) get pass. TS:6 set:4D, get:65
+2023-12-07 10:36:41 :     TSI u-law to a-law (T1 to E1) get pass. TS:7 set:4E, get:7A
+2023-12-07 10:36:42 :     TSI u-law to a-law (T1 to E1) get pass. TS:8 set:4F, get:78
+2023-12-07 10:36:44 :     TSI u-law to a-law (T1 to E1) get pass. TS:9 set:50, get:7E
+2023-12-07 10:36:45 :     TSI u-law to a-law (T1 to E1) get pass. TS:10 set:51, get:7F
+2023-12-07 10:36:47 :     TSI u-law to a-law (T1 to E1) get pass. TS:11 set:52, get:7C
+2023-12-07 10:36:48 :     TSI u-law to a-law (T1 to E1) get pass. TS:12 set:53, get:7D
+2023-12-07 10:36:50 :     TSI u-law to a-law (T1 to E1) get pass. TS:13 set:54, get:72
+2023-12-07 10:36:51 :     TSI u-law to a-law (T1 to E1) get pass. TS:14 set:55, get:73
+2023-12-07 10:36:53 :     TSI u-law to a-law (T1 to E1) get pass. TS:15 set:56, get:70
+2023-12-07 10:36:54 :     TSI u-law to a-law (T1 to E1) get pass. TS:16 set:57, get:71
+2023-12-07 10:36:56 :     TSI u-law to a-law (T1 to E1) get pass. TS:17 set:58, get:76
+2023-12-07 10:36:57 :     TSI u-law to a-law (T1 to E1) get pass. TS:18 set:59, get:77
+2023-12-07 10:36:59 :     TSI u-law to a-law (T1 to E1) get pass. TS:19 set:5A, get:74
+2023-12-07 10:37:00 :     TSI u-law to a-law (T1 to E1) get pass. TS:20 set:5B, get:75
+2023-12-07 10:37:02 :     TSI u-law to a-law (T1 to E1) get pass. TS:21 set:5C, get:4B
+2023-12-07 10:37:03 :     TSI u-law to a-law (T1 to E1) get pass. TS:22 set:5D, get:49
+2023-12-07 10:37:05 :     TSI u-law to a-law (T1 to E1) get pass. TS:23 set:5E, get:4F
+2023-12-07 10:37:06 :     TSI u-law to a-law (T1 to E1) get pass. TS:24 set:5F, get:4D
+2023-12-07 10:37:27 :     TSI u-law to a-law (T1 to E1) get pass. TS:1 set:60, get:42
+2023-12-07 10:37:29 :     TSI u-law to a-law (T1 to E1) get pass. TS:2 set:61, get:43
+2023-12-07 10:37:30 :     TSI u-law to a-law (T1 to E1) get pass. TS:3 set:62, get:40
+2023-12-07 10:37:32 :     TSI u-law to a-law (T1 to E1) get pass. TS:4 set:63, get:41
+2023-12-07 10:37:33 :     TSI u-law to a-law (T1 to E1) get pass. TS:5 set:64, get:46
+2023-12-07 10:37:35 :     TSI u-law to a-law (T1 to E1) get pass. TS:6 set:65, get:47
+2023-12-07 10:37:36 :     TSI u-law to a-law (T1 to E1) get pass. TS:7 set:66, get:44
+2023-12-07 10:37:38 :     TSI u-law to a-law (T1 to E1) get pass. TS:8 set:67, get:45
+2023-12-07 10:37:39 :     TSI u-law to a-law (T1 to E1) get pass. TS:9 set:68, get:5A
+2023-12-07 10:37:40 :     TSI u-law to a-law (T1 to E1) get pass. TS:10 set:69, get:5B
+2023-12-07 10:37:42 :     TSI u-law to a-law (T1 to E1) get pass. TS:11 set:6A, get:58
+2023-12-07 10:37:44 :     TSI u-law to a-law (T1 to E1) get pass. TS:12 set:6B, get:59
+2023-12-07 10:37:45 :     TSI u-law to a-law (T1 to E1) get pass. TS:13 set:6C, get:5E
+2023-12-07 10:37:47 :     TSI u-law to a-law (T1 to E1) get pass. TS:14 set:6D, get:5F
+2023-12-07 10:37:48 :     TSI u-law to a-law (T1 to E1) get pass. TS:15 set:6E, get:5C
+2023-12-07 10:37:49 :     TSI u-law to a-law (T1 to E1) get pass. TS:16 set:6F, get:5D
+2023-12-07 10:37:51 :     TSI u-law to a-law (T1 to E1) get pass. TS:17 set:70, get:52
+2023-12-07 10:37:52 :     TSI u-law to a-law (T1 to E1) get pass. TS:18 set:71, get:52
+2023-12-07 10:37:54 :     TSI u-law to a-law (T1 to E1) get pass. TS:19 set:72, get:53
+2023-12-07 10:37:56 :     TSI u-law to a-law (T1 to E1) get pass. TS:20 set:73, get:53
+2023-12-07 10:37:57 :     TSI u-law to a-law (T1 to E1) get pass. TS:21 set:74, get:50
+2023-12-07 10:37:59 :     TSI u-law to a-law (T1 to E1) get pass. TS:22 set:75, get:50
+2023-12-07 10:38:00 :     TSI u-law to a-law (T1 to E1) get pass. TS:23 set:76, get:51
+2023-12-07 10:38:02 :     TSI u-law to a-law (T1 to E1) get pass. TS:24 set:77, get:51
+2023-12-07 10:38:22 :     TSI u-law to a-law (T1 to E1) get pass. TS:1 set:78, get:56
+2023-12-07 10:38:24 :     TSI u-law to a-law (T1 to E1) get pass. TS:2 set:79, get:56
+2023-12-07 10:38:25 :     TSI u-law to a-law (T1 to E1) get pass. TS:3 set:7A, get:57
+2023-12-07 10:38:27 :     TSI u-law to a-law (T1 to E1) get pass. TS:4 set:7B, get:57
+2023-12-07 10:38:28 :     TSI u-law to a-law (T1 to E1) get pass. TS:5 set:7C, get:54
+2023-12-07 10:38:30 :     TSI u-law to a-law (T1 to E1) get pass. TS:6 set:7D, get:54
+2023-12-07 10:38:31 :     TSI u-law to a-law (T1 to E1) get pass. TS:7 set:7E, get:55
+2023-12-07 10:38:33 :     TSI u-law to a-law (T1 to E1) get pass. TS:8 set:7F, get:55
+2023-12-07 10:38:34 :     TSI u-law to a-law (T1 to E1) get pass. TS:9 set:80, get:AA
+2023-12-07 10:38:36 :     TSI u-law to a-law (T1 to E1) get pass. TS:10 set:81, get:AB
+2023-12-07 10:38:38 :     TSI u-law to a-law (T1 to E1) get pass. TS:11 set:82, get:A8
+2023-12-07 10:38:39 :     TSI u-law to a-law (T1 to E1) get pass. TS:12 set:83, get:A9
+2023-12-07 10:38:41 :     TSI u-law to a-law (T1 to E1) get pass. TS:13 set:84, get:AE
+2023-12-07 10:38:42 :     TSI u-law to a-law (T1 to E1) get pass. TS:14 set:85, get:AF
+2023-12-07 10:38:44 :     TSI u-law to a-law (T1 to E1) get pass. TS:15 set:86, get:AC
+2023-12-07 10:38:45 :     TSI u-law to a-law (T1 to E1) get pass. TS:16 set:87, get:AD
+2023-12-07 10:38:47 :     TSI u-law to a-law (T1 to E1) get pass. TS:17 set:88, get:A2
+2023-12-07 10:38:48 :     TSI u-law to a-law (T1 to E1) get pass. TS:18 set:89, get:A3
+2023-12-07 10:38:50 :     TSI u-law to a-law (T1 to E1) get pass. TS:19 set:8A, get:A0
+2023-12-07 10:38:51 :     TSI u-law to a-law (T1 to E1) get pass. TS:20 set:8B, get:A1
+2023-12-07 10:38:53 :     TSI u-law to a-law (T1 to E1) get pass. TS:21 set:8C, get:A6
+2023-12-07 10:38:54 :     TSI u-law to a-law (T1 to E1) get pass. TS:22 set:8D, get:A7
+2023-12-07 10:38:56 :     TSI u-law to a-law (T1 to E1) get pass. TS:23 set:8E, get:A4
+2023-12-07 10:38:57 :     TSI u-law to a-law (T1 to E1) get pass. TS:24 set:8F, get:A5
+2023-12-07 10:39:18 :     TSI u-law to a-law (T1 to E1) get pass. TS:1 set:90, get:BA
+2023-12-07 10:39:19 :     TSI u-law to a-law (T1 to E1) get pass. TS:2 set:91, get:BB
+2023-12-07 10:39:21 :     TSI u-law to a-law (T1 to E1) get pass. TS:3 set:92, get:B8
+2023-12-07 10:39:22 :     TSI u-law to a-law (T1 to E1) get pass. TS:4 set:93, get:B9
+2023-12-07 10:39:24 :     TSI u-law to a-law (T1 to E1) get pass. TS:5 set:94, get:BE
+2023-12-07 10:39:25 :     TSI u-law to a-law (T1 to E1) get pass. TS:6 set:95, get:BF
+2023-12-07 10:39:27 :     TSI u-law to a-law (T1 to E1) get pass. TS:7 set:96, get:BC
+2023-12-07 10:39:28 :     TSI u-law to a-law (T1 to E1) get pass. TS:8 set:97, get:BD
+2023-12-07 10:39:30 :     TSI u-law to a-law (T1 to E1) get pass. TS:9 set:98, get:B2
+2023-12-07 10:39:31 :     TSI u-law to a-law (T1 to E1) get pass. TS:10 set:99, get:B3
+2023-12-07 10:39:33 :     TSI u-law to a-law (T1 to E1) get pass. TS:11 set:9A, get:B0
+2023-12-07 10:39:34 :     TSI u-law to a-law (T1 to E1) get pass. TS:12 set:9B, get:B1
+2023-12-07 10:39:36 :     TSI u-law to a-law (T1 to E1) get pass. TS:13 set:9C, get:B6
+2023-12-07 10:39:37 :     TSI u-law to a-law (T1 to E1) get pass. TS:14 set:9D, get:B7
+2023-12-07 10:39:39 :     TSI u-law to a-law (T1 to E1) get pass. TS:15 set:9E, get:B4
+2023-12-07 10:39:40 :     TSI u-law to a-law (T1 to E1) get pass. TS:16 set:9F, get:B5
+2023-12-07 10:39:42 :     TSI u-law to a-law (T1 to E1) get pass. TS:17 set:A0, get:8A
+2023-12-07 10:39:43 :     TSI u-law to a-law (T1 to E1) get pass. TS:18 set:A1, get:8B
+2023-12-07 10:39:45 :     TSI u-law to a-law (T1 to E1) get pass. TS:19 set:A2, get:88
+2023-12-07 10:39:47 :     TSI u-law to a-law (T1 to E1) get pass. TS:20 set:A3, get:89
+2023-12-07 10:39:48 :     TSI u-law to a-law (T1 to E1) get pass. TS:21 set:A4, get:8E
+2023-12-07 10:39:50 :     TSI u-law to a-law (T1 to E1) get pass. TS:22 set:A5, get:8F
+2023-12-07 10:39:51 :     TSI u-law to a-law (T1 to E1) get pass. TS:23 set:A6, get:8C
+2023-12-07 10:39:53 :     TSI u-law to a-law (T1 to E1) get pass. TS:24 set:A7, get:8D
+2023-12-07 10:40:13 :     TSI u-law to a-law (T1 to E1) get pass. TS:1 set:A8, get:82
+2023-12-07 10:40:15 :     TSI u-law to a-law (T1 to E1) get pass. TS:2 set:A9, get:83
+2023-12-07 10:40:16 :     TSI u-law to a-law (T1 to E1) get pass. TS:3 set:AA, get:80
+2023-12-07 10:40:18 :     TSI u-law to a-law (T1 to E1) get pass. TS:4 set:AB, get:81
+2023-12-07 10:40:19 :     TSI u-law to a-law (T1 to E1) get pass. TS:5 set:AC, get:86
+2023-12-07 10:40:21 :     TSI u-law to a-law (T1 to E1) get pass. TS:6 set:AD, get:87
+2023-12-07 10:40:22 :     TSI u-law to a-law (T1 to E1) get pass. TS:7 set:AE, get:84
+2023-12-07 10:40:24 :     TSI u-law to a-law (T1 to E1) get pass. TS:8 set:AF, get:85
+2023-12-07 10:40:25 :     TSI u-law to a-law (T1 to E1) get pass. TS:9 set:B0, get:9B
+2023-12-07 10:40:27 :     TSI u-law to a-law (T1 to E1) get pass. TS:10 set:B1, get:98
+2023-12-07 10:40:28 :     TSI u-law to a-law (T1 to E1) get pass. TS:11 set:B2, get:99
+2023-12-07 10:40:30 :     TSI u-law to a-law (T1 to E1) get pass. TS:12 set:B3, get:9E
+2023-12-07 10:40:31 :     TSI u-law to a-law (T1 to E1) get pass. TS:13 set:B4, get:9F
+2023-12-07 10:40:33 :     TSI u-law to a-law (T1 to E1) get pass. TS:14 set:B5, get:9C
+2023-12-07 10:40:34 :     TSI u-law to a-law (T1 to E1) get pass. TS:15 set:B6, get:9D
+2023-12-07 10:40:36 :     TSI u-law to a-law (T1 to E1) get pass. TS:16 set:B7, get:92
+2023-12-07 10:40:37 :     TSI u-law to a-law (T1 to E1) get pass. TS:17 set:B8, get:93
+2023-12-07 10:40:39 :     TSI u-law to a-law (T1 to E1) get pass. TS:18 set:B9, get:90
+2023-12-07 10:40:40 :     TSI u-law to a-law (T1 to E1) get pass. TS:19 set:BA, get:91
+2023-12-07 10:40:42 :     TSI u-law to a-law (T1 to E1) get pass. TS:20 set:BB, get:96
+2023-12-07 10:40:43 :     TSI u-law to a-law (T1 to E1) get pass. TS:21 set:BC, get:97
+2023-12-07 10:40:45 :     TSI u-law to a-law (T1 to E1) get pass. TS:22 set:BD, get:94
+2023-12-07 10:40:46 :     TSI u-law to a-law (T1 to E1) get pass. TS:23 set:BE, get:95
+2023-12-07 10:40:48 :     TSI u-law to a-law (T1 to E1) get pass. TS:24 set:BF, get:EA
+2023-12-07 10:41:09 :     TSI u-law to a-law (T1 to E1) get pass. TS:1 set:C0, get:E8
+2023-12-07 10:41:10 :     TSI u-law to a-law (T1 to E1) get pass. TS:2 set:C1, get:E9
+2023-12-07 10:41:12 :     TSI u-law to a-law (T1 to E1) get pass. TS:3 set:C2, get:EE
+2023-12-07 10:41:13 :     TSI u-law to a-law (T1 to E1) get pass. TS:4 set:C3, get:EF
+2023-12-07 10:41:15 :     TSI u-law to a-law (T1 to E1) get pass. TS:5 set:C4, get:EC
+2023-12-07 10:41:16 :     TSI u-law to a-law (T1 to E1) get pass. TS:6 set:C5, get:ED
+2023-12-07 10:41:18 :     TSI u-law to a-law (T1 to E1) get pass. TS:7 set:C6, get:E2
+2023-12-07 10:41:19 :     TSI u-law to a-law (T1 to E1) get pass. TS:8 set:C7, get:E3
+2023-12-07 10:41:21 :     TSI u-law to a-law (T1 to E1) get pass. TS:9 set:C8, get:E0
+2023-12-07 10:41:22 :     TSI u-law to a-law (T1 to E1) get pass. TS:10 set:C9, get:E1
+2023-12-07 10:41:24 :     TSI u-law to a-law (T1 to E1) get pass. TS:11 set:CA, get:E6
+2023-12-07 10:41:25 :     TSI u-law to a-law (T1 to E1) get pass. TS:12 set:CB, get:E7
+2023-12-07 10:41:27 :     TSI u-law to a-law (T1 to E1) get pass. TS:13 set:CC, get:E4
+2023-12-07 10:41:28 :     TSI u-law to a-law (T1 to E1) get pass. TS:14 set:CD, get:E5
+2023-12-07 10:41:30 :     TSI u-law to a-law (T1 to E1) get pass. TS:15 set:CE, get:FA
+2023-12-07 10:41:31 :     TSI u-law to a-law (T1 to E1) get pass. TS:16 set:CF, get:F8
+2023-12-07 10:41:33 :     TSI u-law to a-law (T1 to E1) get pass. TS:17 set:D0, get:FE
+2023-12-07 10:41:35 :     TSI u-law to a-law (T1 to E1) get pass. TS:18 set:D1, get:FF
+2023-12-07 10:41:36 :     TSI u-law to a-law (T1 to E1) get pass. TS:19 set:D2, get:FC
+2023-12-07 10:41:38 :     TSI u-law to a-law (T1 to E1) get pass. TS:20 set:D3, get:FD
+2023-12-07 10:41:39 :     TSI u-law to a-law (T1 to E1) get pass. TS:21 set:D4, get:F2
+2023-12-07 10:41:41 :     TSI u-law to a-law (T1 to E1) get pass. TS:22 set:D5, get:F3
+2023-12-07 10:41:42 :     TSI u-law to a-law (T1 to E1) get pass. TS:23 set:D6, get:F0
+2023-12-07 10:41:44 :     TSI u-law to a-law (T1 to E1) get pass. TS:24 set:D7, get:F1
+2023-12-07 10:42:04 :     TSI u-law to a-law (T1 to E1) get pass. TS:1 set:D8, get:F6
+2023-12-07 10:42:06 :     TSI u-law to a-law (T1 to E1) get pass. TS:2 set:D9, get:F7
+2023-12-07 10:42:07 :     TSI u-law to a-law (T1 to E1) get pass. TS:3 set:DA, get:F4
+2023-12-07 10:42:09 :     TSI u-law to a-law (T1 to E1) get pass. TS:4 set:DB, get:F5
+2023-12-07 10:42:10 :     TSI u-law to a-law (T1 to E1) get pass. TS:5 set:DC, get:CB
+2023-12-07 10:42:12 :     TSI u-law to a-law (T1 to E1) get pass. TS:6 set:DD, get:C9
+2023-12-07 10:42:13 :     TSI u-law to a-law (T1 to E1) get pass. TS:7 set:DE, get:CF
+2023-12-07 10:42:15 :     TSI u-law to a-law (T1 to E1) get pass. TS:8 set:DF, get:CD
+2023-12-07 10:42:16 :     TSI u-law to a-law (T1 to E1) get pass. TS:9 set:E0, get:C2
+2023-12-07 10:42:18 :     TSI u-law to a-law (T1 to E1) get pass. TS:10 set:E1, get:C3
+2023-12-07 10:42:19 :     TSI u-law to a-law (T1 to E1) get pass. TS:11 set:E2, get:C0
+2023-12-07 10:42:21 :     TSI u-law to a-law (T1 to E1) get pass. TS:12 set:E3, get:C1
+2023-12-07 10:42:22 :     TSI u-law to a-law (T1 to E1) get pass. TS:13 set:E4, get:C6
+2023-12-07 10:42:24 :     TSI u-law to a-law (T1 to E1) get pass. TS:14 set:E5, get:C7
+2023-12-07 10:42:25 :     TSI u-law to a-law (T1 to E1) get pass. TS:15 set:E6, get:C4
+2023-12-07 10:42:27 :     TSI u-law to a-law (T1 to E1) get pass. TS:16 set:E7, get:C5
+2023-12-07 10:42:28 :     TSI u-law to a-law (T1 to E1) get pass. TS:17 set:E8, get:DA
+2023-12-07 10:42:30 :     TSI u-law to a-law (T1 to E1) get pass. TS:18 set:E9, get:DB
+2023-12-07 10:42:31 :     TSI u-law to a-law (T1 to E1) get pass. TS:19 set:EA, get:D8
+2023-12-07 10:42:33 :     TSI u-law to a-law (T1 to E1) get pass. TS:20 set:EB, get:D9
+2023-12-07 10:42:34 :     TSI u-law to a-law (T1 to E1) get pass. TS:21 set:EC, get:DE
+2023-12-07 10:42:36 :     TSI u-law to a-law (T1 to E1) get pass. TS:22 set:ED, get:DF
+2023-12-07 10:42:37 :     TSI u-law to a-law (T1 to E1) get pass. TS:23 set:EE, get:DC
+2023-12-07 10:42:39 :     TSI u-law to a-law (T1 to E1) get pass. TS:24 set:EF, get:DD
+2023-12-07 10:42:59 :     TSI u-law to a-law (T1 to E1) get pass. TS:1 set:E8, get:DA
+2023-12-07 10:43:01 :     TSI u-law to a-law (T1 to E1) get pass. TS:2 set:E9, get:DB
+2023-12-07 10:43:02 :     TSI u-law to a-law (T1 to E1) get pass. TS:3 set:EA, get:D8
+2023-12-07 10:43:04 :     TSI u-law to a-law (T1 to E1) get pass. TS:4 set:EB, get:D9
+2023-12-07 10:43:05 :     TSI u-law to a-law (T1 to E1) get pass. TS:5 set:EC, get:DE
+2023-12-07 10:43:07 :     TSI u-law to a-law (T1 to E1) get pass. TS:6 set:ED, get:DF
+2023-12-07 10:43:08 :     TSI u-law to a-law (T1 to E1) get pass. TS:7 set:EE, get:DC
+2023-12-07 10:43:10 :     TSI u-law to a-law (T1 to E1) get pass. TS:8 set:EF, get:DD
+2023-12-07 10:43:11 :     TSI u-law to a-law (T1 to E1) get pass. TS:9 set:F0, get:D2
+2023-12-07 10:43:13 :     TSI u-law to a-law (T1 to E1) get pass. TS:10 set:F1, get:D2
+2023-12-07 10:43:14 :     TSI u-law to a-law (T1 to E1) get pass. TS:11 set:F2, get:D3
+2023-12-07 10:43:16 :     TSI u-law to a-law (T1 to E1) get pass. TS:12 set:F3, get:D3
+2023-12-07 10:43:17 :     TSI u-law to a-law (T1 to E1) get pass. TS:13 set:F4, get:D0
+2023-12-07 10:43:19 :     TSI u-law to a-law (T1 to E1) get pass. TS:14 set:F5, get:D0
+2023-12-07 10:43:20 :     TSI u-law to a-law (T1 to E1) get pass. TS:15 set:F6, get:D1
+2023-12-07 10:43:22 :     TSI u-law to a-law (T1 to E1) get pass. TS:16 set:F7, get:D1
+2023-12-07 10:43:23 :     TSI u-law to a-law (T1 to E1) get pass. TS:17 set:F8, get:D6
+2023-12-07 10:43:25 :     TSI u-law to a-law (T1 to E1) get pass. TS:18 set:F9, get:D6
+2023-12-07 10:43:26 :     TSI u-law to a-law (T1 to E1) get pass. TS:19 set:FA, get:D7
+2023-12-07 10:43:28 :     TSI u-law to a-law (T1 to E1) get pass. TS:20 set:FB, get:D7
+2023-12-07 10:43:29 :     TSI u-law to a-law (T1 to E1) get pass. TS:21 set:FC, get:D4
+2023-12-07 10:43:31 :     TSI u-law to a-law (T1 to E1) get pass. TS:22 set:FD, get:D4
+2023-12-07 10:43:32 :     TSI u-law to a-law (T1 to E1) get pass. TS:23 set:FE, get:D5
+2023-12-07 10:43:34 :     TSI u-law to a-law (T1 to E1) get pass. TS:24 set:FF, get:D5
+2023-12-07 10:43:55 :     TSI a-law to u-law (E1 to T1) get pass. TS:1 set:00, get:2A
+2023-12-07 10:43:56 :     TSI a-law to u-law (E1 to T1) get pass. TS:2 set:01, get:2B
+2023-12-07 10:43:58 :     TSI a-law to u-law (E1 to T1) get pass. TS:3 set:02, get:28
+2023-12-07 10:43:59 :     TSI a-law to u-law (E1 to T1) get pass. TS:4 set:03, get:29
+2023-12-07 10:44:01 :     TSI a-law to u-law (E1 to T1) get pass. TS:5 set:04, get:2E
+2023-12-07 10:44:02 :     TSI a-law to u-law (E1 to T1) get pass. TS:6 set:05, get:2F
+2023-12-07 10:44:04 :     TSI a-law to u-law (E1 to T1) get pass. TS:7 set:06, get:2C
+2023-12-07 10:44:05 :     TSI a-law to u-law (E1 to T1) get pass. TS:8 set:07, get:2D
+2023-12-07 10:44:07 :     TSI a-law to u-law (E1 to T1) get pass. TS:9 set:08, get:22
+2023-12-07 10:44:08 :     TSI a-law to u-law (E1 to T1) get pass. TS:10 set:09, get:23
+2023-12-07 10:44:10 :     TSI a-law to u-law (E1 to T1) get pass. TS:11 set:0A, get:20
+2023-12-07 10:44:11 :     TSI a-law to u-law (E1 to T1) get pass. TS:12 set:0B, get:21
+2023-12-07 10:44:13 :     TSI a-law to u-law (E1 to T1) get pass. TS:13 set:0C, get:26
+2023-12-07 10:44:14 :     TSI a-law to u-law (E1 to T1) get pass. TS:14 set:0D, get:27
+2023-12-07 10:44:16 :     TSI a-law to u-law (E1 to T1) get pass. TS:15 set:0E, get:24
+2023-12-07 10:44:17 :     TSI a-law to u-law (E1 to T1) get pass. TS:16 set:0F, get:25
+2023-12-07 10:44:19 :     TSI a-law to u-law (E1 to T1) get pass. TS:17 set:10, get:39
+2023-12-07 10:44:20 :     TSI a-law to u-law (E1 to T1) get pass. TS:18 set:11, get:3A
+2023-12-07 10:44:22 :     TSI a-law to u-law (E1 to T1) get pass. TS:19 set:12, get:37
+2023-12-07 10:44:23 :     TSI a-law to u-law (E1 to T1) get pass. TS:20 set:13, get:38
+2023-12-07 10:44:25 :     TSI a-law to u-law (E1 to T1) get pass. TS:21 set:14, get:3D
+2023-12-07 10:44:26 :     TSI a-law to u-law (E1 to T1) get pass. TS:22 set:15, get:3E
+2023-12-07 10:44:28 :     TSI a-law to u-law (E1 to T1) get pass. TS:23 set:16, get:3B
+2023-12-07 10:44:29 :     TSI a-law to u-law (E1 to T1) get pass. TS:24 set:17, get:3C
+2023-12-07 10:44:50 :     TSI a-law to u-law (E1 to T1) get pass. TS:1 set:18, get:31
+2023-12-07 10:44:51 :     TSI a-law to u-law (E1 to T1) get pass. TS:2 set:19, get:32
+2023-12-07 10:44:53 :     TSI a-law to u-law (E1 to T1) get pass. TS:3 set:1A, get:30
+2023-12-07 10:44:54 :     TSI a-law to u-law (E1 to T1) get pass. TS:4 set:1B, get:30
+2023-12-07 10:44:56 :     TSI a-law to u-law (E1 to T1) get pass. TS:5 set:1C, get:35
+2023-12-07 10:44:57 :     TSI a-law to u-law (E1 to T1) get pass. TS:6 set:1D, get:36
+2023-12-07 10:44:59 :     TSI a-law to u-law (E1 to T1) get pass. TS:7 set:1E, get:33
+2023-12-07 10:45:00 :     TSI a-law to u-law (E1 to T1) get pass. TS:8 set:1F, get:34
+2023-12-07 10:45:02 :     TSI a-law to u-law (E1 to T1) get pass. TS:9 set:20, get:0A
+2023-12-07 10:45:03 :     TSI a-law to u-law (E1 to T1) get pass. TS:10 set:21, get:0B
+2023-12-07 10:45:05 :     TSI a-law to u-law (E1 to T1) get pass. TS:11 set:22, get:08
+2023-12-07 10:45:06 :     TSI a-law to u-law (E1 to T1) get pass. TS:12 set:23, get:09
+2023-12-07 10:45:08 :     TSI a-law to u-law (E1 to T1) get pass. TS:13 set:24, get:0E
+2023-12-07 10:45:09 :     TSI a-law to u-law (E1 to T1) get pass. TS:14 set:25, get:0F
+2023-12-07 10:45:11 :     TSI a-law to u-law (E1 to T1) get pass. TS:15 set:26, get:0C
+2023-12-07 10:45:12 :     TSI a-law to u-law (E1 to T1) get pass. TS:16 set:27, get:0D
+2023-12-07 10:45:14 :     TSI a-law to u-law (E1 to T1) get pass. TS:17 set:28, get:02
+2023-12-07 10:45:15 :     TSI a-law to u-law (E1 to T1) get pass. TS:18 set:29, get:03
+2023-12-07 10:45:17 :     TSI a-law to u-law (E1 to T1) get pass. TS:19 set:2A, get:00
+2023-12-07 10:45:18 :     TSI a-law to u-law (E1 to T1) get pass. TS:20 set:2B, get:01
+2023-12-07 10:45:20 :     TSI a-law to u-law (E1 to T1) get pass. TS:21 set:2C, get:06
+2023-12-07 10:45:21 :     TSI a-law to u-law (E1 to T1) get pass. TS:22 set:2D, get:07
+2023-12-07 10:45:23 :     TSI a-law to u-law (E1 to T1) get pass. TS:23 set:2E, get:04
+2023-12-07 10:45:24 :     TSI a-law to u-law (E1 to T1) get pass. TS:24 set:2F, get:05
+2023-12-07 10:45:45 :     TSI a-law to u-law (E1 to T1) get pass. TS:1 set:30, get:1A
+2023-12-07 10:45:47 :     TSI a-law to u-law (E1 to T1) get pass. TS:2 set:31, get:1B
+2023-12-07 10:45:48 :     TSI a-law to u-law (E1 to T1) get pass. TS:3 set:32, get:18
+2023-12-07 10:45:50 :     TSI a-law to u-law (E1 to T1) get pass. TS:4 set:33, get:19
+2023-12-07 10:45:51 :     TSI a-law to u-law (E1 to T1) get pass. TS:5 set:34, get:1E
+2023-12-07 10:45:53 :     TSI a-law to u-law (E1 to T1) get pass. TS:6 set:35, get:1F
+2023-12-07 10:45:54 :     TSI a-law to u-law (E1 to T1) get pass. TS:7 set:36, get:1C
+2023-12-07 10:45:56 :     TSI a-law to u-law (E1 to T1) get pass. TS:8 set:37, get:1D
+2023-12-07 10:45:57 :     TSI a-law to u-law (E1 to T1) get pass. TS:9 set:38, get:12
+2023-12-07 10:45:59 :     TSI a-law to u-law (E1 to T1) get pass. TS:10 set:39, get:13
+2023-12-07 10:46:00 :     TSI a-law to u-law (E1 to T1) get pass. TS:11 set:3A, get:10
+2023-12-07 10:46:02 :     TSI a-law to u-law (E1 to T1) get pass. TS:12 set:3B, get:11
+2023-12-07 10:46:03 :     TSI a-law to u-law (E1 to T1) get pass. TS:13 set:3C, get:16
+2023-12-07 10:46:05 :     TSI a-law to u-law (E1 to T1) get pass. TS:14 set:3D, get:17
+2023-12-07 10:46:06 :     TSI a-law to u-law (E1 to T1) get pass. TS:15 set:3E, get:14
+2023-12-07 10:46:08 :     TSI a-law to u-law (E1 to T1) get pass. TS:16 set:3F, get:15
+2023-12-07 10:46:09 :     TSI a-law to u-law (E1 to T1) get pass. TS:17 set:40, get:62
+2023-12-07 10:46:11 :     TSI a-law to u-law (E1 to T1) get pass. TS:18 set:41, get:63
+2023-12-07 10:46:12 :     TSI a-law to u-law (E1 to T1) get pass. TS:19 set:42, get:60
+2023-12-07 10:46:14 :     TSI a-law to u-law (E1 to T1) get pass. TS:20 set:43, get:61
+2023-12-07 10:46:15 :     TSI a-law to u-law (E1 to T1) get pass. TS:21 set:44, get:66
+2023-12-07 10:46:17 :     TSI a-law to u-law (E1 to T1) get pass. TS:22 set:45, get:67
+2023-12-07 10:46:18 :     TSI a-law to u-law (E1 to T1) get pass. TS:23 set:46, get:64
+2023-12-07 10:46:20 :     TSI a-law to u-law (E1 to T1) get pass. TS:24 set:47, get:65
+2023-12-07 10:46:41 :     TSI a-law to u-law (E1 to T1) get pass. TS:1 set:48, get:5D
+2023-12-07 10:46:42 :     TSI a-law to u-law (E1 to T1) get pass. TS:2 set:49, get:5D
+2023-12-07 10:46:44 :     TSI a-law to u-law (E1 to T1) get pass. TS:3 set:4A, get:5C
+2023-12-07 10:46:45 :     TSI a-law to u-law (E1 to T1) get pass. TS:4 set:4B, get:5C
+2023-12-07 10:46:47 :     TSI a-law to u-law (E1 to T1) get pass. TS:5 set:4C, get:5F
+2023-12-07 10:46:49 :     TSI a-law to u-law (E1 to T1) get pass. TS:6 set:4D, get:5F
+2023-12-07 10:46:50 :     TSI a-law to u-law (E1 to T1) get pass. TS:7 set:4E, get:5E
+2023-12-07 10:46:52 :     TSI a-law to u-law (E1 to T1) get pass. TS:8 set:4F, get:5E
+2023-12-07 10:46:53 :     TSI a-law to u-law (E1 to T1) get pass. TS:9 set:50, get:74
+2023-12-07 10:46:55 :     TSI a-law to u-law (E1 to T1) get pass. TS:10 set:51, get:76
+2023-12-07 10:46:56 :     TSI a-law to u-law (E1 to T1) get pass. TS:11 set:52, get:70
+2023-12-07 10:46:58 :     TSI a-law to u-law (E1 to T1) get pass. TS:12 set:53, get:72
+2023-12-07 10:46:59 :     TSI a-law to u-law (E1 to T1) get pass. TS:13 set:54, get:7C
+2023-12-07 10:47:01 :     TSI a-law to u-law (E1 to T1) get pass. TS:14 set:55, get:7E
+2023-12-07 10:47:02 :     TSI a-law to u-law (E1 to T1) get pass. TS:15 set:56, get:78
+2023-12-07 10:47:04 :     TSI a-law to u-law (E1 to T1) get pass. TS:16 set:57, get:7A
+2023-12-07 10:47:05 :     TSI a-law to u-law (E1 to T1) get pass. TS:17 set:58, get:6A
+2023-12-07 10:47:07 :     TSI a-law to u-law (E1 to T1) get pass. TS:18 set:59, get:6B
+2023-12-07 10:47:08 :     TSI a-law to u-law (E1 to T1) get pass. TS:19 set:5A, get:68
+2023-12-07 10:47:10 :     TSI a-law to u-law (E1 to T1) get pass. TS:20 set:5B, get:69
+2023-12-07 10:47:11 :     TSI a-law to u-law (E1 to T1) get pass. TS:21 set:5C, get:6E
+2023-12-07 10:47:13 :     TSI a-law to u-law (E1 to T1) get pass. TS:22 set:5D, get:6F
+2023-12-07 10:47:14 :     TSI a-law to u-law (E1 to T1) get pass. TS:23 set:5E, get:6C
+2023-12-07 10:47:16 :     TSI a-law to u-law (E1 to T1) get pass. TS:24 set:5F, get:6D
+2023-12-07 10:47:37 :     TSI a-law to u-law (E1 to T1) get pass. TS:1 set:60, get:48
+2023-12-07 10:47:38 :     TSI a-law to u-law (E1 to T1) get pass. TS:2 set:61, get:49
+2023-12-07 10:47:40 :     TSI a-law to u-law (E1 to T1) get pass. TS:3 set:62, get:46
+2023-12-07 10:47:41 :     TSI a-law to u-law (E1 to T1) get pass. TS:4 set:63, get:47
+2023-12-07 10:47:43 :     TSI a-law to u-law (E1 to T1) get pass. TS:5 set:64, get:4C
+2023-12-07 10:47:44 :     TSI a-law to u-law (E1 to T1) get pass. TS:6 set:65, get:4D
+2023-12-07 10:47:46 :     TSI a-law to u-law (E1 to T1) get pass. TS:7 set:66, get:4A
+2023-12-07 10:47:47 :     TSI a-law to u-law (E1 to T1) get pass. TS:8 set:67, get:4B
+2023-12-07 10:47:49 :     TSI a-law to u-law (E1 to T1) get pass. TS:9 set:68, get:40
+2023-12-07 10:47:50 :     TSI a-law to u-law (E1 to T1) get pass. TS:10 set:69, get:41
+2023-12-07 10:47:52 :     TSI a-law to u-law (E1 to T1) get pass. TS:11 set:6A, get:3F
+2023-12-07 10:47:53 :     TSI a-law to u-law (E1 to T1) get pass. TS:12 set:6B, get:3F
+2023-12-07 10:47:55 :     TSI a-law to u-law (E1 to T1) get pass. TS:13 set:6C, get:44
+2023-12-07 10:47:56 :     TSI a-law to u-law (E1 to T1) get pass. TS:14 set:6D, get:45
+2023-12-07 10:47:58 :     TSI a-law to u-law (E1 to T1) get pass. TS:15 set:6E, get:42
+2023-12-07 10:47:59 :     TSI a-law to u-law (E1 to T1) get pass. TS:16 set:6F, get:43
+2023-12-07 10:48:00 :     TSI a-law to u-law (E1 to T1) get pass. TS:17 set:70, get:56
+2023-12-07 10:48:02 :     TSI a-law to u-law (E1 to T1) get pass. TS:18 set:71, get:57
+2023-12-07 10:48:04 :     TSI a-law to u-law (E1 to T1) get pass. TS:19 set:72, get:54
+2023-12-07 10:48:05 :     TSI a-law to u-law (E1 to T1) get pass. TS:20 set:73, get:55
+2023-12-07 10:48:07 :     TSI a-law to u-law (E1 to T1) get pass. TS:21 set:74, get:5A
+2023-12-07 10:48:08 :     TSI a-law to u-law (E1 to T1) get pass. TS:22 set:75, get:5B
+2023-12-07 10:48:10 :     TSI a-law to u-law (E1 to T1) get pass. TS:23 set:76, get:58
+2023-12-07 10:48:11 :     TSI a-law to u-law (E1 to T1) get pass. TS:24 set:77, get:59
+2023-12-07 10:48:32 :     TSI a-law to u-law (E1 to T1) get pass. TS:1 set:78, get:4F
+2023-12-07 10:48:33 :     TSI a-law to u-law (E1 to T1) get pass. TS:2 set:79, get:4F
+2023-12-07 10:48:35 :     TSI a-law to u-law (E1 to T1) get pass. TS:3 set:7A, get:4E
+2023-12-07 10:48:36 :     TSI a-law to u-law (E1 to T1) get pass. TS:4 set:7B, get:4E
+2023-12-07 10:48:38 :     TSI a-law to u-law (E1 to T1) get pass. TS:5 set:7C, get:52
+2023-12-07 10:48:39 :     TSI a-law to u-law (E1 to T1) get pass. TS:6 set:7D, get:53
+2023-12-07 10:48:41 :     TSI a-law to u-law (E1 to T1) get pass. TS:7 set:7E, get:50
+2023-12-07 10:48:42 :     TSI a-law to u-law (E1 to T1) get pass. TS:8 set:7F, get:51
+2023-12-07 10:48:44 :     TSI a-law to u-law (E1 to T1) get pass. TS:9 set:80, get:AA
+2023-12-07 10:48:45 :     TSI a-law to u-law (E1 to T1) get pass. TS:10 set:81, get:AB
+2023-12-07 10:48:47 :     TSI a-law to u-law (E1 to T1) get pass. TS:11 set:82, get:A8
+2023-12-07 10:48:48 :     TSI a-law to u-law (E1 to T1) get pass. TS:12 set:83, get:A9
+2023-12-07 10:48:50 :     TSI a-law to u-law (E1 to T1) get pass. TS:13 set:84, get:AE
+2023-12-07 10:48:51 :     TSI a-law to u-law (E1 to T1) get pass. TS:14 set:85, get:AF
+2023-12-07 10:48:53 :     TSI a-law to u-law (E1 to T1) get pass. TS:15 set:86, get:AC
+2023-12-07 10:48:55 :     TSI a-law to u-law (E1 to T1) get pass. TS:16 set:87, get:AD
+2023-12-07 10:48:56 :     TSI a-law to u-law (E1 to T1) get pass. TS:17 set:88, get:A2
+2023-12-07 10:48:58 :     TSI a-law to u-law (E1 to T1) get pass. TS:18 set:89, get:A3
+2023-12-07 10:48:59 :     TSI a-law to u-law (E1 to T1) get pass. TS:19 set:8A, get:A0
+2023-12-07 10:49:01 :     TSI a-law to u-law (E1 to T1) get pass. TS:20 set:8B, get:A1
+2023-12-07 10:49:02 :     TSI a-law to u-law (E1 to T1) get pass. TS:21 set:8C, get:A6
+2023-12-07 10:49:04 :     TSI a-law to u-law (E1 to T1) get pass. TS:22 set:8D, get:A7
+2023-12-07 10:49:05 :     TSI a-law to u-law (E1 to T1) get pass. TS:23 set:8E, get:A4
+2023-12-07 10:49:07 :     TSI a-law to u-law (E1 to T1) get pass. TS:24 set:8F, get:A5
+2023-12-07 10:49:27 :     TSI a-law to u-law (E1 to T1) get pass. TS:1 set:90, get:B9
+2023-12-07 10:49:29 :     TSI a-law to u-law (E1 to T1) get pass. TS:2 set:91, get:BA
+2023-12-07 10:49:30 :     TSI a-law to u-law (E1 to T1) get pass. TS:3 set:92, get:B7
+2023-12-07 10:49:32 :     TSI a-law to u-law (E1 to T1) get pass. TS:4 set:93, get:B8
+2023-12-07 10:49:33 :     TSI a-law to u-law (E1 to T1) get pass. TS:5 set:94, get:BD
+2023-12-07 10:49:35 :     TSI a-law to u-law (E1 to T1) get pass. TS:6 set:95, get:BE
+2023-12-07 10:49:37 :     TSI a-law to u-law (E1 to T1) get pass. TS:7 set:96, get:BB
+2023-12-07 10:49:38 :     TSI a-law to u-law (E1 to T1) get pass. TS:8 set:97, get:BC
+2023-12-07 10:49:40 :     TSI a-law to u-law (E1 to T1) get pass. TS:9 set:98, get:B1
+2023-12-07 10:49:41 :     TSI a-law to u-law (E1 to T1) get pass. TS:10 set:99, get:B2
+2023-12-07 10:49:43 :     TSI a-law to u-law (E1 to T1) get pass. TS:11 set:9A, get:B0
+2023-12-07 10:49:44 :     TSI a-law to u-law (E1 to T1) get pass. TS:12 set:9B, get:B0
+2023-12-07 10:49:46 :     TSI a-law to u-law (E1 to T1) get pass. TS:13 set:9C, get:B5
+2023-12-07 10:49:47 :     TSI a-law to u-law (E1 to T1) get pass. TS:14 set:9D, get:B6
+2023-12-07 10:49:49 :     TSI a-law to u-law (E1 to T1) get pass. TS:15 set:9E, get:B3
+2023-12-07 10:49:50 :     TSI a-law to u-law (E1 to T1) get pass. TS:16 set:9F, get:B4
+2023-12-07 10:49:52 :     TSI a-law to u-law (E1 to T1) get pass. TS:17 set:A0, get:8A
+2023-12-07 10:49:53 :     TSI a-law to u-law (E1 to T1) get pass. TS:18 set:A1, get:8B
+2023-12-07 10:49:55 :     TSI a-law to u-law (E1 to T1) get pass. TS:19 set:A2, get:88
+2023-12-07 10:49:56 :     TSI a-law to u-law (E1 to T1) get pass. TS:20 set:A3, get:89
+2023-12-07 10:49:58 :     TSI a-law to u-law (E1 to T1) get pass. TS:21 set:A4, get:8E
+2023-12-07 10:49:59 :     TSI a-law to u-law (E1 to T1) get pass. TS:22 set:A5, get:8F
+2023-12-07 10:50:01 :     TSI a-law to u-law (E1 to T1) get pass. TS:23 set:A6, get:8C
+2023-12-07 10:50:02 :     TSI a-law to u-law (E1 to T1) get pass. TS:24 set:A7, get:8D
+2023-12-07 10:50:22 :     TSI a-law to u-law (E1 to T1) get pass. TS:1 set:A8, get:82
+2023-12-07 10:50:24 :     TSI a-law to u-law (E1 to T1) get pass. TS:2 set:A9, get:83
+2023-12-07 10:50:25 :     TSI a-law to u-law (E1 to T1) get pass. TS:3 set:AA, get:80
+2023-12-07 10:50:27 :     TSI a-law to u-law (E1 to T1) get pass. TS:4 set:AB, get:81
+2023-12-07 10:50:28 :     TSI a-law to u-law (E1 to T1) get pass. TS:5 set:AC, get:86
+2023-12-07 10:50:30 :     TSI a-law to u-law (E1 to T1) get pass. TS:6 set:AD, get:87
+2023-12-07 10:50:31 :     TSI a-law to u-law (E1 to T1) get pass. TS:7 set:AE, get:84
+2023-12-07 10:50:33 :     TSI a-law to u-law (E1 to T1) get pass. TS:8 set:AF, get:85
+2023-12-07 10:50:34 :     TSI a-law to u-law (E1 to T1) get pass. TS:9 set:B0, get:9A
+2023-12-07 10:50:36 :     TSI a-law to u-law (E1 to T1) get pass. TS:10 set:B1, get:9B
+2023-12-07 10:50:37 :     TSI a-law to u-law (E1 to T1) get pass. TS:11 set:B2, get:98
+2023-12-07 10:50:39 :     TSI a-law to u-law (E1 to T1) get pass. TS:12 set:B3, get:99
+2023-12-07 10:50:40 :     TSI a-law to u-law (E1 to T1) get pass. TS:13 set:B4, get:9E
+2023-12-07 10:50:42 :     TSI a-law to u-law (E1 to T1) get pass. TS:14 set:B5, get:9F
+2023-12-07 10:50:43 :     TSI a-law to u-law (E1 to T1) get pass. TS:15 set:B6, get:9C
+2023-12-07 10:50:45 :     TSI a-law to u-law (E1 to T1) get pass. TS:16 set:B7, get:9D
+2023-12-07 10:50:46 :     TSI a-law to u-law (E1 to T1) get pass. TS:17 set:B8, get:92
+2023-12-07 10:50:48 :     TSI a-law to u-law (E1 to T1) get pass. TS:18 set:B9, get:93
+2023-12-07 10:50:49 :     TSI a-law to u-law (E1 to T1) get pass. TS:19 set:BA, get:90
+2023-12-07 10:50:51 :     TSI a-law to u-law (E1 to T1) get pass. TS:20 set:BB, get:91
+2023-12-07 10:50:52 :     TSI a-law to u-law (E1 to T1) get pass. TS:21 set:BC, get:96
+2023-12-07 10:50:54 :     TSI a-law to u-law (E1 to T1) get pass. TS:22 set:BD, get:97
+2023-12-07 10:50:55 :     TSI a-law to u-law (E1 to T1) get pass. TS:23 set:BE, get:94
+2023-12-07 10:50:57 :     TSI a-law to u-law (E1 to T1) get pass. TS:24 set:BF, get:95
+2023-12-07 10:51:17 :     TSI a-law to u-law (E1 to T1) get pass. TS:1 set:C0, get:E2
+2023-12-07 10:51:19 :     TSI a-law to u-law (E1 to T1) get pass. TS:2 set:C1, get:E3
+2023-12-07 10:51:20 :     TSI a-law to u-law (E1 to T1) get pass. TS:3 set:C2, get:E0
+2023-12-07 10:51:22 :     TSI a-law to u-law (E1 to T1) get pass. TS:4 set:C3, get:E1
+2023-12-07 10:51:23 :     TSI a-law to u-law (E1 to T1) get pass. TS:5 set:C4, get:E6
+2023-12-07 10:51:25 :     TSI a-law to u-law (E1 to T1) get pass. TS:6 set:C5, get:E7
+2023-12-07 10:51:26 :     TSI a-law to u-law (E1 to T1) get pass. TS:7 set:C6, get:E4
+2023-12-07 10:51:28 :     TSI a-law to u-law (E1 to T1) get pass. TS:8 set:C7, get:E5
+2023-12-07 10:51:29 :     TSI a-law to u-law (E1 to T1) get pass. TS:9 set:C8, get:DD
+2023-12-07 10:51:31 :     TSI a-law to u-law (E1 to T1) get pass. TS:10 set:C9, get:DD
+2023-12-07 10:51:32 :     TSI a-law to u-law (E1 to T1) get pass. TS:11 set:CA, get:DC
+2023-12-07 10:51:34 :     TSI a-law to u-law (E1 to T1) get pass. TS:12 set:CB, get:DC
+2023-12-07 10:51:35 :     TSI a-law to u-law (E1 to T1) get pass. TS:13 set:CC, get:DF
+2023-12-07 10:51:37 :     TSI a-law to u-law (E1 to T1) get pass. TS:14 set:CD, get:DF
+2023-12-07 10:51:39 :     TSI a-law to u-law (E1 to T1) get pass. TS:15 set:CE, get:DE
+2023-12-07 10:51:40 :     TSI a-law to u-law (E1 to T1) get pass. TS:16 set:CF, get:DE
+2023-12-07 10:51:42 :     TSI a-law to u-law (E1 to T1) get pass. TS:17 set:D0, get:F4
+2023-12-07 10:51:43 :     TSI a-law to u-law (E1 to T1) get pass. TS:18 set:D1, get:F6
+2023-12-07 10:51:45 :     TSI a-law to u-law (E1 to T1) get pass. TS:19 set:D2, get:F0
+2023-12-07 10:51:46 :     TSI a-law to u-law (E1 to T1) get pass. TS:20 set:D3, get:F2
+2023-12-07 10:51:48 :     TSI a-law to u-law (E1 to T1) get pass. TS:21 set:D4, get:FC
+2023-12-07 10:51:49 :     TSI a-law to u-law (E1 to T1) get pass. TS:22 set:D5, get:FE
+2023-12-07 10:51:51 :     TSI a-law to u-law (E1 to T1) get pass. TS:23 set:D6, get:F8
+2023-12-07 10:51:52 :     TSI a-law to u-law (E1 to T1) get pass. TS:24 set:D7, get:FA
+2023-12-07 10:52:13 :     TSI a-law to u-law (E1 to T1) get pass. TS:1 set:D8, get:EA
+2023-12-07 10:52:14 :     TSI a-law to u-law (E1 to T1) get pass. TS:2 set:D9, get:EB
+2023-12-07 10:52:16 :     TSI a-law to u-law (E1 to T1) get pass. TS:3 set:DA, get:E8
+2023-12-07 10:52:17 :     TSI a-law to u-law (E1 to T1) get pass. TS:4 set:DB, get:E9
+2023-12-07 10:52:19 :     TSI a-law to u-law (E1 to T1) get pass. TS:5 set:DC, get:EE
+2023-12-07 10:52:20 :     TSI a-law to u-law (E1 to T1) get pass. TS:6 set:DD, get:EF
+2023-12-07 10:52:22 :     TSI a-law to u-law (E1 to T1) get pass. TS:7 set:DE, get:EC
+2023-12-07 10:52:23 :     TSI a-law to u-law (E1 to T1) get pass. TS:8 set:DF, get:ED
+2023-12-07 10:52:25 :     TSI a-law to u-law (E1 to T1) get pass. TS:9 set:E0, get:C8
+2023-12-07 10:52:26 :     TSI a-law to u-law (E1 to T1) get pass. TS:10 set:E1, get:C9
+2023-12-07 10:52:28 :     TSI a-law to u-law (E1 to T1) get pass. TS:11 set:E2, get:C6
+2023-12-07 10:52:29 :     TSI a-law to u-law (E1 to T1) get pass. TS:12 set:E3, get:C7
+2023-12-07 10:52:31 :     TSI a-law to u-law (E1 to T1) get pass. TS:13 set:E4, get:CC
+2023-12-07 10:52:32 :     TSI a-law to u-law (E1 to T1) get pass. TS:14 set:E5, get:CD
+2023-12-07 10:52:34 :     TSI a-law to u-law (E1 to T1) get pass. TS:15 set:E6, get:CA
+2023-12-07 10:52:35 :     TSI a-law to u-law (E1 to T1) get pass. TS:16 set:E7, get:CB
+2023-12-07 10:52:37 :     TSI a-law to u-law (E1 to T1) get pass. TS:17 set:E8, get:C0
+2023-12-07 10:52:38 :     TSI a-law to u-law (E1 to T1) get pass. TS:18 set:E9, get:C1
+2023-12-07 10:52:40 :     TSI a-law to u-law (E1 to T1) get pass. TS:19 set:EA, get:BF
+2023-12-07 10:52:41 :     TSI a-law to u-law (E1 to T1) get pass. TS:20 set:EB, get:BF
+2023-12-07 10:52:43 :     TSI a-law to u-law (E1 to T1) get pass. TS:21 set:EC, get:C4
+2023-12-07 10:52:44 :     TSI a-law to u-law (E1 to T1) get pass. TS:22 set:ED, get:C5
+2023-12-07 10:52:45 :     TSI a-law to u-law (E1 to T1) get pass. TS:23 set:EE, get:C2
+2023-12-07 10:52:47 :     TSI a-law to u-law (E1 to T1) get pass. TS:24 set:EF, get:C3
+2023-12-07 10:53:07 :     TSI a-law to u-law (E1 to T1) get pass. TS:1 set:E8, get:C0
+2023-12-07 10:53:09 :     TSI a-law to u-law (E1 to T1) get pass. TS:2 set:E9, get:C1
+2023-12-07 10:53:10 :     TSI a-law to u-law (E1 to T1) get pass. TS:3 set:EA, get:BF
+2023-12-07 10:53:12 :     TSI a-law to u-law (E1 to T1) get pass. TS:4 set:EB, get:BF
+2023-12-07 10:53:13 :     TSI a-law to u-law (E1 to T1) get pass. TS:5 set:EC, get:C4
+2023-12-07 10:53:15 :     TSI a-law to u-law (E1 to T1) get pass. TS:6 set:ED, get:C5
+2023-12-07 10:53:16 :     TSI a-law to u-law (E1 to T1) get pass. TS:7 set:EE, get:C2
+2023-12-07 10:53:18 :     TSI a-law to u-law (E1 to T1) get pass. TS:8 set:EF, get:C3
+2023-12-07 10:53:19 :     TSI a-law to u-law (E1 to T1) get pass. TS:9 set:F0, get:D6
+2023-12-07 10:53:21 :     TSI a-law to u-law (E1 to T1) get pass. TS:10 set:F1, get:D7
+2023-12-07 10:53:22 :     TSI a-law to u-law (E1 to T1) get pass. TS:11 set:F2, get:D4
+2023-12-07 10:53:24 :     TSI a-law to u-law (E1 to T1) get pass. TS:12 set:F3, get:D5
+2023-12-07 10:53:25 :     TSI a-law to u-law (E1 to T1) get pass. TS:13 set:F4, get:DA
+2023-12-07 10:53:27 :     TSI a-law to u-law (E1 to T1) get pass. TS:14 set:F5, get:DB
+2023-12-07 10:53:28 :     TSI a-law to u-law (E1 to T1) get pass. TS:15 set:F6, get:D8
+2023-12-07 10:53:29 :     TSI a-law to u-law (E1 to T1) get pass. TS:16 set:F7, get:D9
+2023-12-07 10:53:31 :     TSI a-law to u-law (E1 to T1) get pass. TS:17 set:F8, get:CF
+2023-12-07 10:53:32 :     TSI a-law to u-law (E1 to T1) get pass. TS:18 set:F9, get:CF
+2023-12-07 10:53:34 :     TSI a-law to u-law (E1 to T1) get pass. TS:19 set:FA, get:CE
+2023-12-07 10:53:35 :     TSI a-law to u-law (E1 to T1) get pass. TS:20 set:FB, get:CE
+2023-12-07 10:53:37 :     TSI a-law to u-law (E1 to T1) get pass. TS:21 set:FC, get:D2
+2023-12-07 10:53:38 :     TSI a-law to u-law (E1 to T1) get pass. TS:22 set:FD, get:D3
+2023-12-07 10:53:40 :     TSI a-law to u-law (E1 to T1) get pass. TS:23 set:FE, get:D0
+2023-12-07 10:53:41 :     TSI a-law to u-law (E1 to T1) get pass. TS:24 set:FF, get:D1
+2023-12-07 10:53:45 : E1/T1 au_law TEST End

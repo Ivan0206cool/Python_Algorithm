@@ -1,0 +1,164 @@
+{
+    "1": {
+        "Chassis": "LOOP CCPB_2ge-A",
+        "Total slots": "16",
+        "Slot Info": [
+            {
+                "Name": "Ctrl 1",
+                "HW Version": "V23.11.01 (0008)",
+                "SW Version": "V23.11.01 (0008)",
+                "Serial Version": "205 hw: \"Ver.C, FPGA1:V16(7), FPGA2:V14(4), CPLD:V3(2) \"",
+                "FPGA1 Version": "V16(7)",
+                "FPGA2 Version": "V14(4)",
+                "CPLD Version": "V3(2)"
+            },
+            {
+                "Name": "Ctrl 2",
+                "HW Version": "V23.11.01 (0008)",
+                "SW Version": "V23.11.01 (0008)",
+                "Serial Version": "107 hw: \"Ver.C\""
+            },
+            {
+                "Name": "Slot 10",
+                "Card Type": "FXS",
+                "Version": "V4.09.02 (0003) Ver.P FPGA:V8(10)"
+            },
+            {
+                "Name": "Slot 9",
+                "Card Type": "FXO",
+                "Version": "V3.05.01 (0009) HW Ver.H FPGA :V10(4)"
+            },
+            {
+                "Name": "Slot 7",
+                "Card Type": "QT1",
+                "Version": "V3.10.02 (0046)"
+            },
+            {
+                "Name": "Slot 6",
+                "Card Type": "EM",
+                "Version": "V6.08.01 (0104) HW Ver.L FPGA :V13(3)"
+            },
+            {
+                "Name": "Slot 5",
+                "Card Type": "EM",
+                "Version": "V6.08.01 (0104) HW Ver.L FPGA :V13(3)"
+            },
+            {
+                "Name": "Slot 4",
+                "Card Type": "QE1",
+                "Version": "V3.10.02 (0046)"
+            },
+            {
+                "Name": "Slot 3",
+                "Card Type": "QE1",
+                "Version": "V3.10.02 (0043)"
+            },
+            {
+                "Name": "Slot 2",
+                "Card Type": "Oct_rt_b",
+                "Version": "V1.10.01 (03)"
+            },
+            {
+                "Name": "Slot c",
+                "Card Type": "FT1",
+                "Version": "V4.04.07 (0013), HW: G, FPGA: 52"
+            },
+            {
+                "Name": "Slot b",
+                "Card Type": "MQT1",
+                "Version": "V1.11.02 (0006)"
+            },
+            {
+                "Name": "Slot a",
+                "Card Type": "Router_a",
+                "Version": "V2.10.01 (19)"
+            }
+        ]
+    },
+    "2": {
+        "Chassis": "LOOP CCPB_2ge-A",
+        "Total slots": "16",
+        "Slot Info": [
+            {
+                "Name": "Ctrl 1",
+                "HW Version": "V23.11.01 (0008)",
+                "SW Version": "V23.11.01 (0008)",
+                "Serial Version": "108 hw: \"Ver.C, FPGA1:V16(7), FPGA2:V14(4), CPLD:V3(2) \"",
+                "FPGA1 Version": "V16(7)",
+                "FPGA2 Version": "V14(4)",
+                "CPLD Version": "V3(2)"
+            },
+            {
+                "Name": "Ctrl 2",
+                "HW Version": "V23.11.01 (0008)",
+                "SW Version": "V23.11.01 (0008)",
+                "Serial Version": "106 hw: \"Ver.C\""
+            },
+            {
+                "Name": "Slot 11",
+                "Card Type": "Fom",
+                "Version": "FPGA:K HW:A"
+            },
+            {
+                "Name": "Slot 9",
+                "Card Type": "Ls_optical']",
+                "Version": "FPGA:F HW:B"
+            },
+            {
+                "Name": "Slot 7",
+                "Card Type": "QT1",
+                "Version": "V3.10.02 (0046)"
+            },
+            {
+                "Name": "Slot 6",
+                "Card Type": "FXO",
+                "Version": "V3.04.01 (0062) HW Ver.H FPGA :V10(4)"
+            },
+            {
+                "Name": "Slot 5",
+                "Card Type": "FXS",
+                "Version": "V4.09.02 (0003) Ver.P FPGA:V8(10)"
+            },
+            {
+                "Name": "Slot 4",
+                "Card Type": "QE1",
+                "Version": "V3.10.02 (0046)"
+            },
+            {
+                "Name": "Slot 3",
+                "Card Type": "QE1",
+                "Version": "V3.10.02 (0046)"
+            },
+            {
+                "Name": "Slot 2",
+                "Card Type": "FXO",
+                "Version": "V3.05.01 (0009) HW Ver.H FPGA :V10(4)"
+            },
+            {
+                "Name": "Slot 1",
+                "Card Type": "FXS",
+                "Version": "V4.09.02 (0003) Ver.P FPGA:V8(10)"
+            },
+            {
+                "Name": "Slot d",
+                "Card Type": "clka",
+                "Version": ""
+            },
+            {
+                "Name": "Slot c",
+                "Card Type": "MQE1",
+                "Version": "V1.11.02 (0006)"
+            },
+            {
+                "Name": "Slot b",
+                "Card Type": "FE1",
+                "Version": "V4.03.04 (0010), HW: G, FPGA: 09"
+            },
+            {
+                "Name": "Slot a",
+                "Card Type": "MQT1",
+                "Version": "V1.11.02 (0006)"
+            }
+        ]
+    }
+}
