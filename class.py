@@ -5,6 +5,7 @@ class bank():
 
 
 h=bank(3,1)
+g=bank(4,1)
 print(h.medium)
 print(h.big)
       
